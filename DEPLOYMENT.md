@@ -1,4 +1,6 @@
-# Deployment Instructions for Dyslexia-Hub to Cloudflare Pages
+# Deployment Instructions for Dyslexia-Hub to Cloudflare Pages (Workers Builds)
+
+This document provides step-by-step instructions to deploy the dyslexia-hub Vite/React application to Cloudflare Pages on the subdomain `dyslexia.yassinelaaziz.com`.
 
 ## Prerequisites
 - Dyslexia-hub repository pushed to GitHub
@@ -6,11 +8,10 @@
 - pnpm installed locally
 
 ## Files Added
-- `.nvmrc` (Node 18) - Repository root
-- `packages/web/public/_redirects` (SPA routing) - Ensures client-side routing works
-- Updated `vite.config.ts` (no base path) - Configured for subdomain deployment
+- `.nvmrc` (Node 20) - Repository root
+- `packages/web/wrangler.jsonc` (Workers config) - Wrangler configuration for SPA deployment
 
-## Cloudflare Pages Deployment Steps
+## Cloudflare Pages Deployment Steps (Workers Builds)
 
 ### 1. Create Pages Project
 - Go to Cloudflare Dashboard → Workers & Pages
@@ -19,14 +20,15 @@
 - Configure build settings:
   - **Project name:** `dyslexia-hub`
   - **Production branch:** `main`
-  - **Framework preset:** None (or React/Vite)
+  - **Framework preset:** None
+  - **Root directory:** `/` (runs pnpm commands at monorepo root)
   - **Build command:** `pnpm install && pnpm build`
-  - **Build output directory:** `packages/web/dist`
-  - **Root directory:** `/`
-  - **Environment variables:** Add `NODE_VERSION = 18`
+  - **Deploy command:** `cd packages/web && npx wrangler deploy`
+  - **Environment variables:** `NODE_VERSION = 20`
 
 ### 2. Configure Custom Domain
-- In the dyslexia-hub Pages project → Custom domains
+- In the dyslexia-hub Pages project → Settings → Domains & Routes
+- Click "Add Custom Domain"
 - Add: `dyslexia.yassinelaaziz.com`
 - Cloudflare will automatically create the DNS record
 - Wait for SSL certificate to provision (usually takes a few minutes)
@@ -38,12 +40,13 @@
 - Verify assets load correctly
 
 ## Notes
+- This is a **Workers Builds** project (not classic Pages), so it requires a deploy command
+- The deploy command runs wrangler from the packages/web directory where wrangler.jsonc is located
+- SPA fallback is configured in wrangler.jsonc (`not_found_handling: "single-page-application"`)
+- Workers static assets does not read `_redirects` files (that's Pages-only)
 - Auto-deployment is enabled by default on push to main branch
 - Preview deployments are available for pull requests
-- No proxy logic needed - direct routing to subdomain
-- Build occurs in Cloudflare's environment using Node 18
-- The `_redirects` file ensures all routes serve index.html for client-side routing
-- React Router uses default basename "/" which is correct for subdomain deployment
+- Build occurs in Cloudflare's environment using Node 20
 
 ## Local Build Testing
 To test the build locally before deploying:
