@@ -15,6 +15,8 @@ import TrainingHistoryPage from './pages/training/TrainingHistoryPage';
 import DocsPage from './pages/docs/DocsPage';
 
 function App() {
+  const isDev = import.meta.env.MODE === 'development';
+
   return (
     <ThemeProvider>
       <Router>
@@ -42,9 +44,11 @@ function App() {
                   <Link to="/research" className="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">
                     Research
                   </Link>
-                  <Link to="/docs" className="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">
-                    Documentation
-                  </Link>
+                  {isDev && (
+                    <Link to="/docs" className="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">
+                      Documentation
+                    </Link>
+                  )}
                   <ThemeToggle />
                 </div>
               </div>
@@ -62,7 +66,7 @@ function App() {
             <Route path="/training/history" element={<TrainingHistoryPage />} />
             <Route path="/interventions" element={<Navigate to="/training" replace />} />
             <Route path="/research" element={<ResearchPage />} />
-            <Route path="/docs" element={<DocsPage />} />
+            {isDev && <Route path="/docs" element={<DocsPage />} />}
             <Route path="/404" element={<NotFoundPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
