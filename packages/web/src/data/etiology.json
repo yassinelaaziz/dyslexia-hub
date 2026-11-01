@@ -1,0 +1,238 @@
+{
+  "title": "Causes of Dyslexia (Etiology)",
+  "description": "Dyslexia has a multifactorial etiology involving complex interactions between genetic predisposition, neurobiological differences, cognitive processing deficits, and environmental influences.",
+  "sections": [
+    {
+      "id": "genetic",
+      "name": "Genetic Factors",
+      "description": "Dyslexia has substantial genetic contributions, with heritability estimates ranging from 40% to 80% based on twin and family studies.",
+      "keyPoints": [
+        "Heritability estimates range from 40-80%",
+        "A 2022 genome-wide association study (GWAS) of 51,800 adults with dyslexia identified 42 independent genome-wide significant loci",
+        "15 of these loci are in genes linked to cognitive ability/educational attainment",
+        "27 are new and potentially more specific to dyslexia",
+        "Commonly replicated candidate genes include DCDC2, KIAA0319, and DYX1C1",
+        "Genetic correlation between males and females is 0.91, indicating similar genetic etiology",
+        "Polygenic risk scores can explain a portion of variance in reading ability, though prediction accuracy remains limited for clinical use"
+      ],
+      "specificGenes": [
+        {
+          "name": "DCDC2",
+          "function": "Associated with neural migration patterns and white matter connectivity",
+          "finding": "READ1 deletion in DCDC2 gene is associated with lower global efficiency, local efficiency, and clustering coefficient in white matter networks"
+        },
+        {
+          "name": "KIAA0319",
+          "function": "Regulates cell cycle during human neuroepithelial cell development"
+        },
+        {
+          "name": "DYX1C1",
+          "function": "Early candidate gene for dyslexia"
+        }
+      ],
+      "geneEnvironmentInteractions": [
+        "Low socioeconomic status (SES) is associated with higher probability of dyslexia and exacerbates genetic contribution",
+        "Parental education moderates the effect of genetic risk variants on reading ability",
+        "Environmental pollutants may selectively target dyslexia-related genes"
+      ],
+      "sources": [
+        {
+          "authors": "Doust C, Fontanillas P, Eising E, et al.",
+          "year": 2022,
+          "title": "Discovery of 42 genome-wide significant loci associated with dyslexia",
+          "journal": "Nature Genetics",
+          "doi": "10.1038/s41588-022-01192-y"
+        },
+        {
+          "authors": "Di Stefano M, Mascheretti S, Lampis V, et al.",
+          "year": 2026,
+          "title": "Associations between READ1 deletion, reading proficiency, and white matter network organisation in children with and without developmental dyslexia",
+          "journal": "Brain Structure and Function",
+          "doi": "10.1007/s00429-026-03160-2"
+        }
+      ]
+    },
+    {
+      "id": "neurological",
+      "name": "Neurological Factors",
+      "description": "Dyslexia is associated with differences in brain structure and function, particularly in regions involved in reading and language processing.",
+      "keyPoints": [
+        "Brain differences are observed in both gray matter and white matter",
+        "Functional MRI studies show altered activation patterns during reading tasks",
+        "Machine learning approaches using neuroimaging data show classification accuracy of 65-90% in controlled cohorts",
+        "These findings have limited generalizability to real-world populations and should not be confused with clinical diagnostic utility"
+      ],
+      "brainStructure": {
+        "grayMatter": [
+          "Differences in gray matter volume in left occipito-temporal cortex (including visual word form area)",
+          "Differences in inferior frontal gyrus",
+          "Differences in temporoparietal regions",
+          "Note: Replication of these findings has been inconsistent"
+        ],
+        "whiteMatter": [
+          "Reduced fractional anisotropy (FA) reported in arcuate fasciculus in some studies",
+          "Connectivity differences in left perisylvian language network",
+          "READ1 deletion in DCDC2 gene associated with lower network efficiency"
+        ]
+      },
+      "functionalDifferences": [
+        "Hypoactivation in left hemisphere reading networks (occipito-temporal, temporoparietal, inferior frontal regions)",
+        "Compensatory hyperactivation in right hemisphere homologues in some individuals",
+        "Altered functional connectivity during reading tasks",
+        "Deficits in neural entrainment and temporal processing, particularly in auditory and speech processing networks"
+      ],
+      "sources": [
+        {
+          "authors": "Rimrodt SL, Clements AM, et al.",
+          "year": 2009,
+          "title": "White matter microstructural differences linked to left perisylvian language network in children with dyslexia",
+          "journal": "Cortex",
+          "doi": "10.1016/j.cortex.2009.07.008"
+        },
+        {
+          "authors": "Müller-Axt C, Anwander A, von Kriegstein K",
+          "year": 2017,
+          "title": "Altered structural connectivity of the left visual thalamus in developmental dyslexia",
+          "journal": "Current Biology",
+          "doi": "10.1016/j.cub.2017.10.034"
+        }
+      ]
+    },
+    {
+      "id": "cognitive",
+      "name": "Cognitive Factors",
+      "description": "Cognitive processing deficits play a key role in dyslexia, with phonological processing being the most consistently identified deficit.",
+      "keyPoints": [
+        "The phonological deficit hypothesis remains the most supported cognitive account of dyslexia",
+        "Double-deficit hypothesis proposes combinations of phonological and rapid automatized naming (RAN) deficits",
+        "Working memory, processing speed, and attention show mixed evidence for involvement"
+      ],
+      "phonologicalDeficit": {
+        "description": "The most consistently supported cognitive account of dyslexia",
+        "evidence": [
+          "Phonological awareness deficits in dyslexia across languages and orthographies",
+          "Phonological processing impairments predict reading difficulties",
+          "Phonological deficits are evident in both children and adults with dyslexia"
+        ]
+      },
+      "doubleDeficit": {
+        "description": "Dyslexia can arise from combinations of deficits",
+        "components": [
+          "Phonological processing deficits",
+          "Rapid automatized naming (RAN) deficits"
+        ],
+        "evidence": "Evidence supports distinct subtypes with single and double deficits"
+      },
+      "rapidAutomatedNaming": {
+        "description": "RAN deficits are consistently observed in dyslexia",
+        "evidence": [
+          "RAN speed correlates with reading fluency",
+          "RAN deficits persist even when phonological awareness is intact",
+          "RAN and phonological awareness contribute independently to reading ability"
+        ]
+      },
+      "otherCognitiveFactors": [
+        {
+          "factor": "Working Memory",
+          "evidence": "Mixed evidence - some studies show verbal working memory impairments, others find deficits only when phonological processing demands are high"
+        },
+        {
+          "factor": "Processing Speed",
+          "evidence": "Slower naming speed (RAN) is a robust finding, but general processing speed deficits are less consistent"
+        },
+        {
+          "factor": "Attention",
+          "evidence": "Mixed - some studies report attention control difficulties, others find attention deficits only in comorbid ADHD. Not considered a core feature of dyslexia"
+        }
+      ],
+      "sources": [
+        {
+          "authors": "Wolf M, Bowers PG",
+          "year": 1999,
+          "title": "The double-deficit hypothesis for the developmental dyslexias",
+          "journal": "Journal of Educational Psychology",
+          "doi": "10.1037/0022-0663.91.3.415"
+        },
+        {
+          "authors": "Gott D, Cohen-Mimran R, Share DL",
+          "year": 2026,
+          "title": "Rate-disabled versus accuracy-disabled subtypes of dyslexia: A longitudinal study from preschool to grade 1",
+          "journal": "Annals of Dyslexia",
+          "doi": "10.1007/s11881-026-00379-w"
+        }
+      ]
+    },
+    {
+      "id": "environmental",
+      "name": "Environmental Factors",
+      "description": "Environmental factors influence dyslexia risk and outcomes, often interacting with genetic predisposition.",
+      "keyPoints": [
+        "Socioeconomic status consistently affects dyslexia risk and outcomes",
+        "Prenatal and perinatal factors may contribute to risk",
+        "Educational quality and instruction affect dyslexia outcomes",
+        "Gene-environment interactions play a significant role"
+      ],
+      "socioeconomicStatus": [
+        "Low SES is associated with higher prevalence of reading difficulties",
+        "SES moderates genetic risk - low SES exacerbates genetic contribution",
+        "SES affects access to early intervention and educational resources"
+      ],
+      "prenatalPerinatal": [
+        "Some studies link prenatal exposure to environmental pollutants to dyslexia risk",
+        "Preterm birth and low birth weight associated with increased risk",
+        "Prenatal nutrition may play a role (evidence emerging)"
+      ],
+      "educationalFactors": [
+        "Quality of reading instruction moderates expression of dyslexia",
+        "Early identification and intervention improve outcomes",
+        "Educational policies affect identification rates and support access"
+      ],
+      "environmentalRiskFactors": {
+        "description": "Most important environmental risk factors identified in recent research",
+        "factors": [
+          "Proactive learning habit",
+          "Age of child's literacy",
+          "Maternal education level",
+          "Out-migrant workers",
+          "Prolonged screen exposure during pregnancy"
+        ]
+      },
+      "sources": [
+        {
+          "authors": "Wang H, Fan H, Liu R, et al.",
+          "year": 2026,
+          "title": "Environmental factors and polygenic risk score for psychiatric and neurodevelopmental disorders in children with dyslexia",
+          "journal": "Translational Psychiatry",
+          "doi": "10.1038/s41398-026-04429-0"
+        },
+        {
+          "authors": "Huo S, Zhang AJ, Zheng M, et al.",
+          "year": 2026,
+          "title": "Aetiologies of basic biliteracy difficulties in Hong Kong Chinese children: A latent profile analysis with twin data",
+          "journal": "Annals of Dyslexia",
+          "doi": "10.1007/s11881-025-00355-w"
+        }
+      ]
+    }
+  ],
+  "integrativeModels": {
+    "multipleDeficitModel": {
+      "description": "The multiple-deficit model proposes that dyslexia arises from combinations of cognitive risk factors rather than a single core deficit",
+      "accountsFor": [
+        "Heterogeneity in dyslexia profiles",
+        "Co-occurrence with other neurodevelopmental disorders",
+        "Variable expression across individuals"
+      ]
+    },
+    "comorbidityPatterns": {
+      "description": "Dyslexia frequently co-occurs with other neurodevelopmental disorders",
+      "commonComorbidities": [
+        "ADHD (attention-deficit/hyperactivity disorder)",
+        "Developmental language disorder (DLD)",
+        "Dyscalculia (mathematics learning disability)"
+      ],
+      "note": "Comorbidity suggests shared genetic and neurobiological risk factors"
+    }
+  },
+  "disclaimer": "Etiological factors show both consistency and variation across individuals. Genetic factors are largely language-independent, while neurological and cognitive factors are moderated by orthographic depth and language characteristics."
+}

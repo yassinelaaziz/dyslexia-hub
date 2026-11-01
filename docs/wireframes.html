@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyslexia Grand Hub - Wireframes - Dyslexia Grand Hub Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fafb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header .container {
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            padding: 0 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        nav a:hover {
+            background: #f3f4f6;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.75rem;
+            color: #374151;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.25rem 0 0.5rem;
+            color: #4b5563;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem;
+            color: #6b7280;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f9fafb;
+            font-weight: 600;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 2rem 0;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .meta {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dyslexia Grand Hub - Wireframes</h1>
+            <p class="subtitle">Document  Complete</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Documentation Index</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="monorepo-structure.html">Monorepo Structure</a></li>
+                <li><a href="database-schema.html">Database Schema</a></li>
+                <li><a href="api-specification.html">API Specification</a></li>
+                <li><a href="component-library.html">Component Library</a></li>
+                <li><a href="user-journeys.html">User Journeys</a></li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+                <li><a href="development-plan.html">Development Plan</a></li>
+                <li><a href="testing-strategy.html">Testing Strategy</a></li>
+                <li><a href="deployment-plan.html">Deployment Plan</a></li>
+                <li><a href="monitoring-plan.html">Monitoring Plan</a></li>
+                <li><a href="maintenance-plan.html">Maintenance Plan</a></li>
+                <li><a href="technical-specification.html">Technical Specification</a></li>
+                <li><a href="training-system.html">Training System</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>Dyslexia Grand Hub - Wireframes</h1>
+
+<strong>Version:</strong> 1.0
+<strong>Date:</strong> 2026-10-31
+<strong>Author:</strong> Senior Tech Lead (Devin)
+<strong>Status:</strong> UI/UX Design Phase - Complete
+
+<hr>
+
+<h2>Screen-by-Screen Wireframes</h2>
+
+<h3>Screen 1: Landing Page</h3>
+
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+<p>│                    Dyslexia Grand Hub                         │</p>
+<p>│                                                              │</p>
+<p>│        [Logo]                                                │</p>
+<p>│                                                              │</p>
+<p>│        Empowering Your Brain to Read Better                  │</p>
+<p>│                                                              │</p>
+<p>│        Evidence-based interventions for dyslexia             │</p>
+<p>│                                                              │</p>
+<p>│        [Get Started]  [Learn More]                           │</p>
+<p>│                                                              │</p>
+<p>│        Features:                                             │</p>
+<p>│        ✓ Screening  ✓ Interventions  ✓ Brain Showcase       │</p>
+<p>│                                                              │</p>
+<p>└─────────────────────────────────────────────────────────────┘</p>
+</code></pre>
+
+<strong>Accessibility Notes:</strong>
+<ul>
+<li>Large, readable font (24px minimum)</li>
+<li>High contrast colors</li>
+<li>Dyslexia-friendly font option</li>
+<li>Clear call-to-action button</li>
+<li>Minimal text, welcoming tone</li>
+</ul>
+
+<hr>
+
+<h3>Screen 2: Onboarding</h3>
+
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+<p>│                    Create Your Profile                       │</p>
+<p>│                                                              │</p>
+<p>│        Name: [________________]                                │</p>
+<p>│                                                              │</p>
+<p>│        Age:  [12 ▼]                                          │</p>
+<p>│                                                              │</p>
+<p>│        Language: [English ▼]                                 │</p>
+<p>│                                                              │</p>
+<p>│        Preferences:                                          │</p>
+<p>│        ☑ Dyslexia-friendly font                             │</p>
+<p>│        ☑ Larger text size                                    │</p>
+<p>│        ☑ High contrast mode                                 │</p>
+<p>│                                                              │</p>
+<p>│        [Create Profile]                                      │</p>
+<p>│                                                              │</p>
+<p>└─────────────────────────────────────────────────────────────┘</p>
+</code></pre>
+
+<strong>Accessibility Notes:</strong>
+<ul>
+<li>Form labels above inputs (clear association)</li>
+<li>Large input fields (48px height)</li>
+<li>Checkbox labels clearly associated</li>
+<li>High contrast focus states</li>
+<li>Error messages in red with icons</li>
+</ul>
+
+<hr>
+
+<h3>Screen 3: Screening - Child Version</h3>
+
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+<p>│                    Let's Play a Game! 🎮                     │</p>
+<p>│                                                              │</p>
+<p>│        Round 1 of 4                                           │</p>
+<p>│        Progress: [████░░░░░░░░░░░░░░░] 25%                   │</p>
+<p>│                                                              │</p>
+<p>│        [Image: Rapid Naming Game]                            │</p>
+<p>│                                                              │</p>
+<p>│        Point to the word: "CAT"                              │</p>
+<p>│                                                              │</p>
+<p>│        [DOG]  [CAT]  [BAT]  [HAT]                            │</p>
+<p>│                                                              │</p>
+<p>│        Great job! 🌟                                         │</p>
+<p>│                                                              │</p>
+<p>│        [Next]                                                │</p>
+<p>│                                                              │</p>
+<p>└─────────────────────────────────────────────────────────────┘</p>
+</code></pre>
+
+<strong>Accessibility Notes:</strong>
+<ul>
+<li>Gamified design (not "test")</li>
+<li>Progress bar with percentage</li>
+<li>Large, clickable targets (100px minimum)</li>
+<li>Celebration feedback (stars, sounds)</li>
+<li>No wrong answers, only "let's try again"</li>
+<li>Audio instructions option</li>
+</ul>
+
+<hr>
+
+<h3>Screen 4: Screening - Adult Version</h3>
+
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+<p>│                    Dyslexia Screening                         │</p>
+<p>│                                                              │</p>
+<p>│        Question 5 of 20                                      │</p>
+<p>│        Progress: [██████████░░░░░░░░░░░] 50%               │</p>
+<p>│                                                              │</p>
+<p>│        Rate your reading speed:                              │</p>
+<p>│                                                              │</p>
+<p>│        Very Slow  ○────○────○  Very Fast                    │</p>
+<p>│                                                              │</p>
+<p>│        How often do you skip words when reading?             │</p>
+<p>│                                                              │</p>
+<p>│        ○ Never                                               │</p>
+<p>│        ○ Rarely                                              │</p>
+<p>○ Sometimes                                            │</p>
+<p>○ Often                                               │</p>
+<p>○ Always                                              │</p>
+<p>│                                                              │</p>
+<p>│        [Previous]  [Next]                                    │</p>
+<p>│                                                              │</p>
+<p>└─────────────────────────────────────────────────────────────┘</p>
+</code></pre>
+
+<strong>Accessibility Notes:</strong>
+<ul>
+<li>Clear question numbering</li>
+<li>Slider with labels at ends</li>
+<li>Radio buttons with large click targets</li>
+<li>Keyboard navigation support</li>
+<li>Estimated time remaining</li>
+</ul>
+
+<hr>
+
+<h3>Screen 5: Screening Results</h3>
+
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+<p>│                    Your Screening Results                    │</p>
+<p>│                                                              │</p>
+<p>│        Overall Severity: Moderate 🟡                          │</p>
+<p>│                                                              │</p>
+<p>│        Phonological Processing: ⭐⭐⭐☆☆ (45/100)           │</p>
+<p>│        Rapid Naming:         ⭐⭐☆☆☆ (30/100)              │</p>
+<p>│        Visual Processing:      ⭐⭐⭐⭐☆ (65/100)            │</p>
+<p>│        Working Memory:        ⭐⭐⭐☆☆ (50/100)             │</p>
+<p>│                                                              │</p>
+<p>│        What This Means:                                      │</p>
+<p>│        Your brain processes reading differently.             │</p>
+<p>│        The good news: Your brain can change! 🧠✨           │</p>
+<p>│                                                              │</p>
+<p>│        Recommended Interventions:                            │</p>
+<p>│        ✓ RAN-IT (Rapid Naming Training)                     │</p>
+<p>│        ✓ Phonological Training Program                      │</p>
+<p>│                                                              │</p>
+<p>│        [View Interventions]  [Learn More]                    │</p>
+<p>│                                                              │</p>
+<p>└─────────────────────────────────────────────────────────────┘</p>
+</code></pre>
+
+<strong>Accessibility Notes:</strong>
+<ul>
+<li>Visual severity indicator (color + emoji)</li>
+<li>Star ratings for each domain</li>
+<li>Plain language explanation</li>
+<li>Hope-focused messaging</li>
+<li>Clear next steps</li>
+<li>Option to export results</li>
+</ul>
+
+<hr>
+
+<h3>Screen 6: Intervention Explorer</h3>
+
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+<p>│                    Interventions                             │</p>
+<p>│                                                              │</p>
+<p>│        Filter: [Category ▼] [Age ▼] [Efficacy ▼]          │</p>
+<p>│                                                              │</p>
+<p>│        Search: [________________]                             │</p>
+<p>│                                                              │</p>
+<p>│        ┌─────────────────────────────────────────────────┐   │</p>
+<p>│        │ RAN-IT                                          │   │</p>
+<p>│        │ Rapid Automated Naming Intensive Training         │   │</p>
+<p>│        │ ⭐⭐⭐⭐⭐ Efficacy: 8.0/10                     │   │</p>
+<p>│        │ Age: 5-8 | Category: RAN                         │   │</p>
+<p>│        │ [View Details]                                   │   │</p>
+<p>│        └─────────────────────────────────────────────────┘   │</p>
+<p>│                                                              │</p>
+<p>│        ┌─────────────────────────────────────────────────┐   │</p>
+<p>│        │ Phonological Training Program                    │   │</p>
+<p>│        │ Systematic phonics instruction                   │   │</p>
+<p>│        │ ⭐⭐⭐⭐☆ Efficacy: 7.5/10                     │   │</p>
+<p>│        │ Age: 5-12 | Category: Phonological              │   │</p>
+<p>│        │ [View Details]                                   │   │</p>
+<p>│        └─────────────────────────────────────────────────┘   │</p>
+<p>│                                                              │</p>
+<p>└─────────────────────────────────────────────────────────────┘</p>
+</code></pre>
+
+<strong>Accessibility Notes:</strong>
+<ul>
+<li>Filter dropdowns with clear labels</li>
+<li>Search field with icon</li>
+<li>Card-based layout</li>
+<li>Efficacy rating with stars</li>
+<li>Clear age and category tags</li>
+<li>Large clickable cards</li>
+</ul>
+
+<hr>
+
+<h3>Screen 7: Intervention Detail</h3>
+
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+<p>│                    RAN-IT                                    │</p>
+<p>│                    Rapid Automated Naming Intensive Training │</p>
+<p>│                                                              │</p>
+<p>│        ⭐⭐⭐⭐⭐ Efficacy: 8.0/10                          │</p>
+<p>│        📊 Evidence: 14 supporting studies                    │</p>
+<p>│                                                              │</p>
+<p>│        Description:                                          │</p>
+<p>│        Intensive speed-focused rapid naming training...       │</p>
+<p>│                                                              │</p>
+<p>│        Target Deficits:                                      │</p>
+<p>│        ✓ Rapid naming                                       │</p>
+<p>│        ✓ Reading fluency                                    │</p>
+<p>│                                                              │</p>
+<p>│        Guide:                                                │</p>
+<p>│        • Duration: 15 minutes per session                    │</p>
+<p>│        • Frequency: 3x per week                             │</p>
+<p>│        • Materials: Digital device, quiet space              │</p>
+<p>│                                                              │</p>
+<p>│        [Start Intervention]  [View Research]                 │</p>
+<p>│                                                              │</p>
+<p>└─────────────────────────────────────────────────────────────┘</p>
+</code></pre>
+
+<strong>Accessibility Notes:</strong>
+<ul>
+<li>Clear hierarchy (title, rating, description)</li>
+<li>Bullet points for lists</li>
+<li>Step-by-step guide</li>
+<li>Clear action buttons</li>
+<li>Research link for credibility</li>
+</ul>
+
+<hr>
+
+<h3>Screen 8: Brain Showcase</h3>
+
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+<p>│                    Brain Showcase                            │</p>
+<p>│                                                              │</p>
+<p>│        [3D Brain Model - Interactive]                        │</p>
+<p>│                                                              │</p>
+<p>│        Select Region:                                        │</p>
+<p>│        ○ VWFA (Visual Word Form Area)                       │</p>
+<p>│        ○ Arcuate Fasciculus                                 │</p>
+<p>│        ○ Thalamus                                           │</p>
+<p>│        ○ Left Temporal Lobe                                 │</p>
+<p>│                                                              │</p>
+<p>│        Before Intervention: [Brain State A]                  │</p>
+<p>│        After Intervention:  [Brain State B]                   │</p>
+<p>│                                                              │</p>
+<p>│        [Play Animation]  [Reset]                             │</p>
+<p>│                                                              │</p>
+<p>│        VWFA: Processes written words                        │</p>
+<p>│        Intervention strengthens connections 🧠                │</p>
+<p>│                                                              │</p>
+<p>└─────────────────────────────────────────────────────────────┘</p>
+</code></pre>
+
+<strong>Accessibility Notes:</strong>
+<ul>
+<li>Interactive 3D model with keyboard controls</li>
+<li>Region selection with radio buttons</li>
+<li>Before/after comparison</li>
+<li>Play button with audio description</li>
+<li>Fallback to 2D diagrams if 3D not supported</li>
+<li>Screen reader description of brain regions</li>
+</ul>
+
+<hr>
+
+<h3>Screen 9: Developmental Display</h3>
+
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+<p>│                    Developmental Timeline                      │</p>
+<p>│                                                              │</p>
+<p>│        Age: ━━━━━━━━●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━        │</p>
+<p>│              │        │                                      │</p>
+<p>│             5y       10y                                    │</p>
+<p>│                                                              │</p>
+<p>│        Milestones:                                           │</p>
+<p>│        ┌─────────────────────────────────────────────────┐   │</p>
+<p>│        │ Typical Development                              │   │</p>
+<p>│        │ • Letter recognition: 5-6 years                │   │</p>
+<p>│        │ • Reading fluency: 7-8 years                   │   │</p>
+<p>│        │ • Comprehension: 8-10 years                    │   │</p>
+<p>│        └─────────────────────────────────────────────────┘   │</p>
+<p>│                                                              │</p>
+<p>│        ┌─────────────────────────────────────────────────┐   │</p>
+<p>│        │ Dyslexia Development                            │   │</p>
+<p>│        │ • Letter recognition: 6-7 years (delayed)        │   │</p>
+<p>│        │ • Reading fluency: 9-10 years (delayed)         │   │</p>
+<p>│        │ • Comprehension: 10-12 years (delayed)          │   │</p>
+<p>│        └─────────────────────────────────────────────────┘   │</p>
+<p>│                                                              │</p>
+<p>│        Intervention Windows: 🎯                               │</p>
+<p>│        • 5-8 years: Critical for phonological training     │</p>
+<p>│        • 8-12 years: Critical for fluency training         │</p>
+<p>│                                                              │</p>
+<p>└─────────────────────────────────────────────────────────────┘</p>
+</code></pre>
+
+<strong>Accessibility Notes:</strong>
+<ul>
+<li>Interactive timeline with keyboard navigation</li>
+<li>Color-coded milestone comparison</li>
+<li>Clear labels for typical vs. dyslexic</li>
+<li>Intervention windows highlighted</li>
+<li>Option to view specific age ranges</li>
+<li>Text description of timeline for screen readers</li>
+</ul>
+
+<hr>
+
+<h3>Screen 10: Progress Dashboard</h3>
+
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+<p>│                    Your Progress                              │</p>
+<p>│                                                              │</p>
+<p>│        Current Intervention: RAN-IT                           │</p>
+<p>│        Sessions: 5/20 (25%)                                  │</p>
+<p>│        Progress Score: 45/100                               │</p>
+<p>│                                                              │</p>
+<p>│        [Progress Chart]                                      │</p>
+<p>│        Week 1: ████  20%                                     │</p>
+<p>│        Week 2: ██████ 40%                                    │</p>
+<p>│        Week 3: ████████ 60%                                  │</p>
+<p>│        Week 4: ██████████ 80%                                │</p>
+<p>│                                                              │</p>
+<p>│        Achievements:                                         │</p>
+<p>│        🏆 First Session Complete                            │</p>
+<p>│        🏆 Week Streak: 3 days                               │</p>
+<p>│        🏆 Improvement Detected! 🌟                          │</p>
+<p>│                                                              │</p>
+<p>│        [Continue Intervention]  [Switch Intervention]          │</p>
+<p>│                                                              │</p>
+<p>└─────────────────────────────────────────────────────────────┘</p>
+</code></pre>
+
+<strong>Accessibility Notes:</strong>
+<ul>
+<li>Clear progress indicators</li>
+<li>Visual chart with text alternative</li>
+<li>Achievement badges with descriptions</li>
+<li>Celebration feedback for improvements</li>
+<li>Option to view detailed history</li>
+<li>Encouraging messaging</li>
+</ul>
+
+<hr>
+
+<h2>User Flows Between Screens</h2>
+
+<h3>Primary Flow (Alex - Individual)</h3>
+<pre><code>Landing Page → Onboarding → Screening (Child) → Results →
+<p>Intervention Explorer → Intervention Detail → Intervention Use →</p>
+<p>Progress Dashboard → Brain Showcase → Return to Dashboard</p>
+</code></pre>
+
+<h3>Secondary Flow (Sarah - Parent)</h3>
+<pre><code>Landing Page → Onboarding → Screening (via Alex) → Results →
+<p>Research Explorer → Intervention Explorer → Progress Dashboard</p>
+</code></pre>
+
+<h3>Tertiary Flow (Dr. Martinez - Educator)</h3>
+<pre><code>Landing Page → Professional Registration → Screening (Batch) →
+<p>Results Overview → Intervention Assignment → Class Progress Dashboard</p>
+</code></pre>
+
+<h3>Quaternary Flow (Dr. Chen - Researcher)</h3>
+<pre><code>Landing Page → Researcher Registration → Research Explorer →
+<p>Claim Search → Claim Detail → Export/Visualization</p>
+</code></pre>
+
+<hr>
+
+<h2>Component Breakdown</h2>
+
+<h3>Base Components</h3>
+<ul>
+<li>Button (primary, secondary, tertiary)</li>
+<li>Input (text, number, select, checkbox, radio)</li>
+<li>Card (for content grouping)</li>
+<li>Modal (for dialogs)</li>
+<li>Typography (headings, body, captions)</li>
+</ul>
+
+<h3>Screening Components</h3>
+<ul>
+<li>ScreeningQuestion (single question)</li>
+<li>ScreeningProgress (progress bar)</li>
+<li>ScreeningResult (results display)</li>
+<li>SeverityIndicator (visual severity)</li>
+<li>GamificationElement (stars, badges)</li>
+</ul>
+
+<h3>Intervention Components</h3>
+<ul>
+<li>InterventionCard (list item)</li>
+<li>InterventionFilter (filter controls)</li>
+<li>InterventionGuide (step-by-step)</li>
+<li>ProgressTracker (session tracking)</li>
+<li>EfficacyRating (star display)</li>
+</ul>
+
+<h3>Visualization Components</h3>
+<ul>
+<li>BrainModel3D (interactive 3D)</li>
+<li>BrainModel2D (fallback 2D)</li>
+<li>AnnotationOverlay (labels)</li>
+<li>DevelopmentalTimeline (interactive timeline)</li>
+<li>MilestoneChart (comparison chart)</li>
+</ul>
+
+<hr>
+
+<h2>Accessibility Considerations</h2>
+
+<h3>Per-Screen Accessibility</h3>
+
+<strong>All Screens:</strong>
+<ul>
+<li>WCAG 2.1 AA compliance</li>
+<li>Screen reader compatible</li>
+<li>Keyboard navigation</li>
+<li>High contrast mode</li>
+<li>Dyslexia-friendly fonts</li>
+</ul>
+
+<strong>Screen-Specific:</strong>
+<ul>
+<li>Screening: Audio instructions, no time limits</li>
+<li>Brain Showcase: Keyboard controls for 3D, audio description</li>
+<li>Timeline: Screen reader description, keyboard navigation</li>
+<li>Progress: Color + text indicators, celebration sounds</li>
+</ul>
+
+<h3>Dyslexia-Friendly Design Choices</h3>
+
+<strong>Typography:</strong>
+<ul>
+<li>OpenDyslexic font option</li>
+<li>Increased letter spacing (0.5-1px)</li>
+<li>Increased line height (1.5-2.0)</li>
+<li>Larger font sizes (16px base, 24px headings)</li>
+</ul>
+
+<strong>Colors:</strong>
+<ul>
+<li>High contrast mode (black on white, or dyslexia palette)</li>
+<li>Avoid red/green for critical information</li>
+<li>Use icons + text for clarity</li>
+</ul>
+
+<strong>Layout:</strong>
+<ul>
+<li>Minimal clutter</li>
+<li>Clear visual hierarchy</li>
+<li>Consistent spacing</li>
+<li>Generous white space</li>
+</ul>
+
+<hr>
+
+<h2>Conclusion</h2>
+
+<p>These wireframes provide:</p>
+<ul>
+<li><strong>All MVP Screens Covered:</strong> 10 screens for 4 core modules</li>
+<li><strong>Clear User Flows:</strong> Primary, secondary, tertiary, quaternary flows</li>
+<li><strong>Component Breakdown:</strong> Reusable components identified</li>
+<li><strong>Accessibility Integrated:</strong> WCAG 2.1 AA, dyslexia-friendly design</li>
+<li><strong>Age-Appropriate Complexity:</strong> Child vs. adult versions</li>
+</ul>
+
+<p>The wireframes inform component library specification and implementation.</p>
+
+<hr>
+
+<strong>Document Status:</strong> Complete
+<strong>Next Step:</strong> Component Library Specification (Phase 3)
+
+        </div>
+    </div>
+</body>
+</html>

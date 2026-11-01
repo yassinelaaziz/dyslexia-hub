@@ -1,0 +1,238 @@
+{
+  "title": "Dyslexia Manifestations",
+  "description": "Dyslexia manifests across multiple domains including cognitive processing, academic skills, psychological well-being, and neural connectivity. These manifestations vary across individuals and developmental stages.",
+  "sections": [
+    {
+      "id": "reading",
+      "name": "Reading and Language Manifestations",
+      "description": "The primary manifestations of dyslexia are in word-level reading skills, with specific patterns depending on the type of dyslexia.",
+      "keyPoints": [
+        "Primary difficulties at the word-reading level",
+        "Affects phonological awareness, decoding, encoding, and/or oral reading fluency",
+        "Distinct from developmental language disorder (DLD), which affects language comprehension"
+      ],
+      "accuracyVsRate": {
+        "description": "Dyslexia can be classified into distinct subtypes based on reading accuracy versus reading rate",
+        "accuracyDisabled": {
+          "description": "Deficits in reading accuracy",
+          "characteristics": [
+            "Selective deficits in phonological and morphological awareness",
+            "Intact rapid automatized naming (RAN)",
+            "Inaccurate reading and spelling"
+          ]
+        },
+        "rateDisabled": {
+          "description": "Deficits in reading speed",
+          "characteristics": [
+            "Deficits in rapid automatized naming (RAN)",
+            "Preserved phonological and morphological awareness",
+            "Slow but accurate reading"
+          ]
+        },
+        "doublyDisabled": {
+          "description": "Deficits in both accuracy and rate",
+          "characteristics": [
+            "Deficits in both phonological/morphological awareness and RAN",
+            "Performance below normal levels on both accuracy and rate measures",
+            "Approximately one third of dyslexic subsample"
+          ]
+        }
+      },
+      "crossLinguistic": {
+        "description": "Manifestations vary across languages and orthographies",
+        "transparentOrthographies": {
+          "examples": ["Finnish", "Spanish", "Italian"],
+          "manifestations": [
+            "Less problems with accuracy of word reading",
+            "Become rate-disabled with speed deficits",
+            "Lack of automaticity in word and non-word reading"
+          ]
+        },
+        "opaqueOrthographies": {
+          "examples": ["English", "Danish"],
+          "manifestations": [
+            "Problems in both accuracy and speed of word reading",
+            "Spelling difficulties",
+            "More complex decoding challenges"
+          ]
+        }
+      },
+      "biliteracy": {
+        "description": "In bilingual children, distinct biliteracy difficulty subtypes exist",
+        "associative": "Difficulties in both languages",
+        "dissociative": "Difficulties in one language but not the other"
+      },
+      "sources": [
+        {
+          "authors": "Gott D, Cohen-Mimran R, Share DL",
+          "year": 2026,
+          "title": "Rate-disabled versus accuracy-disabled subtypes of dyslexia: A longitudinal study from preschool to grade 1",
+          "journal": "Annals of Dyslexia",
+          "doi": "10.1007/s11881-026-00379-w"
+        },
+        {
+          "authors": "Catts HW, Haynes CW, Joshi RM",
+          "year": 2026,
+          "title": "Defining dyslexia: 2025 revision",
+          "journal": "Annals of Dyslexia",
+          "doi": "10.1007/s11881-026-00363-4"
+        },
+        {
+          "authors": "Huo S, Zhang AJ, Zheng M, et al.",
+          "year": 2025,
+          "title": "Aetiologies of basic biliteracy difficulties in Hong Kong Chinese children: A latent profile analysis with twin data",
+          "journal": "Annals of Dyslexia",
+          "doi": "10.1007/s11881-025-00355-w"
+        }
+      ]
+    },
+    {
+      "id": "cognitive",
+      "name": "Cognitive Manifestations",
+      "description": "Dyslexia is associated with specific cognitive processing deficits that affect reading and related skills.",
+      "keyPoints": [
+        "Reduced structural connectivity between left visual thalamus and left middle temporal area",
+        "Deficits in working memory, particularly verbal working memory",
+        "Deficits in sustained attention and behavioral inhibition (though less severe than in ADHD)"
+      ],
+      "workingMemory": {
+        "description": "Children with reading disabilities show deficits in working memory",
+        "evidence": [
+          "Particularly pronounced in verbal working memory compared to typically developing peers",
+          "Correlates with poor reading comprehension",
+          "May be secondary to phonological processing difficulties"
+        ]
+      },
+      "attention": {
+        "description": "Attention deficits are observed but are less severe than in ADHD",
+        "evidence": [
+          "Significant deficits in sustained attention compared to typically developing peers",
+          "Deficits in behavioral inhibition",
+          "These deficits are linked to difficulties in word reading and fluency",
+          "Less severe than those observed in ADHD + RD group"
+        ]
+      },
+      "neuralConnectivity": {
+        "description": "Specific structural connectivity differences observed",
+        "finding": "Reduced structural connectivity between the left visual thalamus (LGN) and left middle temporal area V5/MT",
+        "correlation": "Strength of this connectivity correlates with rapid naming abilities"
+      },
+      "sources": [
+        {
+          "authors": "Li M, Kirby JR, Wang T, Zhao W",
+          "year": 2025,
+          "title": "Cognitive Profiles of Children with Reading Disabilities and/or ADHD",
+          "journal": "Behavioral Sciences",
+          "doi": "10.3390/bs16010012"
+        },
+        {
+          "authors": "Müller-Axt C, Anwander A, von Kriegstein K",
+          "year": 2017,
+          "title": "Altered structural connectivity of the left visual thalamus in developmental dyslexia",
+          "journal": "Current Biology",
+          "doi": "10.1016/j.cub.2017.10.034"
+        }
+      ]
+    },
+    {
+      "id": "psychological",
+      "name": "Psychological and Social Manifestations",
+      "description": "Dyslexia can have significant psychological and social consequences beyond reading difficulties.",
+      "keyPoints": [
+        "Psychological well-being may be affected",
+        "Employment opportunities may be affected",
+        "Secondary consequences include reduced reading experience and vocabulary growth"
+      ],
+      "secondaryConsequences": [
+        "Problems in reading comprehension",
+        "Reduced reading experience",
+        "Impeded growth of vocabulary and background knowledge",
+        "Psychological well-being impacts",
+        "Employment opportunities may be affected"
+      ],
+      "sources": [
+        {
+          "authors": "Catts HW, Haynes CW, Joshi RM",
+          "year": 2026,
+          "title": "Defining dyslexia: 2025 revision",
+          "journal": "Annals of Dyslexia",
+          "doi": "10.1007/s11881-026-00363-4"
+        },
+        {
+          "authors": "International Dyslexia Association",
+          "year": 2002,
+          "title": "Definition of Dyslexia",
+          "journal": "IDA Board of Directors",
+          "doi": "REPORT_IDA_2002"
+        }
+      ]
+    },
+    {
+      "id": "developmental",
+      "name": "Developmental Timing Framework",
+      "description": "Learning disabilities, including dyslexia, can emerge from maturational asynchrony among interacting systems.",
+      "keyPoints": [
+        "Learning disabilities can emerge from maturational asynchrony among interacting systems",
+        "Involves neural, cognitive, linguistic, sensorimotor, and executive systems",
+        "Not from isolated deficits within a single domain"
+      ],
+      "systemsInvolved": [
+        "Neural systems",
+        "Cognitive systems",
+        "Linguistic systems",
+        "Sensorimotor systems",
+        "Executive systems"
+      ],
+      "implications": [
+        "Explains heterogeneity in dyslexia profiles",
+        "Accounts for variable expression across individuals",
+        "Suggests interventions should target multiple systems"
+      ],
+      "sources": [
+        {
+          "authors": "Leisman G",
+          "year": 2026,
+          "title": "When Development Falls out of Sync: A Developmental Timing Framework for Learning Disabilities",
+          "journal": "Brain Sciences",
+          "doi": "10.3390/brainsci16090987"
+        }
+      ]
+    }
+  ],
+  "comorbidity": {
+    "description": "Dyslexia frequently co-occurs with other neurodevelopmental disorders",
+    "adhd": {
+      "description": "ADHD and dyslexia share a neuroanatomical basis",
+      "evidence": [
+        "Overlapping reductions in cortical area in the orbitofrontal cortex",
+        "Unique differences in global white matter integrity in individuals with combined conditions",
+        "Shared underlying susceptibility for ADHD and dyslexia"
+      ]
+    },
+    "developmentalLanguageDisorder": {
+      "description": "Distinct from dyslexia but frequently co-occurs",
+      "evidence": [
+        "55% of dyslexic children also met criteria for specific language impairment (SLI)",
+        "51% of children with SLI also met criteria for dyslexia",
+        "Different disorders that frequently co-occur"
+      ]
+    },
+    "sources": [
+      {
+        "authors": "Romano MF, Nedelec P, Mandelli ML, et al.",
+        "year": 2026,
+        "title": "A neuroanatomical basis for co-occurring low attention and low reading ability",
+        "journal": "Cerebral Cortex",
+        "doi": "10.1093/cercor/bhag100"
+      },
+      {
+        "authors": "Adlof SM",
+        "year": 2020,
+        "title": "Promoting Reading Achievement in Children With Developmental Language Disorders: What Can We Learn From Research on Specific Language Impairment and Dyslexia?",
+        "journal": "Journal of Speech, Language, and Hearing Research",
+        "doi": "10.1044/2020_JSLHR-20-00118"
+      }
+    ]
+  },
+  "disclaimer": "Manifestations vary widely among individuals. These patterns represent research findings at the group level, not deterministic predictions for any individual. Comprehensive assessment is essential for understanding individual profiles."
+}

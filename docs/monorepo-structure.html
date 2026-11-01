@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to root workspaces - Dyslexia Grand Hub Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fafb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header .container {
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            padding: 0 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        nav a:hover {
+            background: #f3f4f6;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.75rem;
+            color: #374151;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.25rem 0 0.5rem;
+            color: #4b5563;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem;
+            color: #6b7280;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f9fafb;
+            font-weight: 600;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 2rem 0;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .meta {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Add to root workspaces</h1>
+            <p class="subtitle">Document  Complete</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Documentation Index</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="monorepo-structure.html">Monorepo Structure</a></li>
+                <li><a href="database-schema.html">Database Schema</a></li>
+                <li><a href="api-specification.html">API Specification</a></li>
+                <li><a href="component-library.html">Component Library</a></li>
+                <li><a href="user-journeys.html">User Journeys</a></li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+                <li><a href="development-plan.html">Development Plan</a></li>
+                <li><a href="testing-strategy.html">Testing Strategy</a></li>
+                <li><a href="deployment-plan.html">Deployment Plan</a></li>
+                <li><a href="monitoring-plan.html">Monitoring Plan</a></li>
+                <li><a href="maintenance-plan.html">Maintenance Plan</a></li>
+                <li><a href="technical-specification.html">Technical Specification</a></li>
+                <li><a href="training-system.html">Training System</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>Dyslexia Grand Hub - Monorepo Structure</h1>
+
+<strong>Version:</strong> 1.0
+<strong>Date:</strong> 2026-10-31
+<strong>Author:</strong> Senior Tech Lead (Devin)
+<strong>Status:</strong> Architecture Phase - Complete
+
+<hr>
+
+<h2>Package Management Strategy</h2>
+
+<strong>Choice:</strong> npm workspaces
+
+<strong>Justification:</strong>
+<ul>
+<li>Native npm support (no additional tooling)</li>
+<li>Simple configuration</li>
+<li>Good TypeScript support</li>
+<li>Compatible with all major CI/CD platforms</li>
+<li>Sufficient for our needs (not as complex as nx/pnpm workspaces needed)</li>
+</ul>
+
+<hr>
+
+<h2>Directory Structure</h2>
+
+<pre><code>dyslexia-hub/
+<p>├── packages/</p>
+<p>│   ├── core/                          # Shared business logic (platform-agnostic)</p>
+<p>│   │   ├── src/</p>
+<p>│   │   │   ├── domain/                # Domain models and interfaces</p>
+<p>│   │   │   │   ├── user.ts</p>
+<p>│   │   │   │   ├── screening.ts</p>
+<p>│   │   │   │   ├── intervention.ts</p>
+<p>│   │   │   │   └── research.ts</p>
+<p>│   │   │   ├── services/              # Domain services</p>
+<p>│   │   │   │   ├── screening.service.ts</p>
+<p>│   │   │   │   ├── intervention.service.ts</p>
+<p>│   │   │   │   ├── user-profile.service.ts</p>
+<p>│   │   │   │   ├── research.service.ts</p>
+<p>│   │   │   │   └── sync.service.ts</p>
+<p>│   │   │   ├── repositories/          # Data access layer (agnostic interfaces)</p>
+<p>│   │   │   │   ├── base.repository.ts</p>
+<p>│   │   │   │   ├── user.repository.ts</p>
+<p>│   │   │   │   ├── screening.repository.ts</p>
+<p>│   │   │   │   ├── intervention.repository.ts</p>
+<p>│   │   │   │   └── claim.repository.ts</p>
+<p>│   │   │   ├── utils/                 # Shared utilities</p>
+<p>│   │   │   │   ├── date.utils.ts</p>
+<p>│   │   │   │   ├── validation.utils.ts</p>
+<p>│   │   │   │   └── i18n.utils.ts</p>
+<p>│   │   │   ├── types/                 # TypeScript type definitions</p>
+<p>│   │   │   └── index.ts               # Public API exports</p>
+<p>│   │   ├── package.json</p>
+<p>│   │   ├── tsconfig.json</p>
+<p>│   │   └── README.md</p>
+<p>│   │</p>
+<p>│   ├── web/                           # Web application (React)</p>
+<p>│   │   ├── src/</p>
+<p>│   │   │   ├── components/            # UI components</p>
+<p>│   │   │   │   ├── base/              # Base components (buttons, inputs, etc.)</p>
+<p>│   │   │   │   ├── screening/         # Screening-specific components</p>
+<p>│   │   │   │   ├── interventions/     # Intervention-specific components</p>
+<p>│   │   │   │   ├── brain-showcase/    # 3D visualization components</p>
+<p>│   │   │   │   └── developmental/      # Timeline components</p>
+<p>│   │   │   ├── modules/               # Feature modules</p>
+<p>│   │   │   │   ├── screening/</p>
+<p>│   │   │   │   ├── interventions/</p>
+<p>│   │   │   │   ├── brain-showcase/</p>
+<p>│   │   │   │   └── developmental/</p>
+<p>│   │   │   ├── pages/                 # Route pages</p>
+<p>│   │   │   │   ├── home/</p>
+<p>│   │   │   │   ├── screening/</p>
+<p>│   │   │   │   ├── interventions/</p>
+<p>│   │   │   │   ├── brain-showcase/</p>
+<p>│   │   │   │   └── developmental/</p>
+<p>│   │   │   ├── hooks/                 # React hooks</p>
+<p>│   │   │   ├── context/               # React context providers</p>
+<p>│   │   │   ├── stores/                # Zustand stores</p>
+<p>│   │   │   ├── utils/                 # Web-specific utilities</p>
+<p>│   │   │   ├── styles/                # Global styles</p>
+<p>│   │   │   ├── App.tsx</p>
+<p>│   │   │   └── main.tsx</p>
+<p>│   │   ├── public/</p>
+<p>│   │   │   ├── index.html</p>
+<p>│   │   │   ├── manifest.json          # PWA manifest</p>
+<p>│   │   │   └── service-worker.js      # Service worker</p>
+<p>│   │   ├── package.json</p>
+<p>│   │   ├── tsconfig.json</p>
+<p>│   │   ├── vite.config.ts</p>
+<p>│   │   └── tailwind.config.js</p>
+<p>│   │</p>
+<p>│   ├── mobile/                        # Mobile application (React Native - Future)</p>
+<p>│   │   ├── src/</p>
+<p>│   │   │   ├── components/</p>
+<p>│   │   │   ├── screens/</p>
+<p>│   │   │   ├── navigation/</p>
+<p>│   │   │   └── App.tsx</p>
+<p>│   │   ├── package.json</p>
+<p>│   │   └── tsconfig.json</p>
+<p>│   │</p>
+<p>│   ├── desktop/                       # Desktop application (Electron/Tauri - Future)</p>
+<p>│   │   ├── src/</p>
+<p>│   │   │   ├── main/                  # Main process</p>
+<p>│   │   │   ├── renderer/              # Renderer process (web UI)</p>
+<p>│   │   │   └── preload/</p>
+<p>│   │   ├── package.json</p>
+<p>│   │   └── tsconfig.json</p>
+<p>│   │</p>
+<p>│   └── components/                    # Shared component library</p>
+<p>│       ├── src/</p>
+<p>│       │   ├── base/                  # Framework-agnostic base components</p>
+<p>│       │   │   ├── Button/</p>
+<p>│       │   │   │   ├── Button.tsx</p>
+<p>│       │   │   │   ├── Button.test.tsx</p>
+<p>│       │   │   │   └── index.ts</p>
+<p>│       │   │   ├── Input/</p>
+<p>│       │   │   ├── Card/</p>
+<p>│       │   │   ├── Modal/</p>
+<p>│       │   │   └── Typography/</p>
+<p>│       │   ├── screening/             # Screening components</p>
+<p>│       │   ├── interventions/         # Intervention components</p>
+<p>│       │   ├── visualization/         # Visualization components</p>
+<p>│       │   ├── themes/                # Theme system</p>
+<p>│       │   │   ├── default.ts</p>
+<p>│       │   │   ├── dyslexia.ts</p>
+<p>│       │   │   └── high-contrast.ts</p>
+<p>│       │   └── index.ts</p>
+<p>│       ├── package.json</p>
+<p>│       ├── tsconfig.json</p>
+<p>│       └── README.md</p>
+<p>│</p>
+<p>├── docs/                              # Documentation</p>
+<p>│   ├── ARCHITECTURE.md</p>
+<p>│   ├── MONOREPO_STRUCTURE.md</p>
+<p>│   ├── DATABASE_SCHEMA.md</p>
+<p>│   ├── API_SPECIFICATION.md</p>
+<p>│   ├── USER_JOURNEYS.md</p>
+<p>│   ├── WIREFRAMES.md</p>
+<p>│   ├── COMPONENT_LIBRARY.md</p>
+<p>│   ├── DEVELOPMENT_PLAN.md</p>
+<p>│   ├── TESTING_STRATEGY.md</p>
+<p>│   ├── DEPLOYMENT_PLAN.md</p>
+<p>│   ├── MONITORING_PLAN.md</p>
+<p>│   ├── MAINTENANCE_PLAN.md</p>
+<p>│   └── TECHNICAL_SPECIFICATION_SUMMARY.md</p>
+<p>│</p>
+<p>├── scripts/                           # Build and utility scripts</p>
+<p>│   ├── build.sh</p>
+<p>│   ├── test.sh</p>
+<p>│   ├── lint.sh</p>
+<p>│   └── sync-research.sh              # Sync research claims from repository</p>
+<p>│</p>
+<p>├── .github/                           # GitHub Actions CI/CD</p>
+<p>│   └── workflows/</p>
+<p>│       ├── ci.yml</p>
+<p>│       ├── deploy-web.yml</p>
+<p>│       └── test.yml</p>
+<p>│</p>
+<p>├── package.json                       # Root package.json (workspaces config)</p>
+<p>├── pnpm-workspace.yaml                # Optional: pnpm workspace config</p>
+<p>├── tsconfig.base.json                 # Base TypeScript config</p>
+<p>├── .eslintrc.js                       # Root ESLint config</p>
+<p>├── .prettierrc                        # Root Prettier config</p>
+<p>├── .gitignore</p>
+<p>└── README.md</p>
+</code></pre>
+
+<hr>
+
+<h2>Root package.json</h2>
+
+<pre><code>{
+<p>"name": "dyslexia-hub",</p>
+<p>"version": "1.0.0",</p>
+<p>"private": true,</p>
+<p>"description": "Dyslexia Grand Hub - Platform-agnostic dyslexia intervention platform",</p>
+<p>"workspaces": [</p>
+<p>"packages/*"</p>
+<p>],</p>
+<p>"scripts": {</p>
+<p>"dev": "npm run dev:web",</p>
+<p>"dev:web": "npm run dev --workspace=packages/web",</p>
+<p>"dev:mobile": "npm run dev --workspace=packages/mobile",</p>
+<p>"dev:desktop": "npm run dev --workspace=packages/desktop",</p>
+<p>"build": "npm run build --workspaces",</p>
+<p>"build:web": "npm run build --workspace=packages/web",</p>
+<p>"build:mobile": "npm run build --workspace=packages/mobile",</p>
+<p>"build:desktop": "npm run build --workspace=packages/desktop",</p>
+<p>"test": "npm run test --workspaces",</p>
+<p>"test:unit": "npm run test:unit --workspaces",</p>
+<p>"test:e2e": "npm run test:e2e --workspace=packages/web",</p>
+<p>"lint": "npm run lint --workspaces",</p>
+<p>"lint:fix": "npm run lint:fix --workspaces",</p>
+<p>"format": "prettier --write \"<em>*/</em>.{ts,tsx,js,jsx,json,md}\"",</p>
+<p>"format:check": "prettier --check \"<em>*/</em>.{ts,tsx,js,jsx,json,md}\"",</p>
+<p>"clean": "rm -rf node_modules packages/<em>/node_modules packages/</em>/dist"</p>
+<p>},</p>
+<p>"devDependencies": {</p>
+<p>"@types/node": "^20.0.0",</p>
+<p>"typescript": "^5.0.0",</p>
+<p>"prettier": "^3.0.0",</p>
+<p>"eslint": "^8.0.0",</p>
+<p>"@typescript-eslint/eslint-plugin": "^6.0.0",</p>
+<p>"@typescript-eslint/parser": "^6.0.0"</p>
+<p>},</p>
+<p>"engines": {</p>
+<p>"node": ">=18.0.0",</p>
+<p>"npm": ">=9.0.0"</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h2>Shared Packages and Their Purposes</h2>
+
+<h3>packages/core</h3>
+
+<strong>Purpose:</strong> Platform-agnostic business logic
+
+<strong>Contains:</strong>
+<ul>
+<li>Domain models and interfaces</li>
+<li>Domain services (screening, intervention, user profile, research, sync)</li>
+<li>Repository interfaces (agnostic implementations)</li>
+<li>Shared utilities (date, validation, i18n)</li>
+<li>TypeScript type definitions</li>
+</ul>
+
+<strong>Dependencies:</strong>
+<ul>
+<li>Minimal (only what's needed for core logic)</li>
+<li>No UI framework dependencies</li>
+<li>No platform-specific dependencies</li>
+</ul>
+
+<strong>Exports:</strong>
+<pre><code>export * from './domain';
+<p>export * from './services';</p>
+<p>export * from './repositories';</p>
+<p>export * from './utils';</p>
+<p>export * from './types';</p>
+</code></pre>
+
+<h3>packages/web</h3>
+
+<strong>Purpose:</strong> Web application (React)
+
+<strong>Contains:</strong>
+<ul>
+<li>React components</li>
+<li>Feature modules</li>
+<li>Pages/routes</li>
+<li>React hooks</li>
+<li>Context providers</li>
+<li>Zustand stores</li>
+<li>Web-specific utilities</li>
+<li>Global styles</li>
+</ul>
+
+<strong>Dependencies:</strong>
+<ul>
+<li>React 18+</li>
+<li>TypeScript</li>
+<li>Tailwind CSS</li>
+<li>Zustand</li>
+<li>React Query</li>
+<li>Three.js + React Three Fiber</li>
+<li>packages/core (workspace dependency)</li>
+<li>packages/components (workspace dependency)</li>
+</ul>
+
+<strong>Build Tool:</strong> Vite
+
+<h3>packages/mobile (Future)</h3>
+
+<strong>Purpose:</strong> Mobile application (React Native)
+
+<strong>Contains:</strong>
+<ul>
+<li>React Native components</li>
+<li>Screens</li>
+<li>Navigation</li>
+<li>Mobile-specific utilities</li>
+</ul>
+
+<strong>Dependencies:</strong>
+<ul>
+<li>React Native</li>
+<li>packages/core (workspace dependency)</li>
+<li>packages/components (workspace dependency, may need RN-specific implementations)</li>
+</ul>
+
+<strong>Build Tool:</strong> Metro bundler
+
+<h3>packages/desktop (Future)</h3>
+
+<strong>Purpose:</strong> Desktop application (Electron/Tauri)
+
+<strong>Contains:</strong>
+<ul>
+<li>Main process (Electron/Tauri)</li>
+<li>Renderer process (shares web UI)</li>
+<li>Desktop-specific features</li>
+</ul>
+
+<strong>Dependencies:</strong>
+<ul>
+<li>Electron or Tauri</li>
+<li>packages/web (workspace dependency - reuse web UI)</li>
+<li>packages/core (workspace dependency)</li>
+</ul>
+
+<h3>packages/components</h3>
+
+<strong>Purpose:</strong> Shared component library
+
+<strong>Contains:</strong>
+<ul>
+<li>Base components (Button, Input, Card, Modal, Typography)</li>
+<li>Feature-specific components (Screening, Intervention, Visualization)</li>
+<li>Theme system (default, dyslexia, high-contrast)</li>
+<li>Component documentation</li>
+</ul>
+
+<strong>Dependencies:</strong>
+<ul>
+<li>React (for React implementation)</li>
+<li>TypeScript</li>
+<li>Tailwind CSS</li>
+<li>packages/core (workspace dependency - for types)</li>
+</ul>
+
+<strong>Note:</strong> Could have multiple implementations (React, React Native) in future
+
+<hr>
+
+<h2>Build Tool Configuration</h2>
+
+<h3>Vite Configuration (packages/web/vite.config.ts)</h3>
+
+<pre><code>import { defineConfig } from 'vite';
+<p>import react from '@vitejs/plugin-react';</p>
+<p>import path from 'path';</p>
+
+<p>export default defineConfig({</p>
+<p>plugins: [react()],</p>
+<p>resolve: {</p>
+<p>alias: {</p>
+<p>'@core': path.resolve(__dirname, '../core/src'),</p>
+<p>'@components': path.resolve(__dirname, '../components/src'),</p>
+<p>},</p>
+<p>},</p>
+<p>build: {</p>
+<p>outDir: 'dist',</p>
+<p>sourcemap: true,</p>
+<p>rollupOptions: {</p>
+<p>output: {</p>
+<p>manualChunks: {</p>
+<p>'vendor': ['react', 'react-dom'],</p>
+<p>'three': ['three', '@react-three/fiber'],</p>
+<p>},</p>
+<p>},</p>
+<p>},</p>
+<p>},</p>
+<p>server: {</p>
+<p>port: 3000,</p>
+<p>open: true,</p>
+<p>},</p>
+<p>});</p>
+</code></pre>
+
+<h3>TypeScript Configuration</h3>
+
+<strong>Root tsconfig.base.json:</strong>
+<pre><code>{
+<p>"compilerOptions": {</p>
+<p>"target": "ES2020",</p>
+<p>"module": "ESNext",</p>
+<p>"lib": ["ES2020", "DOM", "DOM.Iterable"],</p>
+<p>"moduleResolution": "bundler",</p>
+<p>"resolveJsonModule": true,</p>
+<p>"allowJs": true,</p>
+<p>"strict": true,</p>
+<p>"noEmit": true,</p>
+<p>"esModuleInterop": true,</p>
+<p>"skipLibCheck": true,</p>
+<p>"forceConsistentCasingInFileNames": true,</p>
+<p>"isolatedModules": true,</p>
+<p>"paths": {</p>
+<p>"@core/<em>": ["./packages/core/src/</em>"],</p>
+<p>"@components/<em>": ["./packages/components/src/</em>"]</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<strong>packages/core/tsconfig.json:</strong>
+<pre><code>{
+<p>"extends": "../../tsconfig.base.json",</p>
+<p>"compilerOptions": {</p>
+<p>"outDir": "./dist",</p>
+<p>"rootDir": "./src",</p>
+<p>"declaration": true,</p>
+<p>"declarationMap": true</p>
+<p>},</p>
+<p>"include": ["src/<em>*/</em>"],</p>
+<p>"exclude": ["node_modules", "dist", "<em>*/</em>.test.ts"]</p>
+<p>}</p>
+</code></pre>
+
+<strong>packages/web/tsconfig.json:</strong>
+<pre><code>{
+<p>"extends": "../../tsconfig.base.json",</p>
+<p>"compilerOptions": {</p>
+<p>"jsx": "react-jsx",</p>
+<p>"noEmit": true</p>
+<p>},</p>
+<p>"include": ["src/<em>*/</em>"],</p>
+<p>"exclude": ["node_modules", "dist"]</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h2>Dependency Management Strategy</h2>
+
+<h3>Workspace Dependencies</h3>
+
+<strong>Install all workspace dependencies:</strong>
+<pre><code>npm install
+</code></pre>
+
+<strong>Add dependency to specific package:</strong>
+<pre><code>npm install <package> --workspace=packages/web
+</code></pre>
+
+<strong>Add dev dependency to specific package:</strong>
+<pre><code>npm install <package> -D --workspace=packages/core
+</code></pre>
+
+<strong>Add workspace dependency:</strong>
+<pre><code>npm install @dyslexia-hub/core --workspace=packages/web
+</code></pre>
+
+<h3>Version Management</h3>
+
+<strong>Strategy:</strong> Semantic versioning (semver)
+
+<ul>
+<li>Major: Breaking changes</li>
+<li>Minor: New features, backward compatible</li>
+<li>Patch: Bug fixes, backward compatible</li>
+</ul>
+
+<strong>Workflow:</strong>
+<ul>
+<li>Use <code>npm version</code> to bump versions</li>
+<li>Use conventional commits for changelog</li>
+<li>Use semantic-release for automated releases (future)</li>
+</ul>
+
+<h3>Dependency Updates</h3>
+
+<strong>Schedule:</strong> Monthly security updates, quarterly feature updates
+
+<strong>Tool:</strong> npm audit + Dependabot (GitHub)
+
+<strong>Process:</strong>
+<ol>
+<li>Run <code>npm audit</code> to check for vulnerabilities</li>
+<li>Review Dependabot PRs</li>
+<li>Test updates in staging</li>
+<li>Deploy to production if tests pass</li>
+</ol>
+
+<hr>
+
+<h2>Linting and Formatting Rules</h2>
+
+<h3>ESLint Configuration</h3>
+
+<strong>Root .eslintrc.js:</strong>
+<pre><code>module.exports = {
+<p>root: true,</p>
+<p>parser: '@typescript-eslint/parser',</p>
+<p>parserOptions: {</p>
+<p>ecmaVersion: 2020,</p>
+<p>sourceType: 'module',</p>
+<p>project: './tsconfig.base.json',</p>
+<p>},</p>
+<p>plugins: ['@typescript-eslint'],</p>
+<p>extends: [</p>
+<p>'eslint:recommended',</p>
+<p>'plugin:@typescript-eslint/recommended',</p>
+<p>'plugin:@typescript-eslint/recommended-requiring-type-checking',</p>
+<p>],</p>
+<p>rules: {</p>
+<p>'@typescript-eslint/no-unused-vars': 'error',</p>
+<p>'@typescript-eslint/explicit-function-return-type': 'warn',</p>
+<p>'@typescript-eslint/no-explicit-any': 'warn',</p>
+<p>'no-console': 'warn',</p>
+<p>},</p>
+<p>ignorePatterns: ['dist', 'node_modules', '*.config.js'],</p>
+<p>};</p>
+</code></pre>
+
+<h3>Prettier Configuration</h3>
+
+<strong>Root .prettierrc:</strong>
+<pre><code>{
+<p>"semi": true,</p>
+<p>"trailingComma": "es5",</p>
+<p>"singleQuote": true,</p>
+<p>"printWidth": 100,</p>
+<p>"tabWidth": 2,</p>
+<p>"useTabs": false</p>
+<p>}</p>
+</code></pre>
+
+<h3>Pre-commit Hooks</h3>
+
+<strong>Tool:</strong> Husky + lint-staged
+
+<strong>package.json:</strong>
+<pre><code>{
+<p>"lint-staged": {</p>
+<p>"*.{ts,tsx}": [</p>
+<p>"eslint --fix",</p>
+<p>"prettier --write"</p>
+<p>],</p>
+<p>"*.{js,jsx}": [</p>
+<p>"eslint --fix",</p>
+<p>"prettier --write"</p>
+<p>],</p>
+<p>"*.{json,md}": [</p>
+<p>"prettier --write"</p>
+<p>]</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h2>Testing Structure</h2>
+
+<h3>Unit Tests</h3>
+
+<strong>Location:</strong> Alongside source files (<code>*.test.ts</code>)
+
+<strong>Framework:</strong> Jest
+
+<strong>Example:</strong>
+<pre><code>packages/core/src/services/
+<p>├── screening.service.ts</p>
+<p>└── screening.service.test.ts</p>
+</code></pre>
+
+<h3>Integration Tests</h3>
+
+<strong>Location:</strong> <code>packages/*/tests/integration/</code>
+
+<strong>Framework:</strong> Jest + Supertest (if API testing needed)
+
+<h3>E2E Tests</h3>
+
+<strong>Location:</strong> <code>packages/web/tests/e2e/</code>
+
+<strong>Framework:</strong> Playwright
+
+<strong>Example:</strong>
+<pre><code>packages/web/tests/e2e/
+<p>├── screening.spec.ts</p>
+<p>├── interventions.spec.ts</p>
+<p>└── brain-showcase.spec.ts</p>
+</code></pre>
+
+<h3>Accessibility Tests</h3>
+
+<strong>Location:</strong> <code>packages/web/tests/a11y/</code>
+
+<strong>Framework:</strong> axe-core + Jest
+
+<strong>Example:</strong>
+<pre><code>packages/web/tests/a11y/
+<p>├── screening.a11y.test.ts</p>
+<p>└── interventions.a11y.test.ts</p>
+</code></pre>
+
+<hr>
+
+<h2>Efficient Build Strategy</h2>
+
+<h3>Parallel Builds</h3>
+
+<strong>Use npm workspaces for parallel builds:</strong>
+<pre><code>npm run build  # Builds all packages in parallel
+</code></pre>
+
+<h3>Incremental Builds</h3>
+
+<strong>Tool:</strong> Turbopack (future) or esbuild
+
+<strong>Strategy:</strong>
+<ul>
+<li>Only rebuild changed packages</li>
+<li>Cache build artifacts</li>
+<li>Watch mode for development</li>
+</ul>
+
+<h3>Build Order</h3>
+
+<strong>Dependency Graph:</strong>
+<ol>
+<li>core (no dependencies)</li>
+<li>components (depends on core)</li>
+<li>web (depends on core, components)</li>
+<li>mobile (depends on core, components) - future</li>
+<li>desktop (depends on web) - future</li>
+</ol>
+
+<strong>npm workspaces handles this automatically</strong>
+
+<hr>
+
+<h2>Ease of Adding New Platforms</h2>
+
+<h3>Adding a New Platform</h3>
+
+<strong>Steps:</strong>
+<ol>
+<li>Create new package: <code>packages/new-platform/</code></li>
+<li>Add platform-specific dependencies</li>
+<li>Configure build tool for platform</li>
+<li>Import from <code>@dyslexia-hub/core</code> and <code>@dyslexia-hub/components</code></li>
+<li>Implement platform-specific UI layer</li>
+<li>Add build script to root package.json</li>
+</ol>
+
+<strong>Example (Mobile):</strong>
+<pre><code>mkdir -p packages/mobile/src
+<p>cd packages/mobile</p>
+<p>npm init -y</p>
+<p>npm install react-native typescript</p>
+<h1>Add to root workspaces</h1>
+<p>npm install @dyslexia-hub/core @dyslexia-hub/components</p>
+</code></pre>
+
+<h3>Shared Code Reuse</h3>
+
+<strong>Percentage of Shared Code:</strong>
+<ul>
+<li>Core business logic: 100% shared</li>
+<li>Component library: 80% shared (20% platform-specific)</li>
+<li>UI layer: 0% shared (platform-specific)</li>
+</ul>
+
+<strong>Overall:</strong> ~60-70% code reuse across platforms
+
+<hr>
+
+<h2>Supports Parallel Development</h2>
+
+<h3>Team Structure</h3>
+
+<strong>Teams can work on different packages simultaneously:</strong>
+<ul>
+<li>Team A: Core business logic</li>
+<li>Team B: Web application</li>
+<li>Team C: Component library</li>
+<li>Team D: Mobile (future)</li>
+</ul>
+
+<h3>Dependency Management</h3>
+
+<strong>Independent Versioning:</strong>
+<ul>
+<li>Each package has its own version</li>
+<li>Breaking changes require version bump</li>
+<li>Semver for compatibility</li>
+</ul>
+
+<strong>Workspace Protocol:</strong>
+<ul>
+<li>Changes to core require testing in dependent packages</li>
+<li>CI/CD runs tests for all affected packages</li>
+<li>PRs should include test results</li>
+</ul>
+
+<hr>
+
+<h2>Summary</h2>
+
+<p>This monorepo structure provides:</p>
+<ul>
+<li><strong>Clear separation:</strong> Shared core vs. platform-specific code</li>
+<li><strong>Efficient builds:</strong> Parallel builds with npm workspaces</li>
+<li><strong>Easy platform addition:</strong> New platforms as new packages</li>
+<li><strong>Supports parallel development:</strong> Teams can work independently</li>
+<li><strong>Type safety:</strong> TypeScript across all packages</li>
+<li><strong>Consistent tooling:</strong> Shared linting, formatting, testing</li>
+<li><strong>Scalable:</strong> Can add more packages as needed</li>
+</ul>
+
+<hr>
+
+<strong>Document Status:</strong> Complete
+<strong>Next Step:</strong> Database Schema Design (Phase 2)
+
+        </div>
+    </div>
+</body>
+</html>

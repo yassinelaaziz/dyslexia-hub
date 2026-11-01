@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyslexia Grand Hub - API Specification - Dyslexia Grand Hub Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fafb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header .container {
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            padding: 0 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        nav a:hover {
+            background: #f3f4f6;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.75rem;
+            color: #374151;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.25rem 0 0.5rem;
+            color: #4b5563;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem;
+            color: #6b7280;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f9fafb;
+            font-weight: 600;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 2rem 0;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .meta {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dyslexia Grand Hub - API Specification</h1>
+            <p class="subtitle">Document  Complete</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Documentation Index</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="monorepo-structure.html">Monorepo Structure</a></li>
+                <li><a href="database-schema.html">Database Schema</a></li>
+                <li><a href="api-specification.html">API Specification</a></li>
+                <li><a href="component-library.html">Component Library</a></li>
+                <li><a href="user-journeys.html">User Journeys</a></li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+                <li><a href="development-plan.html">Development Plan</a></li>
+                <li><a href="testing-strategy.html">Testing Strategy</a></li>
+                <li><a href="deployment-plan.html">Deployment Plan</a></li>
+                <li><a href="monitoring-plan.html">Monitoring Plan</a></li>
+                <li><a href="maintenance-plan.html">Maintenance Plan</a></li>
+                <li><a href="technical-specification.html">Technical Specification</a></li>
+                <li><a href="training-system.html">Training System</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>Dyslexia Grand Hub - API Specification</h1>
+
+<strong>Version:</strong> 1.0
+<strong>Date:</strong> 2026-10-31
+<strong>Author:</strong> Senior Tech Lead (Devin)
+<strong>Status:</strong> Data Design Phase - Complete
+
+<hr>
+
+<h2>API Style Choice</h2>
+
+<strong>Choice:</strong> REST API
+
+<strong>Justification:</strong>
+<ul>
+<li><strong>Simplicity:</strong> Easier to understand and implement than GraphQL</li>
+<li><strong>Caching:</strong> Better HTTP caching support (browser, CDN)</li>
+<li><strong>Offline-First:</strong> Simpler to implement local API layer</li>
+<li><strong>Tooling:</strong> Mature ecosystem (Postman, Swagger/OpenAPI)</li>
+<li><strong>Mobile:</strong> Easier to work with React Native networking</li>
+</ul>
+
+<strong>Future Consideration:</strong> GraphQL could be added for complex queries if needed
+
+<hr>
+
+<h2>Base URL</h2>
+
+<strong>Local Development:</strong> <code>http://localhost:3000/api</code>
+<strong>Staging:</strong> <code>https://staging.dyslexia-hub.com/api</code>
+<strong>Production:</strong> <code>https://api.dyslexia-hub.com</code> (if backend is deployed)
+
+<strong>Note:</strong> MVP is client-side only (no backend API needed). This specification is for optional cloud sync and future backend features.
+
+<hr>
+
+<h2>API Endpoints</h2>
+
+<h3>User Profile Management</h3>
+
+<h4>Create User Profile</h4>
+
+<strong>POST</strong> <code>/api/users</code>
+
+<strong>Request Body:</strong>
+<pre><code>{
+<p>"age": 25,</p>
+<p>"language": "en",</p>
+<p>"preferences": {</p>
+<p>"theme": "default",</p>
+<p>"fontSize": "medium",</p>
+<p>"fontFamily": "default",</p>
+<p>"lineSpacing": 1.5,</p>
+<p>"letterSpacing": 0,</p>
+<p>"enableSoundEffects": true,</p>
+<p>"enableAnimations": true,</p>
+<p>"enableOfflineMode": true,</p>
+<p>"enableCloudSync": false</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<strong>Response (201 Created):</strong>
+<pre><code>{
+<p>"id": "uuid-v4",</p>
+<p>"age": 25,</p>
+<p>"language": "en",</p>
+<p>"createdAt": "2026-10-31T00:00:00Z",</p>
+<p>"updatedAt": "2026-10-31T00:00:00Z",</p>
+<p>"preferences": { ... }</p>
+<p>}</p>
+</code></pre>
+
+<strong>Error Responses:</strong>
+<ul>
+<li><code>400 Bad Request</code> - Invalid input</li>
+<li><code>409 Conflict</code> - User already exists (if email-based auth)</li>
+</ul>
+
+<hr>
+
+<h4>Get User Profile</h4>
+
+<strong>GET</strong> <code>/api/users/:id</code>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"id": "uuid-v4",</p>
+<p>"age": 25,</p>
+<p>"language": "en",</p>
+<p>"createdAt": "2026-10-31T00:00:00Z",</p>
+<p>"updatedAt": "2026-10-31T00:00:00Z",</p>
+<p>"preferences": { ... }</p>
+<p>}</p>
+</code></pre>
+
+<strong>Error Responses:</strong>
+<ul>
+<li><code>404 Not Found</code> - User not found</li>
+</ul>
+
+<hr>
+
+<h4>Update User Profile</h4>
+
+<strong>PATCH</strong> <code>/api/users/:id</code>
+
+<strong>Request Body:</strong>
+<pre><code>{
+<p>"age": 26,</p>
+<p>"preferences": {</p>
+<p>"theme": "dyslexia"</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"id": "uuid-v4",</p>
+<p>"age": 26,</p>
+<p>"language": "en",</p>
+<p>"createdAt": "2026-10-31T00:00:00Z",</p>
+<p>"updatedAt": "2026-10-31T01:00:00Z",</p>
+<p>"preferences": { ... }</p>
+<p>}</p>
+</code></pre>
+
+<strong>Error Responses:</strong>
+<ul>
+<li><code>400 Bad Request</code> - Invalid input</li>
+<li><code>404 Not Found</code> - User not found</li>
+</ul>
+
+<hr>
+
+<h4>Set User Preferences</h4>
+
+<strong>PATCH</strong> <code>/api/users/:id/preferences</code>
+
+<strong>Request Body:</strong>
+<pre><code>{
+<p>"theme": "high-contrast",</p>
+<p>"fontSize": "large"</p>
+<p>}</p>
+</code></pre>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"theme": "high-contrast",</p>
+<p>"fontSize": "large",</p>
+<p>"fontFamily": "default",</p>
+<p>"lineSpacing": 1.5,</p>
+<p>"letterSpacing": 0,</p>
+<p>"enableSoundEffects": true,</p>
+<p>"enableAnimations": true,</p>
+<p>"enableOfflineMode": true,</p>
+<p>"enableCloudSync": false</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h3>Screening Operations</h3>
+
+<h4>Create Screening Result</h4>
+
+<strong>POST</strong> <code>/api/screening-results</code>
+
+<strong>Request Body:</strong>
+<pre><code>{
+<p>"userId": "uuid-v4",</p>
+<p>"age": 8,</p>
+<p>"version": "1.0.0",</p>
+<p>"scores": {</p>
+<p>"phonological": 45,</p>
+<p>"rapidNaming": 30,</p>
+<p>"visual": 65,</p>
+<p>"workingMemory": 50,</p>
+<p>"overall": 47.5</p>
+<p>},</p>
+<p>"severity": "moderate"</p>
+<p>}</p>
+</code></pre>
+
+<strong>Response (201 Created):</strong>
+<pre><code>{
+<p>"id": "uuid-v4",</p>
+<p>"userId": "uuid-v4",</p>
+<p>"date": "2026-10-31T00:00:00Z",</p>
+<p>"age": 8,</p>
+<p>"version": "1.0.0",</p>
+<p>"scores": { ... },</p>
+<p>"severity": "moderate",</p>
+<p>"recommendations": ["intervention-id-1", "intervention-id-2"]</p>
+<p>}</p>
+</code></pre>
+
+<strong>Note:</strong> Recommendations are auto-generated based on severity and age
+
+<hr>
+
+<h4>Get Screening Results</h4>
+
+<strong>GET</strong> <code>/api/screening-results?userId=:userId&limit=:limit&offset=:offset</code>
+
+<strong>Query Parameters:</strong>
+<ul>
+<li><code>userId</code> (required) - User ID</li>
+<li><code>limit</code> (optional, default: 10) - Number of results</li>
+<li><code>offset</code> (optional, default: 0) - Pagination offset</li>
+</ul>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"results": [</p>
+<p>{</p>
+<p>"id": "uuid-v4",</p>
+<p>"userId": "uuid-v4",</p>
+<p>"date": "2026-10-31T00:00:00Z",</p>
+<p>"age": 8,</p>
+<p>"version": "1.0.0",</p>
+<p>"scores": { ... },</p>
+<p>"severity": "moderate",</p>
+<p>"recommendations": [...]</p>
+<p>}</p>
+<p>],</p>
+<p>"total": 5,</p>
+<p>"limit": 10,</p>
+<p>"offset": 0</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h4>Get Screening Result by ID</h4>
+
+<strong>GET</strong> <code>/api/screening-results/:id</code>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"id": "uuid-v4",</p>
+<p>"userId": "uuid-v4",</p>
+<p>"date": "2026-10-31T00:00:00Z",</p>
+<p>"age": 8,</p>
+<p>"version": "1.0.0",</p>
+<p>"scores": { ... },</p>
+<p>"severity": "moderate",</p>
+<p>"recommendations": [...]</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h3>Intervention Operations</h3>
+
+<h4>Search Interventions</h4>
+
+<strong>GET</strong> <code>/api/interventions?category=:category&minAge=:minAge&maxAge=:maxAge&minEfficacy=:minEfficacy&limit=:limit&offset=:offset</code>
+
+<strong>Query Parameters:</strong>
+<ul>
+<li><code>category</code> (optional) - Filter by category (phonological, RAN, neurofeedback, etc.)</li>
+<li><code>minAge</code> (optional) - Minimum age</li>
+<li><code>maxAge</code> (optional) - Maximum age</li>
+<li><code>minEfficacy</code> (optional) - Minimum efficacy rating (0-10)</li>
+<li><code>limit</code> (optional, default: 20) - Number of results</li>
+<li><code>offset</code> (optional, default: 0) - Pagination offset</li>
+</ul>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"results": [</p>
+<p>{</p>
+<p>"id": "uuid-v4",</p>
+<p>"name": "RAN-IT (Rapid Automated Naming Intensive Training)",</p>
+<p>"category": "RAN",</p>
+<p>"targetDeficit": ["rapid naming", "reading fluency"],</p>
+<p>"ageRange": [5, 8],</p>
+<p>"efficacyRating": 8.0,</p>
+<p>"evidenceCount": 14,</p>
+<p>"description": "Intensive speed-focused RAN training...",</p>
+<p>"guide": {</p>
+<p>"steps": [...],</p>
+<p>"duration": 15,</p>
+<p>"frequency": "3x per week",</p>
+<p>"materials": [...],</p>
+<p>"warnings": [...]</p>
+<p>},</p>
+<p>"lastUpdated": "2026-10-31T00:00:00Z"</p>
+<p>}</p>
+<p>],</p>
+<p>"total": 50,</p>
+<p>"limit": 20,</p>
+<p>"offset": 0</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h4>Get Intervention by ID</h4>
+
+<strong>GET</strong> <code>/api/interventions/:id</code>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"id": "uuid-v4",</p>
+<p>"name": "RAN-IT",</p>
+<p>"category": "RAN",</p>
+<p>"targetDeficit": ["rapid naming"],</p>
+<p>"ageRange": [5, 8],</p>
+<p>"efficacyRating": 8.0,</p>
+<p>"evidenceCount": 14,</p>
+<p>"description": "...",</p>
+<p>"guide": { ... },</p>
+<p>"lastUpdated": "2026-10-31T00:00:00Z"</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h4>Get Efficacy Rating</h4>
+
+<strong>GET</strong> <code>/api/interventions/:id/efficacy</code>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"interventionId": "uuid-v4",</p>
+<p>"efficacyRating": 8.0,</p>
+<p>"evidenceCount": 14,</p>
+<p>"confidence": 0.75,</p>
+<p>"lastUpdated": "2026-10-31T00:00:00Z"</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h3>Intervention Progress Operations</h3>
+
+<h4>Create Intervention Progress</h4>
+
+<strong>POST</strong> <code>/api/intervention-progress</code>
+
+<strong>Request Body:</strong>
+<pre><code>{
+<p>"userId": "uuid-v4",</p>
+<p>"interventionId": "uuid-v4"</p>
+<p>}</p>
+</code></pre>
+
+<strong>Response (201 Created):</strong>
+<pre><code>{
+<p>"id": "uuid-v4",</p>
+<p>"userId": "uuid-v4",</p>
+<p>"interventionId": "uuid-v4",</p>
+<p>"startDate": "2026-10-31T00:00:00Z",</p>
+<p>"lastSessionDate": "2026-10-31T00:00:00Z",</p>
+<p>"sessionsCompleted": 0,</p>
+<p>"totalDuration": 0,</p>
+<p>"progressScore": 0,</p>
+<p>"notes": [],</p>
+<p>"status": "active"</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h4>Update Intervention Progress</h4>
+
+<strong>PATCH</strong> <code>/api/intervention-progress/:id</code>
+
+<strong>Request Body:</strong>
+<pre><code>{
+<p>"sessionsCompleted": 5,</p>
+<p>"totalDuration": 75,</p>
+<p>"progressScore": 45,</p>
+<p>"notes": [</p>
+<p>{</p>
+<p>"date": "2026-10-31T00:00:00Z",</p>
+<p>"content": "User showed improvement",</p>
+<p>"type": "manual"</p>
+<p>}</p>
+<p>],</p>
+<p>"status": "active"</p>
+<p>}</p>
+</code></pre>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"id": "uuid-v4",</p>
+<p>"userId": "uuid-v4",</p>
+<p>"interventionId": "uuid-v4",</p>
+<p>"startDate": "2026-10-31T00:00:00Z",</p>
+<p>"lastSessionDate": "2026-10-31T01:00:00Z",</p>
+<p>"sessionsCompleted": 5,</p>
+<p>"totalDuration": 75,</p>
+<p>"progressScore": 45,</p>
+<p>"notes": [...],</p>
+<p>"status": "active"</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h4>Get Intervention Progress</h4>
+
+<strong>GET</strong> <code>/api/intervention-progress?userId=:userId&interventionId=:interventionId</code>
+
+<strong>Query Parameters:</strong>
+<ul>
+<li><code>userId</code> (required) - User ID</li>
+<li><code>interventionId</code> (optional) - Filter by intervention</li>
+</ul>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"results": [</p>
+<p>{</p>
+<p>"id": "uuid-v4",</p>
+<p>"userId": "uuid-v4",</p>
+<p>"interventionId": "uuid-v4",</p>
+<p>"startDate": "2026-10-31T00:00:00Z",</p>
+<p>"lastSessionDate": "2026-10-31T01:00:00Z",</p>
+<p>"sessionsCompleted": 5,</p>
+<p>"totalDuration": 75,</p>
+<p>"progressScore": 45,</p>
+<p>"notes": [...],</p>
+<p>"status": "active"</p>
+<p>}</p>
+<p>]</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h3>Research Queries</h3>
+
+<h4>Search Claims</h4>
+
+<strong>GET</strong> <code>/api/claims?q=:query&phase=:phase&topic=:topic&minConfidence=:minConfidence&limit=:limit&offset=:offset</code>
+
+<strong>Query Parameters:</strong>
+<ul>
+<li><code>q</code> (optional) - Full-text search query</li>
+<li><code>phase</code> (optional) - Filter by phase (1-7)</li>
+<li><code>topic</code> (optional) - Filter by topic</li>
+<li><code>minConfidence</code> (optional) - Minimum confidence (0-1)</li>
+<li><code>limit</code> (optional, default: 20) - Number of results</li>
+<li><code>offset</code> (optional, default: 0) - Pagination offset</li>
+</ul>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"results": [</p>
+<p>{</p>
+<p>"id": "uuid-v4",</p>
+<p>"text": "Dyslexia is highly heritable with substantial genetic influences",</p>
+<p>"sourceId": "uuid-v4",</p>
+<p>"confidence": 0.95,</p>
+<p>"phase": 2,</p>
+<p>"topics": ["genetics", "heritability"],</p>
+<p>"relatedClaims": ["uuid-v4"],</p>
+<p>"contradictoryClaims": [],</p>
+<p>"lastUpdated": "2026-10-31T00:00:00Z"</p>
+<p>}</p>
+<p>],</p>
+<p>"total": 335,</p>
+<p>"limit": 20,</p>
+<p>"offset": 0</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h4>Get Claim by ID</h4>
+
+<strong>GET</strong> <code>/api/claims/:id</code>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"id": "uuid-v4",</p>
+<p>"text": "...",</p>
+<p>"sourceId": "uuid-v4",</p>
+<p>"confidence": 0.95,</p>
+<p>"phase": 2,</p>
+<p>"topics": ["genetics"],</p>
+<p>"relatedClaims": [...],</p>
+<p>"contradictoryClaims": [],</p>
+<p>"lastUpdated": "2026-10-31T00:00:00Z"</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h4>Get Claims by Topic</h4>
+
+<strong>GET</strong> <code>/api/claims/topics/:topic</code>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"topic": "genetics",</p>
+<p>"claims": [</p>
+<p>{</p>
+<p>"id": "uuid-v4",</p>
+<p>"text": "...",</p>
+<p>"confidence": 0.95,</p>
+<p>"phase": 2</p>
+<p>}</p>
+<p>],</p>
+<p>"total": 99</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h4>Get Claims by Phase</h4>
+
+<strong>GET</strong> <code>/api/claims/phases/:phase</code>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"phase": 2,</p>
+<p>"claims": [</p>
+<p>{</p>
+<p>"id": "uuid-v4",</p>
+<p>"text": "...",</p>
+<p>"confidence": 0.95,</p>
+<p>"topics": ["genetics"]</p>
+<p>}</p>
+<p>],</p>
+<p>"total": 166</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h4>Get Contradictory Claims</h4>
+
+<strong>GET</strong> <code>/api/claims/:id/contradictions</code>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"claimId": "uuid-v4",</p>
+<p>"contradictoryClaims": [</p>
+<p>{</p>
+<p>"id": "uuid-v4",</p>
+<p>"text": "...",</p>
+<p>"confidence": 0.85,</p>
+<p>"phase": 6</p>
+<p>}</p>
+<p>]</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h3>Sync Operations</h3>
+
+<h4>Sync Local to Cloud</h4>
+
+<strong>POST</strong> <code>/api/sync/push</code>
+
+<strong>Request Body:</strong>
+<pre><code>{
+<p>"userId": "uuid-v4",</p>
+<p>"changes": [</p>
+<p>{</p>
+<p>"entityType": "screeningResult",</p>
+<p>"entityId": "uuid-v4",</p>
+<p>"data": { ... },</p>
+<p>"timestamp": "2026-10-31T00:00:00Z"</p>
+<p>}</p>
+<p>]</p>
+<p>}</p>
+</code></pre>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"syncId": "uuid-v4",</p>
+<p>"status": "success",</p>
+<p>"syncedCount": 5,</p>
+<p>"conflicts": [],</p>
+<p>"syncedAt": "2026-10-31T01:00:00Z"</p>
+<p>}</p>
+</code></pre>
+
+<strong>Response (409 Conflict):</strong>
+<pre><code>{
+<p>"syncId": "uuid-v4",</p>
+<p>"status": "partial",</p>
+<p>"syncedCount": 3,</p>
+<p>"conflicts": [</p>
+<p>{</p>
+<p>"entityType": "screeningResult",</p>
+<p>"entityId": "uuid-v4",</p>
+<p>"localVersion": { ... },</p>
+<p>"cloudVersion": { ... },</p>
+<p>"timestamp": "2026-10-31T00:00:00Z"</p>
+<p>}</p>
+<p>],</p>
+<p>"syncedAt": "2026-10-31T01:00:00Z"</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h4>Sync Cloud to Local</h4>
+
+<strong>GET</strong> <code>/api/sync/pull?userId=:userId&since=:since</code>
+
+<strong>Query Parameters:</strong>
+<ul>
+<li><code>userId</code> (required) - User ID</li>
+<li><code>since</code> (optional) - ISO 8601 timestamp (pull changes since this time)</li>
+</ul>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"changes": [</p>
+<p>{</p>
+<p>"entityType": "intervention",</p>
+<p>"entityId": "uuid-v4",</p>
+<p>"data": { ... },</p>
+<p>"timestamp": "2026-10-31T01:00:00Z",</p>
+<p>"operation": "update"</p>
+<p>}</p>
+<p>],</p>
+<p>"total": 10,</p>
+<p>"syncedAt": "2026-10-31T01:00:00Z"</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h4>Get Sync Status</h4>
+
+<strong>GET</strong> <code>/api/sync/status?userId=:userId</code>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"userId": "uuid-v4",</p>
+<p>"lastSyncDate": "2026-10-31T01:00:00Z",</p>
+<p>"syncStatus": "success",</p>
+<p>"pendingChanges": 0,</p>
+<p>"conflicts": []</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h2>Request/Response Schemas</h2>
+
+<h3>Common Headers</h3>
+
+<strong>Request Headers:</strong>
+<pre><code>Content-Type: application/json
+<p>Accept: application/json</p>
+<p>Authorization: Bearer <token> (if auth enabled)</p>
+</code></pre>
+
+<strong>Response Headers:</strong>
+<pre><code>Content-Type: application/json
+<p>X-Request-ID: <uuid></p>
+<p>X-API-Version: 1.0.0</p>
+</code></pre>
+
+<h3>Error Response Schema</h3>
+
+<pre><code>{
+<p>"error": {</p>
+<p>"code": "VALIDATION_ERROR",</p>
+<p>"message": "Invalid input data",</p>
+<p>"details": [</p>
+<p>{</p>
+<p>"field": "age",</p>
+<p>"message": "Age must be between 0 and 120"</p>
+<p>}</p>
+<p>],</p>
+<p>"requestId": "uuid-v4",</p>
+<p>"timestamp": "2026-10-31T00:00:00Z"</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<strong>Error Codes:</strong>
+<ul>
+<li><code>VALIDATION_ERROR</code> - Invalid input (400)</li>
+<li><code>NOT_FOUND</code> - Resource not found (404)</li>
+<li><code>CONFLICT</code> - Resource conflict (409)</li>
+<li><code>UNAUTHORIZED</code> - Authentication required (401)</li>
+<li><code>FORBIDDEN</code> - Insufficient permissions (403)</li>
+<li><code>INTERNAL_ERROR</code> - Server error (500)</li>
+</ul>
+
+<hr>
+
+<h2>Authentication Strategy</h2>
+
+<h3>Option 1: No Authentication (MVP)</h3>
+
+<strong>Strategy:</strong> Client-side only, no backend
+<ul>
+<li>All data stored locally</li>
+<li>No authentication needed</li>
+<li>Cloud sync not available</li>
+</ul>
+
+<h3>Option 2: JWT Authentication (Future)</h3>
+
+<strong>Strategy:</strong> If cloud sync is enabled
+
+<strong>Login Endpoint:</strong>
+<strong>POST</strong> <code>/api/auth/login</code>
+
+<strong>Request Body:</strong>
+<pre><code>{
+<p>"email": "user@example.com",</p>
+<p>"password": "password"</p>
+<p>}</p>
+</code></pre>
+
+<strong>Response (200 OK):</strong>
+<pre><code>{
+<p>"token": "jwt-token",</p>
+<p>"userId": "uuid-v4",</p>
+<p>"expiresAt": "2026-11-30T00:00:00Z"</p>
+<p>}</p>
+</code></pre>
+
+<strong>Token Format:</strong>
+<ul>
+<li>Header: <code>Authorization: Bearer <token></code></li>
+<li>Claims: <code>userId</code>, <code>email</code>, <code>exp</code>, <code>iat</code></li>
+<li>Expiration: 30 days</li>
+</ul>
+
+<h3>Option 3: OAuth 2.0 (Future)</h3>
+
+<strong>Strategy:</strong> Social login (Google, GitHub)
+
+<strong>Authorization Flow:</strong>
+<ol>
+<li>Redirect to OAuth provider</li>
+<li>User authorizes</li>
+<li>Provider redirects to callback URL with code</li>
+<li>Exchange code for access token</li>
+<li>Create or update user account</li>
+<li>Return JWT token</li>
+</ol>
+
+<hr>
+
+<h2>Error Handling Strategy</h2>
+
+<h3>HTTP Status Codes</h3>
+
+<ul>
+<li><code>200 OK</code> - Success</li>
+<li><code>201 Created</code> - Resource created</li>
+<li><code>204 No Content</code> - Success, no response body</li>
+<li><code>400 Bad Request</code> - Invalid input</li>
+<li><code>401 Unauthorized</code> - Authentication required</li>
+<li><code>403 Forbidden</code> - Insufficient permissions</li>
+<li><code>404 Not Found</code> - Resource not found</li>
+<li><code>409 Conflict</code> - Resource conflict</li>
+<li><code>422 Unprocessable Entity</code> - Semantic error</li>
+<li><code>429 Too Many Requests</code> - Rate limit exceeded</li>
+<li><code>500 Internal Server Error</code> - Server error</li>
+<li><code>503 Service Unavailable</code> - Service temporarily unavailable</li>
+</ul>
+
+<h3>Error Response Format</h3>
+
+<strong>Validation Errors (400):</strong>
+<pre><code>{
+<p>"error": {</p>
+<p>"code": "VALIDATION_ERROR",</p>
+<p>"message": "Invalid input data",</p>
+<p>"details": [</p>
+<p>{</p>
+<p>"field": "age",</p>
+<p>"message": "Age must be between 0 and 120"</p>
+<p>}</p>
+<p>]</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<strong>Not Found (404):</strong>
+<pre><code>{
+<p>"error": {</p>
+<p>"code": "NOT_FOUND",</p>
+<p>"message": "User not found",</p>
+<p>"details": {}</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<strong>Conflict (409):</strong>
+<pre><code>{
+<p>"error": {</p>
+<p>"code": "CONFLICT",</p>
+<p>"message": "Screening result already exists",</p>
+<p>"details": {</p>
+<p>"existingId": "uuid-v4"</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<strong>Server Error (500):</strong>
+<pre><code>{
+<p>"error": {</p>
+<p>"code": "INTERNAL_ERROR",</p>
+<p>"message": "An unexpected error occurred",</p>
+<p>"details": {},</p>
+<p>"requestId": "uuid-v4"</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h2>Rate Limiting</h2>
+
+<strong>Strategy:</strong> Token bucket algorithm
+
+<strong>Limits:</strong>
+<ul>
+<li>Anonymous: 100 requests per hour</li>
+<li>Authenticated: 1000 requests per hour</li>
+<li>Burst: 10 requests per second</li>
+</ul>
+
+<strong>Response Headers:</strong>
+<pre><code>X-RateLimit-Limit: 1000
+<p>X-RateLimit-Remaining: 950</p>
+<p>X-RateLimit-Reset: 1635685200</p>
+</code></pre>
+
+<strong>Rate Limit Exceeded (429):</strong>
+<pre><code>{
+<p>"error": {</p>
+<p>"code": "RATE_LIMIT_EXCEEDED",</p>
+<p>"message": "Rate limit exceeded",</p>
+<p>"details": {</p>
+<p>"limit": 1000,</p>
+<p>"remaining": 0,</p>
+<p>"resetAt": "2026-10-31T01:00:00Z"</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h2>Versioning Strategy</h2>
+
+<strong>URL Versioning:</strong>
+<ul>
+<li>Current version: <code>/api/v1/...</code></li>
+<li>Previous versions: <code>/api/v0/...</code> (deprecated)</li>
+</ul>
+
+<strong>Header Versioning (Alternative):</strong>
+<pre><code>Accept: application/vnd.dyslexia-hub.v1+json
+</code></pre>
+
+<strong>Deprecation Policy:</strong>
+<ul>
+<li>New versions announced 6 months in advance</li>
+<li>Old versions supported for 12 months after deprecation</li>
+<li>Breaking changes require new version</li>
+</ul>
+
+<hr>
+
+<h2>Offline-First Considerations</h2>
+
+<h3>Local API Layer</h3>
+
+<strong>Design:</strong> Mirror cloud API with local implementation
+
+<strong>Example:</strong>
+<pre><code>class LocalAPIClient {
+<p>async createScreeningResult(data: ScreeningResult): Promise<ScreeningResult> {</p>
+<p>// Save to IndexedDB</p>
+<p>const db = await openDB();</p>
+<p>await db.add('screeningResults', data);</p>
+<p>return data;</p>
+<p>}</p>
+
+<p>async getScreeningResults(userId: string): Promise<ScreeningResult[]> {</p>
+<p>// Read from IndexedDB</p>
+<p>const db = await openDB();</p>
+<p>return db.getAllFromIndex('screeningResults', 'userId', userId);</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<h3>Sync API Layer</h3>
+
+<strong>Design:</strong> Wrapper that decides local vs. cloud
+
+<strong>Example:</strong>
+<pre><code>class SyncAPIClient {
+<p>async createScreeningResult(data: ScreeningResult): Promise<ScreeningResult> {</p>
+<p>// Always save locally first</p>
+<p>const localClient = new LocalAPIClient();</p>
+<p>const result = await localClient.createScreeningResult(data);</p>
+
+<p>// If online, sync to cloud</p>
+<p>if (navigator.onLine && userPreferences.enableCloudSync) {</p>
+<p>try {</p>
+<p>await cloudClient.createScreeningResult(data);</p>
+<p>} catch (error) {</p>
+<p>// Queue for background sync</p>
+<p>syncQueue.add('screeningResult', data);</p>
+<p>}</p>
+<p>}</p>
+
+<p>return result;</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h2>OpenAPI Specification</h2>
+
+<strong>Tool:</strong> Swagger/OpenAPI 3.0
+
+<strong>File:</strong> <code>api-spec.yaml</code> (in docs/)
+
+<strong>Example:</strong>
+<pre><code>openapi: 3.0.0
+<p>info:</p>
+<p>title: Dyslexia Grand Hub API</p>
+<p>version: 1.0.0</p>
+<p>description: REST API for Dyslexia Grand Hub application</p>
+
+<p>servers:</p>
+<p>- url: http://localhost:3000/api</p>
+<p>description: Local development</p>
+<p>- url: https://api.dyslexia-hub.com</p>
+<p>description: Production</p>
+
+<p>paths:</p>
+<p>/users:</p>
+<p>post:</p>
+<p>summary: Create user profile</p>
+<p>requestBody:</p>
+<p>required: true</p>
+<p>content:</p>
+<p>application/json:</p>
+<p>schema:</p>
+<p>$ref: '#/components/schemas/UserCreate'</p>
+<p>responses:</p>
+<p>'201':</p>
+<p>description: User created</p>
+<p>content:</p>
+<p>application/json:</p>
+<p>schema:</p>
+<p>$ref: '#/components/schemas/User'</p>
+
+<p>components:</p>
+<p>schemas:</p>
+<p>UserCreate:</p>
+<p>type: object</p>
+<p>required:</p>
+<p>- age</p>
+<p>- language</p>
+<p>properties:</p>
+<p>age:</p>
+<p>type: integer</p>
+<p>minimum: 0</p>
+<p>maximum: 120</p>
+<p>language:</p>
+<p>type: string</p>
+<p>pattern: '^[a-z]{2}$'</p>
+<p>preferences:</p>
+<p>$ref: '#/components/schemas/UserPreferences'</p>
+</code></pre>
+
+<hr>
+
+<h2>Summary</h2>
+
+<p>This API specification provides:</p>
+<ul>
+<li><strong>Complete Endpoint Coverage:</strong> User profiles, screening, interventions, research, sync</li>
+<li><strong>Clear Request/Response Schemas:</strong> JSON format with validation</li>
+<li><strong>Authentication Strategy:</strong> JWT/OAuth options for future</li>
+<li><strong>Error Handling:</strong> Standardized error responses with codes</li>
+<li><strong>Rate Limiting:</strong> Token bucket algorithm</li>
+<li><strong>Versioning:</strong> URL-based versioning</li>
+<li><strong>Offline-First:</strong> Local API layer design</li>
+<li><strong>OpenAPI Spec:</strong> Ready for documentation generation</li>
+</ul>
+
+<hr>
+
+<strong>Document Status:</strong> Complete
+<strong>Next Step:</strong> UI/UX Design Phase (Phase 3)
+
+        </div>
+    </div>
+</body>
+</html>

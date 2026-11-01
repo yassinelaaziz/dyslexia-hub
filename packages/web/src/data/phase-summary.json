@@ -1,0 +1,270 @@
+{
+  "metadata": {
+    "totalPapers": 460,
+    "totalClaims": 310,
+    "totalPhases": 7,
+    "completionDate": "2026-10-31",
+    "methodology": "Strict-Source-Required with API-Based Research",
+    "tokenSavings": "~80% via hybrid screening approach"
+  },
+  "phases": [
+    {
+      "id": "phase01_foundational",
+      "name": "Foundational",
+      "title": "Dyslexia Definitions and Classifications",
+      "papers": 133,
+      "claims": 110,
+      "description": "Definitions, classifications, prevalence, diagnostic criteria, and historical evolution of dyslexia",
+      "keyTopics": [
+        "Core definitions of dyslexia",
+        "Phonological processing as core deficit",
+        "Prevalence estimates and continuum view",
+        "Diagnostic criteria and IQ-discrepancy",
+        "Historical evolution of definitions",
+        "International definitions (IDA, ICD-11, DSM-5-TR)",
+        "Definition controversies and debates"
+      ],
+      "keyFindings": [
+        "Dyslexia is predominantly characterized by a core deficit in phonological processing",
+        "Reading ability is continuously distributed, making prevalence estimates arbitrary",
+        "2025 IDA definition removed unexpectedness language and intellectual functioning as defining components",
+        "Different definitions may be required for different purposes (researchers, policy makers, practitioners)",
+        "U.S. First Step Act (2018) retains unexpectedness framing",
+        "UK Rose Report (2009) conceptualized dyslexia as a continuum"
+      ],
+      "evidenceQuality": "High - multiple peer-reviewed sources with strong consensus on core definition",
+      "controversies": [
+        "IQ-discrepancy criteria - no universal scientific consensus",
+        "Continuum vs categorical views - continuum has stronger support",
+        "Role of cognitive testing in assessment - differing views"
+      ]
+    },
+    {
+      "id": "phase02_etiology",
+      "name": "Etiology",
+      "title": "Causes of Dyslexia",
+      "papers": 102,
+      "claims": 147,
+      "description": "Genetic, neurological, cognitive, and environmental factors contributing to dyslexia",
+      "keyTopics": [
+        "Genetic heritability and specific loci",
+        "Genome-wide association studies (GWAS)",
+        "Gene-environment interactions",
+        "Brain structure differences (gray and white matter)",
+        "Functional brain activation patterns",
+        "Neural timing and oscillatory entrainment",
+        "Cognitive factors (phonological, RAN, working memory, attention)",
+        "Environmental risk factors"
+      ],
+      "keyFindings": [
+        "Heritability estimates range from 40-80% based on twin and family studies",
+        "2022 GWAS identified 42 genome-wide significant loci associated with dyslexia",
+        "Genetic correlation between males and females is 0.91 (similar etiology)",
+        "Low SES exacerbates genetic contribution to dyslexia",
+        "White matter differences in arcuate fasciculus and perisylvian network",
+        "Hypoactivation in left hemisphere reading networks",
+        "Phonological deficit hypothesis remains most supported cognitive account",
+        "RAN deficits consistently observed and contribute independently to reading"
+      ],
+      "evidenceQuality": "High - large-scale genetic studies, neuroimaging meta-analyses, longitudinal research",
+      "controversies": [
+        "Replication of gray matter findings has been inconsistent",
+        "General processing speed deficits are less consistent than domain-specific",
+        "Attention deficits - mixed evidence, may be comorbid with ADHD"
+      ]
+    },
+    {
+      "id": "phase03_manifestations",
+      "name": "Manifestations",
+      "title": "Dyslexia Manifestations",
+      "papers": 36,
+      "claims": 9,
+      "description": "Cognitive subtypes, working memory, attention, biliteracy, maturational asynchrony, and psychological consequences",
+      "keyTopics": [
+        "Primary characteristics (word-level reading difficulties)",
+        "Cognitive manifestations (working memory, attention)",
+        "Subtypes (accuracy-disabled vs rate-disabled)",
+        "Biliteracy manifestations (associative vs dissociative)",
+        "Maturational asynchrony framework",
+        "Environmental risk factors",
+        "Secondary consequences (psychological, employment)"
+      ],
+      "keyFindings": [
+        "Primary difficulties at word-reading level with phonological awareness, decoding, encoding",
+        "Distinct from developmental language disorder (DLD)",
+        "Working memory deficits particularly pronounced in verbal working memory",
+        "Sustained attention and behavioral inhibition deficits (less severe than ADHD)",
+        "Learning disabilities emerge from maturational asynchrony among interacting systems",
+        "Biliteracy subtypes: associative (both languages) and dissociative (one language)",
+        "57% of Chinese children with reading difficulties did not have English difficulties",
+        "Key environmental risk factors: maternal education, screen exposure during pregnancy"
+      ],
+      "evidenceQuality": "Good - longitudinal studies, meta-analyses, cross-linguistic research",
+      "controversies": [
+        "Whether word reading difficulties are linguistically universal or specific",
+        "Role of general cognitive deficits vs domain-specific deficits"
+      ]
+    },
+    {
+      "id": "phase04_theoretical",
+      "name": "Theoretical Models",
+      "title": "Theoretical Models of Dyslexia",
+      "papers": 30,
+      "claims": 10,
+      "description": "Phonological deficit, double-deficit, temporal sampling, multiple-deficit models, and developmental frameworks",
+      "keyTopics": [
+        "Phonological deficit hypothesis",
+        "Double-deficit hypothesis",
+        "Temporal sampling theory",
+        "Multiple-deficit model",
+        "Cerebellar theory",
+        "Cross-linguistic variations (orthographic depth)",
+        "Developmental trajectory models",
+        "Computational and neural models",
+        "Comorbidity models"
+      ],
+      "keyFindings": [
+        "Phonological deficit hypothesis is most influential and well-supported",
+        "Double-deficit hypothesis supported by longitudinal evidence (PA and RAN as distinct causes)",
+        "Temporal sampling theory proposes impaired encoding of low-frequency envelope information",
+        "Multiple-deficit model gaining support - dyslexia typically results from multiple deficits",
+        "Cerebellar theory has mixed empirical support",
+        "Orthographic depth affects manifestation (transparent vs opaque orthographies)",
+        "Developmental timing framework proposes maturational asynchrony among systems",
+        "Additive model of RD-ADHD comorbidity supported by cognitive profiles"
+      ],
+      "evidenceQuality": "Good - theoretical models with varying levels of empirical support",
+      "controversies": [
+        "Cerebellar theory - controversial with mixed evidence",
+        "Domain-relevance vs domain-specific accounts - theoretical distinction"
+      ]
+    },
+    {
+      "id": "phase05_interventions",
+      "name": "Interventions",
+      "title": "Intervention Approaches",
+      "papers": 26,
+      "claims": 3,
+      "description": "BCI-based interventions, early intervention, and general intervention approaches",
+      "keyTopics": [
+        "Early intervention and remediation",
+        "Brain-Computer Interface (BCI) approaches",
+        "Phonological interventions",
+        "Multisensory approaches",
+        "Technology-based solutions",
+        "Environmental and family-based interventions"
+      ],
+      "keyFindings": [
+        "Early intervention and remediation are critical for dyslexia outcomes",
+        "BCI approaches show potential for improving phonological processing",
+        "Brain remains plastic throughout life, allowing intervention at any age"
+      ],
+      "evidenceQuality": "Limited - only 3 claims extracted due to many papers lacking proper DOIs/PMIDs",
+      "gaps": [
+        "Phonological training programs",
+        "Multisensory approaches (Orton-Gillingham)",
+        "Environmental interventions",
+        "Personalized RTI models",
+        "Intervention efficacy and effect sizes",
+        "Comparative studies of different approaches"
+      ],
+      "note": "Phase 5 research is limited - future work should focus on extracting more specific claims about intervention efficacy"
+    },
+    {
+      "id": "phase06_controversies",
+      "name": "Controversies",
+      "title": "Controversies and Debates",
+      "papers": 36,
+      "claims": 20,
+      "description": "Assessment/diagnosis controversies, cross-linguistic debates, policy controversies, and definition debates",
+      "keyTopics": [
+        "Delphi definition limitations",
+        "IQ-discrepancy criteria controversy",
+        "Cut-off criteria vs continuum view",
+        "Role of cognitive testing in assessment",
+        "Stealth dyslexia",
+        "Unexpectedness and equity concerns",
+        "Cross-linguistic universality vs specificity",
+        "Biliteracy subtypes",
+        "Policy and educational practice controversies"
+      ],
+      "keyFindings": [
+        "Delphi definition has unresolved issues (prevalence, cognitive functioning, educator guidance)",
+        "No universal scientific consensus on IQ-achievement discrepancy",
+        "ICD-11 endorses discrepancy, DSM-5-TR focuses on unexpected attainment",
+        "83% agree dyslexic difficulties exist on a continuum (vs 65% for cut-off criteria)",
+        "Metsala et al. regard discrepancy definition as 'serious error'",
+        "Stealth dyslexia not addressed in current definitions",
+        "Unexpectedness framing may be inequitable for economically disadvantaged children",
+        "Evidence supports both universal and specific cross-linguistic perspectives"
+      ],
+      "evidenceQuality": "Good - recent debates in peer-reviewed literature",
+      "status": "Ongoing debates reflect complexity and diversity of perspectives"
+    },
+    {
+      "id": "phase07_methodology",
+      "name": "Methodology",
+      "title": "Research Methodology",
+      "papers": 97,
+      "claims": 14,
+      "description": "Research design, statistical analysis, genetic methodology, and measurement approaches",
+      "keyTopics": [
+        "Research design (case-control, longitudinal)",
+        "Genetic research methods (GWAS, polygenic scores)",
+        "Genetic correlation analysis",
+        "Pleiotropy analysis",
+        "Statistical analysis (machine learning, factor analysis)",
+        "Measurement and assessment",
+        "Neuroimaging methodology"
+      ],
+      "keyFindings": [
+        "Multi-center case-control designs commonly used (e.g., 948 cases, 948 controls)",
+        "GWAS uses logistic regression with additive model and genomic control",
+        "Polygenic risk scores calculated using clumping and thresholding (C+T) method",
+        "Linkage disequilibrium score regression (LDSC) for genetic correlations",
+        "PolarMorphism for pleiotropic loci identification",
+        "XGBoost machine learning with 5-fold cross-validation",
+        "Exploratory factor analysis with promax rotation for factor structure"
+      ],
+      "evidenceQuality": "Good - methodological papers describing rigorous approaches",
+      "implications": "Methodological rigor essential for valid conclusions in dyslexia research"
+    }
+  ],
+  "crossPhaseThemes": [
+    {
+      "theme": "Phonological Processing",
+      "phases": ["phase01_foundational", "phase02_etiology", "phase03_manifestations", "phase04_theoretical"],
+      "description": "Central role of phonological processing across definitions, etiology, manifestations, and theoretical models"
+    },
+    {
+      "theme": "Multiple-Deficit Perspective",
+      "phases": ["phase02_etiology", "phase03_manifestations", "phase04_theoretical"],
+      "description": "Increasing support for multiple interacting risk factors rather than single deficits"
+    },
+    {
+      "theme": "Continuum vs Categorical",
+      "phases": ["phase01_foundational", "phase06_controversies"],
+      "description": "Debate about whether dyslexia exists on a continuum or as distinct categories"
+    },
+    {
+      "theme": "Cross-Linguistic Variation",
+      "phases": ["phase03_manifestations", "phase04_theoretical", "phase06_controversies"],
+      "description": "How dyslexia manifests differently across languages and orthographies"
+    },
+    {
+      "theme": "Developmental Trajectories",
+      "phases": ["phase03_manifestations", "phase04_theoretical"],
+      "description": "How dyslexia manifests and changes across developmental stages"
+    },
+    {
+      "theme": "Neurobiological Basis",
+      "phases": ["phase02_etiology", "phase04_theoretical"],
+      "description": "Brain structure, function, and neural mechanisms underlying dyslexia"
+    },
+    {
+      "theme": "Gene-Environment Interactions",
+      "phases": ["phase02_etiology", "phase03_manifestations"],
+      "description": "How genetic predisposition interacts with environmental factors"
+    }
+  ]
+}

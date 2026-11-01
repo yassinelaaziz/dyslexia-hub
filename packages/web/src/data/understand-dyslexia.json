@@ -1,0 +1,992 @@
+{
+  "vision": {
+    "statement": "Understand Dyslexia is made for top-tier researchers offering a birds-eye view of the whole dyslexia research ecosystem and representing it simply via playful UX",
+    "description": "This section provides a comprehensive, research-backed overview of dyslexia across multiple domains - from definitions and etiology to brain structure, developmental trajectories, and theoretical models. The content is designed to be both scientifically rigorous and accessible, using interactive elements and visual metaphors to make complex research concepts engaging and understandable.",
+    "audience": "Researchers, educators, clinicians, and anyone seeking a deep, evidence-based understanding of dyslexia",
+    "features": [
+      "Systematic coverage across 7 research phases",
+      "460 research papers synthesized",
+      "335 verified claims with source citations",
+      "Interactive exploration of brain regions",
+      "Developmental trajectory visualization",
+      "Multiple theoretical frameworks compared"
+    ]
+  },
+  "quickStats": {
+    "prevalence": "5-15% of population (varies by diagnostic criteria)",
+    "heritability": "40-80% (twin and family studies)",
+    "earlyIdentification": "Critical for optimal outcomes",
+    "interventionEffectiveness": "Brain remains plastic throughout life",
+    "keyDeficit": "Phonological processing (most supported cognitive account)"
+  },
+  "sections": [
+    {
+      "id": "what-is-dyslexia",
+      "name": "What is Dyslexia?",
+      "description": "Definitions, classifications, prevalence, and diagnostic criteria from 111 verified research claims",
+      "icon": "📖",
+      "color": "blue",
+      "visualMetaphor": "foundation",
+      "content": {
+        "definition": "Dyslexia is predominantly characterized by a core deficit in phonological processing (the ability to recognize and manipulate speech sounds), which results in impairments in decoding (sounding out words), spelling, and word recognition. It is a neurobiological in origin specific learning disability.",
+        "keyPoints": [
+          "Neurobiological origin - brain-based, not due to lack of intelligence",
+          "Specific to reading and related language skills (word-level reading difficulties)",
+          "Characterized by persistent difficulties in accurate and/or fluent word recognition and spelling",
+          "Primary difficulties at the word-reading level with phonological awareness, decoding, encoding and/or oral reading fluency",
+          "Distinct from developmental language disorder (DLD) which affects language comprehension"
+        ],
+        "prevalence": {
+          "overview": "Reading ability is continuously and normally distributed in the population, making prevalence estimates arbitrary based on chosen cutoff points.",
+          "estimates": "Commonly cited 5-10% or 7-15% of population, but this depends on diagnostic criteria",
+          "continuumView": "The continuum view leads to variations in dyslexic samples across studies in research contexts",
+          "note": "The 2025 IDA definition no longer references unexpectedness in relation to cognitive ability",
+          "genderDistribution": "Equal prevalence in males and females when using same diagnostic criteria",
+          "crossLinguistic": "Prevalence varies across languages and orthographies due to orthographic depth"
+        },
+        "definitionEvolution": {
+          "traditional": "Earlier definitions emphasized 'unexpected difficulty' in relation to cognitive ability",
+          "current2025": "The 2025 International Dyslexia Association definition removes unexpectedness language and intellectual functioning as defining components",
+          "policy": "The U.S. First Step Act (2018) still retains the unexpectedness framing",
+          "international": "The UK Rose Report (2009) explicitly conceptualized dyslexia as a continuum with no clear cut-off points",
+          "implications": "Definition changes affect policy, resource allocation, and educational practice"
+        },
+        "classification": {
+          "title": "Dyslexia Subtypes",
+          "accuracyDisabled": {
+            "name": "Accuracy-Disabled",
+            "deficits": ["Phonological awareness", "Morphological awareness"],
+            "characteristics": "Inaccurate reading and spelling",
+            "preschoolProfile": "Deficits in phonological and morphological awareness but intact RAN"
+          },
+          "rateDisabled": {
+            "name": "Rate-Disabled",
+            "deficits": ["Rapid automatized naming (RAN)"],
+            "characteristics": "Slow but accurate reading",
+            "preschoolProfile": "Impaired RAN but preserved phonological and morphological awareness"
+          },
+          "longitudinal": "Research supports distinct subtypes with different developmental trajectories",
+          "implications": "Different subtypes may require different intervention approaches"
+        },
+        "diagnosticCriteria": {
+          "title": "Diagnostic Criteria",
+          "coreCriteria": [
+            "Persistent difficulties with accurate and fluent word recognition",
+            "Poor spelling and decoding abilities",
+            "Difficulties are unexpected relative to other cognitive abilities",
+            "Difficulties are not better explained by other conditions"
+          ],
+          "assessmentTools": [
+            "Phonological awareness tests",
+            "Rapid automatized naming (RAN) tasks",
+            "Word reading and pseudoword reading tests",
+            "Spelling assessments",
+            "Reading fluency measures"
+          ],
+          "ageOfIdentification": "Typically identified in early elementary school (ages 6-8), but can be identified earlier with screening"
+        },
+        "misconceptions": {
+          "title": "Common Misconceptions",
+          "intelligence": "Myth: Dyslexia is caused by low intelligence. Reality: Dyslexia occurs across the full range of intellectual abilities.",
+          "vision": "Myth: Dyslexia is a vision problem. Reality: Dyslexia is a language-based learning disability, not a visual processing disorder.",
+          "laziness": "Myth: Children with dyslexia are lazy or not trying hard enough. Reality: Dyslexia is a neurobiological condition affecting reading ability.",
+          "outgrowth": "Myth: Children will outgrow dyslexia. Reality: Dyslexia is a lifelong condition, but interventions can significantly improve reading skills.",
+          "gender": "Myth: More boys than girls have dyslexia. Reality: Equal prevalence when using same diagnostic criteria; boys are more likely to be identified due to behavioral factors."
+        }
+      },
+      "researchStats": {
+        "papers": 133,
+        "claims": 111,
+        "phase": "Phase 1 - Foundational"
+      },
+      "source": {
+        "title": "Multiple sources synthesized from Phase 1 research",
+        "authors": "Sanfilippo et al., Olson et al., Metsala et al., Austin et al.",
+        "year": "2010-2026",
+        "journal": "Pediatrics, Cambridge University Press, Dyslexia, Annals of Dyslexia",
+        "doi": "Multiple DOIs available in research database"
+      }
+    },
+    {
+      "id": "causes",
+      "name": "Causes (Etiology)",
+      "description": "Genetic, neurological, cognitive, and environmental factors from 166 verified research claims",
+      "icon": "🧬",
+      "color": "green",
+      "visualMetaphor": "roots",
+      "content": {
+        "overview": "The etiology of dyslexia is multifactorial, involving complex interactions between genetic predisposition, neurobiological differences, cognitive processing deficits, and environmental influences. Multiple interacting risk factors across domains contribute to different individual profiles.",
+        "genetic": {
+          "heritability": {
+            "estimates": "Heritability estimates range from 40-80% based on twin and family studies",
+            "gwas": "2022 GWAS of 51,800 adults with dyslexia and 1,087,070 controls estimated SNP-based heritability at h²SNP=0.152 (5% prevalence) and h²SNP=0.189 (10% prevalence)",
+            "sexCorrelation": "Genetic correlation between males and females for dyslexia was 0.91, indicating similar genetic etiology between sexes"
+          },
+          "keyGenes": {
+            "overview": "42 independent genome-wide significant loci identified in 2022 GWAS",
+            "replicated": ["DCDC2 (neural migration, white matter connectivity)", "KIAA0319 (cell cycle during neuroepithelial development)", "DYX1C1 (early candidate gene)"],
+            "cognitive": "15 loci in genes linked to cognitive ability/educational attainment",
+            "specific": "27 new loci potentially more specific to dyslexia"
+          },
+          "geneEnvironment": {
+            "overview": "Genetic predisposition interacts with environmental factors",
+            "ses": "Low socioeconomic status (SES) is associated with higher probability of dyslexia and exacerbates genetic contribution",
+            "parental": "Parental education moderates the effect of genetic risk variants on reading ability",
+            "pollutants": "Environmental pollutants may selectively target dyslexia-related genes"
+          }
+        },
+        "neurological": {
+          "grayMatter": {
+            "overview": "Differences in gray matter volume in reading-associated regions",
+            "regions": ["Left occipito-temporal cortex (including visual word form area)", "Inferior frontal gyrus", "Temporoparietal regions"],
+            "note": "Replication of these findings has been inconsistent"
+          },
+          "whiteMatter": {
+            "overview": "Differences in white matter microstructure",
+            "regions": ["Arcuate fasciculus (reduced fractional anisotropy in some studies)", "Left perisylvian language network (connectivity differences)"],
+            "genetic": "READ1 deletion in DCDC2 gene associated with lower global efficiency in white matter networks"
+          },
+          "activation": {
+            "overview": "Functional MRI findings",
+            "patterns": ["Hypoactivation in left hemisphere reading networks (occipito-temporal, temporoparietal, inferior frontal)", "Compensatory hyperactivation in right hemisphere homologues in some individuals", "Altered functional connectivity during reading tasks"]
+          },
+          "neuralTiming": {
+            "overview": "Evidence for deficits in neural entrainment and temporal processing",
+            "networks": "Particularly in auditory and speech processing networks"
+          },
+          "classification": {
+            "overview": "Machine learning using neuroimaging data",
+            "accuracy": "Classification accuracy of 65-90% in controlled cohorts",
+            "caution": "Limited generalizability to real-world populations, not for clinical diagnostic use"
+          }
+        },
+        "cognitive": {
+          "overview": "Multiple cognitive factors contribute to dyslexia",
+          "phonological": {
+            "status": "Most supported cognitive account",
+            "evidence": ["Phonological awareness deficits across languages and orthographies", "Phonological processing impairments predict reading difficulties", "Evident in both children and adults with dyslexia"]
+          },
+          "doubleDeficit": {
+            "overview": "Double-deficit hypothesis proposes distinct subtypes",
+            "deficits": ["Phonological processing deficits", "Rapid automatized naming (RAN) deficits"],
+            "evidence": "Distinct subtypes with single and double deficits supported by research"
+          },
+          "ran": {
+            "overview": "Rapid Automatized Naming (RAN) deficits consistently observed",
+            "evidence": ["RAN speed correlates with reading fluency", "RAN deficits persist even when phonological awareness is intact", "RAN and phonological awareness contribute independently to reading ability"]
+          },
+          "workingMemory": {
+            "overview": "Mixed evidence for working memory deficits",
+            "findings": ["Some studies show verbal working memory impairments", "Other studies find deficits only when phonological processing demands are high", "May be secondary to phonological processing difficulties"]
+          },
+          "processingSpeed": {
+            "overview": "Evidence for processing speed deficits",
+            "findings": ["Slower naming speed (RAN) is a robust finding", "General processing speed deficits are less consistent", "May be domain-specific rather than general"]
+          },
+          "attention": {
+            "overview": "Evidence for attention deficits is mixed",
+            "findings": ["Some studies report attention control difficulties", "Others find attention deficits only in comorbid ADHD", "Not considered a core feature of dyslexia"]
+          }
+        },
+        "environmental": {
+          "overview": "Environmental factors significantly affect dyslexia risk and outcomes",
+          "ses": {
+            "overview": "Socioeconomic status consistently affects dyslexia risk",
+            "effects": ["Low SES associated with higher prevalence of reading difficulties", "SES moderates genetic risk - low SES exacerbates genetic contribution", "SES affects access to early intervention and educational resources"]
+          },
+          "prenatal": {
+            "overview": "Evidence for prenatal risk factors",
+            "factors": ["Prenatal exposure to environmental pollutants linked to dyslexia risk", "Preterm birth and low birth weight associated with increased risk", "Prenatal nutrition may play a role (evidence emerging)"]
+          },
+          "educational": {
+            "overview": "Educational quality and instruction affect outcomes",
+            "factors": ["Quality of reading instruction moderates expression of dyslexia", "Early identification and intervention improve outcomes"]
+          },
+          "keyRiskFactors": ["Proactive learning habit", "Age of child's literacy", "Maternal education level", "Out-migrant workers", "Prolonged screen exposure during pregnancy"]
+        }
+      },
+      "researchStats": {
+        "papers": 102,
+        "claims": 166,
+        "phase": "Phase 2 - Etiology"
+      },
+      "source": {
+        "title": "Etiology of Dyslexia - Phase 2 Research Synthesis",
+        "authors": "Doust et al., Müller-Axt et al., Brimo et al., and multiple others",
+        "year": "2010-2026",
+        "journal": "Nature Genetics, Current Biology, Dyslexia, Molecular Psychiatry",
+        "doi": "Multiple DOIs available in research database"
+      }
+    },
+    {
+      "id": "brain-neurology",
+      "name": "Brain & Neurology",
+      "description": "Brain structure, function, connectivity, and plasticity from Phase 2 neurological research",
+      "icon": "🧠",
+      "color": "purple",
+      "visualMetaphor": "network",
+      "content": {
+        "overview": "Research has identified patterns in brain structure and function associated with dyslexia, but individual differences are significant. The brain remains plastic throughout life, meaning that intervention can be effective at any age. Neuroimaging findings show both structural and functional differences, though replication varies.",
+        "grayMatter": {
+          "title": "Gray Matter Differences",
+          "overview": "Studies have reported differences in gray matter volume in regions associated with reading",
+          "regions": {
+            "leftOccipitoTemporal": {
+              "name": "Left Occipito-Temporal Cortex",
+              "function": "Includes the visual word form area for rapid word recognition",
+              "location": "Back of the brain, near visual processing areas",
+              "findings": "Differences reported, but replication has been inconsistent",
+              "significance": "Critical for developing reading expertise and automatic word recognition"
+            },
+            "inferiorFrontal": {
+              "name": "Inferior Frontal Gyrus",
+              "function": "Involved in phonological processing and reading",
+              "location": "Frontal lobe, near the temple",
+              "findings": "Structural differences observed in some studies",
+              "significance": "Important for articulation, speech production, and phonological working memory"
+            },
+            "temporoparietal": {
+              "name": "Temporoparietal Regions",
+              "function": "Critical for phonological processing and reading",
+              "location": "Temporal and parietal lobes, above the ear",
+              "findings": "Reduced gray matter volume reported, associated with phonological awareness deficits",
+              "significance": "Involved in mapping sounds to letters and phonological decoding"
+            }
+          },
+          "note": "Replication of gray matter findings has been inconsistent across studies",
+          "individualVariability": "Individual differences in brain structure are significant, making neuroimaging findings variable across studies"
+        },
+        "whiteMatter": {
+          "title": "White Matter Connectivity",
+          "overview": "Dyslexia is associated with differences in white matter microstructure",
+          "description": "White matter consists of myelinated axons that form communication highways between brain regions",
+          "regions": {
+            "arcuateFasciculus": {
+              "name": "Arcuate Fasciculus",
+              "function": "Major white matter tract connecting language regions",
+              "pathway": "Connects frontal and temporal language areas",
+              "findings": "Reduced fractional anisotropy (FA) reported in some studies",
+              "significance": "Critical for language processing and reading fluency"
+            },
+            "perisylvian": {
+              "name": "Left Perisylvian Language Network",
+              "function": "Language processing network",
+              "regions": "Surrounds the Sylvian fissure",
+              "findings": "Connectivity differences observed",
+              "significance": "Core language network for comprehension and production"
+            },
+            "visualThalamus": {
+              "name": "Left Visual Thalamus (LGN) to V5/MT",
+              "function": "Visual processing pathway",
+              "pathway": "From thalamus to motion processing areas",
+              "findings": "Reduced structural connectivity in individuals with dyslexia, correlates with rapid naming abilities",
+              "significance": "Important for visual processing and rapid naming speed"
+            }
+          },
+          "genetic": {
+            "title": "Genetic Influences on White Matter",
+            "overview": "Genetic factors influence white matter connectivity",
+            "finding": "READ1 deletion in DCDC2 gene associated with lower global efficiency, local efficiency, and clustering coefficient in white matter networks",
+            "implication": "Genetic risk factors affect brain connectivity from early development"
+          }
+        },
+        "functionalActivation": {
+          "title": "Functional Brain Activation",
+          "overview": "Functional MRI studies show characteristic activation patterns during reading tasks",
+          "patterns": {
+            "hypoactivation": "Hypoactivation in left hemisphere reading networks (occipito-temporal, temporoparietal, inferior frontal regions) - reduced activity in areas critical for reading",
+            "compensatory": "Compensatory hyperactivation in right hemisphere homologues in some individuals - right hemisphere attempts to compensate for left hemisphere differences",
+            "connectivity": "Altered functional connectivity during reading tasks - different patterns of communication between brain regions"
+          },
+          "implications": "Activation patterns suggest different neural strategies for reading in individuals with dyslexia"
+        },
+        "neuralTiming": {
+          "title": "Neural Timing and Oscillations",
+          "overview": "Evidence for deficits in neural entrainment and temporal processing",
+          "mechanism": "Impaired encoding of low-frequency envelope information (<10Hz, delta and theta band) in speech signal",
+          "theory": "Temporal Sampling Theory proposes impaired neural oscillatory entrainment underlies phonological deficits",
+          "frequencyBands": {
+            "delta": "0.5-4 Hz - related to syllable-level processing",
+            "theta": "4-8 Hz - related to phoneme-level processing",
+            "gamma": "30+ Hz - related to fine-grained acoustic feature processing"
+          },
+          "implications": "Neural timing deficits may explain difficulties with speech segmentation and phonological awareness"
+        },
+        "cerebellum": {
+          "title": "Cerebellar Theory",
+          "overview": "Cerebellar theory with mixed empirical support",
+          "hypothesis": "Poor automaticity and motor deficits may be associated with cerebellar dysfunction",
+          "location": "Located at the base of the brain, traditionally associated with motor coordination",
+          "evidence": "Mixed empirical support, controversial",
+          "status": "Not widely accepted as primary explanation for dyslexia"
+        },
+        "plasticity": {
+          "title": "Brain Plasticity and Intervention",
+          "overview": "The brain remains plastic throughout life, meaning that intervention can be effective at any age",
+          "keyPoints": [
+            "Neural circuits for reading can be reshaped with intervention",
+            "Left hemisphere language areas can show increased activation after training",
+            "White matter connectivity can improve with intensive training",
+            "The brain's plasticity means outcomes are not fixed",
+            "Early intervention is most effective, but adults can also improve reading skills with targeted training"
+          ],
+          "interventionEffects": {
+            "structural": "Changes in gray matter volume with intensive reading intervention",
+            "functional": "Normalization of activation patterns in left hemisphere reading networks",
+            "connectivity": "Improved white matter connectivity with training"
+          },
+          "bci": {
+            "title": "Brain-Computer Interface Approaches",
+            "overview": "Emerging approaches",
+            "finding": "Brain-Computer Interface (BCI) approaches show potential for improving phonological processing in developmental dyslexia",
+            "status": "Experimental, promising but not yet clinically validated"
+          }
+        },
+        "neuroimagingClassification": {
+          "title": "Neuroimaging for Classification",
+          "overview": "Machine learning approaches using neuroimaging data",
+          "accuracy": "Classification accuracy of 65-90% in controlled cohorts",
+          "limitations": "Limited generalizability to real-world populations",
+          "caution": "Should not be confused with clinical diagnostic utility",
+          "future": "May eventually contribute to personalized intervention approaches"
+        }
+      },
+      "researchStats": {
+        "papers": "Included in Phase 2",
+        "claims": "Part of 166 Phase 2 claims",
+        "phase": "Phase 2 - Etiology (Neurological Factors)"
+      },
+      "source": {
+        "title": "Multiple neuroimaging studies synthesized",
+        "authors": "Müller-Axt et al., Doust et al., Brimo et al., and others",
+        "year": "2017-2026",
+        "journal": "Current Biology, Nature Genetics, Dyslexia",
+        "doi": "Multiple DOIs available in research database"
+      }
+    },
+    {
+      "id": "developmental-trajectories",
+      "name": "Developmental Trajectories",
+      "description": "How dyslexia manifests across the lifespan with maturational asynchrony framework",
+      "icon": "📈",
+      "color": "orange",
+      "visualMetaphor": "journey",
+      "content": {
+        "overview": "Dyslexia manifests differently across developmental stages. The developmental timing framework proposes that learning disabilities emerge from maturational asynchrony among interacting neural, cognitive, linguistic, sensorimotor, and executive systems rather than from isolated deficits within a single domain. Early identification and intervention can significantly improve outcomes, but the brain remains plastic throughout life.",
+        "maturationalAsynchrony": {
+          "title": "Developmental Timing Framework",
+          "description": "Learning disabilities emerge from maturational asynchrony among interacting systems",
+          "systems": ["Neural", "Cognitive", "Linguistic", "Sensorimotor", "Executive"],
+          "implication": "Deficits are not isolated to a single domain but arise from asynchronous development across multiple interacting systems",
+          "practical": "This framework suggests interventions should target multiple domains rather than focusing on a single deficit"
+        },
+        "longitudinalSubtypes": {
+          "title": "Rate-Disabled vs Accuracy-Disabled Subtypes",
+          "overview": "Longitudinal research supports distinct subtypes with different developmental trajectories",
+          "preschool": {
+            "accuracyDisabled": "Deficits in phonological and morphological awareness but intact RAN",
+            "rateDisabled": "Impaired RAN but preserved phonological and morphological awareness"
+          },
+          "firstGrade": {
+            "accuracyDisabled": "Significantly lower reading accuracy, also slower reading rates (low accuracy limits rate)",
+            "rateDisabled": "Slow reading but intact accuracy"
+          },
+          "implication": "Supports accuracy-rate subtyping of dyslexia with different intervention needs",
+          "intervention": "Accuracy-disabled may need phonological awareness training; rate-disabled may need fluency-focused interventions"
+        },
+        "stages": [
+          {
+            "name": "Early Childhood (3-5 years)",
+            "description": "Pre-reading period where risk factors can be identified through screening",
+            "indicators": ["Difficulty with rhyming games", "Delayed speech development", "Trouble remembering names of letters", "Family history of dyslexia", "Difficulty learning nursery rhymes", "Trouble with simple word recognition"],
+            "action": "Early screening and phonological awareness activities",
+            "research": "Preschool deficits in RAN and phonological awareness predict later reading outcomes",
+            "interventions": ["Language-rich environment", "Phonological awareness games", "Shared reading activities", "Speech-language assessment if concerns arise"]
+          },
+          {
+            "name": "Early Elementary (5-7 years)",
+            "description": "Initial reading instruction period - critical window for intervention",
+            "indicators": ["Difficulty learning letter-sound correspondences", "Trouble sounding out unfamiliar words", "Slow reading compared to peers", "Spelling difficulties", "Difficulty with nonsense word reading", "Resistance to reading activities"],
+            "action": "Intensive phonics instruction and early intervention",
+            "research": "Early intervention and remediation are critical for dyslexia outcomes",
+            "interventions": ["Systematic phonics instruction", "Multisensory learning approaches", "Frequent progress monitoring", "Small group or individual instruction"]
+          },
+          {
+            "name": "Late Elementary (8-10 years)",
+            "description": "Reading fluency development period - subtypes become differentiated",
+            "indicators": ["Slow, effortful reading", "Difficulty with multisyllabic words", "Reading comprehension lags", "Avoidance of reading activities", "Spelling remains challenging", "Fatigue from reading tasks"],
+            "action": "Fluency training and comprehension strategies",
+            "research": "Subtypes become more differentiated (rate-disabled vs accuracy-disabled)",
+            "interventions": ["Repeated reading practice", "Fluency-building activities", "Comprehension strategy instruction", "Assistive technology introduction"]
+          },
+          {
+            "name": "Adolescence (11-18 years)",
+            "description": "Academic demands increase - secondary consequences emerge",
+            "indicators": ["Difficulty with complex texts", "Slow reading affects other subjects", "Need for accommodations", "Impact on self-esteem", "Avoidance of academic reading", "Compensatory strategies develop"],
+            "action": "Accommodations, assistive technology, continued support",
+            "research": "Secondary consequences include psychological well-being and self-esteem challenges",
+            "interventions": ["Extended time on tests", "Text-to-speech technology", "Note-taking assistance", "Focus on strengths and interests", "College/career planning support"]
+          },
+          {
+            "name": "Adulthood (18+ years)",
+            "description": "Workplace and daily life impact - brain remains plastic",
+            "indicators": ["Avoidance of reading tasks", "Difficulty with written communication", "Compensatory strategies developed", "May impact career choices", "Reading fatigue", "Self-selection away from reading-intensive roles"],
+            "action": "Workplace accommodations, assistive technology, adult interventions",
+            "research": "Employment opportunities may be affected; brain remains plastic for intervention",
+            "interventions": ["Workplace accommodations", "Assistive technology in workplace", "Adult literacy programs", "Focus on functional reading skills", "Strength-based career counseling"]
+          }
+        ],
+        "plasticity": {
+          "title": "Lifelong Brain Plasticity",
+          "overview": "The brain remains plastic throughout life",
+          "implication": "Intervention can be effective at any age, though early intervention is most effective",
+          "keyPoints": [
+            "Neural circuits can be reshaped with intervention at any age",
+            "Adults can improve reading skills with targeted training",
+            "Motivation and relevance enhance plasticity in adulthood",
+            "Different intervention approaches may be needed for different ages"
+          ],
+          "optimizing": {
+            "early": "Early intervention is most efficient due to heightened neural plasticity",
+            "adult": "Adult interventions require more intensive, targeted approaches but can still be effective",
+            "factors": "Motivation, practice intensity, and individualized approach enhance outcomes"
+          }
+        }
+      },
+      "researchStats": {
+        "papers": "Synthesized from Phase 3 and Phase 4",
+        "claims": "Part of Phase 3 (10) and Phase 4 (11) claims",
+        "phase": "Phase 3 - Manifestations, Phase 4 - Theoretical Models"
+      },
+      "source": {
+        "title": "Longitudinal and developmental studies",
+        "authors": "Gott et al., Leisman, Snowling & Hulme",
+        "year": "2024-2026",
+        "journal": "Annals of Dyslexia, Brain Sciences, Dyslexia",
+        "doi": "Multiple DOIs available in research database"
+      }
+    },
+    {
+      "id": "manifestations",
+      "name": "Manifestations",
+      "description": "Cognitive, academic, psychological, and social manifestations from 10 verified research claims",
+      "icon": "🎭",
+      "color": "red",
+      "visualMetaphor": "spectrum",
+      "content": {
+        "overview": "Dyslexia affects reading, spelling, and related language skills at the word-reading level, with primary difficulties in phonological awareness, decoding, encoding, and/or oral reading fluency. Secondary consequences include psychological well-being and employment opportunities that may be affected. Manifestations vary across individuals and developmental stages.",
+        "primary": {
+          "title": "Primary Characteristics",
+          "wordLevel": "Primary difficulties at the word-reading level",
+          "skills": ["Phonological awareness deficits", "Decoding difficulties (sounding out words)", "Encoding and spelling problems", "Oral reading fluency impairments", "Difficulty with accurate and fluent word recognition", "Poor spelling and decoding abilities", "Slow reading speed", "Difficulty with nonsense word reading"],
+          "distinction": "Distinct from developmental language disorder (DLD) which affects language comprehension, semantics, syntax, and written expression"
+        },
+        "cognitive": {
+          "title": "Cognitive Manifestations",
+          "workingMemory": {
+            "overview": "Children with reading disabilities show deficits in working memory",
+            "specific": "Particularly pronounced in verbal working memory compared to typically developing peers",
+            "metaAnalysis": "Meta-analysis highlights that children with RD exhibit significant impairments in working memory, correlating with poor reading comprehension"
+          },
+          "attention": {
+            "overview": "Children with reading disabilities exhibit deficits in sustained attention and behavioral inhibition",
+            "severity": "These deficits are typically less severe than those observed in children with ADHD",
+            "link": "Deficits linked to difficulties in word reading and fluency as attention and inhibition support phonological processing and rapid naming"
+          },
+          "maturationalAsynchrony": {
+            "overview": "Learning disabilities can emerge from maturational asynchrony among interacting systems",
+            "systems": ["Neural", "Cognitive", "Linguistic", "Sensorimotor", "Executive"],
+            "implication": "Rather than from isolated deficits within a single domain"
+          }
+        },
+        "subtypes": {
+          "title": "Dyslexia Subtypes",
+          "accuracyDisabled": {
+            "name": "Accuracy-Disabled",
+            "deficits": ["Phonological awareness", "Morphological awareness"],
+            "characteristics": "Inaccurate reading and spelling"
+          },
+          "rateDisabled": {
+            "name": "Rate-Disabled",
+            "deficits": ["Rapid automatized naming (RAN)"],
+            "characteristics": "Slow but accurate reading"
+          },
+          "longitudinal": "Preschool deficits predict first-grade reading outcomes, supporting distinct subtypes"
+        },
+        "biliteracy": {
+          "title": "Biliteracy Manifestations",
+          "overview": "In bilingual children, distinct biliteracy difficulty subtypes exist",
+          "associative": "Difficulties in both languages (associative subtype)",
+          "dissociative": "Difficulties in one language but not the other (dissociative subtype)",
+          "chineseEnglish": "Study of Chinese-English children: 57% of Grade 5 children with Chinese reading difficulties did not suffer from English reading difficulties",
+          "debate": "Whether word reading difficulties are linguistically universal or specific remains debatable"
+        },
+        "secondary": {
+          "title": "Secondary Consequences",
+          "psychological": "Psychological well-being may be affected",
+          "employment": "Employment opportunities may be affected",
+          "esteem": "Impact on self-esteem and confidence",
+          "social": "Social and emotional consequences"
+        },
+        "environmentalRiskFactors": {
+          "title": "Environmental Risk Factors",
+          "overview": "Most important environmental risk factors for dyslexia",
+          "factors": ["Proactive learning habit", "Age of child's literacy", "Maternal education level", "Out-migrant workers", "Prolonged screen exposure during pregnancy"]
+        }
+      },
+      "researchStats": {
+        "papers": 36,
+        "claims": 10,
+        "phase": "Phase 3 - Manifestations"
+      },
+      "source": {
+        "title": "Dyslexia Manifestations - Phase 3 Research Synthesis",
+        "authors": "Catts et al., Gott et al., Li et al., Huo et al., Leisman, Wang et al.",
+        "year": "2025-2026",
+        "journal": "Annals of Dyslexia, Behavioral Sciences, Brain Sciences, Translational Psychiatry",
+        "doi": "Multiple DOIs available in research database"
+      }
+    },
+    {
+      "id": "theoretical-models",
+      "name": "Theoretical Models",
+      "description": "Scientific frameworks explaining dyslexia from 11 verified research claims",
+      "icon": "🔬",
+      "color": "indigo",
+      "visualMetaphor": "framework",
+      "content": {
+        "overview": "Several theoretical models have been proposed to explain dyslexia, each emphasizing different cognitive and neural mechanisms. Research increasingly supports a multiple-deficit perspective, though the phonological deficit hypothesis remains the most influential. Different models explain different aspects of dyslexia and are not mutually exclusive.",
+        "models": [
+          {
+            "name": "Phonological Deficit Hypothesis",
+            "description": "Proposes that the cognitive basis of many specific reading difficulties is a phonological deficit, characterized by difficulties in processing and manipulating the sound structure of words and grapheme-phoneme correspondences.",
+            "evidence": "Phonological deficits evident across languages and orthographies, in both children and adults with dyslexia",
+            "status": "Most influential and well-supported model",
+            "consensus": "Widely accepted as core deficit",
+            "implications": "Interventions focus on phonological awareness training and phonics instruction",
+            "limitations": "Does not fully account for all cases, particularly those with intact phonological skills"
+          },
+          {
+            "name": "Double-Deficit Hypothesis",
+            "description": "Posits that difficulties in phonological awareness (PA) and rapid automatized naming (RAN) represent two distinct causes of reading disability, with slow RAN associated with slow reading, whereas poor PA is characterized by inaccurate reading and spelling.",
+            "evidence": "Longitudinal research supports distinct subtypes with different developmental trajectories",
+            "status": "Supported by longitudinal evidence",
+            "subtypes": "PA-disabled (inaccurate), RAN-disabled (slow), double-deficit (both)",
+            "implications": "Different intervention approaches for different subtypes",
+            "clinical": "RAN tasks should be included in assessment to identify rate-disabled subtype"
+          },
+          {
+            "name": "Temporal Sampling Theory",
+            "description": "Proposes that infants and children extract a phonological system via automatic sensory-motor learning of a hierarchy of amplitude modulations nested in the amplitude envelope of the speech signal. Impaired encoding of low-frequency envelope information (<10Hz, delta and theta band) underlies phonological deficits in dyslexia.",
+            "evidence": "Explains neural entrainment deficits and temporal processing impairments",
+            "status": "Emerging theoretical framework",
+            "mechanism": "Neural oscillatory entrainment deficits",
+            "predictions": "Predicts that auditory training targeting temporal processing could improve phonological skills",
+            "research": "Active area of current research, not yet fully validated"
+          },
+          {
+            "name": "Multiple-Deficit Model",
+            "description": "Proposes that dyslexia typically occurs as a result of multiple deficits rather than a single phonological deficit, and some diagnosed cases show no phonological problems at all. Different combinations of genetic, neural, cognitive, and environmental risk factors contribute to different individual profiles.",
+            "evidence": "Recent studies suggest multiple deficits, sometimes with no phonological problems at all",
+            "status": "Gaining support",
+            "implication": "Accounts for heterogeneity in dyslexia profiles",
+            "assessment": "Comprehensive assessment should evaluate multiple cognitive domains",
+            "intervention": "Personalized interventions based on individual deficit profiles"
+          },
+          {
+            "name": "Cerebellar Theory",
+            "description": "States that poor automaticity and motor deficits in individuals with dyslexia may be associated with a dysfunction of the cerebellum.",
+            "evidence": "Mixed empirical support",
+            "status": "Controversial / Mixed evidence",
+            "caution": "Not widely accepted as primary explanation",
+            "focus": "Explains motor and automaticity deficits, but not core reading difficulties"
+          }
+        ],
+        "crossLinguistic": {
+          "title": "Cross-Linguistic Variations",
+          "overview": "Dyslexia manifests differently across languages due to orthographic depth and writing system characteristics",
+          "orthographicDepth": {
+            "transparent": {
+              "languages": "Finnish, Spanish, Italian, German",
+              "characteristics": "Consistent grapheme-phoneme correspondences",
+              "manifestation": "Less problems with accuracy, become rate-disabled with speed deficits and lack of automaticity",
+              "intervention": "Focus on fluency and automaticity"
+            },
+            "opaque": {
+              "languages": "English, Danish, French",
+              "characteristics": "Inconsistent grapheme-phoneme correspondences",
+              "manifestation": "Problems in both accuracy and speed of word reading and spelling",
+              "intervention": "Focus on both accuracy and fluency"
+            },
+            "implication": "Orthographic depth affects how dyslexia manifests and intervention approaches"
+          },
+          "biliteracy": {
+            "title": "Biliteracy Research",
+            "overview": "Studies of bilingual children reveal both associative and dissociative dyslexia subtypes",
+            "associative": "Difficulties in both languages",
+            "dissociative": "Difficulties in one language but not the other",
+            "evidence": "57% of Grade 5 children with Chinese reading difficulties did not suffer from English reading difficulties",
+            "implication": "Word reading difficulties may be language-specific rather than universal"
+          }
+        },
+        "developmentalModels": {
+          "title": "Developmental Trajectory Models",
+          "rateVsAccuracy": {
+            "overview": "Longitudinal research supports distinction between rate-disabled and accuracy-disabled subtypes",
+            "preschool": "Preschool deficits in RAN and phonological awareness predict first-grade outcomes",
+            "implication": "Different developmental trajectories and intervention needs",
+            "longitudinal": "Subtypes remain distinct across development, supporting stable individual differences"
+          },
+          "developmentalTiming": {
+            "overview": "Developmental timing framework proposes maturational asynchrony among interacting systems",
+            "systems": ["Neural", "Cognitive", "Linguistic", "Sensorimotor", "Executive"],
+            "implication": "Learning disabilities emerge from asynchronous development across multiple systems",
+            "intervention": "Should target multiple domains rather than single deficits"
+          }
+        },
+        "computationalNeural": {
+          "title": "Computational and Neural Models",
+          "domainRelevance": {
+            "overview": "Domain-relevant accounts propose widespread brain differences differentially impact domains relying on those properties",
+            "mechanism": "General processing differences that only affect domains particularly reliant on those properties",
+            "example": "Temporal processing deficits affect reading but not necessarily other domains"
+          },
+          "domainSpecific": {
+            "overview": "Domain-specific accounts point to underactivation or structural differences in specific brain regions",
+            "mechanism": "Differences in brain processing systems specific to the domain showing cognitive strength or weakness",
+            "example": "Left hemisphere language network differences specific to reading"
+          }
+        },
+        "comorbidity": {
+          "title": "Comorbidity Models",
+          "additive": {
+            "overview": "Additive model of RD-ADHD comorbidity",
+            "description": "Children with ADHD + RD exhibit more severe deficits in attention, inhibition, working memory, and RAN due to combined impairments",
+            "evidence": "Supported by additive effects in cognitive profiles",
+            "implication": "Comorbid cases require integrated intervention approaches"
+          }
+        },
+        "integrativePerspective": {
+          "title": "Integrative Perspective",
+          "overview": "No single model explains all aspects of dyslexia",
+          "approach": "Multiple models are complementary rather than mutually exclusive",
+          "clinical": "Assessment and intervention should consider multiple perspectives",
+          "future": "Research continues to refine our understanding of how these models interact"
+        }
+      },
+      "researchStats": {
+        "papers": 30,
+        "claims": 11,
+        "phase": "Phase 4 - Theoretical Models"
+      },
+      "source": {
+        "title": "Theoretical Models of Dyslexia - Phase 4 Research Synthesis",
+        "authors": "Brimo et al., Gott et al., Zheng et al., Catts et al., Leisman, Kohli et al., Li et al.",
+        "year": "2021-2026",
+        "journal": "Dyslexia, Annals of Dyslexia, European Journal of Neuroscience, Developmental Science, Behavioral Sciences",
+        "doi": "Multiple DOIs available in research database"
+      }
+    },
+    {
+      "id": "interventions",
+      "name": "Interventions",
+      "description": "Evidence-based intervention approaches from Phase 5 research",
+      "icon": "💡",
+      "color": "teal",
+      "visualMetaphor": "solution",
+      "content": {
+        "overview": "Intervention research for dyslexia includes phonological training, brain-based approaches, environmental interventions, multisensory methods, and technology-based solutions. Early intervention and remediation are critical for dyslexia outcomes. The brain remains plastic throughout life, meaning intervention can be effective at any age.",
+        "earlyIntervention": {
+          "title": "Early Intervention",
+          "overview": "Early intervention and remediation are critical for dyslexia outcomes",
+          "implication": "Early identification and intervention significantly improve outcomes",
+          "plasticity": "Brain remains plastic throughout life, allowing for intervention effectiveness at any age",
+          "criticalWindow": "Ages 5-7 represent a critical window for reading development and intervention",
+          "preschool": "Preschool screening can identify risk factors before formal reading instruction begins"
+        },
+        "phonologicalTraining": {
+          "title": "Phonological Training",
+          "overview": "Systematic instruction in phonological awareness and phonics",
+          "components": [
+            "Phoneme awareness (identifying and manipulating individual sounds)",
+            "Phonics instruction (grapheme-phoneme correspondence)",
+            "Syllable awareness and manipulation",
+            "Rhyming and alliteration activities"
+          ],
+          "effectiveness": "Well-established as evidence-based intervention for dyslexia",
+          "approaches": ["Systematic synthetic phonics", "Analogy phonics", "Embedded phonics"]
+        },
+        "multisensory": {
+          "title": "Multisensory Approaches",
+          "overview": "Teaching methods that engage multiple senses simultaneously",
+          "ortonGillingham": {
+            "name": "Orton-Gillingham Approach",
+            "description": "Structured, sequential, multisensory approach to teaching reading",
+            "principles": ["Multisensory learning", "Structured and sequential", "Individualized pace", "Diagnostic teaching"],
+            "evidence": "Widely used, though empirical support varies by implementation"
+          },
+          "otherApproaches": ["Wilson Reading System", "Lindamood-Bell", "Spalding Method"],
+          "rationale": "Engaging multiple senses may strengthen neural pathways for reading"
+        },
+        "fluencyTraining": {
+          "title": "Reading Fluency Training",
+          "overview": "Approaches to improve reading speed, accuracy, and expression",
+          "methods": [
+            "Repeated reading of the same text",
+            "Modelled reading (listening to fluent reading)",
+            "Choral reading (reading together)",
+            "Timed reading practice"
+          ],
+          "target": "Particularly important for rate-disabled subtype",
+          "outcomes": "Improved automaticity and comprehension with fluency gains"
+        },
+        "technologyBased": {
+          "title": "Technology-Based Solutions",
+          "assistiveTechnology": {
+            "overview": "Tools that support reading and writing",
+            "examples": [
+              "Text-to-speech software",
+              "Speech-to-text dictation",
+              "Audiobooks and digital text",
+              "Reading pens and scanners",
+              "Digital highlighters and note-taking tools"
+            ],
+            "benefits": "Access to content despite reading difficulties, reduces fatigue"
+          },
+          "bci": {
+            "title": "Brain-Computer Interface Approaches",
+            "overview": "Brain-Computer Interface (BCI) approaches",
+            "finding": "BCI approaches show potential for improving phonological processing in developmental dyslexia",
+            "status": "Emerging approach, exploratory study",
+            "future": "May contribute to personalized neurofeedback interventions"
+          },
+          "digitalInterventions": {
+            "overview": "Computer-based reading intervention programs",
+            "advantages": ["Individualized pacing", "Immediate feedback", "Engaging formats", "Progress tracking"],
+            "examples": ["Fast ForWord", "Reading Eggs", "Lexia Core5"]
+          }
+        },
+        "comprehensionStrategies": {
+          "title": "Comprehension Strategies",
+          "overview": "Strategies to improve understanding of text",
+          "strategies": [
+            "Previewing text before reading",
+            "Making predictions",
+            "Asking questions while reading",
+            "Visualizing content",
+            "Summarizing sections",
+            "Monitoring comprehension"
+          ],
+          "application": "Important once basic decoding skills are established"
+        },
+        "accommodations": {
+          "title": "Academic and Workplace Accommodations",
+          "overview": "Modifications that support access while maintaining standards",
+          "educational": [
+            "Extended time on tests and assignments",
+            "Quiet testing environment",
+            "Use of text-to-speech for assessments",
+            "Note-taking assistance",
+            "Reduced reading load",
+            "Alternative assessment formats"
+          ],
+          "workplace": [
+            "Assistive technology provision",
+            "Flexible work schedules",
+            "Alternative communication methods",
+            "Written instructions summarized verbally",
+            "Reduced emphasis on handwritten work"
+          ]
+        },
+        "approaches": {
+          "title": "General Intervention Approaches",
+          "note": "Phase 5 research is limited (3 claims from 26 papers) due to many intervention papers lacking proper DOIs/PMIDs for automated processing",
+          "gaps": ["Phonological training programs", "Multisensory approaches (Orton-Gillingham)", "Environmental interventions", "Personalized RTI models"],
+          "future": "Future research should focus on extracting more specific claims about intervention efficacy, effect sizes, and comparative studies"
+        },
+        "responseToIntervention": {
+          "title": "Response to Intervention (RTI)",
+          "overview": "Multi-tiered approach to identification and intervention",
+          "tiers": {
+            "tier1": "Universal classroom instruction with screening",
+            "tier2": "Targeted small-group intervention for at-risk students",
+            "tier3": "Intensive individualized intervention for non-responders"
+          },
+          "benefits": ["Early identification", "Data-driven decision making", "Prevention over remediation"]
+        }
+      },
+      "researchStats": {
+        "papers": 26,
+        "claims": 3,
+        "phase": "Phase 5 - Interventions"
+      },
+      "source": {
+        "title": "Interventions for Dyslexia - Phase 5 Research Synthesis",
+        "authors": "Zheng et al., Snowling & Hulme",
+        "year": "2024-2026",
+        "journal": "European Journal of Neuroscience, Dyslexia",
+        "doi": "Multiple DOIs available in research database"
+      }
+    },
+    {
+      "id": "controversies",
+      "name": "Controversies & Debates",
+      "description": "Ongoing debates and unresolved issues in dyslexia research from 20 verified claims",
+      "icon": "⚖️",
+      "color": "amber",
+      "visualMetaphor": "debate",
+      "content": {
+        "overview": "Dyslexia research has several ongoing controversies and debates, including assessment criteria, cross-linguistic issues, policy controversies, and neurobiological disagreements. These debates reflect the complexity of dyslexia and the diversity of perspectives in the field.",
+        "assessmentDiagnosis": {
+          "title": "Assessment and Diagnosis Controversies",
+          "delphi": {
+            "overview": "Delphi consensus definition (Carroll et al. 2025) has unresolved issues",
+            "issues": ["Ambiguity around prevalence", "Role of general cognitive functioning", "Lack of clear guidance for educators"]
+          },
+          "iqDiscrepancy": {
+            "overview": "IQ-achievement discrepancy controversy",
+            "conflict": "ICD-11 uses discrepancy criterion relative to age and IQ, while DSM-5-TR focuses on unexpected levels relative to age and educational opportunities",
+            "consensus": "No universal scientific consensus regarding role of IQ-achievement discrepancy scores",
+            "metsala": "Metsala and colleagues regard discrepancy definition as 'serious error that should be explicitly challenged'"
+          },
+          "cutoffVsContinuum": {
+            "overview": "Cut-off criteria vs continuum view",
+            "continuum": "83% of panelists agreed dyslexic difficulties exist on a continuum",
+            "cutoff": "65% agreed cut-off criteria are important (below 80% threshold for acceptance)",
+            "implication": "Continuum view has stronger consensus"
+          },
+          "cognitiveTesting": {
+            "overview": "Role of cognitive testing in assessment",
+            "delphi": "Delphi consensus supports including elements of cognitive processing",
+            "metsala": "Metsala et al. disagree with this",
+            "morsanyi": "Morsanyi et al. argue lack of clear guidance on range of cognitive tests is regrettable"
+          },
+          "stealthDyslexia": {
+            "overview": "Stealth dyslexia not addressed in definitions",
+            "description": "Individuals with high cognitive abilities who compensate for dyslexia may not meet criteria despite underlying phonological difficulties",
+            "gap": "Ongoing gap in definition"
+          },
+          "unexpectedness": {
+            "overview": "Unexpectedness and equity concerns",
+            "criticism": "Defining dyslexia in terms of unexpectedness may be inequitable for economically disadvantaged children",
+            "ida2025": "IDA 2025 removed unexpectedness language to address this concern"
+          }
+        },
+        "crossLinguistic": {
+          "title": "Cross-Linguistic and Cultural Controversies",
+          "universality": {
+            "overview": "Whether word reading difficulties are linguistically universal or specific",
+            "lcdh": "Linguistic Coding Difference Hypothesis suggests difficulty in one language implies difficulty in another",
+            "alternative": "Alternative perspective allows for difficulty in one language but not another",
+            "evidence": "Studies show both associative (both languages) and dissociative (one language) subtypes"
+          },
+          "biliteracy": {
+            "overview": "Biliteracy subtypes",
+            "finding": "57% of Grade 5 children with Chinese reading difficulties did not suffer from English reading difficulties",
+            "implication": "Evidence supports both universal and specific perspectives"
+          }
+        },
+        "policy": {
+          "title": "Policy and Educational Practice Controversies",
+          "overview": "Debates about educational policy, screening practices, and resource allocation",
+          "implications": "Different definitions and criteria affect policy decisions and resource distribution"
+        }
+      },
+      "researchStats": {
+        "papers": 36,
+        "claims": 20,
+        "phase": "Phase 6 - Controversies"
+      },
+      "source": {
+        "title": "Controversies and Debates in Dyslexia Research - Phase 6 Research Synthesis",
+        "authors": "Morsanyi et al., Carroll et al., Austin et al., Huo et al.",
+        "year": "2025-2026",
+        "journal": "Dyslexia, Annals of Dyslexia",
+        "doi": "Multiple DOIs available in research database"
+      }
+    },
+    {
+      "id": "methodology",
+      "name": "Research Methodology",
+      "description": "Research design, measurement, and statistical analysis methods from 14 verified claims",
+      "icon": "🔬",
+      "color": "slate",
+      "visualMetaphor": "method",
+      "content": {
+        "overview": "Dyslexia research employs diverse methodologies including genetic studies (GWAS), neuroimaging, cognitive assessments, and longitudinal designs. Methodological rigor is essential for valid conclusions, with attention to research design, measurement validity, and appropriate statistical analysis.",
+        "researchDesign": {
+          "title": "Research Design",
+          "caseControl": {
+            "overview": "Multi-center case-control designs commonly used",
+            "example": "948 dyslexia cases and 948 controls matched by age and sex in multi-center study",
+            "sampling": "Multi-stage stratified cluster sampling approach for participant recruitment"
+          }
+        },
+        "geneticMethodology": {
+          "title": "Genetic Research Methods",
+          "gwas": {
+            "overview": "Genome-wide association studies (GWAS)",
+            "analysis": "Logistic regression with additive model of allelic effects",
+            "control": "Genomic control to correct for population stratification",
+            "significance": "Likelihood ratio tests used to assess significance of SNPs"
+          },
+          "polygenicScores": {
+            "overview": "Polygenic risk scores calculation",
+            "method": "Classic clumping and thresholding (C+T) method",
+            "purpose": "Account for linkage disequilibrium and optimize number of included SNPs"
+          },
+          "geneticCorrelations": {
+            "overview": "Genetic correlation analysis",
+            "method": "Linkage disequilibrium score regression (LDSC)",
+            "purpose": "Estimate SNP-based heritability and pairwise genetic correlations between disorders"
+          },
+          "pleiotropy": {
+            "overview": "Pleiotropic genetic loci identification",
+            "method": "PolarMorphism polar coordinate transformation",
+            "purpose": "Identify loci associated with both dyslexia and ADHD, correcting for vertical pleiotropy and sample overlap"
+          }
+        },
+        "statisticalAnalysis": {
+          "title": "Statistical Analysis Methods",
+          "machineLearning": {
+            "overview": "Machine learning approaches",
+            "example": "XGBoost model with 5-fold cross-validation",
+            "optimization": "Hyperparameter optimization via grid search",
+            "application": "Examining associations between environmental variables and dyslexia risk"
+          },
+          "factorAnalysis": {
+            "overview": "Factor structure analysis",
+            "method": "Exploratory factor analysis (EFA) with promax rotation",
+            "purpose": "Investigate factor structure underlying genetic relationships when confirmatory models show poor fit"
+          }
+        },
+        "measurement": {
+          "title": "Measurement and Assessment",
+          "overview": "Valid and reliable measurement instruments essential for dyslexia research",
+          "considerations": ["Age-appropriate assessments", "Cross-linguistic validity", "Cultural appropriateness", "Longitudinal measurement invariance"]
+        }
+      },
+      "researchStats": {
+        "papers": 97,
+        "claims": 14,
+        "phase": "Phase 7 - Methodology"
+      },
+      "source": {
+        "title": "Research Methodology in Dyslexia Studies - Phase 7 Research Synthesis",
+        "authors": "Doust et al., Wang et al., Ciulkinyte et al.",
+        "year": "2022-2026",
+        "journal": "Nature Genetics, Translational Psychiatry, Molecular Psychiatry",
+        "doi": "Multiple DOIs available in research database"
+      }
+    }
+  ],
+  "disclaimer": "The information presented is based on 460 peer-reviewed research papers synthesized across 7 research phases with 335 verified claims. Individual experiences with dyslexia vary widely. This information is for educational purposes and is not a substitute for professional assessment or diagnosis. Always consult the original sources for complete context and methodology.",
+  "researchSummary": {
+    "totalPapers": 460,
+    "totalClaims": 335,
+    "totalPhases": 7,
+    "completionDate": "2026-10-31",
+    "methodology": "Strict-Source-Required with API-Based Research",
+    "tokenSavings": "~80% via hybrid screening approach"
+  }
+}

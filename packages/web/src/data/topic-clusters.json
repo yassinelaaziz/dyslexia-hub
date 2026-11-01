@@ -1,0 +1,351 @@
+{
+  "metadata": {
+    "totalClusters": 12,
+    "description": "Research claims organized by thematic topic clusters for better navigation and discovery",
+    "lastUpdated": "2026-10-31"
+  },
+  "clusters": [
+    {
+      "id": "definitions",
+      "name": "Definitions and Classifications",
+      "icon": "📖",
+      "color": "blue",
+      "description": "Core definitions, diagnostic criteria, and classification systems for dyslexia",
+      "phase": "phase01_foundational",
+      "keyClaims": [
+        "claim-30",
+        "claim-35",
+        "claim-61",
+        "claim-81",
+        "claim-97",
+        "claim-100"
+      ],
+      "topics": [
+        "Core phonological deficit definition",
+        "Prevalence and continuum view",
+        "IQ-discrepancy criteria",
+        "International definitions (IDA, ICD-11, DSM-5-TR)",
+        "Historical evolution of definitions",
+        "Definition controversies"
+      ],
+      "relatedClusters": ["prevalence", "diagnosis", "controversies"]
+    },
+    {
+      "id": "prevalence",
+      "name": "Prevalence and Epidemiology",
+      "icon": "📊",
+      "color": "blue",
+      "description": "Prevalence estimates, population distribution, and epidemiological patterns",
+      "phase": "phase01_foundational",
+      "keyClaims": [
+        "claim-35",
+        "claim-66"
+      ],
+      "topics": [
+        "Prevalence estimates (5-10%, 7-15%)",
+        "Continuum vs categorical views",
+        "Population distribution of reading ability",
+        "Cross-cultural prevalence differences"
+      ],
+      "relatedClusters": ["definitions", "controversies"]
+    },
+    {
+      "id": "genetics",
+      "name": "Genetic Factors",
+      "icon": "🧬",
+      "color": "green",
+      "description": "Heritability, specific genetic loci, GWAS findings, and gene-environment interactions",
+      "phase": "phase02_etiology",
+      "keyClaims": [
+        "Phase 2 genetic claims (multiple)"
+      ],
+      "topics": [
+        "Heritability estimates (40-80%)",
+        "GWAS findings (42 loci)",
+        "Specific genes (DCDC2, KIAA0319, DYX1C1)",
+        "Polygenic risk scores",
+        "Genetic correlations",
+        "Gene-environment interactions",
+        "Sex differences in genetic etiology"
+      ],
+      "relatedClusters": ["neurology", "environment", "etiology"]
+    },
+    {
+      "id": "neurology",
+      "name": "Neurological Factors",
+      "icon": "🧠",
+      "color": "purple",
+      "description": "Brain structure, function, connectivity, and neural mechanisms",
+      "phase": "phase02_etiology",
+      "keyClaims": [
+        "Phase 2 neurological claims (multiple)"
+      ],
+      "topics": [
+        "Gray matter differences",
+        "White matter connectivity",
+        "Functional activation patterns",
+        "Neural timing and oscillatory entrainment",
+        "Neuroimaging classification",
+        "Cerebellar involvement",
+        "Brain plasticity"
+      ],
+      "relatedClusters": ["genetics", "cognitive", "theoretical"]
+    },
+    {
+      "id": "cognitive",
+      "name": "Cognitive Factors",
+      "icon": "🧩",
+      "color": "green",
+      "description": "Phonological processing, RAN, working memory, attention, and processing speed",
+      "phase": "phase02_etiology",
+      "keyClaims": [
+        "Phase 2 cognitive claims (multiple)"
+      ],
+      "topics": [
+        "Phonological deficit hypothesis",
+        "Rapid automatized naming (RAN)",
+        "Double-deficit hypothesis",
+        "Working memory",
+        "Processing speed",
+        "Attention and executive function"
+      ],
+      "relatedClusters": ["neurology", "manifestations", "theoretical"]
+    },
+    {
+      "id": "environment",
+      "name": "Environmental Factors",
+      "icon": "🌍",
+      "color": "green",
+      "description": "Socioeconomic status, prenatal factors, educational quality, and environmental risks",
+      "phase": "phase02_etiology",
+      "keyClaims": [
+        "Phase 2 environmental claims (multiple)",
+        "claim-280"
+      ],
+      "topics": [
+        "Socioeconomic status",
+        "Prenatal and perinatal factors",
+        "Educational quality",
+        "Gene-environment interactions",
+        "Environmental pollutants",
+        "Parental education",
+        "Screen exposure"
+      ],
+      "relatedClusters": ["genetics", "manifestations", "interventions"]
+    },
+    {
+      "id": "manifestations",
+      "name": "Manifestations and Subtypes",
+      "icon": "🎭",
+      "color": "red",
+      "description": "Primary and secondary manifestations, subtypes, and developmental patterns",
+      "phase": "phase03_manifestations",
+      "keyClaims": [
+        "claim-273",
+        "claim-274",
+        "claim-275",
+        "claim-276",
+        "claim-278",
+        "claim-279",
+        "claim-280",
+        "claim-281",
+        "claim-282"
+      ],
+      "topics": [
+        "Primary characteristics (word-level reading)",
+        "Secondary consequences (psychological, employment)",
+        "Accuracy-disabled vs rate-disabled subtypes",
+        "Working memory deficits",
+        "Attention deficits",
+        "Maturational asynchrony",
+        "Biliteracy manifestations",
+        "Environmental risk factors"
+      ],
+      "relatedClusters": ["cognitive", "environment", "developmental"]
+    },
+    {
+      "id": "theoretical",
+      "name": "Theoretical Models",
+      "icon": "🔬",
+      "color": "indigo",
+      "description": "Major theoretical frameworks explaining dyslexia",
+      "phase": "phase04_theoretical",
+      "keyClaims": [
+        "claim-283",
+        "claim-284",
+        "claim-285",
+        "claim-286",
+        "claim-287",
+        "claim-288",
+        "claim-289",
+        "claim-291",
+        "claim-292",
+        "claim-293"
+      ],
+      "topics": [
+        "Phonological deficit hypothesis",
+        "Double-deficit hypothesis",
+        "Temporal sampling theory",
+        "Multiple-deficit model",
+        "Cerebellar theory",
+        "Cross-linguistic variations",
+        "Developmental trajectory models",
+        "Domain-relevance vs domain-specific",
+        "Comorbidity models"
+      ],
+      "relatedClusters": ["cognitive", "neurology", "developmental"]
+    },
+    {
+      "id": "interventions",
+      "name": "Interventions",
+      "icon": "💡",
+      "color": "teal",
+      "description": "Evidence-based intervention approaches and treatment strategies",
+      "phase": "phase05_interventions",
+      "keyClaims": [
+        "claim-294",
+        "claim-295",
+        "claim-296"
+      ],
+      "topics": [
+        "Early intervention",
+        "Phonological training",
+        "Multisensory approaches",
+        "Technology-based solutions (BCI)",
+        "Environmental interventions",
+        "Brain plasticity and intervention"
+      ],
+      "relatedClusters": ["neurology", "environment", "developmental"],
+      "note": "Limited claims due to many intervention papers lacking proper DOIs/PMIDs"
+    },
+    {
+      "id": "controversies",
+      "name": "Controversies and Debates",
+      "icon": "⚖️",
+      "color": "amber",
+      "description": "Ongoing debates and unresolved issues in dyslexia research",
+      "phase": "phase06_controversies",
+      "keyClaims": [
+        "claim-297",
+        "claim-298",
+        "claim-299",
+        "claim-302",
+        "claim-304",
+        "claim-305",
+        "claim-306",
+        "claim-307",
+        "claim-308"
+      ],
+      "topics": [
+        "Delphi definition limitations",
+        "IQ-discrepancy controversy",
+        "Cut-off vs continuum debate",
+        "Cognitive testing in assessment",
+        "Stealth dyslexia",
+        "Unexpectedness and equity",
+        "Cross-linguistic universality",
+        "Biliteracy subtypes",
+        "Policy controversies"
+      ],
+      "relatedClusters": ["definitions", "diagnosis", "prevalence"]
+    },
+    {
+      "id": "methodology",
+      "name": "Research Methodology",
+      "icon": "🔬",
+      "color": "slate",
+      "description": "Research design, statistical analysis, and measurement approaches",
+      "phase": "phase07_methodology",
+      "keyClaims": [
+        "claim-341",
+        "claim-342",
+        "claim-343",
+        "claim-344",
+        "claim-345",
+        "claim-347",
+        "claim-348",
+        "claim-349",
+        "claim-351",
+        "claim-356"
+      ],
+      "topics": [
+        "Research design (case-control, longitudinal)",
+        "Genetic methodology (GWAS, polygenic scores)",
+        "Genetic correlation analysis",
+        "Pleiotropy analysis",
+        "Machine learning approaches",
+        "Factor analysis",
+        "Measurement and assessment",
+        "Statistical analysis methods"
+      ],
+      "relatedClusters": ["genetics", "neurology"]
+    },
+    {
+      "id": "developmental",
+      "name": "Developmental Trajectories",
+      "icon": "📈",
+      "color": "orange",
+      "description": "How dyslexia manifests and changes across developmental stages",
+      "phase": "phase03_manifestations, phase04_theoretical",
+      "keyClaims": [
+        "claim-276",
+        "claim-284",
+        "claim-292"
+      ],
+      "topics": [
+        "Early childhood indicators",
+        "Elementary school manifestations",
+        "Adolescent challenges",
+        "Adult outcomes",
+        "Maturational asynchrony framework",
+        "Rate-disabled vs accuracy-disabled trajectories",
+        "Brain plasticity across lifespan"
+      ],
+      "relatedClusters": ["manifestations", "theoretical", "interventions"]
+    }
+  ],
+  "crossClusterRelationships": [
+    {
+      "from": "definitions",
+      "to": "controversies",
+      "relationship": "Definition debates drive many controversies",
+      "strength": "strong"
+    },
+    {
+      "from": "genetics",
+      "to": "neurology",
+      "relationship": "Genetic factors influence brain structure and function",
+      "strength": "strong"
+    },
+    {
+      "from": "cognitive",
+      "to": "theoretical",
+      "relationship": "Cognitive findings inform theoretical models",
+      "strength": "strong"
+    },
+    {
+      "from": "genetics",
+      "to": "environment",
+      "relationship": "Gene-environment interactions",
+      "strength": "moderate"
+    },
+    {
+      "from": "manifestations",
+      "to": "developmental",
+      "relationship": "Manifestations change across developmental stages",
+      "strength": "strong"
+    },
+    {
+      "from": "theoretical",
+      "to": "interventions",
+      "relationship": "Theoretical models guide intervention approaches",
+      "strength": "moderate"
+    },
+    {
+      "from": "neurology",
+      "to": "interventions",
+      "relationship": "Brain plasticity informs intervention timing",
+      "strength": "moderate"
+    }
+  ]
+}

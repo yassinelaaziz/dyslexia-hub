@@ -1,0 +1,134 @@
+{
+  "description": "Training module metadata and recommendations",
+  "version": "1.0",
+  "trainingModules": {
+    "phonological-training": {
+      "id": "phonological-training",
+      "name": "Phonological Awareness Training",
+      "description": "Practice identifying and manipulating sounds in words to improve reading accuracy",
+      "category": "phonological",
+      "difficulty": "beginner",
+      "timeCommitment": "15-20 minutes",
+      "levels": 3,
+      "prerequisites": [],
+      "targetDeficits": ["phonological"],
+      "evidenceTier": "established",
+      "efficacyRating": 9,
+      "expectedOutcomes": [
+        "Improved phoneme awareness",
+        "Better sound-letter correspondence",
+        "Enhanced decoding skills"
+      ],
+      "weeklyFrequency": 4,
+      "icon": "🔤"
+    },
+    "ran-training": {
+      "id": "ran-training",
+      "name": "Rapid Automatized Naming Training",
+      "description": "Practice rapid naming of letters, numbers, and colors to improve processing speed",
+      "category": "RAN",
+      "difficulty": "intermediate",
+      "timeCommitment": "10-15 minutes",
+      "levels": 3,
+      "prerequisites": [],
+      "targetDeficits": ["rapidNaming"],
+      "evidenceTier": "established",
+      "efficacyRating": 8,
+      "expectedOutcomes": [
+        "Faster naming speed",
+        "Improved automaticity",
+        "Better reading fluency"
+      ],
+      "weeklyFrequency": 4,
+      "icon": "⚡"
+    },
+    "working-memory": {
+      "id": "working-memory",
+      "name": "Working Memory Training",
+      "description": "Practice holding and manipulating information in memory to support reading comprehension",
+      "category": "cognitive",
+      "difficulty": "intermediate",
+      "timeCommitment": "15-20 minutes",
+      "levels": 3,
+      "prerequisites": [],
+      "targetDeficits": ["workingMemory", "attention"],
+      "evidenceTier": "emerging",
+      "efficacyRating": 7,
+      "expectedOutcomes": [
+        "Improved memory span",
+        "Better focus and attention",
+        "Enhanced comprehension"
+      ],
+      "weeklyFrequency": 3,
+      "icon": "🧠"
+    },
+    "fluency-training": {
+      "id": "fluency-training",
+      "name": "Reading Fluency Training",
+      "description": "Practice reading words, phrases, and sentences with speed and accuracy",
+      "category": "reading",
+      "difficulty": "advanced",
+      "timeCommitment": "20-25 minutes",
+      "levels": 3,
+      "prerequisites": ["phonological-training"],
+      "targetDeficits": ["phonological", "rapidNaming"],
+      "evidenceTier": "established",
+      "efficacyRating": 8,
+      "expectedOutcomes": [
+        "Improved reading speed",
+        "Better expression and prosody",
+        "Enhanced comprehension"
+      ],
+      "weeklyFrequency": 3,
+      "icon": "📖"
+    }
+  },
+  "programs": {
+    "severe_program": {
+      "name": "Intensive Training Program",
+      "description": "Comprehensive training for severe deficits",
+      "modules": ["phonological-training", "ran-training", "working-memory", "fluency-training"],
+      "sessionsPerWeek": 5,
+      "durationWeeks": 12,
+      "estimatedTotalHours": 30
+    },
+    "moderate_program": {
+      "name": "Regular Training Program",
+      "description": "Balanced training for moderate deficits",
+      "modules": ["phonological-training", "ran-training", "working-memory"],
+      "sessionsPerWeek": 4,
+      "durationWeeks": 10,
+      "estimatedTotalHours": 25
+    },
+    "mild_program": {
+      "name": "Light Training Program",
+      "description": "Focused training for mild deficits",
+      "modules": ["phonological-training", "ran-training"],
+      "sessionsPerWeek": 3,
+      "durationWeeks": 8,
+      "estimatedTotalHours": 15
+    },
+    "maintenance_program": {
+      "name": "Maintenance Program",
+      "description": "Optional training to maintain skills",
+      "modules": ["phonological-training", "fluency-training"],
+      "sessionsPerWeek": 2,
+      "durationWeeks": 4,
+      "estimatedTotalHours": 8
+    }
+  },
+  "deficitToModule": {
+    "phonological_severe": ["phonological-training", "fluency-training"],
+    "phonological_moderate": ["phonological-training"],
+    "phonological_mild": ["phonological-training"],
+    "rapidNaming_severe": ["ran-training", "fluency-training"],
+    "rapidNaming_moderate": ["ran-training"],
+    "rapidNaming_mild": ["ran-training"],
+    "workingMemory_severe": ["working-memory", "phonological-training"],
+    "workingMemory_moderate": ["working-memory"],
+    "workingMemory_mild": ["working-memory"],
+    "attention_severe": ["working-memory", "phonological-training"],
+    "attention_moderate": ["working-memory"],
+    "attention_mild": ["working-memory"]
+  }
+}

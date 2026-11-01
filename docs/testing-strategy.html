@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.github/workflows/lighthouse.yml - Dyslexia Grand Hub Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fafb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header .container {
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            padding: 0 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        nav a:hover {
+            background: #f3f4f6;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.75rem;
+            color: #374151;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.25rem 0 0.5rem;
+            color: #4b5563;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem;
+            color: #6b7280;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f9fafb;
+            font-weight: 600;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 2rem 0;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .meta {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>.github/workflows/lighthouse.yml</h1>
+            <p class="subtitle">Document  Complete</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Documentation Index</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="monorepo-structure.html">Monorepo Structure</a></li>
+                <li><a href="database-schema.html">Database Schema</a></li>
+                <li><a href="api-specification.html">API Specification</a></li>
+                <li><a href="component-library.html">Component Library</a></li>
+                <li><a href="user-journeys.html">User Journeys</a></li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+                <li><a href="development-plan.html">Development Plan</a></li>
+                <li><a href="testing-strategy.html">Testing Strategy</a></li>
+                <li><a href="deployment-plan.html">Deployment Plan</a></li>
+                <li><a href="monitoring-plan.html">Monitoring Plan</a></li>
+                <li><a href="maintenance-plan.html">Maintenance Plan</a></li>
+                <li><a href="technical-specification.html">Technical Specification</a></li>
+                <li><a href="training-system.html">Training System</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>Dyslexia Grand Hub - Testing Strategy</h1>
+
+<strong>Version:</strong> 1.0
+<strong>Date:</strong> 2026-10-31
+<strong>Author:</strong> Senior Tech Lead (Devin)
+<strong>Status:</strong> Quality Assurance Phase - Complete
+
+<hr>
+
+<h2>Testing Pyramid</h2>
+
+<pre><code>           /\
+<p>/  \</p>
+<p>/ E2E \       (10% - Critical user flows)</p>
+<p>/________\</p>
+<p>/ Integration \ (30% - Module interactions)</p>
+<p>/______________\</p>
+<p>/   Unit Tests    \ (60% - Individual functions)</p>
+<p>/__________________\</p>
+</code></pre>
+
+<hr>
+
+<h2>Unit Testing</h2>
+
+<strong>Framework:</strong> Jest + React Testing Library
+
+<strong>Coverage Goals:</strong>
+<ul>
+<li>Core business logic: 90%+</li>
+<li>Component library: 80%+</li>
+<li>Services: 85%+</li>
+</ul>
+
+<strong>Test Structure:</strong>
+<pre><code>packages/core/src/
+<p>services/</p>
+<p>screening.service.test.ts</p>
+<p>intervention.service.test.ts</p>
+<p>repositories/</p>
+<p>user.repository.test.ts</p>
+
+<p>packages/web/src/</p>
+<p>components/</p>
+<p>base/</p>
+<p>Button.test.tsx</p>
+<p>Input.test.tsx</p>
+<p>screening/</p>
+<p>ScreeningQuestion.test.tsx</p>
+</code></pre>
+
+<strong>Example Test:</strong>
+<pre><code>describe('ScreeningService', () => {
+<p>it('should calculate severity correctly', () => {</p>
+<p>const service = new ScreeningService();</p>
+<p>const scores = { phonological: 30, rapidNaming: 20, visual: 40, workingMemory: 30 };</p>
+<p>const severity = service.calculateSeverity(scores);</p>
+<p>expect(severity).toBe('severe');</p>
+<p>});</p>
+<p>});</p>
+</code></pre>
+
+<hr>
+
+<h2>Integration Testing</h2>
+
+<strong>Framework:</strong> Jest + Supertest (if API testing needed)
+
+<strong>Coverage Goals:</strong>
+<ul>
+<li>Module interactions: 75%+</li>
+<li>Data layer: 80%+</li>
+</ul>
+
+<strong>Test Structure:</strong>
+<pre><code>packages/core/tests/integration/
+<p>screening.integration.test.ts</p>
+<p>intervention.integration.test.ts</p>
+<p>sync.integration.test.ts</p>
+</code></pre>
+
+<strong>Example Test:</strong>
+<pre><code>describe('Screening Integration', () => {
+<p>it('should save screening result and retrieve it', async () => {</p>
+<p>const service = new ScreeningService();</p>
+<p>const repository = new LocalScreeningRepository();</p>
+<p>const result = await service.assessUser(8, 'en');</p>
+<p>await repository.save(result);</p>
+<p>const retrieved = await repository.findById(result.id);</p>
+<p>expect(retrieved).toEqual(result);</p>
+<p>});</p>
+<p>});</p>
+</code></pre>
+
+<hr>
+
+<h2>End-to-End Testing</h2>
+
+<strong>Framework:</strong> Playwright
+
+<strong>Coverage Goals:</strong>
+<ul>
+<li>Critical user flows: 100%</li>
+<li>Cross-browser: Major browsers covered</li>
+</ul>
+
+<strong>Test Structure:</strong>
+<pre><code>packages/web/tests/e2e/
+<p>screening.spec.ts</p>
+<p>interventions.spec.ts</p>
+<p>brain-showcase.spec.ts</p>
+<p>developmental.spec.ts</p>
+</code></pre>
+
+<strong>Example Test:</strong>
+<pre><code>test('complete screening flow', async ({ page }) => {
+<p>await page.goto('/screening/child');</p>
+<p>await page.click('[data-testid="start-screening"]');</p>
+<p>await page.fill('[data-testid="answer-input"]', 'CAT');</p>
+<p>await page.click('[data-testid="submit-answer"]');</p>
+<p>await page.waitForSelector('[data-testid="screening-results"]');</p>
+<p>expect(await page.textContent('[data-testid="severity"]')).toBe('Moderate');</p>
+<p>});</p>
+</code></pre>
+
+<hr>
+
+<h2>Accessibility Testing</h2>
+
+<strong>Framework:</strong> axe-core + Jest + Manual Screen Reader Testing
+
+<strong>Coverage Goals:</strong>
+<ul>
+<li>WCAG 2.1 AA: 100% compliance</li>
+<li>Screen reader: NVDA, JAWS, VoiceOver tested</li>
+</ul>
+
+<strong>Automated Testing:</strong>
+<pre><code>import { axe } from 'jest-axe';
+
+<p>describe('Accessibility', () => {</p>
+<p>it('should have no axe violations', async () => {</p>
+<p>const render = render(<ScreeningQuestion />);</p>
+<p>const results = await axe(container);</p>
+<p>expect(results).toHaveNoViolations();</p>
+<p>});</p>
+<p>});</p>
+</code></pre>
+
+<strong>Manual Testing:</strong>
+<ul>
+<li>NVDA (Windows)</li>
+<li>JAWS (Windows)</li>
+<li>VoiceOver (macOS)</li>
+<li>TalkBack (Android)</li>
+</ul>
+
+<strong>Checklist:</strong>
+<ul>
+<li>Keyboard navigation works</li>
+<li>Screen reader announces all content</li>
+<li>Focus indicators visible</li>
+<li>Color contrast meets WCAG AA</li>
+<li>Forms have labels</li>
+<li>Images have alt text</li>
+<li>ARIA attributes correct</li>
+</ul>
+
+<hr>
+
+<h2>Performance Testing</h2>
+
+<strong>Framework:</strong> Lighthouse CI
+
+<strong>Targets:</strong>
+<ul>
+<li>Performance: 90+</li>
+<li>Accessibility: 90+</li>
+<li>Best Practices: 90+</li>
+<li>SEO: 80+</li>
+</ul>
+
+<strong>Key Metrics:</strong>
+<ul>
+<li>First Contentful Paint: <1.5s</li>
+<li>Largest Contentful Paint: <2.5s</li>
+<li>Time to Interactive: <5s</li>
+<li>Cumulative Layout Shift: <0.1</li>
+<li>First Input Delay: <100ms</li>
+</ul>
+
+<strong>Test Automation:</strong>
+<pre><code><h1>.github/workflows/lighthouse.yml</h1>
+<p>on: [push]</p>
+<p>jobs:</p>
+<p>lighthouse:</p>
+<p>runs-on: ubuntu-latest</p>
+<p>steps:</p>
+<p>- uses: actions/checkout@v2</p>
+<p>- run: npm install</p>
+<p>- run: npm run build</p>
+<p>- run: npx lhci autorun</p>
+</code></pre>
+
+<hr>
+
+<h2>Cross-Browser Testing</h2>
+
+<strong>Browsers:</strong>
+<ul>
+<li>Chrome (latest)</li>
+<li>Firefox (latest)</li>
+<li>Safari (latest)</li>
+<li>Edge (latest)</li>
+</ul>
+
+<strong>Testing Tools:</strong>
+<ul>
+<li>BrowserStack (cloud testing)</li>
+<li>Local browser testing</li>
+</ul>
+
+<strong>Test Matrix:</strong>
+<p>| Browser | Screening | Interventions | Brain Showcase | Developmental |</p>
+<p>|---------|-----------|--------------|----------------|---------------|</p>
+<p>| Chrome  | ✓         | ✓            | ✓              | ✓             |</p>
+<p>| Firefox | ✓         | ✓            | ✓              | ✓             |</p>
+<p>| Safari  | ✓         | ✓            | ✓              | ✓             |</p>
+<p>| Edge    | ✓         | ✓            | ✓              | ✓             |</p>
+
+<hr>
+
+<h2>Testing Automation (CI Integration)</h2>
+
+<strong>GitHub Actions Workflow:</strong>
+<pre><code>name: Test
+<p>on: [push, pull_request]</p>
+<p>jobs:</p>
+<p>test:</p>
+<p>runs-on: ubuntu-latest</p>
+<p>steps:</p>
+<p>- uses: actions/checkout@v2</p>
+<p>- uses: actions/setup-node@v2</p>
+<p>- run: npm install</p>
+<p>- run: npm run test:unit</p>
+<p>- run: npm run test:integration</p>
+<p>- run: npm run test:e2e</p>
+<p>- run: npm run test:a11y</p>
+<p>- run: npm run test:lighthouse</p>
+</code></pre>
+
+<hr>
+
+<h2>Manual Testing Procedures</h2>
+
+<strong>Pre-Release Checklist:</strong>
+<ul>
+<li>[ ] All automated tests pass</li>
+<li>[ ] Manual accessibility testing (screen readers)</li>
+<li>[ ] Manual cross-browser testing</li>
+<li>[ ] Manual mobile testing (iOS, Android)</li>
+<li>[ ] Performance testing on real devices</li>
+<li>[ ] Beta testing with target users</li>
+</ul>
+
+<strong>Beta Testing Protocol:</strong>
+<ol>
+<li>Recruit 5-10 users matching Alex persona</li>
+<li>Provide testing instructions</li>
+<li>Collect feedback via surveys</li>
+<li>Analyze feedback and prioritize fixes</li>
+<li>Iterate and re-test</li>
+</ol>
+
+<hr>
+
+<h2>Conclusion</h2>
+
+<p>This testing strategy provides:</p>
+<ul>
+<li><strong>Testing Pyramid:</strong> Unit → Integration → E2E</li>
+<li><strong>Test Frameworks:</strong> Jest, Playwright, axe-core, Lighthouse</li>
+<li><strong>Accessibility Testing:</strong> Automated + manual screen reader testing</li>
+<li><strong>Performance Targets:</strong> Lighthouse scores defined</li>
+<li><strong>Cross-Browser Matrix:</strong> 4 major browsers</li>
+<li><strong>Testing Automation:</strong> CI/CD integration</li>
+<li><strong>Manual Testing:</strong> Pre-release checklist and beta testing</li>
+</ul>
+
+<hr>
+
+<strong>Document Status:</strong> Complete
+<strong>Next Step:</strong> Deployment Plan (Phase 6)
+
+        </div>
+    </div>
+</body>
+</html>

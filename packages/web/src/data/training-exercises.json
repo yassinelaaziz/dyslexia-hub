@@ -1,0 +1,2525 @@
+{
+  "exercises": {
+    "phonological-training": {
+      "name": "Phonological Awareness Training",
+      "description": "Practice identifying and manipulating sounds in words through phoneme deletion, substitution, and blending",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Phoneme Deletion",
+          "instructions": "Say the word without the specified sound. Type your answer.",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "word": "cat",
+              "instruction": "Say 'cat' without the 'c' sound",
+              "answer": "at",
+              "hint": "Remove the first sound"
+            },
+            {
+              "word": "dog",
+              "instruction": "Say 'dog' without the 'g' sound",
+              "answer": "do",
+              "hint": "Remove the last sound"
+            },
+            {
+              "word": "star",
+              "instruction": "Say 'star' without the 't' sound",
+              "answer": "sar",
+              "hint": "Remove the middle sound"
+            },
+            {
+              "word": "play",
+              "instruction": "Say 'play' without the 'p' sound",
+              "answer": "lay",
+              "hint": "Remove the first sound"
+            },
+            {
+              "word": "green",
+              "instruction": "Say 'green' without the 'n' sound",
+              "answer": "gree",
+              "hint": "Remove the last sound"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Phoneme Substitution",
+          "instructions": "Change one sound to make a new word. Type the new word.",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "word": "cat",
+              "instruction": "Change 'cat' to 'bat' (change the first sound)",
+              "answer": "bat",
+              "hint": "Replace 'c' with 'b'"
+            },
+            {
+              "word": "map",
+              "instruction": "Change 'map' to 'mop' (change the vowel)",
+              "answer": "mop",
+              "hint": "Replace 'a' with 'o'"
+            },
+            {
+              "word": "pin",
+              "instruction": "Change 'pin' to 'pit' (change the last sound)",
+              "answer": "pit",
+              "hint": "Replace 'n' with 't'"
+            },
+            {
+              "word": "boat",
+              "instruction": "Change 'boat' to 'coat' (change the first sound)",
+              "answer": "coat",
+              "hint": "Replace 'b' with 'c'"
+            },
+            {
+              "word": "ship",
+              "instruction": "Change 'ship' to 'shop' (change the vowel)",
+              "answer": "shop",
+              "hint": "Replace 'i' with 'o'"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Phoneme Blending",
+          "instructions": "Combine the sounds to make a word. Type the word.",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "sounds": ["c", "a", "t"],
+              "instruction": "Blend these sounds: c - a - t",
+              "answer": "cat",
+              "hint": "Put the sounds together"
+            },
+            {
+              "sounds": ["b", "l", "a", "ck"],
+              "instruction": "Blend these sounds: b - l - a - ck",
+              "answer": "black",
+              "hint": "Put the sounds together"
+            },
+            {
+              "sounds": ["s", "tr", "ee", "t"],
+              "instruction": "Blend these sounds: s - tr - ee - t",
+              "answer": "street",
+              "hint": "Put the sounds together"
+            },
+            {
+              "sounds": ["br", "ea", "k"],
+              "instruction": "Blend these sounds: br - ea - k",
+              "answer": "break",
+              "hint": "Put the sounds together"
+            },
+            {
+              "sounds": ["cl", "ou", "d"],
+              "instruction": "Blend these sounds: cl - ou - d",
+              "answer": "cloud",
+              "hint": "Put the sounds together"
+            }
+          ]
+        }
+      ]
+    },
+    "ran-training": {
+      "name": "Rapid Automized Naming Training",
+      "description": "Practice rapid naming of items in a grid to improve processing speed",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Letter Grid - Basic",
+          "instructions": "Name each letter in the grid as quickly as possible, from left to right, top to bottom",
+          "exerciseType": "timed-grid",
+          "exercises": [
+            {
+              "items": ["A", "B", "C", "D", "E", "F", "G", "H", "I"],
+              "type": "letters",
+              "rows": 3,
+              "cols": 3,
+              "targetTime": 8
+            },
+            {
+              "items": ["K", "L", "M", "N", "O", "P", "Q", "R", "S"],
+              "type": "letters",
+              "rows": 3,
+              "cols": 3,
+              "targetTime": 8
+            },
+            {
+              "items": ["T", "U", "V", "W", "X", "Y", "Z", "A", "B"],
+              "type": "letters",
+              "rows": 3,
+              "cols": 3,
+              "targetTime": 8
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Number Grid - Mixed",
+          "instructions": "Name each number in the grid as quickly as possible, from left to right, top to bottom",
+          "exerciseType": "timed-grid",
+          "exercises": [
+            {
+              "items": ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+              "type": "numbers",
+              "rows": 3,
+              "cols": 3,
+              "targetTime": 7
+            },
+            {
+              "items": ["12", "15", "8", "20", "3", "11", "7", "14", "9"],
+              "type": "numbers",
+              "rows": 3,
+              "cols": 3,
+              "targetTime": 10
+            },
+            {
+              "items": ["25", "13", "17", "30", "42", "18", "55", "21", "19"],
+              "type": "numbers",
+              "rows": 3,
+              "cols": 3,
+              "targetTime": 12
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Color Grid - Advanced",
+          "instructions": "Name each color in the grid as quickly as possible, from left to right, top to bottom",
+          "exerciseType": "timed-grid",
+          "exercises": [
+            {
+              "items": ["red", "blue", "green", "yellow", "orange", "purple", "pink", "brown", "black"],
+              "type": "colors",
+              "rows": 3,
+              "cols": 3,
+              "targetTime": 10
+            },
+            {
+              "items": ["white", "gray", "cyan", "magenta", "lime", "navy", "teal", "olive", "maroon"],
+              "type": "colors",
+              "rows": 3,
+              "cols": 3,
+              "targetTime": 12
+            }
+          ]
+        }
+      ]
+    },
+    "orton-gillingham": {
+      "name": "Orton-Gillingham Approach",
+      "description": "Multisensory structured literacy instruction using visual, auditory, and kinesthetic pathways",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Letter-Sound Association",
+          "instructions": "Practice associating letters with their sounds using multisensory methods",
+          "exerciseType": "visual-feedback",
+          "exercises": [
+            {
+              "letter": "b",
+              "sound": "buh",
+              "prompt": "Trace the letter 'b' while saying 'buh'",
+              "visualHint": "Show a bat picture representing 'buh' sound"
+            },
+            {
+              "letter": "d",
+              "sound": "duh",
+              "prompt": "Trace the letter 'd' while saying 'duh'",
+              "visualHint": "Show a dog picture representing 'duh' sound"
+            },
+            {
+              "letter": "f",
+              "sound": "fff",
+              "prompt": "Trace the letter 'f' while saying 'fff'",
+              "visualHint": "Show a fish picture representing 'fff' sound"
+            },
+            {
+              "letter": "m",
+              "sound": "mmm",
+              "prompt": "Trace the letter 'm' while saying 'mmm'",
+              "visualHint": "Show a mouth picture representing 'mmm' sound"
+            },
+            {
+              "letter": "s",
+              "sound": "sss",
+              "prompt": "Trace the letter 's' while saying 'sss'",
+              "visualHint": "Show a snake picture representing 'sss' sound"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Syllable Division",
+          "instructions": "Practice breaking words into syllables for decoding",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "word": "basketball",
+              "instruction": "Divide 'basketball' into syllables",
+              "answer": "bas-ket-ball",
+              "hint": "Look for vowel sounds"
+            },
+            {
+              "word": "wonderful",
+              "instruction": "Divide 'wonderful' into syllables",
+              "answer": "won-der-ful",
+              "hint": "Look for vowel sounds"
+            },
+            {
+              "word": "elephant",
+              "instruction": "Divide 'elephant' into syllables",
+              "answer": "el-e-phant",
+              "hint": "Look for vowel sounds"
+            },
+            {
+              "word": "computer",
+              "instruction": "Divide 'computer' into syllables",
+              "answer": "com-pu-ter",
+              "hint": "Look for vowel sounds"
+            },
+            {
+              "word": "butterfly",
+              "instruction": "Divide 'butterfly' into syllables",
+              "answer": "but-ter-fly",
+              "hint": "Look for vowel sounds"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Word Building",
+          "instructions": "Build words using learned phonics patterns",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "sounds": ["c", "a", "t"],
+              "instruction": "Build a word from these sounds: c - a - t",
+              "answer": "cat",
+              "hint": "Blend the sounds together"
+            },
+            {
+              "sounds": ["sh", "i", "p"],
+              "instruction": "Build a word from these sounds: sh - i - p",
+              "answer": "ship",
+              "hint": "Blend the sounds together"
+            },
+            {
+              "sounds": ["ch", "a", "r", "t"],
+              "instruction": "Build a word from these sounds: ch - a - r - t",
+              "answer": "chart",
+              "hint": "Blend the sounds together"
+            },
+            {
+              "sounds": ["th", "i", "nk"],
+              "instruction": "Build a word from these sounds: th - i - nk",
+              "answer": "think",
+              "hint": "Blend the sounds together"
+            },
+            {
+              "sounds": ["st", "a", "r"],
+              "instruction": "Build a word from these sounds: st - a - r",
+              "answer": "star",
+              "hint": "Blend the sounds together"
+            }
+          ]
+        }
+      ]
+    },
+    "multisensory-structured": {
+      "name": "Multisensory Structured Language Education",
+      "description": "Instruction that simultaneously engages visual, auditory, kinesthetic, and tactile pathways",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Visual-Tactile Tracing",
+          "instructions": "Trace letters in sand while saying their sounds",
+          "exerciseType": "visual-feedback",
+          "exercises": [
+            {
+              "letter": "a",
+              "sound": "ah",
+              "prompt": "Imagine tracing 'a' in sand while saying 'ah'",
+              "visualHint": "Show apple picture for 'ah' sound"
+            },
+            {
+              "letter": "e",
+              "sound": "eh",
+              "prompt": "Imagine tracing 'e' in sand while saying 'eh'",
+              "visualHint": "Show egg picture for 'eh' sound"
+            },
+            {
+              "letter": "i",
+              "sound": "ih",
+              "prompt": "Imagine tracing 'i' in sand while saying 'ih'",
+              "visualHint": "Show igloo picture for 'ih' sound"
+            },
+            {
+              "letter": "o",
+              "sound": "ah",
+              "prompt": "Imagine tracing 'o' in sand while saying 'ah'",
+              "visualHint": "Show octopus picture for 'ah' sound"
+            },
+            {
+              "letter": "u",
+              "sound": "uh",
+              "prompt": "Imagine tracing 'u' in sand while saying 'uh'",
+              "visualHint": "Show umbrella picture for 'uh' sound"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Air Writing",
+          "instructions": "Write letters in the air while saying their sounds",
+          "exerciseType": "visual-feedback",
+          "exercises": [
+            {
+              "letter": "b",
+              "sound": "buh",
+              "prompt": "Write 'b' in the air with your finger while saying 'buh'",
+              "visualHint": "Show ball picture for 'buh' sound"
+            },
+            {
+              "letter": "d",
+              "sound": "duh",
+              "prompt": "Write 'd' in the air with your finger while saying 'duh'",
+              "visualHint": "Show duck picture for 'duh' sound"
+            },
+            {
+              "letter": "p",
+              "sound": "puh",
+              "prompt": "Write 'p' in the air with your finger while saying 'puh'",
+              "visualHint": "Show pig picture for 'puh' sound"
+            },
+            {
+              "letter": "t",
+              "sound": "tuh",
+              "prompt": "Write 't' in the air with your finger while saying 'tuh'",
+              "visualHint": "Show turtle picture for 'tuh' sound"
+            },
+            {
+              "letter": "v",
+              "sound": "vuh",
+              "prompt": "Write 'v' in the air with your finger while saying 'vuh'",
+              "visualHint": "Show violin picture for 'vuh' sound"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Multisensory Word Building",
+          "instructions": "Build words using multiple sensory modalities",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "word": "map",
+              "instruction": "Write 'map' in the air, say the sounds, then type the word",
+              "answer": "map",
+              "hint": "Use your finger to write each letter"
+            },
+            {
+              "word": "sit",
+              "instruction": "Write 'sit' in the air, say the sounds, then type the word",
+              "answer": "sit",
+              "hint": "Use your finger to write each letter"
+            },
+            {
+              "word": "nap",
+              "instruction": "Write 'nap' in the air, say the sounds, then type the word",
+              "answer": "nap",
+              "hint": "Use your finger to write each letter"
+            },
+            {
+              "word": "pen",
+              "instruction": "Write 'pen' in the air, say the sounds, then type the word",
+              "answer": "pen",
+              "hint": "Use your finger to write each letter"
+            },
+            {
+              "word": "cup",
+              "instruction": "Write 'cup' in the air, say the sounds, then type the word",
+              "answer": "cup",
+              "hint": "Use your finger to write each letter"
+            }
+          ]
+        }
+      ]
+    },
+    "fluency-training": {
+      "name": "Reading Fluency Training",
+      "description": "Practice reading passages with speed, accuracy, and proper expression",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Short Passages",
+          "instructions": "Read the passage aloud at your natural pace. Time yourself and track your words per minute.",
+          "exerciseType": "timed-reading",
+          "exercises": [
+            {
+              "passage": "The sun rises in the east each morning. It brings light to the world. Birds sing in the trees. The day begins with new hope.",
+              "wordCount": 28,
+              "targetTime": 20,
+              "targetWPM": 84
+            },
+            {
+              "passage": "Water flows down the river. Fish swim in the clear water. Trees grow along the bank. The river moves to the sea.",
+              "wordCount": 25,
+              "targetTime": 18,
+              "targetWPM": 83
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Medium Passages",
+          "instructions": "Read the passage aloud with proper expression. Time yourself and track your words per minute.",
+          "exerciseType": "timed-reading",
+          "exercises": [
+            {
+              "passage": "The ancient forest was home to many creatures. Tall trees reached for the sky, their leaves creating a green canopy. Birds nested in the branches, singing their morning songs. Deer walked quietly through the underbrush, alert for any danger.",
+              "wordCount": 42,
+              "targetTime": 30,
+              "targetWPM": 84
+            },
+            {
+              "passage": "Science teaches us about the world. Through observation and experiment, we discover how things work. From the smallest atoms to the largest galaxies, everything follows natural laws. Curiosity drives scientists to ask questions and seek answers.",
+              "wordCount": 39,
+              "targetTime": 28,
+              "targetWPM": 83
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Long Passages",
+          "instructions": "Read the passage aloud with good pacing and expression. Time yourself and track your words per minute.",
+          "exerciseType": "timed-reading",
+          "exercises": [
+            {
+              "passage": "The city library stood at the heart of the town, its stone walls weathered by time. Inside, shelves lined every wall, filled with books of every kind. People of all ages came to read, study, and learn. The librarian knew every book and could help anyone find what they needed. It was a place of quiet discovery and endless knowledge.",
+              "wordCount": 58,
+              "targetTime": 40,
+              "targetWPM": 87
+            },
+            {
+              "passage": "Understanding how the brain learns to read is fascinating. When we read, multiple brain regions work together. Visual areas recognize letters, language areas process sounds and meanings, and memory areas connect new information with what we already know. With practice, reading becomes automatic and effortless.",
+              "wordCount": 51,
+              "targetTime": 35,
+              "targetWPM": 87
+            }
+          ]
+        }
+      ]
+    },
+    "comprehension-strategies": {
+      "name": "Reading Comprehension Strategies",
+      "description": "Practice strategies to understand and remember what you read",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Main Idea Identification",
+          "instructions": "Read the passage and identify the main idea from the options",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "passage": "Dogs are loyal companions. They provide comfort and protection to their owners. Many people consider dogs part of their family.",
+              "question": "What is the main idea of this passage?",
+              "options": ["Dogs are dangerous animals", "Dogs are loyal companions", "Dogs need lots of food", "Dogs cannot be trained"],
+              "correctAnswer": 1,
+              "hint": "Look for the most important point"
+            },
+            {
+              "passage": "The sun provides light and warmth to Earth. Plants need sunlight to grow. Animals depend on plants for food.",
+              "question": "What is the main idea of this passage?",
+              "options": ["The sun is hot", "The sun is important for life", "Animals eat plants", "Plants grow in soil"],
+              "correctAnswer": 1,
+              "hint": "Think about what connects all the sentences"
+            },
+            {
+              "passage": "Reading every day improves vocabulary. It also helps with spelling. Regular reading makes you a better writer.",
+              "question": "What is the main idea of this passage?",
+              "options": ["Reading is boring", "Reading has many benefits", "Books are expensive", "Writing is hard"],
+              "correctAnswer": 1,
+              "hint": "What positive outcomes are mentioned?"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Making Inferences",
+          "instructions": "Read the passage and make logical inferences",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "passage": "Sarah looked out the window and frowned. She grabbed her umbrella and put on her raincoat.",
+              "question": "What can you infer about the weather?",
+              "options": ["It is sunny", "It is raining or about to rain", "It is snowing", "It is windy"],
+              "correctAnswer": 1,
+              "hint": "What do Sarah's actions suggest?"
+            },
+            {
+              "passage": "The boy studied every night for a week. When he got his test back, he smiled broadly.",
+              "question": "What can you infer about the test?",
+              "options": ["He failed the test", "He did well on the test", "He didn't take the test", "He lost the test"],
+              "correctAnswer": 1,
+              "hint": "What does his smile suggest?"
+            },
+            {
+              "passage": "The plants in the garden were wilting. The leaves were turning brown. The soil was dry and cracked.",
+              "question": "What can you infer the plants need?",
+              "options": ["More sunlight", "Less water", "More water", "Fertilizer"],
+              "correctAnswer": 2,
+              "hint": "What does the dry soil suggest?"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Summarization",
+          "instructions": "Read the passage and choose the best summary",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "passage": "The invention of the printing press changed the world. Before it, books were copied by hand and were very expensive. After the printing press, books became cheaper and more people could read. This led to more education and the spread of ideas.",
+              "question": "Which is the best summary?",
+              "options": ["Books were always cheap", "The printing press made books cheaper and increased education", "People stopped reading", "Hand copying was better"],
+              "correctAnswer": 1,
+              "hint": "What was the main effect of the printing press?"
+            },
+            {
+              "passage": "Regular exercise has many health benefits. It strengthens the heart, improves muscle tone, and helps maintain a healthy weight. Exercise also releases chemicals that improve mood. People who exercise regularly often feel happier and have more energy.",
+              "question": "Which is the best summary?",
+              "options": ["Exercise is dangerous", "Exercise only helps muscles", "Exercise improves physical and mental health", "Everyone should run marathons"],
+              "correctAnswer": 2,
+              "hint": "What are the different benefits mentioned?"
+            },
+            {
+              "passage": "Bees are essential for agriculture. They pollinate flowers, which allows plants to produce fruits and vegetables. Without bees, many crops would fail. This would affect food supplies around the world. Protecting bee populations is important for food security.",
+              "question": "Which is the best summary?",
+              "options": ["Bees are pests", "Bees are important for food production", "Bees only live in gardens", "All plants need bees"],
+              "correctAnswer": 1,
+              "hint": "What is the connection between bees and food?"
+            }
+          ]
+        }
+      ]
+    },
+    "assistive-technology": {
+      "name": "Assistive Technology Training",
+      "description": "Learn to use text-to-speech, speech-to-text, and other assistive tools",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Text-to-Speech Basics",
+          "instructions": "Learn when and how to use text-to-speech tools",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You have a long reading assignment and you're feeling tired.",
+              "question": "When would text-to-speech be most helpful?",
+              "options": ["When writing an essay", "When reading a long text", "When doing math", "When drawing pictures"],
+              "correctAnswer": 1,
+              "hint": "Text-to-speech reads text aloud"
+            },
+            {
+              "scenario": "You need to understand the main ideas of a chapter quickly.",
+              "question": "How can text-to-speech help?",
+              "options": ["It makes you read faster", "It lets you listen while following along", "It writes for you", "It does math problems"],
+              "correctAnswer": 1,
+              "hint": "Think about listening and reading together"
+            },
+            {
+              "scenario": "You're proofreading your essay.",
+              "question": "How can text-to-speech help with proofreading?",
+              "options": ["It writes the essay", "It reads your writing aloud so you can hear errors", "It grades your essay", "It prints your essay"],
+              "correctAnswer": 1,
+              "hint": "Hearing your writing can help catch mistakes"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Speech-to-Text Basics",
+          "instructions": "Learn when and how to use speech-to-text tools",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You have great ideas but typing is slow and difficult for you.",
+              "question": "When would speech-to-text be most helpful?",
+              "options": ["When reading a book", "When writing or typing", "When doing math", "When drawing"],
+              "correctAnswer": 1,
+              "hint": "Speech-to-text converts speech to text"
+            },
+            {
+              "scenario": "You need to write a quick email but your hands are busy.",
+              "question": "How can speech-to-text help?",
+              "options": ["It reads emails", "It lets you dictate your message", "It sends emails automatically", "It deletes emails"],
+              "correctAnswer": 1,
+              "hint": "Dictation means speaking to write"
+            },
+            {
+              "scenario": "You want to take notes during a lecture.",
+              "question": "What's a good use of speech-to-text?",
+              "options": ["To listen to the lecture", "To dictate your notes quickly", "To take pictures", "To record audio only"],
+              "correctAnswer": 1,
+              "hint": "Think about fast note-taking"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Tool Selection",
+          "instructions": "Choose the right assistive tool for different situations",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You need to read a 20-page article for class.",
+              "question": "Which tool would be most helpful?",
+              "options": ["Speech-to-text", "Text-to-speech", "Calculator", "Drawing tool"],
+              "correctAnswer": 1,
+              "hint": "You need to read, not write"
+            },
+            {
+              "scenario": "You need to write a 5-page essay.",
+              "question": "Which tool would be most helpful?",
+              "options": ["Text-to-speech", "Speech-to-text", "Video player", "Music player"],
+              "correctAnswer": 1,
+              "hint": "You need to write, not read"
+            },
+            {
+              "scenario": "You need to both read research and write notes.",
+              "question": "Which approach would be best?",
+              "options": ["Use only text-to-speech", "Use only speech-to-text", "Use both tools together", "Use neither tool"],
+              "correctAnswer": 2,
+              "hint": "Different tools help with different tasks"
+            }
+          ]
+        }
+      ]
+    },
+    "accommodations": {
+      "name": "Classroom Accommodations Training",
+      "description": "Learn about and practice using classroom accommodations",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Understanding Accommodations",
+          "instructions": "Learn about different types of accommodations",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You need extra time to complete tests because you read slowly.",
+              "question": "Which accommodation would help?",
+              "options": ["Extended time on tests", "Shorter tests", "No tests", "Harder tests"],
+              "correctAnswer": 0,
+              "hint": "More time helps with slow reading"
+            },
+            {
+              "scenario": "You get distracted easily in a noisy classroom.",
+              "question": "Which accommodation would help?",
+              "options": ["More noise", "Quiet testing environment", "Larger class", "No seating arrangement"],
+              "correctAnswer": 1,
+              "hint": "Less distraction helps with focus"
+            },
+            {
+              "scenario": "You have trouble writing answers on paper tests.",
+              "question": "Which accommodation would help?",
+              "options": ["Oral testing", "Written testing only", "No testing", "Handwritten tests only"],
+              "correctAnswer": 0,
+              "hint": "Speaking answers instead of writing"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Self-Advocacy Scenarios",
+          "instructions": "Practice advocating for your accommodation needs",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "Your teacher forgot to give you extended time on a test.",
+              "question": "What should you do?",
+              "options": ["Say nothing and rush", "Remind the teacher about your accommodation", "Give up on the test", "Ask for harder work"],
+              "correctAnswer": 1,
+              "hint": "It's okay to remind teachers"
+            },
+            {
+              "scenario": "You're assigned a group project and are worried about the reading load.",
+              "question": "What should you do?",
+              "options": ["Do all the work yourself", "Ask the teacher about accommodations for the project", "Drop the class", "Refuse to participate"],
+              "correctAnswer": 1,
+              "hint": "Accommodations apply to group work too"
+            },
+            {
+              "scenario": "A new teacher doesn't know about your accommodations.",
+              "question": "What should you do?",
+              "options": ["Keep it a secret", "Explain your accommodations to the teacher", "Hope they figure it out", "Complain to other students"],
+              "correctAnswer": 1,
+              "hint": "Teachers need to know to help you"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Accommodation Selection",
+          "instructions": "Choose the right accommodation for different situations",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You have an essay due but typing is very slow for you.",
+              "question": "Which accommodation would help?",
+              "options": ["Extended time", "Speech-to-text for writing", "No essay", "Handwrite only"],
+              "correctAnswer": 1,
+              "hint": "Think about tools that help with writing"
+            },
+            {
+              "scenario": "You need to take notes during lectures but miss information.",
+              "question": "Which accommodation would help?",
+              "options": ["No notes", "Copies of teacher's notes or peer notes", "Take no notes ever", "Record everything"],
+              "correctAnswer": 1,
+              "hint": "Getting complete notes helps"
+            },
+            {
+              "scenario": "You have trouble reading aloud in class.",
+              "question": "Which accommodation would help?",
+              "options": ["Read louder", "Read in private with the teacher", "Never read", "Read faster"],
+              "correctAnswer": 1,
+              "hint": "Private reading reduces anxiety"
+            }
+          ]
+        }
+      ]
+    },
+    "working-memory": {
+      "name": "Working Memory Training",
+      "description": "Practice holding and manipulating information in memory through span tasks and n-back exercises",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Digit Span - Forward",
+          "instructions": "Memorize the sequence of numbers, then enter them in the same order",
+          "exerciseType": "sequence-recall",
+          "exercises": [
+            {
+              "sequence": [3, 7, 2, 8],
+              "length": 4,
+              "reverse": false,
+              "displayTime": 3
+            },
+            {
+              "sequence": [5, 1, 8, 4, 9],
+              "length": 5,
+              "reverse": false,
+              "displayTime": 4
+            },
+            {
+              "sequence": [2, 6, 3, 7, 1, 5],
+              "length": 6,
+              "reverse": false,
+              "displayTime": 5
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Digit Span - Backward",
+          "instructions": "Memorize the sequence of numbers, then enter them in reverse order",
+          "exerciseType": "sequence-recall",
+          "exercises": [
+            {
+              "sequence": [3, 7, 2, 8],
+              "length": 4,
+              "reverse": true,
+              "displayTime": 4
+            },
+            {
+              "sequence": [5, 1, 8, 4, 9],
+              "length": 5,
+              "reverse": true,
+              "displayTime": 5
+            },
+            {
+              "sequence": [2, 6, 3, 7, 1, 5],
+              "length": 6,
+              "reverse": true,
+              "displayTime": 6
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Word Span - Advanced",
+          "instructions": "Memorize the sequence of words, then enter them in the specified order",
+          "exerciseType": "sequence-recall",
+          "exercises": [
+            {
+              "words": ["forest", "river", "mountain", "sky"],
+              "length": 4,
+              "reverse": false,
+              "displayTime": 5
+            },
+            {
+              "words": ["discover", "explore", "learn", "understand", "create"],
+              "length": 5,
+              "reverse": false,
+              "displayTime": 6
+            },
+            {
+              "words": ["morning", "afternoon", "evening", "night", "dawn", "dusk"],
+              "length": 6,
+              "reverse": true,
+              "displayTime": 7
+            }
+          ]
+        }
+      ]
+    },
+    "bci-phonological": {
+      "name": "BCI-Based Phonological Training",
+      "description": "Simulated brain-computer interface exercises for phonological processing",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Focus Training",
+          "instructions": "Practice maintaining focus on sounds (simulated BCI)",
+          "exerciseType": "visual-feedback",
+          "exercises": [
+            {
+              "sound": "ah",
+              "prompt": "Focus your attention on the sound 'ah'. Imagine a brain signal strengthening.",
+              "visualHint": "Show a brain image lighting up when focused"
+            },
+            {
+              "sound": "ee",
+              "prompt": "Focus your attention on the sound 'ee'. Imagine a brain signal strengthening.",
+              "visualHint": "Show a brain image lighting up when focused"
+            },
+            {
+              "sound": "oo",
+              "prompt": "Focus your attention on the sound 'oo'. Imagine a brain signal strengthening.",
+              "visualHint": "Show a brain image lighting up when focused"
+            },
+            {
+              "sound": "ih",
+              "prompt": "Focus your attention on the sound 'ih'. Imagine a brain signal strengthening.",
+              "visualHint": "Show a brain image lighting up when focused"
+            },
+            {
+              "sound": "uh",
+              "prompt": "Focus your attention on the sound 'uh'. Imagine a brain signal strengthening.",
+              "visualHint": "Show a brain image lighting up when focused"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Sound Discrimination",
+          "instructions": "Practice distinguishing between similar sounds",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "sounds": ["b", "p"],
+              "question": "Which sound is voiced (uses vocal cords)?",
+              "options": ["b", "p", "both", "neither"],
+              "correctAnswer": 0,
+              "hint": "Touch your throat - voiced sounds vibrate"
+            },
+            {
+              "sounds": ["d", "t"],
+              "question": "Which sound is voiced (uses vocal cords)?",
+              "options": ["d", "t", "both", "neither"],
+              "correctAnswer": 0,
+              "hint": "Touch your throat - voiced sounds vibrate"
+            },
+            {
+              "sounds": ["v", "f"],
+              "question": "Which sound is voiced (uses vocal cords)?",
+              "options": ["v", "f", "both", "neither"],
+              "correctAnswer": 0,
+              "hint": "Touch your throat - voiced sounds vibrate"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Neurofeedback Simulation",
+          "instructions": "Simulated neurofeedback for phonological awareness",
+          "exerciseType": "visual-feedback",
+          "exercises": [
+            {
+              "task": "Phoneme identification",
+              "prompt": "Imagine your brain activity increasing as you identify phonemes",
+              "visualHint": "Show a graph representing brain activity"
+            },
+            {
+              "task": "Sound blending",
+              "prompt": "Imagine your brain activity increasing as you blend sounds",
+              "visualHint": "Show a graph representing brain activity"
+            },
+            {
+              "task": "Phoneme manipulation",
+              "prompt": "Imagine your brain activity increasing as you manipulate sounds",
+              "visualHint": "Show a graph representing brain activity"
+            }
+          ]
+        }
+      ]
+    },
+    "early-intervention": {
+      "name": "Early Intervention and Remediation",
+      "description": "Pre-reading skills for early intervention",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Letter Recognition",
+          "instructions": "Practice recognizing letter shapes",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "letter": "A",
+              "question": "Which letter is this?",
+              "options": ["A", "B", "C", "D"],
+              "correctAnswer": 0,
+              "hint": "This letter has a point at the top"
+            },
+            {
+              "letter": "B",
+              "question": "Which letter is this?",
+              "options": ["A", "B", "C", "D"],
+              "correctAnswer": 1,
+              "hint": "This letter has two bumps"
+            },
+            {
+              "letter": "C",
+              "question": "Which letter is this?",
+              "options": ["A", "B", "C", "D"],
+              "correctAnswer": 2,
+              "hint": "This letter is curved like a crescent"
+            },
+            {
+              "letter": "D",
+              "question": "Which letter is this?",
+              "options": ["A", "B", "C", "D"],
+              "correctAnswer": 3,
+              "hint": "This letter has one straight line and one curve"
+            },
+            {
+              "letter": "E",
+              "question": "Which letter is this?",
+              "options": ["E", "F", "G", "H"],
+              "correctAnswer": 0,
+              "hint": "This letter has three horizontal lines"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Letter-Sound Matching",
+          "instructions": "Match letters with their sounds",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "letter": "m",
+              "question": "What sound does 'm' make?",
+              "options": ["buh", "muh", "nuh", "puh"],
+              "correctAnswer": 1,
+              "hint": "This sound is like humming"
+            },
+            {
+              "letter": "s",
+              "question": "What sound does 's' make?",
+              "options": ["sss", "ttt", "mmm", "nnn"],
+              "correctAnswer": 0,
+              "hint": "This sound is like a snake"
+            },
+            {
+              "letter": "t",
+              "question": "What sound does 't' make?",
+              "options": ["duh", "tuh", "luh", "guh"],
+              "correctAnswer": 1,
+              "hint": "This sound is a quick tap"
+            },
+            {
+              "letter": "b",
+              "question": "What sound does 'b' make?",
+              "options": ["buh", "duh", "puh", "guh"],
+              "correctAnswer": 0,
+              "hint": "This sound starts with your lips together"
+            },
+            {
+              "letter": "f",
+              "question": "What sound does 'f' make?",
+              "options": ["vuh", "fff", "sss", "zzz"],
+              "correctAnswer": 1,
+              "hint": "This sound uses your teeth on your lip"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Print Awareness",
+          "instructions": "Practice understanding how print works",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "question": "In English, which direction do we read?",
+              "options": ["Right to left", "Left to right", "Top to bottom", "Bottom to top"],
+              "correctAnswer": 1,
+              "hint": "Think about how you read this sentence"
+            },
+            {
+              "question": "What represents a word in print?",
+              "options": ["A letter", "A space between letters", "A group of letters with spaces around it", "A picture"],
+              "correctAnswer": 2,
+              "hint": "Words are groups of letters"
+            },
+            {
+              "question": "What does a period (. ) mean?",
+              "options": ["Keep reading", "Stop - end of sentence", "Go faster", "Skip the next word"],
+              "correctAnswer": 1,
+              "hint": "It's like a stop sign"
+            },
+            {
+              "question": "What is the first letter of a sentence?",
+              "options": ["Always lowercase", "Always uppercase", "Sometimes uppercase", "Never uppercase"],
+              "correctAnswer": 1,
+              "hint": "Sentences start with capital letters"
+            },
+            {
+              "question": "Where do we start reading on a page?",
+              "options": ["Bottom right", "Top left", "Middle", "Bottom left"],
+              "correctAnswer": 1,
+              "hint": "Start at the top and go left"
+            }
+          ]
+        }
+      ]
+    },
+    "morphological-awareness": {
+      "name": "Morphological Awareness Training",
+      "description": "Learn about word structure, prefixes, suffixes, and root words",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Prefix Recognition",
+          "instructions": "Identify and understand common prefixes",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "word": "unhappy",
+              "instruction": "What is the prefix in 'unhappy'?",
+              "answer": "un",
+              "hint": "The prefix is at the beginning"
+            },
+            {
+              "word": "preview",
+              "instruction": "What is the prefix in 'preview'?",
+              "answer": "pre",
+              "hint": "The prefix is at the beginning"
+            },
+            {
+              "word": "rewrite",
+              "instruction": "What is the prefix in 'rewrite'?",
+              "answer": "re",
+              "hint": "The prefix is at the beginning"
+            },
+            {
+              "word": "misplace",
+              "instruction": "What is the prefix in 'misplace'?",
+              "answer": "mis",
+              "hint": "The prefix is at the beginning"
+            },
+            {
+              "word": "dislike",
+              "instruction": "What is the prefix in 'dislike'?",
+              "answer": "dis",
+              "hint": "The prefix is at the beginning"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Suffix Recognition",
+          "instructions": "Identify and understand common suffixes",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "word": "helpful",
+              "instruction": "What is the suffix in 'helpful'?",
+              "answer": "ful",
+              "hint": "The suffix is at the end"
+            },
+            {
+              "word": "teacher",
+              "instruction": "What is the suffix in 'teacher'?",
+              "answer": "er",
+              "hint": "The suffix is at the end"
+            },
+            {
+              "word": "quickly",
+              "instruction": "What is the suffix in 'quickly'?",
+              "answer": "ly",
+              "hint": "The suffix is at the end"
+            },
+            {
+              "word": "happiness",
+              "instruction": "What is the suffix in 'happiness'?",
+              "answer": "ness",
+              "hint": "The suffix is at the end"
+            },
+            {
+              "word": "payment",
+              "instruction": "What is the suffix in 'payment'?",
+              "answer": "ment",
+              "hint": "The suffix is at the end"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Word Building with Morphemes",
+          "instructions": "Build new words using prefixes and suffixes",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "root": "happy",
+              "prefix": "un",
+              "instruction": "Combine 'un' + 'happy' to make a new word",
+              "answer": "unhappy",
+              "hint": "Put the prefix before the root"
+            },
+            {
+              "root": "help",
+              "suffix": "ful",
+              "instruction": "Combine 'help' + 'ful' to make a new word",
+              "answer": "helpful",
+              "hint": "Put the suffix after the root"
+            },
+            {
+              "root": "act",
+              "prefix": "re",
+              "suffix": "er",
+              "instruction": "Combine 're' + 'act' + 'er' to make a new word",
+              "answer": "reactor",
+              "hint": "Put parts in order: prefix + root + suffix"
+            },
+            {
+              "root": "use",
+              "prefix": "mis",
+              "instruction": "Combine 'mis' + 'use' to make a new word",
+              "answer": "misuse",
+              "hint": "Put the prefix before the root"
+            },
+            {
+              "root": "kind",
+              "suffix": "ness",
+              "instruction": "Combine 'kind' + 'ness' to make a new word",
+              "answer": "kindness",
+              "hint": "Put the suffix after the root"
+            }
+          ]
+        }
+      ]
+    },
+    "vocabulary-instruction": {
+      "name": "Vocabulary Instruction",
+      "description": "Learn and practice new vocabulary words",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Word Definitions",
+          "instructions": "Match words with their definitions",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "word": "enormous",
+              "question": "What does 'enormous' mean?",
+              "options": ["Very small", "Very large", "Very fast", "Very slow"],
+              "correctAnswer": 1,
+              "hint": "Think about the root 'norm' - normal size, then 'e' means beyond"
+            },
+            {
+              "word": "ancient",
+              "question": "What does 'ancient' mean?",
+              "options": ["Very new", "Very old", "Very bright", "Very dark"],
+              "correctAnswer": 1,
+              "hint": "Think about things from long ago"
+            },
+            {
+              "word": "rapid",
+              "question": "What does 'rapid' mean?",
+              "options": ["Very slow", "Very fast", "Very big", "Very small"],
+              "correctAnswer": 1,
+              "hint": "Think about moving quickly"
+            },
+            {
+              "word": "fragile",
+              "question": "What does 'fragile' mean?",
+              "options": ["Very strong", "Easily broken", "Very heavy", "Very light"],
+              "correctAnswer": 1,
+              "hint": "Think about things that break easily"
+            },
+            {
+              "word": "vivid",
+              "question": "What does 'vivid' mean?",
+              "options": ["Very dull", "Very bright or clear", "Very quiet", "Very loud"],
+              "correctAnswer": 1,
+              "hint": "Think about bright colors or clear memories"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Context Clues",
+          "instructions": "Use context to figure out word meanings",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "sentence": "The mysterious creature emerged from the dark cave, its eyes glowing in the shadows.",
+              "word": "mysterious",
+              "question": "What does 'mysterious' mean in this context?",
+              "options": ["Very clear", "Hard to understand or explain", "Very bright", "Very common"],
+              "correctAnswer": 1,
+              "hint": "Think about something unknown or strange"
+            },
+            {
+              "sentence": "After studying for weeks, Sarah felt confident about the upcoming test.",
+              "word": "confident",
+              "question": "What does 'confident' mean in this context?",
+              "options": ["Worried and unsure", "Sure of herself", "Confused", "Angry"],
+              "correctAnswer": 1,
+              "hint": "Think about feeling sure you'll do well"
+            },
+            {
+              "sentence": "The abandoned house stood empty, with broken windows and overgrown gardens.",
+              "word": "abandoned",
+              "question": "What does 'abandoned' mean in this context?",
+              "options": ["Brand new", "Left empty or deserted", "Very crowded", "Well-maintained"],
+              "correctAnswer": 1,
+              "hint": "Think about something left behind"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Word Relationships",
+          "instructions": "Understand relationships between words",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "word1": "happy",
+              "word2": "joyful",
+              "question": "What is the relationship between 'happy' and 'joyful'?",
+              "options": ["Opposites", "Synonyms (similar meaning)", "Unrelated", "One is a verb"],
+              "correctAnswer": 1,
+              "hint": "Both words describe feeling good"
+            },
+            {
+              "word1": "big",
+              "word2": "tiny",
+              "question": "What is the relationship between 'big' and 'tiny'?",
+              "options": ["Synonyms (similar meaning)", "Opposites", "Unrelated", "One is a noun"],
+              "correctAnswer": 1,
+              "hint": "One means large, one means small"
+            },
+            {
+              "word1": "run",
+              "word2": "runner",
+              "question": "What is the relationship between 'run' and 'runner'?",
+              "options": ["Opposites", "Synonyms", "Root word and derived word", "Unrelated"],
+              "correctAnswer": 2,
+              "hint": "One is the action, one is the person who does it"
+            }
+          ]
+        }
+      ]
+    },
+    "spelling-instruction": {
+      "name": "Structured Spelling Instruction",
+      "description": "Practice spelling patterns and rules",
+      "levels": [
+        {
+          "id": 1,
+          "name": "CVC Words",
+          "instructions": "Spell consonant-vowel-consonant words",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "word": "cat",
+              "sounds": ["c", "a", "t"],
+              "instruction": "Spell the word: c - a - t",
+              "answer": "cat",
+              "hint": "Blend the sounds together"
+            },
+            {
+              "word": "dog",
+              "sounds": ["d", "o", "g"],
+              "instruction": "Spell the word: d - o - g",
+              "answer": "dog",
+              "hint": "Blend the sounds together"
+            },
+            {
+              "word": "pig",
+              "sounds": ["p", "i", "g"],
+              "instruction": "Spell the word: p - i - g",
+              "answer": "pig",
+              "hint": "Blend the sounds together"
+            },
+            {
+              "word": "bus",
+              "sounds": ["b", "u", "s"],
+              "instruction": "Spell the word: b - u - s",
+              "answer": "bus",
+              "hint": "Blend the sounds together"
+            },
+            {
+              "word": "pen",
+              "sounds": ["p", "e", "n"],
+              "instruction": "Spell the word: p - e - n",
+              "answer": "pen",
+              "hint": "Blend the sounds together"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Silent E Pattern",
+          "instructions": "Spell words with silent e (makes the vowel say its name)",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "word": "cake",
+              "sounds": ["c", "a", "k", "e"],
+              "instruction": "Spell the word with silent e: c - a - k - e",
+              "answer": "cake",
+              "hint": "The 'e' at the end makes 'a' say its name"
+            },
+            {
+              "word": "bike",
+              "sounds": ["b", "i", "k", "e"],
+              "instruction": "Spell the word with silent e: b - i - k - e",
+              "answer": "bike",
+              "hint": "The 'e' at the end makes 'i' say its name"
+            },
+            {
+              "word": "hope",
+              "sounds": ["h", "o", "p", "e"],
+              "instruction": "Spell the word with silent e: h - o - p - e",
+              "answer": "hope",
+              "hint": "The 'e' at the end makes 'o' say its name"
+            },
+            {
+              "word": "mute",
+              "sounds": ["m", "u", "t", "e"],
+              "instruction": "Spell the word with silent e: m - u - t - e",
+              "answer": "mute",
+              "hint": "The 'e' at the end makes 'u' say its name"
+            },
+            {
+              "word": "late",
+              "sounds": ["l", "a", "t", "e"],
+              "instruction": "Spell the word with silent e: l - a - t - e",
+              "answer": "late",
+              "hint": "The 'e' at the end makes 'a' say its name"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Common Patterns",
+          "instructions": "Spell words with common spelling patterns",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "word": "ship",
+              "pattern": "sh",
+              "instruction": "Spell the word with 'sh' pattern: sh - i - p",
+              "answer": "ship",
+              "hint": "'sh' makes one sound"
+            },
+            {
+              "word": "chat",
+              "pattern": "ch",
+              "instruction": "Spell the word with 'ch' pattern: ch - a - t",
+              "answer": "chat",
+              "hint": "'ch' makes one sound"
+            },
+            {
+              "word": "think",
+              "pattern": "th",
+              "instruction": "Spell the word with 'th' pattern: th - i - nk",
+              "answer": "think",
+              "hint": "'th' makes one sound"
+            },
+            {
+              "word": "phone",
+              "pattern": "ph",
+              "instruction": "Spell the word with 'ph' pattern: ph - o - n - e",
+              "answer": "phone",
+              "hint": "'ph' sounds like 'f'"
+            },
+            {
+              "word": "back",
+              "pattern": "ck",
+              "instruction": "Spell the word with 'ck' pattern: b - a - ck",
+              "answer": "back",
+              "hint": "'ck' sounds like 'k'"
+            }
+          ]
+        }
+      ]
+    },
+    "self-regulation": {
+      "name": "Self-Regulation and Metacognition Training",
+      "description": "Practice goal-setting, self-monitoring, and reflection",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Goal Setting",
+          "instructions": "Practice setting specific, achievable goals",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You want to improve your reading speed.",
+              "question": "Which is the best goal?",
+              "options": ["Read faster", "Read 10 words per minute faster by next month", "Read perfectly tomorrow", "Never make mistakes"],
+              "correctAnswer": 1,
+              "hint": "Good goals are specific and have a timeline"
+            },
+            {
+              "scenario": "You want to practice phonological exercises.",
+              "question": "Which is the best goal?",
+              "options": ["Do exercises sometimes", "Do 15 minutes of exercises every day for a week", "Do exercises for 5 hours today", "Never miss a day ever"],
+              "correctAnswer": 1,
+              "hint": "Good goals are specific and realistic"
+            },
+            {
+              "scenario": "You want to learn new vocabulary.",
+              "question": "Which is the best goal?",
+              "options": ["Learn all words", "Learn 5 new words each week", "Learn 100 words today", "Learn when I feel like it"],
+              "correctAnswer": 1,
+              "hint": "Good goals are specific and achievable"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Self-Monitoring",
+          "instructions": "Practice checking your own progress",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You're working on a reading exercise and notice you're making many mistakes.",
+              "question": "What should you do?",
+              "options": ["Ignore the mistakes", "Slow down and check your work", "Give up", "Work faster"],
+              "correctAnswer": 1,
+              "hint": "Self-monitoring means noticing and adjusting"
+            },
+            {
+              "scenario": "You've been practicing for a week and haven't improved much.",
+              "question": "What should you do?",
+              "options": ["Quit trying", "Reflect on what's working and what isn't", "Try harder without changing anything", "Blame yourself"],
+              "correctAnswer": 1,
+              "hint": "Reflection helps you improve your approach"
+            },
+            {
+              "scenario": "You finished an exercise quickly but got many answers wrong.",
+              "question": "What does this tell you?",
+              "options": ["You did great", "You need to slow down and focus on accuracy", "You should always work fast", "Speed is more important than accuracy"],
+              "correctAnswer": 1,
+              "hint": "Balance speed and accuracy"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Strategy Selection",
+          "instructions": "Practice choosing the right strategy for different tasks",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You're reading a difficult textbook chapter.",
+              "question": "Which strategy would be most helpful?",
+              "options": ["Read as fast as possible", "Read slowly, take notes, and summarize sections", "Skip the hard parts", "Read without stopping"],
+              "correctAnswer": 1,
+              "hint": "Difficult text requires active reading strategies"
+            },
+            {
+              "scenario": "You need to memorize spelling words.",
+              "question": "Which strategy would be most helpful?",
+              "options": ["Look at them once", "Write them multiple times and say the letters", "Guess how to spell them", "Only think about them"],
+              "correctAnswer": 1,
+              "hint": "Multisensory practice helps memory"
+            },
+            {
+              "scenario": "You're taking a test and feel anxious.",
+              "question": "Which strategy would be most helpful?",
+              "options": ["Panic and give up", "Take deep breaths and start with easy questions", "Work randomly", "Rush through everything"],
+              "correctAnswer": 1,
+              "hint": "Managing anxiety helps you perform better"
+            }
+          ]
+        }
+      ]
+    },
+    "parent-involvement": {
+      "name": "Parent Involvement and Home Support",
+      "description": "Learn strategies for parents to support reading at home",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Creating a Reading Environment",
+          "instructions": "Learn how to create a supportive home reading environment",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You want to encourage your child to read more at home.",
+              "question": "What's the best approach?",
+              "options": ["Force them to read for an hour daily", "Have books available and read together regularly", "Only let them read educational books", "Never let them choose what to read"],
+              "correctAnswer": 1,
+              "hint": "Positive encouragement works better than force"
+            },
+            {
+              "scenario": "Your child is struggling with a reading exercise.",
+              "question": "How should you respond?",
+              "options": ["Get frustrated and criticize", "Stay calm and offer help and encouragement", "Do it for them", "Give up immediately"],
+              "correctAnswer": 1,
+              "hint": "Stay positive and supportive"
+            },
+            {
+              "scenario": "You want to set up a reading routine.",
+              "question": "What's the best approach?",
+              "options": ["Read at random times", "Set a consistent daily reading time", "Only read on weekends", "Read only when required"],
+              "correctAnswer": 1,
+              "hint": "Consistency helps build habits"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Home Practice Activities",
+      "instructions": "Learn effective home practice activities",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You want to practice phonological skills at home.",
+              "question": "Which activity would be most effective?",
+              "options": ["Just tell them about sounds", "Play rhyming games and sound games together", "Only do worksheets", "Never practice at home"],
+              "correctAnswer": 1,
+              "hint": "Games make practice fun and engaging"
+            },
+            {
+              "scenario": "Your child is learning sight words.",
+              "question": "Which activity would help most?",
+              "options": ["Show them once and expect them to remember", "Use flashcards and play sight word games", "Only test them on the words", "Ignore sight words"],
+              "correctAnswer": 1,
+              "hint": "Repeated practice in different ways helps"
+            },
+            {
+              "scenario": "You want to build vocabulary at home.",
+              "question": "Which activity would be most effective?",
+              "options": ["Never talk about new words", "Discuss new words encountered in daily life", "Only use a dictionary", "Memorize word lists"],
+              "correctAnswer": 1,
+              "hint": "Real-life context makes vocabulary meaningful"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Progress Tracking",
+          "instructions": "Learn how to track and celebrate progress",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "Your child showed improvement in reading speed.",
+              "question": "How should you respond?",
+              "options": ["Ignore it - they should just do it", "Celebrate the improvement and acknowledge their effort", "Tell them it's not enough", "Compare them to others"],
+              "correctAnswer": 1,
+              "hint": "Celebration builds motivation"
+            },
+            {
+              "scenario": "Your child had a difficult practice session.",
+              "question": "How should you respond?",
+              "options": ["Get angry and criticize", "Acknowledge the difficulty and encourage persistence", "Stop all practice", "Punish them for struggling"],
+              "correctAnswer": 1,
+              "hint": "Difficult days are part of learning"
+            },
+            {
+              "scenario": "You want to track progress over time.",
+              "question": "What's the best method?",
+              "options": ["Don't track anything", "Keep a simple log of practice time and achievements", "Only track mistakes", "Compare only to other children"],
+              "correctAnswer": 1,
+              "hint": "Tracking helps you see growth"
+            }
+          ]
+        }
+      ]
+    },
+    "peer-tutoring": {
+      "name": "Peer Tutoring and Cooperative Learning",
+      "description": "Learn strategies for peer-assisted learning",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Being a Good Tutor",
+          "instructions": "Learn how to help others effectively",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You're tutoring a peer who is struggling with a word.",
+              "question": "What's the best approach?",
+              "options": ["Just tell them the answer immediately", "Give hints and help them sound it out", "Laugh at their mistake", "Tell them they should know this"],
+              "correctAnswer": 1,
+              "hint": "Helping them learn is better than just giving answers"
+            },
+            {
+              "scenario": "Your peer makes a mistake while reading.",
+              "question": "How should you respond?",
+              "options": ["Correct them harshly", "Gently point out the mistake and help them fix it", "Ignore all mistakes", "Make fun of them"],
+              "correctAnswer": 1,
+              "hint": "Gentle correction helps learning"
+            },
+            {
+              "scenario": "Your peer is getting frustrated.",
+              "question": "What should you do?",
+              "options": ["Get frustrated too", "Take a break and encourage them", "Give up on them", "Tell them to try harder without help"],
+              "correctAnswer": 1,
+              "hint": "Encouragement and breaks help with frustration"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Being a Good Tutee",
+          "instructions": "Learn how to learn from peers effectively",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "Your peer tutor is explaining something but you don't understand.",
+              "question": "What should you do?",
+              "options": ["Pretend to understand", "Ask them to explain in a different way", "Give up", "Get angry"],
+              "correctAnswer": 1,
+              "hint": "It's okay to ask for clarification"
+            },
+            {
+              "scenario": "Your peer corrects your mistake.",
+              "question": "How should you respond?",
+              "options": ["Get defensive", "Thank them and learn from it", "Ignore the correction", "Argue with them"],
+              "correctAnswer": 1,
+              "hint": "Accepting help helps you improve"
+            },
+            {
+              "scenario": "You're working with a peer tutor.",
+              "question": "What's your responsibility?",
+              "options": ["Do nothing and let them do all the work", "Participate actively and do your best", "Just copy their answers", "Talk about other things"],
+              "correctAnswer": 1,
+              "hint": "Both tutor and tutee need to participate"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Cooperative Activities",
+          "instructions": "Learn effective cooperative learning activities",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You're doing paired reading with a peer.",
+              "question": "What's an effective approach?",
+              "options": ["One person reads, the other does nothing", "Take turns reading and helping each other", "Race to see who's faster", "Only read easy books"],
+              "correctAnswer": 1,
+              "hint": "Both should participate and help each other"
+            },
+            {
+              "scenario": "You're working on a group project about reading strategies.",
+              "question": "How can you contribute effectively?",
+              "options": ["Let others do all the work", "Do your assigned part and help others", "Take over the whole project", "Do the minimum required"],
+              "correctAnswer": 1,
+              "hint": "Everyone should contribute"
+            },
+            {
+              "scenario": "Your group disagrees on an answer.",
+              "question": "What's the best way to resolve it?",
+              "options": ["Argue until one person gives up", "Discuss the reasons and find evidence", "Just guess", "Let the loudest person decide"],
+              "correctAnswer": 1,
+              "hint": "Discussion and evidence help resolve disagreements"
+            }
+          ]
+        }
+      ]
+    },
+    "sight-word": {
+      "name": "Sight Word Instruction",
+      "description": "Practice recognizing high-frequency words instantly",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Basic Sight Words",
+          "instructions": "Practice recognizing common sight words",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "word": "the",
+              "instruction": "Type the sight word you see: the",
+              "answer": "the",
+              "hint": "This is one of the most common words"
+            },
+            {
+              "word": "and",
+              "instruction": "Type the sight word you see: and",
+              "answer": "and",
+              "hint": "This word connects things together"
+            },
+            {
+              "word": "is",
+              "instruction": "Type the sight word you see: is",
+              "answer": "is",
+              "hint": "This word shows existence"
+            },
+            {
+              "word": "it",
+              "instruction": "Type the sight word you see: it",
+              "answer": "it",
+              "hint": "This word refers to something"
+            },
+            {
+              "word": "in",
+              "instruction": "Type the sight word you see: in",
+              "answer": "in",
+              "hint": "This word shows location"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Intermediate Sight Words",
+          "instructions": "Practice recognizing more common sight words",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "word": "said",
+              "instruction": "Type the sight word you see: said",
+              "answer": "said",
+              "hint": "This is the past tense of say"
+            },
+            {
+              "word": "was",
+              "instruction": "Type the sight word you see: was",
+              "answer": "was",
+              "hint": "This is the past tense of is"
+            },
+            {
+              "word": "of",
+              "instruction": "Type the sight word you see: of",
+              "answer": "of",
+              "hint": "This word shows belonging or connection"
+            },
+            {
+              "word": "to",
+              "instruction": "Type the sight word you see: to",
+              "answer": "to",
+              "hint": "This word shows direction"
+            },
+            {
+              "word": "for",
+              "instruction": "Type the sight word you see: for",
+              "answer": "for",
+              "hint": "This word shows purpose"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Advanced Sight Words",
+          "instructions": "Practice recognizing challenging sight words",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "word": "because",
+              "instruction": "Type the sight word you see: because",
+              "answer": "because",
+              "hint": "This word gives a reason"
+            },
+            {
+              "word": "thought",
+              "instruction": "Type the sight word you see: thought",
+              "answer": "thought",
+              "hint": "This is the past tense of think"
+            },
+            {
+              "word": "through",
+              "instruction": "Type the sight word you see: through",
+              "answer": "through",
+              "hint": "This word means from one side to the other"
+            },
+            {
+              "word": "different",
+              "instruction": "Type the sight word you see: different",
+              "answer": "different",
+              "hint": "This word means not the same"
+            },
+            {
+              "word": "important",
+              "instruction": "Type the sight word you see: important",
+              "answer": "important",
+              "hint": "This word means significant"
+            }
+          ]
+        }
+      ]
+    },
+    "auditory-processing": {
+      "name": "Auditory Processing Training",
+      "description": "Practice sound discrimination and auditory memory",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Sound Discrimination",
+          "instructions": "Practice distinguishing between similar sounds",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "sounds": ["b", "p"],
+              "question": "Which sound is different?",
+              "options": ["b", "p", "They're the same", "Neither is a sound"],
+              "correctAnswer": 1,
+              "hint": "One is voiced, one is not"
+            },
+            {
+              "sounds": ["d", "t"],
+              "question": "Which sound is different?",
+              "options": ["d", "t", "They're the same", "Neither is a sound"],
+              "correctAnswer": 1,
+              "hint": "One is voiced, one is not"
+            },
+            {
+              "sounds": ["m", "n"],
+              "question": "Which sound is different?",
+              "options": ["m", "n", "They're the same", "Neither is a sound"],
+              "correctAnswer": 1,
+              "hint": "One is made with lips, one with nose"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Auditory Memory",
+          "instructions": "Practice remembering sequences of sounds",
+          "exerciseType": "sequence-recall",
+          "exercises": [
+            {
+              "sequence": ["b", "a", "t"],
+              "length": 3,
+              "reverse": false,
+              "displayTime": 3
+            },
+            {
+              "sequence": ["c", "a", "t", "s"],
+              "length": 4,
+              "reverse": false,
+              "displayTime": 4
+            },
+            {
+              "sequence": ["d", "o", "g", "s", "r"],
+              "length": 5,
+              "reverse": false,
+              "displayTime": 5
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Temporal Processing",
+          "instructions": "Practice processing sounds in time",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "sequence": "ba",
+              "question": "Which sounds do you hear in 'ba'?",
+              "options": ["b then a", "a then b", "both at once", "neither"],
+              "correctAnswer": 0,
+              "hint": "Sounds happen in order"
+            },
+            {
+              "sequence": "stop",
+              "question": "How many sounds are in 'stop'?",
+              "options": ["1", "2", "3", "4"],
+              "correctAnswer": 3,
+              "hint": "Count the phonemes: s-t-o-p"
+            },
+            {
+              "sequence": "blend",
+              "question": "Which sounds are blended in 'blend'?",
+              "options": ["b-l", "bl-end", "b-l-e-n-d", "bl-end"],
+              "correctAnswer": 2,
+              "hint": "All sounds blend together"
+            }
+          ]
+        }
+      ]
+    },
+    "reading-motivation": {
+      "name": "Reading Motivation and Engagement",
+      "description": "Build interest and enjoyment in reading",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Interest Assessment",
+          "instructions": "Identify your reading interests",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "question": "What type of stories do you enjoy most?",
+              "options": ["Adventure", "Mystery", "Science fiction", "All of the above"],
+              "correctAnswer": 3,
+              "hint": "You can enjoy multiple genres"
+            },
+            {
+              "question": "What makes you want to keep reading a book?",
+              "options": ["Interesting characters", "Exciting plot", "Beautiful writing", "All of the above"],
+              "correctAnswer": 3,
+              "hint": "Different elements engage different readers"
+            },
+            {
+              "question": "How do you prefer to discover new books?",
+              "options": ["Recommendations from friends", "Browsing libraries/bookstores", "Online reviews", "All of the above"],
+              "correctAnswer": 3,
+              "hint": "Multiple sources help you find good books"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Goal Setting for Reading",
+          "instructions": "Set personal reading goals",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You want to read more regularly.",
+              "question": "Which is a good reading goal?",
+              "options": ["Read 100 books this month", "Read for 20 minutes every day", "Read only when forced", "Never read fiction"],
+              "correctAnswer": 1,
+              "hint": "Good goals are specific and achievable"
+            },
+            {
+              "scenario": "You want to try new genres.",
+              "question": "Which is a good approach?",
+              "options": ["Never try anything new", "Read one book from a new genre each month", "Only read one genre forever", "Read only what others tell you"],
+              "correctAnswer": 1,
+              "hint": "Small steps help you explore"
+            },
+            {
+              "scenario": "You want to finish a long book.",
+              "question": "Which strategy would help?",
+              "options": ["Read it all in one day", "Set a daily reading goal and track progress", "Give up if it's long", "Skip to the end"],
+              "correctAnswer": 1,
+              "hint": "Breaking it into smaller parts helps"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Building Reading Habits",
+          "instructions": "Create sustainable reading habits",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You want to make reading a daily habit.",
+              "question": "What's the best approach?",
+              "options": ["Read at random times", "Read at the same time every day", "Only read on weekends", "Read only when you have nothing else to do"],
+              "correctAnswer": 1,
+              "hint": "Consistency builds habits"
+            },
+            {
+              "scenario": "You're having trouble finding time to read.",
+              "question": "What could help?",
+              "options": ["Give up on reading", "Find small pockets of time (10-15 minutes) throughout the day", "Only read on vacation", "Read less"],
+              "correctAnswer": 1,
+              "hint": "Small amounts of time add up"
+            },
+            {
+              "scenario": "You're in the middle of a boring book.",
+              "question": "What should you do?",
+              "options": ["Force yourself to finish it", "It's okay to stop and try a different book", "Never read again", "Skip to the end"],
+              "correctAnswer": 1,
+              "hint": "Life is too short for boring books"
+            }
+          ]
+        }
+      ]
+    },
+    "visual-processing": {
+      "name": "Visual Processing Support",
+      "description": "Practice visual tracking and pattern recognition",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Visual Tracking",
+          "instructions": "Practice tracking visual patterns",
+          "exerciseType": "visual-feedback",
+          "exercises": [
+            {
+              "pattern": "left-to-right",
+              "prompt": "Follow the line from left to right with your eyes",
+              "visualHint": "Show a line moving left to right"
+            },
+            {
+              "pattern": "top-to-bottom",
+              "prompt": "Follow the line from top to bottom with your eyes",
+              "visualHint": "Show a line moving top to bottom"
+            },
+            {
+              "pattern": "zigzag",
+              "prompt": "Follow the zigzag pattern with your eyes",
+              "visualHint": "Show a zigzag line"
+            },
+            {
+              "pattern": "circle",
+              "prompt": "Follow the circle with your eyes",
+              "visualHint": "Show a circular path"
+            },
+            {
+              "pattern": "figure-eight",
+              "prompt": "Follow the figure-eight pattern with your eyes",
+              "visualHint": "Show a figure-eight path"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Pattern Recognition",
+          "instructions": "Practice recognizing visual patterns",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "pattern": "ABC ABC",
+              "question": "What comes next in the pattern: ABC ABC ___?",
+              "options": ["A", "B", "C", "D"],
+              "correctAnswer": 0,
+              "hint": "The pattern repeats"
+            },
+            {
+              "pattern": "123 123",
+              "question": "What comes next in the pattern: 123 123 ___?",
+              "options": ["1", "2", "3", "4"],
+              "correctAnswer": 0,
+              "hint": "The pattern repeats"
+            },
+            {
+              "pattern": "A1 B2 C3",
+              "question": "What comes next in the pattern: A1 B2 C3 ___?",
+              "options": ["A", "B", "C", "D4"],
+              "correctAnswer": 3,
+              "hint": "Letters and numbers both increase"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Visual Memory",
+          "instructions": "Practice remembering visual information",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "sequence": ["red", "blue", "green"],
+              "question": "Remember these colors: red, blue, green. Which was first?",
+              "options": ["red", "blue", "green", "yellow"],
+              "correctAnswer": 0,
+              "hint": "The first one shown"
+            },
+            {
+              "sequence": ["circle", "square", "triangle"],
+              "question": "Remember these shapes: circle, square, triangle. Which was last?",
+              "options": ["circle", "square", "triangle", "rectangle"],
+              "correctAnswer": 2,
+              "hint": "The last one shown"
+            },
+            {
+              "sequence": ["A", "B", "C", "D"],
+              "question": "Remember these letters: A, B, C, D. Which was in the middle?",
+              "options": ["A", "B", "C", "D"],
+              "correctAnswer": 1,
+              "hint": "The second of four"
+            }
+          ]
+        }
+      ]
+    },
+    "multisensory-math": {
+      "name": "Multisensory Math Instruction",
+      "description": "Learn math using multisensory approaches",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Number-Sound Association",
+          "instructions": "Associate numbers with their sounds and quantities",
+          "exerciseType": "visual-feedback",
+          "exercises": [
+            {
+              "number": 1,
+              "quantity": "one",
+              "prompt": "Say 'one' while showing one finger",
+              "visualHint": "Show one object representing the number"
+            },
+            {
+              "number": 2,
+              "quantity": "two",
+              "prompt": "Say 'two' while showing two fingers",
+              "visualHint": "Show two objects representing the number"
+            },
+            {
+              "number": 3,
+              "quantity": "three",
+              "prompt": "Say 'three' while showing three fingers",
+              "visualHint": "Show three objects representing the number"
+            },
+            {
+              "number": 4,
+              "quantity": "four",
+              "prompt": "Say 'four' while showing four fingers",
+              "visualHint": "Show four objects representing the number"
+            },
+            {
+              "number": 5,
+              "quantity": "five",
+              "prompt": "Say 'five' while showing five fingers",
+              "visualHint": "Show five objects representing the number"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Visual-Spatial Math",
+          "instructions": "Use visual and spatial methods for math",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "question": "If you have 3 apples and get 2 more, how many do you have?",
+              "options": ["4", "5", "6", "7"],
+              "correctAnswer": 1,
+              "hint": "Imagine the apples visually"
+            },
+            {
+              "question": "What is 5 + 5?",
+              "options": ["9", "10", "11", "12"],
+              "correctAnswer": 1,
+              "hint": "Use your fingers to count"
+            },
+            {
+              "question": "What is 10 - 3?",
+              "options": ["6", "7", "8", "9"],
+              "correctAnswer": 1,
+              "hint": "Count backwards from 10"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Hands-On Math Activities",
+          "instructions": "Simulate hands-on math manipulatives",
+          "exerciseType": "visual-feedback",
+          "exercises": [
+            {
+              "task": "Addition with objects",
+              "prompt": "Imagine adding groups of objects together",
+              "visualHint": "Show groups of objects being combined"
+            },
+            {
+              "task": "Subtraction with objects",
+              "prompt": "Imagine taking objects away from a group",
+              "visualHint": "Show objects being removed from a group"
+            },
+            {
+              "task": "Grouping for multiplication",
+              "prompt": "Imagine making equal groups of objects",
+              "visualHint": "Show objects arranged in equal groups"
+            }
+          ]
+        }
+      ]
+    },
+    "executive-function": {
+      "name": "Executive Function Support",
+      "description": "Practice planning, organization, and task completion",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Planning Skills",
+          "instructions": "Practice breaking tasks into steps",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "task": "Writing an essay",
+              "question": "What's a good first step for writing an essay?",
+              "options": ["Write the final paragraph", "Brainstorm ideas", "Check spelling", "Print the essay"],
+              "correctAnswer": 1,
+              "hint": "Start with planning and ideas"
+            },
+            {
+              "task": "Studying for a test",
+              "question": "What's a good first step for studying?",
+              "options": ["Take the test", "Review your notes and materials", "Guess the answers", "Worry about the test"],
+              "correctAnswer": 1,
+              "hint": "Start by reviewing what you need to know"
+            },
+            {
+              "task": "Cleaning your room",
+              "question": "What's a good first step?",
+              "options": ["Put everything in the closet", "Pick up trash first", "Leave it messy", "Ask someone else to do it"],
+              "correctAnswer": 1,
+              "hint": "Start with the most obvious task"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Organization Skills",
+          "instructions": "Practice organizing materials and time",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You have multiple assignments due.",
+              "question": "How should you organize your time?",
+              "options": ["Do them all at the last minute", "Prioritize by due date and importance", "Only do the easy ones", "Do them in random order"],
+              "correctAnswer": 1,
+              "hint": "Prioritization helps you manage workload"
+            },
+            {
+              "scenario": "Your desk is messy and you can't find things.",
+              "question": "What's a good organizing strategy?",
+              "options": ["Make it messier", "Group similar items together", "Throw everything away", "Never use your desk"],
+              "correctAnswer": 1,
+              "hint": "Grouping helps you find things"
+            },
+            {
+              "scenario": "You keep forgetting homework.",
+              "question": "What organizational tool would help?",
+              "options": ["Try harder to remember", "Use a planner or reminder system", "Just hope you remember", "Stop doing homework"],
+              "correctAnswer": 1,
+              "hint": "External tools help memory"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Task Initiation",
+          "instructions": "Practice starting tasks without procrastination",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "scenario": "You have a big project due in a week.",
+              "question": "What's the best approach?",
+              "options": ["Wait until the night before", "Start today and work on it a bit each day", "Worry about it but do nothing", "Hope it goes away"],
+              "correctAnswer": 1,
+              "hint": "Breaking it into smaller parts helps"
+            },
+            {
+              "scenario": "You're having trouble starting a task.",
+              "question": "What strategy could help?",
+              "options": ["Give up immediately", "Commit to working on it for just 5 minutes", "Wait until you feel like it", "Do something else instead"],
+              "correctAnswer": 1,
+              "hint": "Starting small makes it easier"
+            },
+            {
+              "scenario": "You have several small tasks to do.",
+              "question": "What's a good approach?",
+              "options": ["Do none of them", "Do the quickest task first to build momentum", "Only think about them", "Complain about them"],
+              "correctAnswer": 1,
+              "hint": "Quick wins build motivation"
+            }
+          ]
+        }
+      ]
+    },
+    "speech-therapy": {
+      "name": "Speech-Language Therapy",
+      "description": "Practice speech and language skills",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Articulation Practice",
+          "instructions": "Practice producing specific sounds correctly",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "sound": "r",
+              "words": ["rabbit", "run", "red"],
+              "instruction": "Practice saying words with 'r' sound. Type the word: rabbit",
+              "answer": "rabbit",
+              "hint": "Curl your tongue back"
+            },
+            {
+              "sound": "s",
+              "words": ["snake", "sun", "sock"],
+              "instruction": "Practice saying words with 's' sound. Type the word: snake",
+              "answer": "snake",
+              "hint": "Keep teeth close together"
+            },
+            {
+              "sound": "th",
+              "words": ["think", "three", "thumb"],
+              "instruction": "Practice saying words with 'th' sound. Type the word: think",
+              "answer": "think",
+              "hint": "Put tongue between teeth"
+            },
+            {
+              "sound": "l",
+              "words": ["lion", "lamp", "leaf"],
+              "instruction": "Practice saying words with 'l' sound. Type the word: lion",
+              "answer": "lion",
+              "hint": "Touch tongue to roof of mouth"
+            },
+            {
+              "sound": "sh",
+              "words": ["shoe", "ship", "shell"],
+              "instruction": "Practice saying words with 'sh' sound. Type the word: shoe",
+              "answer": "shoe",
+              "hint": "Round your lips"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Language Exercises",
+          "instructions": "Practice using language correctly",
+          "exerciseType": "multiple-choice",
+          "exercises": [
+            {
+              "sentence": "She ___ to the store yesterday.",
+              "question": "Choose the correct word:",
+              "options": ["go", "goes", "went", "going"],
+              "correctAnswer": 2,
+              "hint": "This is past tense"
+            },
+            {
+              "sentence": "They ___ playing outside right now.",
+              "question": "Choose the correct word:",
+              "options": ["is", "are", "was", "were"],
+              "correctAnswer": 1,
+              "hint": "This is present tense with 'they'"
+            },
+            {
+              "sentence": "The dog ___ its bone.",
+              "question": "Choose the correct word:",
+              "options": ["bury", "buries", "buried", "burying"],
+              "correctAnswer": 2,
+              "hint": "This is past tense"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Expressive Language",
+          "instructions": "Practice expressing ideas clearly",
+          "exerciseType": "text-input",
+          "exercises": [
+            {
+              "prompt": "Describe your favorite animal in one sentence.",
+              "instruction": "Type a complete sentence describing your favorite animal.",
+              "example": "My favorite animal is a dog because it is loyal.",
+              "hint": "Include what the animal is and why you like it"
+            },
+            {
+              "prompt": "Explain how to make a sandwich in one sentence.",
+              "instruction": "Type a complete sentence explaining how to make a sandwich.",
+              "example": "To make a sandwich, put ingredients between two slices of bread.",
+              "hint": "Include the main steps"
+            },
+            {
+              "prompt": "Describe what you did yesterday in one sentence.",
+              "instruction": "Type a complete sentence about yesterday.",
+              "example": "Yesterday, I went to the park and played with my friends.",
+              "hint": "Include the main activity"
+            }
+          ]
+        }
+      ]
+    },
+    "mindfulness": {
+      "name": "Mindfulness and Stress Reduction",
+      "description": "Practice mindfulness techniques to reduce anxiety and improve focus",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Breathing Exercises",
+          "instructions": "Practice mindful breathing",
+          "exerciseType": "visual-feedback",
+          "exercises": [
+            {
+              "technique": "Deep breathing",
+              "prompt": "Breathe in slowly for 4 counts, hold for 4 counts, breathe out for 4 counts",
+              "visualHint": "Show a breathing circle expanding and contracting"
+            },
+            {
+              "technique": "Box breathing",
+              "prompt": "Breathe in for 4, hold for 4, breathe out for 4, hold for 4",
+              "visualHint": "Show a square path for breathing"
+            },
+            {
+              "technique": "4-7-8 breathing",
+              "prompt": "Breathe in for 4, hold for 7, breathe out for 8",
+              "visualHint": "Show numbers counting down"
+            },
+            {
+              "technique": "Belly breathing",
+              "prompt": "Breathe deeply into your belly, not your chest",
+              "visualHint": "Show a belly expanding and contracting"
+            },
+            {
+              "technique": "Alternate nostril breathing",
+              "prompt": "Breathe in through one nostril, out through the other",
+              "visualHint": "Show nostril visualization"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Body Scan",
+          "instructions": "Practice body awareness through scanning",
+          "exerciseType": "visual-feedback",
+          "exercises": [
+            {
+              "focus": "Head to toe",
+              "prompt": "Slowly focus your attention from your head down to your toes",
+              "visualHint": "Show a body outline with scanning movement"
+            },
+            {
+              "focus": "Toe to head",
+              "prompt": "Slowly focus your attention from your toes up to your head",
+              "visualHint": "Show a body outline with scanning movement"
+            },
+            {
+              "focus": "Tension release",
+              "prompt": "Notice tension in your body and consciously release it",
+              "visualHint": "Show tension points and relaxation"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Focus Exercises",
+          "instructions": "Practice focused attention",
+          "exerciseType": "visual-feedback",
+          "exercises": [
+            {
+              "focus": "Breath focus",
+              "prompt": "Focus your attention entirely on your breath",
+              "visualHint": "Show a breathing visualization"
+            },
+            {
+              "focus": "Sound focus",
+              "prompt": "Focus on the sounds around you without judgment",
+              "visualHint": "Show sound wave visualization"
+            },
+            {
+              "focus": "Object focus",
+              "prompt": "Focus on one object and notice its details",
+              "visualHint": "Show an object with highlighted details"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

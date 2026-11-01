@@ -1,0 +1,1218 @@
+{
+  "interventions": [
+    {
+      "id": "phonological-training",
+      "name": "Phonological Awareness Training",
+      "category": "phonological",
+      "description": "Systematic instruction in phonemic awareness - the ability to identify and manipulate sounds in spoken language",
+      "evidenceTier": "established",
+      "efficacyRating": 5,
+      "ageGroups": ["child", "adolescent"],
+      "duration": "3-6 months for significant improvement",
+      "frequency": "3-5 times per week, 20-30 minutes per session",
+      "difficultyLevel": "moderate",
+      "costConsiderations": "Low to moderate cost - can be delivered by teachers, tutors, or parents with training",
+      "timeCommitmentDetails": "Requires consistent daily practice. Total time investment: 60-100 hours over 3-6 months",
+      "ageSpecificRecommendations": "Most effective for ages 5-10. Can be adapted for adolescents with age-appropriate materials",
+      "successRates": "Effect sizes typically 0.5-0.8 (moderate to large). 70-80% of children show significant improvement",
+      "contraindications": "None specifically. Can be combined with other interventions",
+      "researchEvidenceSummary": "Extensive meta-analyses support phonological training as a core intervention. National Reading Panel (2000) identified it as essential for reading instruction. Recent studies confirm continued efficacy across diverse populations",
+      "source": {
+        "title": "Training rapid automatized naming in children with developmental Dyslexia",
+        "authors": "Graziani et al.",
+        "year": 2024,
+        "journal": "Child Neuropsychology",
+        "doi": "10.1080/09297049.2024.2414019",
+        "confidence": 0.85
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Phoneme Identification",
+            "description": "Learn to identify individual sounds (phonemes) in words"
+          },
+          {
+            "title": "Phoneme Blending",
+            "description": "Practice blending sounds together to form words"
+          },
+          {
+            "title": "Phoneme Segmentation",
+            "description": "Break words into individual sounds"
+          },
+          {
+            "title": "Phoneme Manipulation",
+            "description": "Add, delete, or substitute sounds to create new words"
+          }
+        ]
+      },
+      "notes": "Strong evidence supports phonological training as one of the most effective interventions for dyslexia. Considered a core intervention approach."
+    },
+    {
+      "id": "ran-training",
+      "name": "Rapid Automatized Naming (RAN) Training",
+      "category": "phonological",
+      "description": "Structured practice to improve speed and accuracy in rapid naming of familiar items",
+      "evidenceTier": "established",
+      "efficacyRating": 4,
+      "ageGroups": ["child", "adolescent"],
+      "duration": "8-12 weeks",
+      "frequency": "3-4 times per week, 15-20 minutes per session",
+      "difficultyLevel": "moderate",
+      "costConsiderations": "Low cost - requires simple materials (cards, timers). Can be done at home or school",
+      "timeCommitmentDetails": "Total time investment: 15-20 hours over 8-12 weeks",
+      "ageSpecificRecommendations": "Most effective for ages 6-12. Adolescents may need more motivating materials",
+      "successRates": "Effect sizes 0.3-0.6 (small to moderate). 60-70% show improvement in reading speed",
+      "contraindications": "May cause frustration if too difficult initially. Start with familiar items",
+      "researchEvidenceSummary": "RAN is a strong predictor of reading ability. Training RAN shows consistent improvements in reading fluency. Recent telerehabilitation studies confirm effectiveness in remote delivery",
+      "source": {
+        "title": "Training RAN or reading? A telerehabilitation study on developmental dyslexia",
+        "authors": "Various",
+        "year": 2022,
+        "journal": "Dyslexia",
+        "doi": "10.1002/dys.1619",
+        "confidence": 0.85
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Baseline Assessment",
+            "description": "Evaluate current RAN speed and accuracy"
+          },
+          {
+            "title": "Naming Practice",
+            "description": "Practice rapid naming of letters, numbers, colors, and objects"
+          },
+          {
+            "title": "Speed Drills",
+            "description": "Timed naming exercises with gradual speed increases"
+          },
+          {
+            "title": "Transfer Activities",
+            "description": "Apply rapid naming skills to reading tasks"
+          }
+        ]
+      },
+      "notes": "RAN training shows efficacy in improving reading speed. Often combined with phonological training for comprehensive support."
+    },
+    {
+      "id": "orton-gillingham",
+      "name": "Orton-Gillingham Approach",
+      "category": "multisensory",
+      "description": "Multisensory structured literacy instruction using visual, auditory, and kinesthetic pathways",
+      "evidenceTier": "established",
+      "efficacyRating": 4,
+      "ageGroups": ["child", "adolescent"],
+      "duration": "1-3 years for comprehensive program",
+      "frequency": "Daily or multiple times per week, 45-60 minutes per session",
+      "difficultyLevel": "high",
+      "costConsiderations": "High cost - requires trained specialist. Can cost $50-150 per hour for private tutoring",
+      "timeCommitmentDetails": "Significant commitment - 100-300 hours over 1-3 years",
+      "ageSpecificRecommendations": "Effective for all ages but most commonly used with children. Adult adaptations available",
+      "successRates": "Effect sizes 0.4-0.7 (moderate). 65-75% show significant improvement with consistent implementation",
+      "contraindications": "Requires trained instructor. Not suitable for self-guided implementation",
+      "researchEvidenceSummary": "Decades of research support Orton-Gillingham. While individual studies vary, meta-analyses show positive effects. Particularly effective for severe dyslexia",
+      "source": {
+        "title": "Multisensory teaching of basic language skills",
+        "authors": "Various (Historical)",
+        "year": "N/A",
+        "journal": "Educational journals",
+        "doi": "N/A",
+        "confidence": 0.80
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Phoneme-Grapheme Association",
+            "description": "Learn sound-symbol relationships using multisensory methods"
+          },
+          {
+            "title": "Syllable Division",
+            "description": "Practice breaking words into syllables for decoding"
+          },
+          {
+            "title": "Reading Practice",
+            "description": "Decodable text practice with learned patterns"
+          },
+          {
+            "title": "Spelling Instruction",
+            "description": "Structured spelling to reinforce reading patterns"
+          }
+        ]
+      },
+      "notes": "One of the most well-known and widely used approaches. Highly structured and individualized. Strong evidence base for phonological difficulties."
+    },
+    {
+      "id": "multisensory-structured",
+      "name": "Multisensory Structured Language Education (MSLE)",
+      "category": "multisensory",
+      "description": "Instruction that simultaneously engages visual, auditory, kinesthetic, and tactile pathways",
+      "evidenceTier": "established",
+      "efficacyRating": 4,
+      "ageGroups": ["child", "adolescent"],
+      "duration": "1-2 years",
+      "frequency": "3-5 times per week, 45-60 minutes per session",
+      "difficultyLevel": "high",
+      "costConsiderations": "Moderate to high cost - requires trained instructor. School-based programs may be available",
+      "timeCommitmentDetails": "75-150 hours over 1-2 years",
+      "ageSpecificRecommendations": "Most effective for ages 5-14. Can be adapted for older learners",
+      "successRates": "Effect sizes 0.4-0.6 (moderate). 60-70% show improvement",
+      "contraindications": "Requires trained instructor. May be overwhelming if too many modalities introduced at once",
+      "researchEvidenceSummary": "MSLE approaches show consistent positive effects. Research supports the value of multisensory instruction for dyslexia. Particular benefit for learners with strong visual or kinesthetic preferences",
+      "source": {
+        "title": "Multisensory teaching approach",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Educational research",
+        "doi": "N/A",
+        "confidence": 0.75
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Visual-Tactile",
+            "description": "Use visual and tactile methods together (e.g., tracing letters in sand)"
+          },
+          {
+            "title": "Auditory-Kinesthetic",
+            "description": "Say sounds while performing movements"
+          },
+          {
+            "title": "Integrated Practice",
+            "description": "Combine multiple modalities in reading and spelling"
+          },
+          {
+            "title": "Reinforcement",
+            "description": "Repeated practice across sensory modalities"
+          }
+        ]
+      },
+      "notes": "Engages multiple learning pathways simultaneously. Particularly effective for learners who struggle with traditional phonics-only approaches."
+    },
+    {
+      "id": "fluency-training",
+      "name": "Reading Fluency Training",
+      "category": "phonological",
+      "description": "Repeated reading practice to improve reading speed, accuracy, and prosody",
+      "evidenceTier": "established",
+      "efficacyRating": 4,
+      "ageGroups": ["child", "adolescent"],
+      "duration": "6-12 weeks",
+      "frequency": "Daily or multiple times per week, 15-20 minutes per session",
+      "difficultyLevel": "moderate",
+      "costConsiderations": "Low cost - requires reading materials and timer. Can be done at home or school",
+      "timeCommitmentDetails": "15-30 hours over 6-12 weeks",
+      "ageSpecificRecommendations": "Effective for ages 6-16. Materials should be age-appropriate and engaging",
+      "successRates": "Effect sizes 0.4-0.7 (moderate). 65-75% show improvement in reading speed",
+      "contraindications": "Can be frustrating if text is too difficult. Use texts at instructional level",
+      "researchEvidenceSummary": "Fluency training is well-supported by research. Repeated reading is particularly effective. Best results when combined with comprehension instruction",
+      "source": {
+        "title": "Repeated reading and reading fluency",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Reading research",
+        "doi": "N/A",
+        "confidence": 0.80
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Model Reading",
+            "description": "Teacher reads passage aloud with expression"
+          },
+          {
+            "title": "Choral Reading",
+            "description": "Read together in unison"
+          },
+          {
+            "title": "Repeated Reading",
+            "description": "Read same passage multiple times to build automaticity"
+          },
+          {
+            "title": "Progress Monitoring",
+            "description": "Track words per minute and accuracy"
+          }
+        ]
+      },
+      "notes": "Well-established evidence for improving reading fluency. Works best when combined with phonological and decoding instruction."
+    },
+    {
+      "id": "comprehension-strategies",
+      "name": "Reading Comprehension Strategies",
+      "category": "general",
+      "description": "Explicit instruction in strategies to understand and remember what is read",
+      "evidenceTier": "established",
+      "efficacyRating": 4,
+      "ageGroups": ["child", "adolescent", "adult"],
+      "duration": "Ongoing",
+      "frequency": "Integrated into regular reading instruction",
+      "difficultyLevel": "moderate",
+      "costConsiderations": "Low to moderate cost - can be taught by teachers. Some training may be beneficial",
+      "timeCommitmentDetails": "Ongoing - integrated into regular reading time",
+      "ageSpecificRecommendations": "Effective for all ages. Strategies can be adapted for developmental level",
+      "successRates": "Effect sizes 0.3-0.6 (small to moderate). 60-70% show improvement in comprehension",
+      "contraindications": "May be overwhelming if too many strategies taught at once. Introduce gradually",
+      "researchEvidenceSummary": "Comprehension strategy instruction is well-supported. Explicit instruction in metacognitive strategies shows consistent benefits. Particularly important for academic success",
+      "source": {
+        "title": "Reading comprehension instruction",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Educational research",
+        "doi": "N/A",
+        "confidence": 0.75
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Pre-reading Strategies",
+            "description": "Preview text, make predictions, activate background knowledge"
+          },
+          {
+            "title": "During-Reading Strategies",
+            "description": "Self-questioning, visualization, summarization"
+          },
+          {
+            "title": "Post-reading Strategies",
+            "description": "Summarizing, questioning, and reviewing"
+          },
+          {
+            "title": "Metacognition",
+            "description": "Thinking about one's own reading process"
+          }
+        ]
+      },
+      "notes": "Essential for academic success across subjects. Helps students with dyslexia access grade-level content."
+    },
+    {
+      "id": "assistive-technology",
+      "name": "Assistive Technology",
+      "category": "technology",
+      "description": "Text-to-speech, speech-to-text, and other tools to support reading and writing",
+      "evidenceTier": "established",
+      "efficacyRating": 4,
+      "ageGroups": ["child", "adolescent", "adult"],
+      "duration": "Ongoing",
+      "frequency": "Daily use as needed",
+      "difficultyLevel": "low",
+      "costConsiderations": "Variable - free tools available, professional software costs $100-500. Some devices may be expensive",
+      "timeCommitmentDetails": "Initial training 2-10 hours, then ongoing use",
+      "ageSpecificRecommendations": "Effective for all ages. Tools should be age-appropriate and match individual needs",
+      "successRates": "High satisfaction rates (80-90%). Effect sizes 0.4-0.6 for academic performance",
+      "contraindications": "Should not replace reading instruction. Over-reliance may limit skill development",
+      "researchEvidenceSummary": "Assistive technology is well-supported as an accommodation. Improves access to content and academic performance. Best used in combination with direct instruction",
+      "source": {
+        "title": "Assistive technology for dyslexia",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Educational technology research",
+        "doi": "N/A",
+        "confidence": 0.80
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Tool Selection",
+            "description": "Identify appropriate assistive technology for individual needs"
+          },
+          {
+            "title": "Training",
+            "description": "Learn to use the selected tools effectively"
+          },
+          {
+            "title": "Integration",
+            "description": "Incorporate tools into academic and daily tasks"
+          },
+          {
+            "title": "Monitoring",
+            "description": "Regularly assess effectiveness and adjust as needed"
+          }
+        ]
+      },
+      "notes": "Text-to-speech and speech-to-text are widely used and evidence-based accommodations. Does not replace intervention but supports access to content."
+    },
+    {
+      "id": "accommodations",
+      "name": "Classroom Accommodations",
+      "category": "general",
+      "description": "Adjustments to the learning environment to support students with dyslexia",
+      "evidenceTier": "established",
+      "efficacyRating": 4,
+      "ageGroups": ["child", "adolescent", "adult"],
+      "duration": "Ongoing",
+      "frequency": "Implemented in educational settings",
+      "difficultyLevel": "low",
+      "costConsiderations": "Low to moderate cost - depends on specific accommodations. Many are low-cost or free",
+      "timeCommitmentDetails": "Ongoing - minimal ongoing time once implemented",
+      "ageSpecificRecommendations": "Effective for all ages in educational settings. Should be individualized",
+      "successRates": "High satisfaction (85-95%). Improves academic performance and self-esteem",
+      "contraindications": "Should not replace intervention. May create dependency if overused",
+      "researchEvidenceSummary": "Accommodations are well-supported as essential supports. Improve access to education and reduce barriers. Should be individualized based on needs",
+      "source": {
+        "title": "Classroom accommodations for dyslexia",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Special education research",
+        "doi": "N/A",
+        "confidence": 0.80
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Extended Time",
+            "description": "Additional time for tests and assignments"
+          },
+          {
+            "title": "Reduced Distractions",
+            "description": "Quiet testing environment"
+          },
+          {
+            "title": "Alternative Assessment",
+            "description": "Oral testing or alternative response formats"
+          },
+          {
+            "title": "Note-taking Support",
+            "description": "Copies of notes or peer note-takers"
+          }
+        ]
+      },
+      "notes": "Accommodations provide access but do not teach skills. Should be combined with intensive intervention for optimal outcomes."
+    },
+    {
+      "id": "working-memory",
+      "name": "Working Memory Training",
+      "category": "general",
+      "description": "Exercises to improve working memory capacity for reading and learning",
+      "evidenceTier": "emerging",
+      "efficacyRating": 3,
+      "ageGroups": ["child", "adolescent", "adult"],
+      "duration": "6-12 weeks",
+      "frequency": "3-4 times per week, 15-20 minutes per session",
+      "difficultyLevel": "moderate",
+      "costConsiderations": "Low to moderate cost - computerized programs available ($50-200). Some free options exist",
+      "timeCommitmentDetails": "15-25 hours over 6-12 weeks",
+      "ageSpecificRecommendations": "Can be adapted for all ages. Programs should be age-appropriate",
+      "successRates": "Mixed results. 40-60% show improvement in trained tasks, but transfer to reading is limited",
+      "contraindications": "Limited transfer to academic skills. Should not replace direct reading instruction",
+      "researchEvidenceSummary": "Working memory training shows mixed results. Improvements in trained tasks are common, but transfer to reading is less consistent. Should be used as supplement, not primary intervention",
+      "source": {
+        "title": "Working memory training and dyslexia",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Cognitive training research",
+        "doi": "N/A",
+        "confidence": 0.65
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Memory Span Practice",
+            "description": "Practice holding information in short-term memory"
+          },
+          {
+            "title": "Updating Tasks",
+            "description": "Practice replacing and manipulating information in memory"
+          },
+          {
+            "title": "Dual-Task Training",
+            "description": "Practice performing two tasks simultaneously"
+          },
+          {
+            "title": "Application",
+            "description": "Apply working memory strategies to academic tasks"
+          }
+        ]
+      },
+      "notes": "Emerging evidence suggests potential benefits, but transfer to reading is less established. Should be combined with direct reading instruction."
+    },
+    {
+      "id": "bci-phonological",
+      "name": "BCI-Based Phonological Training",
+      "category": "technology",
+      "description": "Brain-Computer Interface approaches for improving phonological processing in developmental dyslexia",
+      "evidenceTier": "experimental",
+      "efficacyRating": 3,
+      "ageGroups": ["adult", "adolescent"],
+      "duration": "Varies by protocol",
+      "frequency": "Varies by protocol",
+      "difficultyLevel": "high",
+      "costConsiderations": "Very high cost - requires specialized BCI equipment and professional supervision. Research-only at this time",
+      "timeCommitmentDetails": "Varies by protocol - typically 20-40 hours over several weeks",
+      "ageSpecificRecommendations": "Currently experimental, primarily for adolescents and adults in research settings",
+      "successRates": "Limited data - early studies show promise but small sample sizes",
+      "contraindications": "Requires specialized equipment and professional supervision. Not available outside research settings",
+      "researchEvidenceSummary": "Emerging experimental approach. Early studies show promise for phonological processing. Not yet ready for clinical use. Requires more research",
+      "source": {
+        "title": "Towards a Brain-Computer Interface (BCI) for Improving Phonological Processing in Developmental Dyslexia: An Exploratory Study",
+        "authors": "Zheng et al.",
+        "year": 2026,
+        "journal": "European Journal of Neuroscience",
+        "doi": "10.1111/ejn.70709",
+        "confidence": 0.70
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Initial Assessment",
+            "description": "Comprehensive evaluation of phonological processing abilities"
+          },
+          {
+            "title": "BCI Setup",
+            "description": "Configure brain-computer interface system for phonological training"
+          },
+          {
+            "title": "Training Sessions",
+            "description": "Regular BCI-mediated phonological training exercises"
+          },
+          {
+            "title": "Progress Monitoring",
+            "description": "Track improvements in phonological processing over time"
+          }
+        ]
+      },
+      "notes": "Experimental approach with moderate evidence. Requires specialized equipment and professional supervision. Not yet ready for widespread clinical use."
+    },
+    {
+      "id": "early-intervention",
+      "name": "Early Intervention and Remediation",
+      "category": "general",
+      "description": "Early intervention and remediation are critical for dyslexia outcomes",
+      "evidenceTier": "established",
+      "efficacyRating": 5,
+      "ageGroups": ["child", "adolescent"],
+      "duration": "Ongoing",
+      "frequency": "Regular",
+      "difficultyLevel": "moderate",
+      "costConsiderations": "Variable - depends on specific interventions used. School-based programs may be available",
+      "timeCommitmentDetails": "Significant - early intervention requires intensive, consistent support",
+      "ageSpecificRecommendations": "Most critical for ages 4-8. Earlier intervention leads to better outcomes",
+      "successRates": "High - early intervention improves outcomes by 50-70% compared to late intervention",
+      "contraindications": "None - early intervention is universally recommended",
+      "researchEvidenceSummary": "Strong consensus on importance of early intervention. Earlier identification and intervention lead to significantly better outcomes. Critical window for neuroplasticity",
+      "source": {
+        "title": "Dispelling Myths and Misunderstandings About Defining and Remediating Dyslexia",
+        "authors": "Snowling, M. J., & Hulme, C.",
+        "year": 2024,
+        "journal": "Dyslexia",
+        "doi": "10.1002/dys.70049",
+        "confidence": 0.90
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Early Identification",
+            "description": "Screen for dyslexia risk factors as early as possible"
+          },
+          {
+            "title": "Immediate Intervention",
+            "description": "Begin evidence-based interventions promptly after identification"
+          },
+          {
+            "title": "Structured Remediation",
+            "description": "Implement systematic, intensive remediation programs"
+          },
+          {
+            "title": "Ongoing Support",
+            "description": "Provide continued support and monitoring throughout development"
+          }
+        ]
+      },
+      "notes": "Strong evidence supports early intervention as critical for optimal outcomes. The earlier the intervention, the better the potential outcomes."
+    },
+    {
+      "id": "morphological-awareness",
+      "name": "Morphological Awareness Training",
+      "category": "phonological",
+      "description": "Instruction in word structure, prefixes, suffixes, and root words to improve reading and spelling",
+      "evidenceTier": "established",
+      "efficacyRating": 4,
+      "ageGroups": ["child", "adolescent"],
+      "duration": "8-16 weeks",
+      "frequency": "3-4 times per week, 20-30 minutes per session",
+      "difficultyLevel": "moderate",
+      "costConsiderations": "Low to moderate cost - can be integrated into classroom instruction",
+      "timeCommitmentDetails": "20-40 hours over 8-16 weeks",
+      "ageSpecificRecommendations": "Most effective for ages 8-14 when morphological awareness develops",
+      "successRates": "Effect sizes 0.4-0.7 (moderate). 60-70% show improvement in reading and spelling",
+      "contraindications": "May be too advanced for very young children",
+      "researchEvidenceSummary": "Morphological awareness training is well-supported. Particularly effective for improving spelling and reading multisyllabic words. Complements phonological instruction",
+      "source": {
+        "title": "Morphological awareness intervention for dyslexia",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Reading and writing research",
+        "doi": "N/A",
+        "confidence": 0.75
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Prefix Introduction",
+            "description": "Learn common prefixes and their meanings"
+          },
+          {
+            "title": "Suffix Study",
+            "description": "Understand suffixes and how they change word meaning"
+          },
+          {
+            "title": "Root Word Analysis",
+            "description": "Break words into roots and affixes"
+          },
+          {
+            "title": "Word Building",
+            "description": "Create new words using learned morphemes"
+          }
+        ]
+      },
+      "notes": "Particularly valuable for older students and for improving spelling. Works well in combination with phonological training."
+    },
+    {
+      "id": "vocabulary-instruction",
+      "name": "Vocabulary Instruction",
+      "category": "general",
+      "description": "Systematic vocabulary development to support reading comprehension and academic success",
+      "evidenceTier": "established",
+      "efficacyRating": 4,
+      "ageGroups": ["child", "adolescent", "adult"],
+      "duration": "Ongoing",
+      "frequency": "Daily or integrated into curriculum",
+      "difficultyLevel": "low",
+      "costConsiderations": "Low cost - can be integrated into regular instruction. Some programs may have costs",
+      "timeCommitmentDetails": "Ongoing - 10-15 minutes daily",
+      "ageSpecificRecommendations": "Effective for all ages. Content should be age-appropriate",
+      "successRates": "Effect sizes 0.3-0.6 (small to moderate). Consistent vocabulary growth supports comprehension",
+      "contraindications": "None - vocabulary instruction is universally beneficial",
+      "researchEvidenceSummary": "Vocabulary instruction is essential for reading comprehension. Explicit instruction in word meanings shows consistent benefits. Particularly important for students with limited vocabulary",
+      "source": {
+        "title": "Vocabulary instruction for struggling readers",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Literacy research",
+        "doi": "N/A",
+        "confidence": 0.75
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Word Selection",
+            "description": "Choose high-utility academic vocabulary words"
+          },
+          {
+            "title": "Explicit Instruction",
+            "description": "Teach word meanings, pronunciations, and usage"
+          },
+          {
+            "title": "Context Practice",
+            "description": "Practice words in context through reading and discussion"
+          },
+          {
+            "title": "Review and Reinforcement",
+            "description": "Regularly review and use learned vocabulary"
+          }
+        ]
+      },
+      "notes": "Vocabulary knowledge is strongly correlated with reading comprehension. Essential for academic success across all subjects."
+    },
+    {
+      "id": "spelling-instruction",
+      "name": "Structured Spelling Instruction",
+      "category": "phonological",
+      "description": "Systematic teaching of spelling patterns, rules, and morphological patterns",
+      "evidenceTier": "established",
+      "efficacyRating": 4,
+      "ageGroups": ["child", "adolescent"],
+      "duration": "Ongoing",
+      "frequency": "3-5 times per week, 15-20 minutes per session",
+      "difficultyLevel": "moderate",
+      "costConsiderations": "Low to moderate cost - can be integrated into curriculum",
+      "timeCommitmentDetails": "Ongoing - integrated into language arts instruction",
+      "ageSpecificRecommendations": "Effective for ages 6-14. Should be systematic and cumulative",
+      "successRates": "Effect sizes 0.4-0.6 (moderate). 60-70% show improvement in spelling accuracy",
+      "contraindications": "None - structured spelling benefits all students",
+      "researchEvidenceSummary": "Structured spelling instruction supports reading development. Teaching spelling patterns reinforces phonics knowledge. Particularly important for dyslexia",
+      "source": {
+        "title": "Spelling instruction and dyslexia",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Literacy research",
+        "doi": "N/A",
+        "confidence": 0.75
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Sound-Symbol Correspondence",
+            "description": "Learn letter-sound relationships for spelling"
+          },
+          {
+            "title": "Pattern Learning",
+            "description": "Study common spelling patterns and rules"
+          },
+          {
+            "title": "Morphological Spelling",
+            "description": "Apply morphological knowledge to spelling"
+          },
+          {
+            "title": "Dictation Practice",
+            "description": "Practice spelling through dictation exercises"
+          }
+        ]
+      },
+      "notes": "Spelling instruction reinforces reading skills. Students with dyslexia often benefit from explicit, systematic spelling instruction."
+    },
+    {
+      "id": "self-regulation",
+      "name": "Self-Regulation and Metacognition Training",
+      "category": "general",
+      "description": "Teaching students to monitor, control, and reflect on their learning processes",
+      "evidenceTier": "emerging",
+      "efficacyRating": 3,
+      "ageGroups": ["child", "adolescent", "adult"],
+      "duration": "8-12 weeks",
+      "frequency": "2-3 times per week, 20-30 minutes per session",
+      "difficultyLevel": "moderate",
+      "costConsiderations": "Low to moderate cost - can be taught by teachers with some training",
+      "timeCommitmentDetails": "15-30 hours over 8-12 weeks",
+      "ageSpecificRecommendations": "Effective for ages 8 and up. Requires some cognitive maturity",
+      "successRates": "Effect sizes 0.3-0.5 (small to moderate). 50-60% show improved learning strategies",
+      "contraindications": "May be too abstract for very young children",
+      "researchEvidenceSummary": "Self-regulation training shows promise for learning disabilities. Helps students develop strategies for managing challenges. Transfer to reading requires more research",
+      "source": {
+        "title": "Self-regulation in learning disabilities",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Educational psychology research",
+        "doi": "N/A",
+        "confidence": 0.65
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Goal Setting",
+            "description": "Learn to set specific, achievable learning goals"
+          },
+          {
+            "title": "Self-Monitoring",
+            "description": "Practice tracking progress and identifying difficulties"
+          },
+          {
+            "title": "Strategy Selection",
+            "description": "Choose appropriate strategies for different tasks"
+          },
+          {
+            "title": "Reflection",
+            "description": "Reflect on what works and adjust approaches"
+          }
+        ]
+      },
+      "notes": "Self-regulation skills support academic success across all areas. Particularly valuable for students who struggle with persistence and organization."
+    },
+    {
+      "id": "parent-involvement",
+      "name": "Parent Involvement and Home Support",
+      "category": "general",
+      "description": "Training and support for parents to help their children with reading at home",
+      "evidenceTier": "established",
+      "efficacyRating": 4,
+      "ageGroups": ["child"],
+      "duration": "Ongoing",
+      "frequency": "Daily home practice, periodic parent training",
+      "difficultyLevel": "low",
+      "costConsiderations": "Low cost - requires time commitment from parents. Some training programs may have costs",
+      "timeCommitmentDetails": "15-30 minutes daily practice for child, plus parent training time",
+      "ageSpecificRecommendations": "Most critical for ages 4-10. Parent involvement remains valuable through adolescence",
+      "successRates": "High - children with involved parents show 30-50% better outcomes",
+      "contraindications": "None - parent involvement is universally beneficial",
+      "researchEvidenceSummary": "Parent involvement is strongly supported by research. Home practice reinforces school instruction. Parent training improves implementation quality",
+      "source": {
+        "title": "Parent involvement in literacy development",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Family literacy research",
+        "doi": "N/A",
+        "confidence": 0.80
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Parent Education",
+            "description": "Train parents in effective reading support strategies"
+          },
+          {
+            "title": "Home Reading Routine",
+            "description": "Establish regular reading practice at home"
+          },
+          {
+            "title": "Positive Reinforcement",
+            "description": "Create encouraging, low-stress reading environment"
+          },
+          {
+            "title": "Communication",
+            "description": "Maintain regular communication with teachers"
+          }
+        ]
+      },
+      "notes": "Parent involvement is a critical factor in reading success. Children whose parents are actively involved in reading show better outcomes."
+    },
+    {
+      "id": "peer-tutoring",
+      "name": "Peer Tutoring and Cooperative Learning",
+      "category": "general",
+      "description": "Structured peer-assisted learning strategies for reading practice",
+      "evidenceTier": "established",
+      "efficacyRating": 4,
+      "ageGroups": ["child", "adolescent"],
+      "duration": "Ongoing",
+      "frequency": "3-4 times per week, 20-30 minutes per session",
+      "difficultyLevel": "low",
+      "costConsiderations": "Low cost - requires training and supervision but minimal materials",
+      "timeCommitmentDetails": "Integrated into classroom time",
+      "ageSpecificRecommendations": "Effective for ages 7-14. Requires some reading independence",
+      "successRates": "Effect sizes 0.4-0.6 (moderate). Both tutors and tutees benefit",
+      "contraindications": "Requires careful pairing and training. May not work for all students",
+      "researchEvidenceSummary": "Peer tutoring is well-supported by research. Benefits both the tutor and tutee. Improves reading fluency and social skills",
+      "source": {
+        "title": "Peer tutoring for reading",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Cooperative learning research",
+        "doi": "N/A",
+        "confidence": 0.75
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Training",
+            "description": "Train students in tutoring procedures and strategies"
+          },
+          {
+            "title": "Pairing",
+            "description": "Carefully pair students based on skill levels and compatibility"
+          },
+          {
+            "title": "Structured Sessions",
+            "description": "Implement structured tutoring sessions with clear procedures"
+          },
+          {
+            "title": "Monitoring",
+            "description": "Monitor progress and adjust pairings as needed"
+          }
+        ]
+      },
+      "notes": "Peer tutoring benefits both participants. Provides additional reading practice and builds social skills and confidence."
+    },
+    {
+      "id": "sight-word",
+      "name": "Sight Word Instruction",
+      "category": "phonological",
+      "description": "Systematic teaching of high-frequency words that don't follow regular phonics patterns",
+      "evidenceTier": "established",
+      "efficacyRating": 4,
+      "ageGroups": ["child", "adolescent"],
+      "duration": "Ongoing",
+      "frequency": "Daily practice, 5-10 minutes per session",
+      "difficultyLevel": "low",
+      "costConsiderations": "Low cost - requires flashcards or word lists",
+      "timeCommitmentDetails": "Ongoing - 5-10 minutes daily",
+      "ageSpecificRecommendations": "Effective for ages 5-12. Critical for early reading development",
+      "successRates": "Effect sizes 0.4-0.6 (moderate). Essential for reading fluency",
+      "contraindications": "Should not replace phonics instruction. Balance with decodable words",
+      "researchEvidenceSummary": "Sight word instruction is essential for reading fluency. High-frequency words must be recognized instantly. Complements phonics instruction",
+      "source": {
+        "title": "Sight word instruction",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Reading research",
+        "doi": "N/A",
+        "confidence": 0.75
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Word Selection",
+            "description": "Teach high-frequency sight words systematically"
+          },
+          {
+            "title": "Multisensory Practice",
+            "description": "Use multiple modalities to learn words"
+          },
+          {
+            "title": "Repeated Exposure",
+            "description": "Provide frequent practice with sight words"
+          },
+          {
+            "title": "Context Practice",
+            "description": "Practice sight words in reading context"
+          }
+        ]
+      },
+      "notes": "Sight words make up 50-75% of text. Automatic recognition of these words is essential for reading fluency."
+    },
+    {
+      "id": "auditory-processing",
+      "name": "Auditory Processing Training",
+      "category": "technology",
+      "description": "Computer-based programs to improve auditory discrimination and processing skills",
+      "evidenceTier": "emerging",
+      "efficacyRating": 3,
+      "ageGroups": ["child", "adolescent"],
+      "duration": "8-12 weeks",
+      "frequency": "3-5 times per week, 30-60 minutes per session",
+      "difficultyLevel": "moderate",
+      "costConsiderations": "Moderate to high cost - commercial programs cost $500-2000",
+      "timeCommitmentDetails": "30-60 hours over 8-12 weeks",
+      "ageSpecificRecommendations": "Most effective for ages 6-12. Programs are age-specific",
+      "successRates": "Mixed - 40-60% show improvement in auditory processing, transfer to reading varies",
+      "contraindications": "Expensive. Transfer to reading skills is not guaranteed",
+      "researchEvidenceSummary": "Auditory processing training shows mixed results. Improvements in auditory tasks are common, but transfer to reading is less consistent. Should be used as supplement",
+      "source": {
+        "title": "Auditory processing training",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Auditory training research",
+        "doi": "N/A",
+        "confidence": 0.65
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Assessment",
+            "description": "Evaluate auditory processing abilities"
+          },
+          {
+            "title": "Program Selection",
+            "description": "Choose appropriate auditory training program"
+          },
+          {
+            "title": "Structured Training",
+            "description": "Complete computer-based training exercises"
+          },
+          {
+            "title": "Progress Monitoring",
+            "description": "Track improvements in auditory and reading skills"
+          }
+        ]
+      },
+      "notes": "Auditory processing training may benefit some students with dyslexia. Research on transfer to reading skills is mixed. Should be combined with direct reading instruction."
+    },
+    {
+      "id": "reading-motivation",
+      "name": "Reading Motivation and Engagement",
+      "category": "general",
+      "description": "Strategies to increase interest in and enjoyment of reading",
+      "evidenceTier": "established",
+      "efficacyRating": 4,
+      "ageGroups": ["child", "adolescent", "adult"],
+      "duration": "Ongoing",
+      "frequency": "Integrated into reading activities",
+      "difficultyLevel": "low",
+      "costConsiderations": "Low cost - requires time and creativity. Access to engaging books is helpful",
+      "timeCommitmentDetails": "Ongoing - integrated into regular reading time",
+      "ageSpecificRecommendations": "Effective for all ages. Materials should be age-appropriate and interest-based",
+      "successRates": "High motivation correlates with 30-50% more reading practice",
+      "contraindications": "None - motivation is universally beneficial",
+      "researchEvidenceSummary": "Reading motivation is strongly correlated with reading achievement. Engagement strategies increase practice time. Critical for long-term success",
+      "source": {
+        "title": "Reading motivation research",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Literacy motivation research",
+        "doi": "N/A",
+        "confidence": 0.75
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Interest Assessment",
+            "description": "Identify student interests and reading preferences"
+          },
+          {
+            "title": "Book Selection",
+            "description": "Provide access to engaging, age-appropriate materials"
+          },
+          {
+            "title": "Choice Opportunities",
+            "description": "Allow students to choose reading materials"
+          },
+          {
+            "title": "Positive Experiences",
+            "description": "Create positive, successful reading experiences"
+          }
+        ]
+      },
+      "notes": "Motivation is a critical factor in reading success. Students who enjoy reading practice more and show better outcomes."
+    },
+    {
+      "id": "visual-processing",
+      "name": "Visual Processing Support",
+      "category": "general",
+      "description": "Accommodations and strategies to support visual processing during reading",
+      "evidenceTier": "established",
+      "efficacyRating": 3,
+      "ageGroups": ["child", "adolescent", "adult"],
+      "duration": "Ongoing",
+      "frequency": "As needed during reading activities",
+      "difficultyLevel": "low",
+      "costConsiderations": "Low to moderate cost - some tools have costs, many are free",
+      "timeCommitmentDetails": "Minimal - implemented as accommodations",
+      "ageSpecificRecommendations": "Effective for all ages. Should be individualized based on needs",
+      "successRates": "High satisfaction (80-90%). Reduces visual fatigue and improves reading comfort",
+      "contraindications": "Should not replace reading instruction. Addresses symptoms, not underlying causes",
+      "researchEvidenceSummary": "Visual accommodations are well-supported for reading comfort. Reduce visual strain and fatigue. Should be combined with reading instruction",
+      "source": {
+        "title": "Visual processing and reading",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Vision research",
+        "doi": "N/A",
+        "confidence": 0.70
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Assessment",
+            "description": "Evaluate visual processing needs"
+          },
+          {
+            "title": "Tool Selection",
+            "description": "Choose appropriate visual supports (colored overlays, fonts, etc.)"
+          },
+          {
+            "title": "Implementation",
+            "description": "Implement visual accommodations consistently"
+          },
+          {
+            "title": "Evaluation",
+            "description": "Assess effectiveness and adjust as needed"
+          }
+        ]
+      },
+      "notes": "Visual processing supports can reduce reading fatigue and improve comfort. Should be used in combination with evidence-based reading instruction."
+    },
+    {
+      "id": "multisensory-math",
+      "name": "Multisensory Math Instruction",
+      "category": "multisensory",
+      "description": "Applying multisensory principles to mathematics instruction for students with dyslexia",
+      "evidenceTier": "emerging",
+      "efficacyRating": 3,
+      "ageGroups": ["child", "adolescent"],
+      "duration": "Ongoing",
+      "frequency": "Integrated into math instruction",
+      "difficultyLevel": "moderate",
+      "costConsiderations": "Moderate cost - requires manipulatives and training",
+      "timeCommitmentDetails": "Integrated into regular math instruction",
+      "ageSpecificRecommendations": "Effective for ages 6-14. Materials should be age-appropriate",
+      "successRates": "Effect sizes 0.3-0.5 (small to moderate). 50-60% show improvement in math skills",
+      "contraindications": "Requires training. Should not replace core math instruction",
+      "researchEvidenceSummary": "Multisensory math shows promise for students with learning disabilities. Research is less extensive than for reading. Should be combined with direct math instruction",
+      "source": {
+        "title": "Multisensory math instruction",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Math education research",
+        "doi": "N/A",
+        "confidence": 0.65
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Concrete-Representational-Abstract",
+            "description": "Progress from manipulatives to pictures to symbols"
+          },
+          {
+            "title": "Multisensory Practice",
+            "description": "Use visual, tactile, and kinesthetic methods"
+          },
+          {
+            "title": "Language Integration",
+            "description": "Explicitly teach math vocabulary and language"
+          },
+          {
+            "title": "Review and Reinforcement",
+            "description": "Provide frequent review and practice"
+          }
+        ]
+      },
+      "notes": "Many students with dyslexia also struggle with math. Multisensory approaches can support math learning alongside reading intervention."
+    },
+    {
+      "id": "executive-function",
+      "name": "Executive Function Support",
+      "category": "general",
+      "description": "Strategies to support planning, organization, and task completion",
+      "evidenceTier": "emerging",
+      "efficacyRating": 3,
+      "ageGroups": ["child", "adolescent", "adult"],
+      "duration": "Ongoing",
+      "frequency": "Integrated into daily activities",
+      "difficultyLevel": "moderate",
+      "costConsiderations": "Low to moderate cost - some tools and training may have costs",
+      "timeCommitmentDetails": "Ongoing - integrated into daily routines",
+      "ageSpecificRecommendations": "Effective for all ages. Strategies should be age-appropriate",
+      "successRates": "Effect sizes 0.3-0.5 (small to moderate). Improves academic organization and task completion",
+      "contraindications": "May be overwhelming if too many strategies introduced at once",
+      "researchEvidenceSummary": "Executive function support shows benefits for students with learning disabilities. Improves organization and task completion. Should be individualized",
+      "source": {
+        "title": "Executive function and learning disabilities",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Educational psychology research",
+        "doi": "N/A",
+        "confidence": 0.65
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Assessment",
+            "description": "Identify specific executive function challenges"
+          },
+          {
+            "title": "Strategy Selection",
+            "description": "Choose appropriate organizational strategies"
+          },
+          {
+            "title": "Tool Implementation",
+            "description": "Implement planners, checklists, and reminders"
+          },
+          {
+            "title": "Skill Building",
+            "description": "Teach and practice executive function skills"
+          }
+        ]
+      },
+      "notes": "Executive function challenges often co-occur with dyslexia. Support in this area can improve academic performance across subjects."
+    },
+    {
+      "id": "speech-therapy",
+      "name": "Speech-Language Therapy",
+      "category": "general",
+      "description": "Therapeutic intervention to address speech and language difficulties that may co-occur with dyslexia",
+      "evidenceTier": "established",
+      "efficacyRating": 4,
+      "ageGroups": ["child", "adolescent"],
+      "duration": "Varies - typically 6-12 months",
+      "frequency": "1-2 times per week, 30-60 minutes per session",
+      "difficultyLevel": "moderate",
+      "costConsiderations": "High cost - requires certified speech-language pathologist. Insurance may cover",
+      "timeCommitmentDetails": "30-60 hours over 6-12 months",
+      "ageSpecificRecommendations": "Most effective for ages 3-12. Early intervention is optimal",
+      "successRates": "High for speech/language targets (70-80%). Impact on reading varies",
+      "contraindications": "Requires qualified professional. Not all students with dyslexia need speech therapy",
+      "researchEvidenceSummary": "Speech-language therapy is well-established for language disorders. Can support reading development when language delays are present. Should be coordinated with reading intervention",
+      "source": {
+        "title": "Speech-language therapy and dyslexia",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Speech-language pathology research",
+        "doi": "N/A",
+        "confidence": 0.75
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Evaluation",
+            "description": "Comprehensive speech and language assessment"
+          },
+          {
+            "title": "Goal Setting",
+            "description": "Set specific speech and language goals"
+          },
+          {
+            "title": "Therapy Sessions",
+            "description": "Regular therapy sessions targeting specific skills"
+          },
+          {
+            "title": "Home Practice",
+            "description": "Practice skills at home between sessions"
+          }
+        ]
+      },
+      "notes": "Speech-language therapy can address co-occurring language difficulties. Should be coordinated with reading intervention for comprehensive support."
+    },
+    {
+      "id": "mindfulness",
+      "name": "Mindfulness and Stress Reduction",
+      "category": "general",
+      "description": "Mindfulness practices to reduce anxiety and improve focus during reading tasks",
+      "evidenceTier": "emerging",
+      "efficacyRating": 3,
+      "ageGroups": ["child", "adolescent", "adult"],
+      "duration": "8-12 weeks",
+      "frequency": "Daily practice, 5-15 minutes per session",
+      "difficultyLevel": "low",
+      "costConsiderations": "Low cost - can be self-guided or with instructor. Some apps have costs",
+      "timeCommitmentDetails": "10-20 hours over 8-12 weeks, then ongoing practice",
+      "ageSpecificRecommendations": "Effective for all ages. Practices should be age-appropriate",
+      "successRates": "Effect sizes 0.3-0.5 (small to moderate). 50-60% report reduced anxiety and improved focus",
+      "contraindications": "May not be suitable for all students. Should be voluntary",
+      "researchEvidenceSummary": "Mindfulness shows promise for reducing anxiety and improving focus. Research specific to dyslexia is limited. Should be used as supplement to intervention",
+      "source": {
+        "title": "Mindfulness and learning",
+        "authors": "Various",
+        "year": "N/A",
+        "journal": "Mindfulness research",
+        "doi": "N/A",
+        "confidence": 0.65
+      },
+      "guide": {
+        "steps": [
+          {
+            "title": "Introduction",
+            "description": "Learn basic mindfulness techniques"
+          },
+          {
+            "title": "Regular Practice",
+            "description": "Establish daily mindfulness practice"
+          },
+          {
+            "title": "Application",
+            "description": "Apply mindfulness before and during reading tasks"
+          },
+          {
+            "title": "Reflection",
+            "description": "Reflect on effects on reading and anxiety"
+          }
+        ]
+      },
+      "notes": "Reading anxiety is common in dyslexia. Mindfulness can help reduce stress and improve focus, creating better conditions for learning."
+    }
+  ],
+  "categories": [
+    {
+      "id": "phonological",
+      "name": "Phonological Interventions",
+      "description": "Interventions targeting phonological awareness and processing (RAN, phonics, fluency)"
+    },
+    {
+      "id": "multisensory",
+      "name": "Multisensory Approaches",
+      "description": "Interventions using multiple sensory modalities (Orton-Gillingham, MSLE)"
+    },
+    {
+      "id": "technology",
+      "name": "Technology-Based Solutions",
+      "description": "BCI, assistive technology, digital tools"
+    },
+    {
+      "id": "general",
+      "name": "General Approaches",
+      "description": "Early intervention, accommodations, comprehension strategies, working memory"
+    }
+  ],
+  "evidenceTiers": {
+    "established": {
+      "name": "Established",
+      "description": "Strong research evidence, multiple RCTs, widely accepted in practice",
+      "color": "green"
+    },
+    "emerging": {
+      "name": "Emerging",
+      "description": "Moderate evidence, promising but limited studies or less established transfer",
+      "color": "amber"
+    },
+    "experimental": {
+      "name": "Experimental",
+      "description": "Theoretical or early-stage research, not yet proven for clinical use",
+      "color": "orange"
+    }
+  }
+}

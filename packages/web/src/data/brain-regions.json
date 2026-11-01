@@ -1,0 +1,218 @@
+{
+  "regions": [
+    {
+      "id": "left-hemisphere",
+      "name": "Left Hemisphere",
+      "description": "Primary language processing center, typically shows reduced activation in dyslexia during reading tasks",
+      "function": "Language processing, speech production, reading comprehension",
+      "dyslexiaEffects": "Hypoactivation in left hemisphere language areas during reading, compensatory right hemisphere activation in some individuals",
+      "findings": [
+        "Reduced activation in left hemisphere language areas during reading tasks",
+        "Structural differences in left temporoparietal regions",
+        "White matter connectivity differences in left arcuate fasciculus",
+        "Underactivation in left inferior frontal gyrus during phonological processing",
+        "Compensatory overactivation in right hemisphere homologues in some readers"
+      ],
+      "plasticity": "Left hemisphere language areas can show increased activation after phonological training and reading intervention",
+      "source": {
+        "title": "White matter microstructural differences linked to left perisylvian language network in children with dyslexia",
+        "authors": "Rimrodt SL, Clements-Stephens AM, Pugh KR, et al.",
+        "year": 2009,
+        "journal": "Cortex",
+        "doi": "10.1016/j.cortex.2009.07.008"
+      },
+      "visualIndicator": {
+        "color": "#3B82F6",
+        "icon": "🧠",
+        "position": "left"
+      }
+    },
+    {
+      "id": "temporoparietal",
+      "name": "Temporoparietal Region",
+      "description": "Critical for phonological processing, mapping sounds to letters, and reading fluency",
+      "function": "Phonological processing, speech sound analysis, grapheme-phoneme conversion",
+      "dyslexiaEffects": "Reduced gray matter volume, altered functional connectivity during phonological tasks, associated with phonological awareness deficits",
+      "findings": [
+        "Reduced gray matter volume in temporoparietal cortex",
+        "Altered functional connectivity during phonological tasks",
+        "Associated with phonological awareness deficits",
+        "Underactivation during nonword reading tasks",
+        "Structural differences in angular gyrus and supramarginal gyrus"
+      ],
+      "plasticity": "Phonological training can increase activation in temporoparietal regions and improve connectivity",
+      "source": {
+        "title": "Thalamic structural connectivity in developmental dyslexia",
+        "authors": "Müller-Axt C, Anwander A, von Kriegstein K",
+        "year": 2017,
+        "journal": "Current Biology",
+        "doi": "10.1016/j.cub.2017.05.045"
+      },
+      "visualIndicator": {
+        "color": "#10B981",
+        "icon": "🔊",
+        "position": "top-left"
+      }
+    },
+    {
+      "id": "occipitotemporal",
+      "name": "Occipitotemporal Region",
+      "description": "Contains the Visual Word Form Area (VWFA) specialized for rapid word recognition",
+      "function": "Visual word form processing, rapid word recognition, orthographic processing",
+      "dyslexiaEffects": "Reduced activation in visual word form area, delayed development of VWFA specialization, correlated with reading speed deficits",
+      "findings": [
+        "Reduced activation in visual word form area (VWFA)",
+        "Delayed development of visual word form specialization",
+        "Correlated with reading speed deficits",
+        "Less neural specialization for print compared to typical readers",
+        "VWFA activation predicts reading fluency improvements after intervention"
+      ],
+      "plasticity": "Intensive reading intervention can strengthen VWFA activation and develop print-specific neural responses",
+      "source": {
+        "title": "Children's Reading Performance is Correlated with White Matter Structure",
+        "authors": "Klingberg T, Hedehus M, Temple E, et al.",
+        "year": 2000,
+        "journal": "NeuroImage",
+        "doi": "10.1016/S1053-8119(00)00029-7"
+      },
+      "visualIndicator": {
+        "color": "#8B5CF6",
+        "icon": "👁️",
+        "position": "bottom-left"
+      }
+    },
+    {
+      "id": "inferior-frontal",
+      "name": "Inferior Frontal Gyrus (Broca's Area)",
+      "description": "Involved in speech production, articulation, and phonological working memory",
+      "function": "Speech production, articulation, phonological working memory, syntactic processing",
+      "dyslexiaEffects": "Underactivation during reading and phonological tasks, particularly in left hemisphere",
+      "findings": [
+        "Underactivation during phonological awareness tasks",
+        "Reduced functional connectivity with temporoparietal regions",
+        "Differences in gray matter volume",
+        "Altered activation during silent reading",
+        "Compensatory right hemisphere activation in some individuals"
+      ],
+      "plasticity": "Phonological training can increase left inferior frontal gyrus activation",
+      "source": {
+        "title": "Neural systems underlying dyslexia: A meta-analysis of neuroimaging studies",
+        "authors": "Richlan F",
+        "year": 2012,
+        "journal": "Neuroscience & Biobehavioral Reviews",
+        "doi": "10.1016/j.neubiorev.2012.06.011"
+      },
+      "visualIndicator": {
+        "color": "#F59E0B",
+        "icon": "🗣️",
+        "position": "front"
+      }
+    },
+    {
+      "id": "cerebellum",
+      "name": "Cerebellum",
+      "description": "Traditionally associated with motor coordination, now known to contribute to cognitive functions including reading automatization",
+      "function": "Motor coordination, procedural learning, automatization, timing, cognitive processing",
+      "dyslexiaEffects": "Differences in cerebellar activation during reading, may contribute to fluency difficulties and automaticity deficits",
+      "findings": [
+        "Cerebellar contributions to reading automatization",
+        "Differences in cerebellar activation during reading",
+        "May contribute to fluency difficulties",
+        "Structural differences in cerebellar vermis",
+        "Associated with rapid automatized naming (RAN) performance"
+      ],
+      "plasticity": "Cerebellar plasticity supports procedural learning and skill automatization with practice",
+      "source": {
+        "title": "The cerebellum and reading",
+        "authors": "Nicolson RI, Fawcett AJ, Dean P",
+        "year": 2001,
+        "journal": "Trends in Neurosciences",
+        "doi": "10.1016/S0166-2236(00)01888-0"
+      },
+      "visualIndicator": {
+        "color": "#EF4444",
+        "icon": "⚡",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "visual-thalamus",
+      "name": "Visual Thalamus (LGN)",
+      "description": "Relay station for visual information to cortex, with specialized pathways for reading",
+      "function": "Visual information relay, motion processing, visual attention",
+      "dyslexiaEffects": "Reduced structural connectivity between left visual thalamus and middle temporal area V5/MT, correlated with rapid naming abilities",
+      "findings": [
+        "Reduced structural connectivity between left LGN and left V5/MT",
+        "Connectivity strength correlates with rapid naming abilities",
+        "Altered thalamic structural connectivity in dyslexia",
+        "May contribute to visual processing differences in reading",
+        "Involved in magnocellular/dorsal stream processing"
+      ],
+      "plasticity": "Visual training can modify thalamic-cortical connectivity",
+      "source": {
+        "title": "Altered structural connectivity of the left visual thalamus in developmental dyslexia",
+        "authors": "Müller-Axt C, Anwander A, von Kriegstein K",
+        "year": 2017,
+        "journal": "Current Biology",
+        "doi": "10.1016/j.cub.2017.10.034"
+      },
+      "visualIndicator": {
+        "color": "#EC4899",
+        "icon": "👁️‍🗨️",
+        "position": "center"
+      }
+    },
+    {
+      "id": "arcuate-fasciculus",
+      "name": "Arcuate Fasciculus",
+      "description": "Major white matter tract connecting frontal and temporoparietal language regions",
+      "function": "Connects Broca's area and Wernicke's area, language processing, auditory-motor integration",
+      "dyslexiaEffects": "White matter connectivity differences, reduced fractional anisotropy, associated with reading and phonological skills",
+      "findings": [
+        "White matter connectivity differences in left arcuate fasciculus",
+        "Reduced fractional anisotropy in dyslexia",
+        "Correlated with phonological awareness and reading ability",
+        "Differences in long segment connecting frontal and temporoparietal regions",
+        "Predicts response to reading intervention"
+      ],
+      "plasticity": "Intensive reading intervention can improve white matter integrity in arcuate fasciculus",
+      "source": {
+        "title": "White matter microstructural differences linked to left perisylvian language network in children with dyslexia",
+        "authors": "Rimrodt SL, Clements-Stephens AM, Pugh KR, et al.",
+        "year": 2009,
+        "journal": "Cortex",
+        "doi": "10.1016/j.cortex.2009.07.008"
+      },
+      "visualIndicator": {
+        "color": "#06B6D4",
+        "icon": "🔗",
+        "position": "left-center"
+      }
+    }
+  ],
+  "networks": [
+    {
+      "id": "reading-network",
+      "name": "Left Hemisphere Reading Network",
+      "description": "Core network for reading involving left hemisphere regions",
+      "regions": ["left-hemisphere", "temporoparietal", "occipitotemporal", "inferior-frontal"],
+      "function": "Orthographic processing, phonological decoding, semantic access"
+    },
+    {
+      "id": "phonological-network",
+      "name": "Phonological Processing Network",
+      "description": "Network specialized for speech sound processing",
+      "regions": ["temporoparietal", "inferior-frontal", "visual-thalamus"],
+      "function": "Phonological awareness, speech sound analysis, grapheme-phoneme mapping"
+    },
+    {
+      "id": "visual-processing-network",
+      "name": "Visual Processing Network",
+      "description": "Network for visual analysis of print",
+      "regions": ["occipitotemporal", "visual-thalamus"],
+      "function": "Visual word form recognition, orthographic processing, visual attention"
+    }
+  ],
+  "disclaimer": "Brain findings in dyslexia show variability across individuals. These findings represent group-level patterns from research studies, not diagnostic markers for individuals. Neuroplasticity means the brain can change with intervention. The brain is highly complex and no single region determines reading ability.",
+  "visualizationNote": "This data represents a simplified model of brain regions involved in reading. Actual brain organization is more complex with extensive interconnections and individual variation."
+}

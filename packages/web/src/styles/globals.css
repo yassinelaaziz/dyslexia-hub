@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #3b82f6;
+    --color-secondary: #8b5cf6;
+    --color-background: #ffffff;
+    --color-text: #1f2937;
+    --color-text-secondary: #6b7280;
+    --color-border: #e5e7eb;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-error: #ef4444;
+  }
+
+  .dyslexia-mode {
+    --color-primary: #0ea5e9;
+    --color-secondary: #6366f1;
+    --color-background: #fef3c7;
+    --color-text: #1c1917;
+    --color-text-secondary: #44403c;
+    --color-border: #d6d3d1;
+  }
+
+  .high-contrast-mode {
+    --color-primary: #ffff00;
+    --color-secondary: #00ffff;
+    --color-background: #000000;
+    --color-text: #ffffff;
+    --color-text-secondary: #d1d5db;
+    --color-border: #ffffff;
+  }
+
+  body {
+    @apply bg-background text-text antialiased;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md border border-border p-6;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .dyslexia-font {
+    font-family: 'OpenDyslexic', sans-serif;
+  }
+}

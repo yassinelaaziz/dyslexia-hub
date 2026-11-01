@@ -1,0 +1,309 @@
+{
+  "title": "Theoretical Models of Dyslexia",
+  "description": "Several theoretical models have been proposed to explain dyslexia, each emphasizing different aspects of the disorder. These models help researchers and practitioners understand the underlying mechanisms and guide intervention approaches.",
+  "sections": [
+    {
+      "id": "phonological-deficit",
+      "name": "Phonological Deficit Hypothesis",
+      "status": "Widely accepted as core deficit",
+      "confidence": "0.90/1.0",
+      "description": "The phonological deficit hypothesis proposes that the cognitive basis of many specific reading difficulties is a phonological deficit, characterized by difficulties in processing and manipulating the sound structure of words and grapheme-phoneme correspondences.",
+      "keyPoints": [
+        "Difficulties processing and manipulating the sound structure of words",
+        "Difficulties with grapheme-phoneme (letter-sound) correspondences",
+        "Difficulties with rapid automatized naming (RAN)",
+        "Phonological deficits are evident across languages and orthographies",
+        "Phonological processing impairments predict reading difficulties"
+      ],
+      "evidence": "For many years, dyslexia has mainly been explained within the context of the phonological theory, which postulates that dyslexic readers have difficulties with processing and manipulating the sound structure of words, grapheme-phoneme correspondences, and rapid automatized naming.",
+      "sources": [
+        {
+          "authors": "Brimo K, Dinkler L, Gillberg C, et al.",
+          "year": 2021,
+          "title": "The co-occurrence of neurodevelopmental problems in dyslexia",
+          "journal": "Dyslexia",
+          "doi": "10.1002/dys.1681"
+        }
+      ]
+    },
+    {
+      "id": "double-deficit",
+      "name": "Double-Deficit Hypothesis",
+      "status": "Supported by longitudinal evidence",
+      "confidence": "0.85/1.0",
+      "description": "The double-deficit hypothesis (DDH) posits that difficulties in phonological awareness (PA) and rapid automatized naming (RAN) represent two distinct causes of reading disability, with slow RAN associated with slow reading, whereas poor PA is characterized by inaccurate reading and spelling.",
+      "keyPoints": [
+        "Two distinct causes of reading disability: PA deficits and RAN deficits",
+        "Slow RAN associated with slow reading",
+        "Poor PA characterized by inaccurate reading and spelling",
+        "Distinct subtypes with single and double deficits",
+        "PA and RAN contribute independently to reading ability"
+      ],
+      "subtypes": [
+        {
+          "name": "PA-disabled",
+          "characteristics": "Selective deficits in phonological and morphological awareness, intact RAN",
+          "outcome": "Inaccurate reading and spelling"
+        },
+        {
+          "name": "RAN-disabled",
+          "characteristics": "Impaired RAN but preserved phonological and morphological awareness",
+          "outcome": "Slow but accurate reading"
+        },
+        {
+          "name": "Doubly-disabled",
+          "characteristics": "Deficits in both PA and RAN",
+          "outcome": "Both inaccurate and slow reading"
+        }
+      ],
+      "sources": [
+        {
+          "authors": "Gott D, Cohen-Mimran R, Share DL",
+          "year": 2026,
+          "title": "Rate-disabled versus accuracy-disabled subtypes of dyslexia: A longitudinal study from preschool to grade 1",
+          "journal": "Annals of Dyslexia",
+          "doi": "10.1007/s11881-026-00379-w"
+        },
+        {
+          "authors": "Wolf M, Bowers PG",
+          "year": 1999,
+          "title": "The double-deficit hypothesis for the developmental dyslexias",
+          "journal": "Journal of Educational Psychology",
+          "doi": "10.1037/0022-0663.91.3.415"
+        }
+      ]
+    },
+    {
+      "id": "temporal-sampling",
+      "name": "Temporal Sampling Theory",
+      "status": "Emerging theoretical framework",
+      "confidence": "0.85/1.0",
+      "description": "Temporal Sampling theory proposes that infants and children extract a phonological system via automatic sensory-motor learning of a hierarchy of amplitude modulations nested in the amplitude envelope of the speech signal, and that impaired encoding of low-frequency envelope information (<10Hz, delta and theta band) underlies phonological deficits in dyslexia.",
+      "keyPoints": [
+        "Phonological system extracted via automatic sensory-motor learning",
+        "Learning involves hierarchy of amplitude modulations in speech signal",
+        "Impaired encoding of low-frequency envelope information (<10Hz)",
+        "Delta and theta band information specifically affected",
+        "Explains phonological deficits at neural level"
+      ],
+      "mechanism": "Infants and children extract a phonological system via automatic sensory-motor learning of a hierarchy of amplitude modulations nested in the amplitude envelope of the speech signal. In developmental dyslexia, encoding of low-frequency envelope information <10Hz (delta and theta band information) is impaired.",
+      "sources": [
+        {
+          "authors": "Zheng X, Araújo J, Busson Q, Goswami U",
+          "year": 2026,
+          "title": "Towards a brain-computer interface (BCI) for improving phonological processing in developmental dyslexia: An exploratory study",
+          "journal": "European Journal of Neuroscience",
+          "doi": "10.1111/ejn.70709"
+        }
+      ]
+    },
+    {
+      "id": "cerebellar",
+      "name": "Cerebellar Theory",
+      "status": "Controversial / Mixed evidence",
+      "confidence": "0.70/1.0",
+      "description": "The cerebellar theory states, with mixed empirical support, that poor automaticity and motor deficits in individuals with dyslexia may be associated with a dysfunction of the cerebellum.",
+      "keyPoints": [
+        "Poor automaticity may be associated with cerebellar dysfunction",
+        "Motor deficits in dyslexia may be linked to cerebellum",
+        "Evidence is mixed and controversial",
+        "Not widely accepted as primary explanation"
+      ],
+      "sources": [
+        {
+          "authors": "Brimo K, Dinkler L, Gillberg C, et al.",
+          "year": 2021,
+          "title": "The co-occurrence of neurodevelopmental problems in dyslexia",
+          "journal": "Dyslexia",
+          "doi": "10.1002/dys.1681"
+        },
+        {
+          "authors": "Nicolson RI, Fawcett AJ, Dean P",
+          "year": 2001,
+          "title": "Developmental dyslexia: The cerebellar deficit hypothesis",
+          "journal": "Trends in Neurosciences",
+          "doi": "10.1016/S0166-2236(00)01888-0"
+        }
+      ]
+    },
+    {
+      "id": "multiple-deficit",
+      "name": "Multiple-Deficit Model",
+      "status": "Gaining support",
+      "confidence": "0.85/1.0",
+      "description": "Recent studies suggest that dyslexia typically occurs as a result of multiple deficits rather than a single phonological deficit, and some diagnosed cases show no phonological problems at all.",
+      "keyPoints": [
+        "Dyslexia typically results from multiple deficits",
+        "Not all cases show phonological problems",
+        "Accounts for heterogeneity in dyslexia profiles",
+        "Explains co-occurrence with other disorders",
+        "Variable expression across individuals"
+      ],
+      "advantages": [
+        "Accounts for heterogeneity in dyslexia profiles",
+        "Explains co-occurrence with other neurodevelopmental disorders",
+        "Accounts for variable expression across individuals"
+      ],
+      "sources": [
+        {
+          "authors": "Brimo K, Dinkler L, Gillberg C, et al.",
+          "year": 2021,
+          "title": "The co-occurrence of neurodevelopmental problems in dyslexia",
+          "journal": "Dyslexia",
+          "doi": "10.1002/dys.1681"
+        }
+      ]
+    }
+  ],
+  "crossLinguisticVariations": {
+    "title": "Cross-Linguistic Variations",
+    "description": "Theoretical models must account for variations across languages and orthographies.",
+    "orthographicDepth": {
+      "description": "Manifestations vary by orthographic depth (transparency vs opacity)",
+      "transparent": {
+        "examples": ["Finnish", "Spanish", "Italian"],
+        "characteristics": [
+          "Less problems with accuracy of word reading",
+          "Become rate-disabled with speed deficits",
+          "Lack of automaticity"
+        ]
+      },
+      "opaque": {
+        "examples": ["English", "Danish"],
+        "characteristics": [
+          "Problems in both accuracy and speed",
+          "More complex decoding challenges",
+          "Spelling difficulties"
+        ]
+      }
+    },
+    "sources": [
+      {
+        "authors": "Catts HW, Haynes CW, Joshi RM",
+        "year": 2026,
+        "title": "Defining dyslexia: 2025 revision",
+        "journal": "Annals of Dyslexia",
+        "doi": "10.1007/s11881-026-00363-4"
+      }
+    ]
+  },
+  "developmentalTrajectories": {
+    "title": "Developmental Trajectory Models",
+    "description": "Models that explain how dyslexia develops over time.",
+    "models": [
+      {
+        "id": "rate-accuracy",
+        "name": "Rate-Disabled vs Accuracy-Disabled Subtypes",
+        "status": "Supported by longitudinal evidence",
+        "confidence": "0.85/1.0",
+        "description": "Longitudinal research supports the distinction between rate-disabled and accuracy-disabled subtypes of dyslexia, with preschool deficits in rapid automatized naming (RAN) predicting slow but accurate reading in first grade, and deficits in phonological and morphological awareness predicting both inaccurate and slow reading.",
+        "evidence": "In first grade, the PA+MA-disabled group demonstrated significantly lower reading accuracy compared to both the RAN-only disabled and control groups. The RAN-only subgroup exhibited slow reading but intact accuracy.",
+        "sources": [
+          {
+            "authors": "Gott D, Cohen-Mimran R, Share DL",
+            "year": 2026,
+            "title": "Rate-disabled versus accuracy-disabled subtypes of dyslexia: A longitudinal study from preschool to grade 1",
+            "journal": "Annals of Dyslexia",
+            "doi": "10.1007/s11881-026-00379-w"
+          }
+        ]
+      },
+      {
+        "id": "developmental-timing",
+        "name": "Developmental Timing Framework",
+        "status": "Emerging framework",
+        "confidence": "0.80/1.0",
+        "description": "The developmental timing framework proposes that learning disabilities emerge from maturational asynchrony among interacting neural, cognitive, linguistic, sensorimotor, and executive systems rather than from isolated deficits within a single domain.",
+        "keyPoints": [
+          "Learning disabilities emerge from maturational asynchrony",
+          "Involves multiple interacting systems",
+          "Not from isolated deficits in single domain",
+          "Explains heterogeneity and variable expression"
+        ],
+        "systems": [
+          "Neural systems",
+          "Cognitive systems",
+          "Linguistic systems",
+          "Sensorimotor systems",
+          "Executive systems"
+        ],
+        "sources": [
+          {
+            "authors": "Leisman G",
+            "year": 2026,
+            "title": "When development falls out of sync: A developmental timing framework for learning disabilities",
+            "journal": "Brain Sciences",
+            "doi": "10.3390/brainsci16090987"
+          }
+        ]
+      }
+    ]
+  },
+  "computationalModels": {
+    "title": "Computational and Neural Models",
+    "description": "Theoretical distinctions in how brain differences produce cognitive profiles.",
+    "domainRelevance": {
+      "name": "Domain-Relevant Accounts",
+      "description": "Widespread brain differences in processing properties differentially impact domains that rely particularly on those properties"
+    },
+    "domainSpecific": {
+      "name": "Domain-Specific Accounts",
+      "description": "Underactivation or structural differences in specific brain regions involved in phonological processing"
+    },
+    "sources": [
+      {
+        "authors": "Kohli M, Magoulas G, Thomas MSC",
+        "year": 2026,
+        "title": "The genetic origin of uneven cognitive profiles in heritable neurodevelopmental conditions and individual differences: Computational investigations",
+        "journal": "Developmental Science",
+        "doi": "10.1111/desc.70186"
+      }
+    ]
+  },
+  "comorbidityModels": {
+    "title": "Comorbidity Models",
+    "description": "Models explaining why dyslexia frequently co-occurs with other disorders.",
+    "models": [
+      {
+        "id": "additive",
+        "name": "Additive Model of RD-ADHD Comorbidity",
+        "status": "Supported by recent evidence",
+        "confidence": "0.80/1.0",
+        "description": "The additive model of RD-ADHD comorbidity posits that children with ADHD + RD exhibit more severe deficits in attention, inhibition, working memory, and RAN due to the combined impairments of both disorders, which is supported by additive effects in cognitive profiles.",
+        "evidence": "Children with ADHD + RD exhibit more severe deficits in attention, inhibition, working memory, and RAN due to the combined impairments of both disorders.",
+        "sources": [
+          {
+            "authors": "Li M, Kirby JR, Wang T, Zhao W",
+            "year": 2026,
+            "title": "Cognitive profiles of children with reading disabilities and/or ADHD",
+            "journal": "Behavioral Sciences",
+            "doi": "10.3390/bs16010012"
+          }
+        ]
+      },
+      {
+        "id": "essence",
+        "name": "ESSENCE Framework",
+        "status": "Conceptual framework",
+        "confidence": "0.75/1.0",
+        "description": "The ESSENCE framework (Early Symptomatic Syndromes Eliciting Neurodevelopmental Clinical Examinations) covers different kinds of neurodevelopmental difficulties and disorders to draw attention to the early onset of symptoms and the universal co-existence among them, challenging compartmentalization into distinct diagnostic categories.",
+        "keyPoints": [
+          "Covers different kinds of neurodevelopmental difficulties",
+          "Draws attention to early onset of symptoms",
+          "Universal co-existence among disorders",
+          "Challenges compartmentalization into distinct diagnostic categories"
+        ],
+        "sources": [
+          {
+            "authors": "Brimo K, Dinkler L, Gillberg C, et al.",
+            "year": 2021,
+            "title": "The co-occurrence of neurodevelopmental problems in dyslexia",
+            "journal": "Dyslexia",
+            "doi": "10.1002/dys.1681"
+          }
+        ]
+      }
+    ]
+  },
+  "disclaimer": "Theoretical models continue to evolve as research advances. No single model fully explains all aspects of dyslexia. The multiple-deficit model, integrating multiple cognitive risk factors, is gaining support. These models should guide research and intervention rather than serve as rigid diagnostic categories."
+}

@@ -1,0 +1,75 @@
+{
+  "milestones": [
+    {
+      "id": "early-childhood",
+      "name": "Early Childhood (3-5 years)",
+      "description": "Pre-reading period where risk factors can be identified",
+      "indicators": [
+        "Difficulty with rhyming games",
+        "Delayed speech development",
+        "Trouble remembering names of letters",
+        "Family history of dyslexia"
+      ],
+      "action": "Early screening and phonological awareness activities"
+    },
+    {
+      "id": "early-elementary",
+      "name": "Early Elementary (5-7 years)",
+      "description": "Initial reading instruction period",
+      "indicators": [
+        "Difficulty learning letter-sound correspondences",
+        "Trouble sounding out unfamiliar words",
+        "Slow reading compared to peers",
+        "Spelling difficulties"
+      ],
+      "action": "Intensive phonics instruction and early intervention"
+    },
+    {
+      "id": "late-elementary",
+      "name": "Late Elementary (8-10 years)",
+      "description": "Reading fluency development period",
+      "indicators": [
+        "Slow, effortful reading",
+        "Difficulty with multisyllabic words",
+        "Reading comprehension lags",
+        "Avoidance of reading activities"
+      ],
+      "action": "Fluency training and comprehension strategies"
+    },
+    {
+      "id": "adolescence",
+      "name": "Adolescence (11-18 years)",
+      "description": "Academic demands increase",
+      "indicators": [
+        "Difficulty with complex texts",
+        "Slow reading affects other subjects",
+        "Need for accommodations",
+        "Impact on self-esteem"
+      ],
+      "action": "Accommodations, assistive technology, continued support"
+    },
+    {
+      "id": "adulthood",
+      "name": "Adulthood (18+ years)",
+      "description": "Workplace and daily life impact",
+      "indicators": [
+        "Avoidance of reading tasks",
+        "Difficulty with written communication",
+        "Compensatory strategies developed",
+        "May impact career choices"
+      ],
+      "action": "Workplace accommodations, assistive technology, adult interventions"
+    }
+  ],
+  "neuroplasticity": {
+    "title": "Brain Plasticity and Development",
+    "description": "The brain remains plastic throughout life, meaning that intervention can be effective at any age. Early intervention is most effective, but adults can also improve reading skills with targeted training.",
+    "keyPoints": [
+      "Neural circuits for reading can be reshaped with intervention",
+      "Left hemisphere language areas can show increased activation after training",
+      "White matter connectivity can improve with intensive training",
+      "The brain's plasticity means outcomes are not fixed"
+    ]
+  },
+  "disclaimer": "Developmental trajectories vary widely among individuals. These milestones represent general patterns from research, not deterministic predictions. Individual assessment and personalized intervention are essential."
+}

@@ -1,0 +1,1 @@
+export { BrainRegionCard } from './BrainRegionCard';

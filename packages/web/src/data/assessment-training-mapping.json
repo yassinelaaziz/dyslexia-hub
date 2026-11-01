@@ -1,0 +1,109 @@
+{
+  "description": "Maps assessment domain scores to recommended training modules",
+  "version": "1.0",
+  "assessmentDomains": {
+    "phonological": {
+      "weight": 0.35,
+      "thresholds": {
+        "severe": 0,
+        "moderate": 50,
+        "mild": 70,
+        "normal": 85
+      },
+      "primaryTraining": "phonological-training",
+      "secondaryTraining": ["fluency-training"],
+      "description": "Phonological processing - ability to identify and manipulate sounds in words"
+    },
+    "rapidNaming": {
+      "weight": 0.35,
+      "thresholds": {
+        "severe": 0,
+        "moderate": 50,
+        "mild": 70,
+        "normal": 85
+      },
+      "primaryTraining": "ran-training",
+      "secondaryTraining": ["fluency-training"],
+      "description": "Rapid Automatized Naming (RAN) - speed of naming familiar items"
+    },
+    "workingMemory": {
+      "weight": 0.15,
+      "thresholds": {
+        "severe": 0,
+        "moderate": 50,
+        "mild": 70,
+        "normal": 85
+      },
+      "primaryTraining": "working-memory",
+      "secondaryTraining": ["phonological-training"],
+      "description": "Working memory - ability to hold and manipulate information"
+    },
+    "attention": {
+      "weight": 0.15,
+      "thresholds": {
+        "severe": 0,
+        "moderate": 50,
+        "mild": 70,
+        "normal": 85
+      },
+      "primaryTraining": "working-memory",
+      "secondaryTraining": ["phonological-training"],
+      "description": "Attention and focus - ability to sustain concentration"
+    }
+  },
+  "severityMapping": {
+    "severe": {
+      "description": "Intensive training program recommended",
+      "sessionsPerWeek": 5,
+      "minutesPerSession": 30,
+      "durationWeeks": 12
+    },
+    "moderate": {
+      "description": "Regular training program recommended",
+      "sessionsPerWeek": 4,
+      "minutesPerSession": 25,
+      "durationWeeks": 10
+    },
+    "mild": {
+      "description": "Light training program recommended",
+      "sessionsPerWeek": 3,
+      "minutesPerSession": 20,
+      "durationWeeks": 8
+    },
+    "normal": {
+      "description": "Maintenance training optional",
+      "sessionsPerWeek": 2,
+      "minutesPerSession": 15,
+      "durationWeeks": 4
+    }
+  },
+  "combinationRules": {
+    "multipleDeficits": {
+      "threshold": 2,
+      "strategy": "prioritize_lowest_score",
+      "description": "When 2+ domains are below threshold, prioritize training for the lowest-scoring domain first"
+    },
+    "allNormal": {
+      "strategy": "maintenance",
+      "description": "When all domains are normal, suggest optional maintenance training"
+    }
+  },
+  "trainingSequence": {
+    "phonological_first": {
+      "order": ["phonological-training", "ran-training", "working-memory", "fluency-training"],
+      "rationale": "Phonological deficits are the most common and foundational"
+    },
+    "ran_first": {
+      "order": ["ran-training", "phonological-training", "working-memory", "fluency-training"],
+      "rationale": "RAN deficits require rapid naming practice first"
+    },
+    "memory_first": {
+      "order": ["working-memory", "phonological-training", "ran-training", "fluency-training"],
+      "rationale": "Working memory supports all other cognitive processes"
+    },
+    "balanced": {
+      "order": ["phonological-training", "ran-training", "working-memory", "fluency-training"],
+      "rationale": "Balanced approach for multiple mild deficits"
+    }
+  }
+}

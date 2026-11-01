@@ -1,0 +1,288 @@
+{
+  "description": "Achievement definitions for training gamification",
+  "version": "1.0",
+  "achievements": {
+    "first_session": {
+      "id": "first_session",
+      "name": "First Steps",
+      "description": "Complete your first training session",
+      "icon": "🎯",
+      "category": "milestone",
+      "criteria": {
+        "type": "sessions_completed",
+        "value": 1
+      },
+      "points": 10,
+      "rarity": "common"
+    },
+    "five_sessions": {
+      "id": "five_sessions",
+      "name": "Getting Started",
+      "description": "Complete 5 training sessions",
+      "icon": "🌟",
+      "category": "milestone",
+      "criteria": {
+        "type": "sessions_completed",
+        "value": 5
+      },
+      "points": 25,
+      "rarity": "common"
+    },
+    "ten_sessions": {
+      "id": "ten_sessions",
+      "name": "Dedicated Learner",
+      "description": "Complete 10 training sessions",
+      "icon": "⭐",
+      "category": "milestone",
+      "criteria": {
+        "type": "sessions_completed",
+        "value": 10
+      },
+      "points": 50,
+      "rarity": "uncommon"
+    },
+    "twenty_five_sessions": {
+      "id": "twenty_five_sessions",
+      "name": "Training Champion",
+      "description": "Complete 25 training sessions",
+      "icon": "🏆",
+      "category": "milestone",
+      "criteria": {
+        "type": "sessions_completed",
+        "value": 25
+      },
+      "points": 100,
+      "rarity": "rare"
+    },
+    "fifty_sessions": {
+      "id": "fifty_sessions",
+      "name": "Master Trainer",
+      "description": "Complete 50 training sessions",
+      "icon": "👑",
+      "category": "milestone",
+      "criteria": {
+        "type": "sessions_completed",
+        "value": 50
+      },
+      "points": 200,
+      "rarity": "legendary"
+    },
+    "three_day_streak": {
+      "id": "three_day_streak",
+      "name": "On Fire",
+      "description": "Maintain a 3-day training streak",
+      "icon": "🔥",
+      "category": "consistency",
+      "criteria": {
+        "type": "streak",
+        "value": 3
+      },
+      "points": 30,
+      "rarity": "common"
+    },
+    "seven_day_streak": {
+      "id": "seven_day_streak",
+      "name": "Week Warrior",
+      "description": "Maintain a 7-day training streak",
+      "icon": "💪",
+      "category": "consistency",
+      "criteria": {
+        "type": "streak",
+        "value": 7
+      },
+      "points": 75,
+      "rarity": "uncommon"
+    },
+    "thirty_day_streak": {
+      "id": "thirty_day_streak",
+      "name": "Month Master",
+      "description": "Maintain a 30-day training streak",
+      "icon": "🎖️",
+      "category": "consistency",
+      "criteria": {
+        "type": "streak",
+        "value": 30
+      },
+      "points": 250,
+      "rarity": "rare"
+    },
+    "perfect_score": {
+      "id": "perfect_score",
+      "name": "Perfectionist",
+      "description": "Achieve 100% score in a training session",
+      "icon": "💎",
+      "category": "performance",
+      "criteria": {
+        "type": "perfect_score",
+        "value": 1
+      },
+      "points": 40,
+      "rarity": "uncommon"
+    },
+    "five_perfect_scores": {
+      "id": "five_perfect_scores",
+      "name": "Consistent Excellence",
+      "description": "Achieve 100% score in 5 training sessions",
+      "icon": "✨",
+      "category": "performance",
+      "criteria": {
+        "type": "perfect_score",
+        "value": 5
+      },
+      "points": 100,
+      "rarity": "rare"
+    },
+    "phonological_master": {
+      "id": "phonological_master",
+      "name": "Phonological Master",
+      "description": "Complete all levels of Phonological Awareness Training",
+      "icon": "🔤",
+      "category": "module",
+      "criteria": {
+        "type": "module_complete",
+        "module": "phonological-training",
+        "value": 3
+      },
+      "points": 60,
+      "rarity": "uncommon"
+    },
+    "ran_master": {
+      "id": "ran_master",
+      "name": "RAN Master",
+      "description": "Complete all levels of RAN Training",
+      "icon": "⚡",
+      "category": "module",
+      "criteria": {
+        "type": "module_complete",
+        "module": "ran-training",
+        "value": 3
+      },
+      "points": 60,
+      "rarity": "uncommon"
+    },
+    "memory_master": {
+      "id": "memory_master",
+      "name": "Memory Master",
+      "description": "Complete all levels of Working Memory Training",
+      "icon": "🧠",
+      "category": "module",
+      "criteria": {
+        "type": "module_complete",
+        "module": "working-memory",
+        "value": 3
+      },
+      "points": 60,
+      "rarity": "uncommon"
+    },
+    "fluency_master": {
+      "id": "fluency_master",
+      "name": "Fluency Master",
+      "description": "Complete all levels of Reading Fluency Training",
+      "icon": "📖",
+      "category": "module",
+      "criteria": {
+        "type": "module_complete",
+        "module": "fluency-training",
+        "value": 3
+      },
+      "points": 60,
+      "rarity": "uncommon"
+    },
+    "all_modules_complete": {
+      "id": "all_modules_complete",
+      "name": "Grand Master",
+      "description": "Complete all training modules",
+      "icon": "🏅",
+      "category": "special",
+      "criteria": {
+        "type": "all_modules_complete",
+        "value": 4
+      },
+      "points": 300,
+      "rarity": "legendary"
+    },
+    "speed_demon": {
+      "id": "speed_demon",
+      "name": "Speed Demon",
+      "description": "Complete a session in under 5 minutes",
+      "icon": "🚀",
+      "category": "performance",
+      "criteria": {
+        "type": "fast_session",
+        "value": 300
+      },
+      "points": 35,
+      "rarity": "uncommon"
+    },
+    "early_bird": {
+      "id": "early_bird",
+      "name": "Early Bird",
+      "description": "Complete a training session before 8 AM",
+      "icon": "🌅",
+      "category": "special",
+      "criteria": {
+        "type": "time_of_day",
+        "value": 8
+      },
+      "points": 20,
+      "rarity": "common"
+    },
+    "night_owl": {
+      "id": "night_owl",
+      "name": "Night Owl",
+      "description": "Complete a training session after 10 PM",
+      "icon": "🦉",
+      "category": "special",
+      "criteria": {
+        "type": "time_of_day",
+        "value": 22
+      },
+      "points": 20,
+      "rarity": "common"
+    }
+  },
+  "rarityConfig": {
+    "common": {
+      "color": "#9CA3AF",
+      "backgroundColor": "#F3F4F6",
+      "description": "Common achievement"
+    },
+    "uncommon": {
+      "color": "#10B981",
+      "backgroundColor": "#D1FAE5",
+      "description": "Uncommon achievement"
+    },
+    "rare": {
+      "color": "#3B82F6",
+      "backgroundColor": "#DBEAFE",
+      "description": "Rare achievement"
+    },
+    "legendary": {
+      "color": "#F59E0B",
+      "backgroundColor": "#FEF3C7",
+      "description": "Legendary achievement"
+    }
+  },
+  "categoryConfig": {
+    "milestone": {
+      "name": "Milestone",
+      "description": "Achievements for reaching training milestones"
+    },
+    "consistency": {
+      "name": "Consistency",
+      "description": "Achievements for maintaining training streaks"
+    },
+    "performance": {
+      "name": "Performance",
+      "description": "Achievements for exceptional performance"
+    },
+    "module": {
+      "name": "Module",
+      "description": "Achievements for completing training modules"
+    },
+    "special": {
+      "name": "Special",
+      "description": "Special achievement awards"
+    }
+  }
+}

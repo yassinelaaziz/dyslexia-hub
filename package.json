@@ -1,0 +1,26 @@
+{
+  "name": "dyslexia-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dyslexia Grand Hub - Platform-agnostic dyslexia intervention platform",
+  "scripts": {
+    "dev": "pnpm --filter @dyslexia-hub/web dev",
+    "build": "pnpm -r build",
+    "build:web": "pnpm --filter @dyslexia-hub/web build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "prettier": "^3.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

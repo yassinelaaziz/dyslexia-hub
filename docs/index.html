@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Index - Dyslexia Grand Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fafb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header .container {
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .intro {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .intro h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .intro p {
+            color: #6b7280;
+            margin-bottom: 1rem;
+        }
+
+        .docs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .doc-card {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.2s;
+        }
+
+        .doc-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .doc-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        .doc-card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .doc-card a {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .doc-card a:hover {
+            text-decoration: underline;
+        }
+
+        .category {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid #e5e7eb;
+            text-align: center;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dyslexia Grand Hub Documentation</h1>
+            <p class="subtitle">Technical specification and development documentation</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="intro">
+                <h2>Welcome to the Documentation</h2>
+                <p>
+                    This documentation provides comprehensive technical specifications for the Dyslexia Grand Hub application.
+                    The Dyslexia Grand Hub is a platform-agnostic, evidence-based application for individuals with dyslexia,
+                    educators, and researchers.
+                </p>
+                <p>
+                    The application is built with a monorepo architecture using React, TypeScript, and Tailwind CSS,
+                    with a focus on accessibility, offline-first functionality, and cross-platform compatibility.
+                </p>
+            </div>
+
+            <h2 class="section-title">Architecture & Design</h2>
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <div class="category">Architecture</div>
+                    <h3>Architecture</h3>
+                    <p>System architecture overview, layered design, platform-agnostic approach, and module breakdown.</p>
+                    <a href="architecture.html">View Documentation →</a>
+                </div>
+
+                <div class="doc-card">
+                    <div class="category">Structure</div>
+                    <h3>Monorepo Structure</h3>
+                    <p>Monorepo organization, package structure, build configuration, and workspace setup.</p>
+                    <a href="monorepo-structure.html">View Documentation →</a>
+                </div>
+
+                <div class="doc-card">
+                    <div class="category">Data</div>
+                    <h3>Database Schema</h3>
+                    <p>Data models, IndexedDB schema, entity relationships, and storage strategy.</p>
+                    <a href="database-schema.html">View Documentation →</a>
+                </div>
+
+                <div class="doc-card">
+                    <div class="category">API</div>
+                    <h3>API Specification</h3>
+                    <p>REST API endpoints, request/response schemas, authentication, and offline-first considerations.</p>
+                    <a href="api-specification.html">View Documentation →</a>
+                </div>
+            </div>
+
+            <h2 class="section-title">Components & UI</h2>
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <div class="category">UI Components</div>
+                    <h3>Component Library</h3>
+                    <p>Base components, screening components, intervention components, visualization components, and theme system.</p>
+                    <a href="component-library.html">View Documentation →</a>
+                </div>
+
+                <div class="doc-card">
+                    <div class="category">UX Design</div>
+                    <h3>User Journeys</h3>
+                    <p>User flows, screening journey, intervention journey, research exploration journey.</p>
+                    <a href="user-journeys.html">View Documentation →</a>
+                </div>
+
+                <div class="doc-card">
+                    <div class="category">Visual Design</div>
+                    <h3>Wireframes</h3>
+                    <p>Screen layouts, component placement, navigation structure, and visual hierarchy.</p>
+                    <a href="wireframes.html">View Documentation →</a>
+                </div>
+            </div>
+
+            <h2 class="section-title">Development & Testing</h2>
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <div class="category">Planning</div>
+                    <h3>Development Plan</h3>
+                    <p>Sprint planning, development phases, task breakdown, and timeline.</p>
+                    <a href="development-plan.html">View Documentation →</a>
+                </div>
+
+                <div class="doc-card">
+                    <div class="category">Quality Assurance</div>
+                    <h3>Testing Strategy</h3>
+                    <p>Unit testing, integration testing, E2E testing, accessibility testing, and testing tools.</p>
+                    <a href="testing-strategy.html">View Documentation →</a>
+                </div>
+
+                <div class="doc-card">
+                    <div class="category">Features</div>
+                    <h3>Training System</h3>
+                    <p>Interactive training exercises, phonological awareness, RAN training, reading fluency, working memory.</p>
+                    <a href="training-system.html">View Documentation →</a>
+                </div>
+            </div>
+
+            <h2 class="section-title">Operations & Maintenance</h2>
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <div class="category">Deployment</div>
+                    <h3>Deployment Plan</h3>
+                    <p>Build process, deployment strategy, CI/CD pipeline, environment management.</p>
+                    <a href="deployment-plan.html">View Documentation →</a>
+                </div>
+
+                <div class="doc-card">
+                    <div class="category">Monitoring</div>
+                    <h3>Monitoring Plan</h3>
+                    <p>Performance monitoring, error tracking, analytics, and alerting strategy.</p>
+                    <a href="monitoring-plan.html">View Documentation →</a>
+                </div>
+
+                <div class="doc-card">
+                    <div class="category">Maintenance</div>
+                    <h3>Maintenance Plan</h3>
+                    <p>Update strategy, dependency management, bug fixing process, and long-term maintenance.</p>
+                    <a href="maintenance-plan.html">View Documentation →</a>
+                </div>
+            </div>
+
+            <h2 class="section-title">Summary</h2>
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <div class="category">Overview</div>
+                    <h3>Technical Specification Summary</h3>
+                    <p>High-level overview of all technical specifications and design decisions.</p>
+                    <a href="technical-specification.html">View Documentation →</a>
+                </div>
+            </div>
+
+            <footer>
+                <p>Dyslexia Grand Hub Technical Documentation</p>
+                <p>Platform-agnostic, evidence-based dyslexia intervention application</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
