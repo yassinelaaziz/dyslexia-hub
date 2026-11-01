@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyslexia Grand Hub - Database Schema - Dyslexia Grand Hub Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fafb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header .container {
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            padding: 0 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        nav a:hover {
+            background: #f3f4f6;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.75rem;
+            color: #374151;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.25rem 0 0.5rem;
+            color: #4b5563;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem;
+            color: #6b7280;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f9fafb;
+            font-weight: 600;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 2rem 0;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .meta {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dyslexia Grand Hub - Database Schema</h1>
+            <p class="subtitle">Document  Complete</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Documentation Index</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="monorepo-structure.html">Monorepo Structure</a></li>
+                <li><a href="database-schema.html">Database Schema</a></li>
+                <li><a href="api-specification.html">API Specification</a></li>
+                <li><a href="component-library.html">Component Library</a></li>
+                <li><a href="user-journeys.html">User Journeys</a></li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+                <li><a href="development-plan.html">Development Plan</a></li>
+                <li><a href="testing-strategy.html">Testing Strategy</a></li>
+                <li><a href="deployment-plan.html">Deployment Plan</a></li>
+                <li><a href="monitoring-plan.html">Monitoring Plan</a></li>
+                <li><a href="maintenance-plan.html">Maintenance Plan</a></li>
+                <li><a href="technical-specification.html">Technical Specification</a></li>
+                <li><a href="training-system.html">Training System</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>Dyslexia Grand Hub - Database Schema</h1>
+
+<strong>Version:</strong> 1.0
+<strong>Date:</strong> 2026-10-31
+<strong>Author:</strong> Senior Tech Lead (Devin)
+<strong>Status:</strong> Data Design Phase - Complete
+
+<hr>
+
+<h2>Entity-Relationship Diagram</h2>
+
+<pre><code>┌─────────────────┐
+<p>│   UserProfile   │</p>
+<p>├─────────────────┤</p>
+<p>│ id (PK)         │◄────────────┐</p>
+<p>│ age             │             │</p>
+<p>│ language        │             │</p>
+<p>│ createdAt       │             │</p>
+<p>│ updatedAt       │             │</p>
+<p>│ preferences     │             │</p>
+<p>└─────────────────┘             │</p>
+<p>│                        │</p>
+<p>│ 1                      │ 1</p>
+<p>│                        │</p>
+<p>│ N                      │ N</p>
+<p>▼                        ▼</p>
+<p>┌─────────────────┐    ┌──────────────────┐</p>
+<p>│ ScreeningResult │    │InterventionProgress│</p>
+<p>├─────────────────┤    ├──────────────────┤</p>
+<p>│ id (PK)         │    │ id (PK)          │</p>
+<p>│ userId (FK)     │    │ userId (FK)      │</p>
+<p>│ date            │    │ interventionId(FK)│</p>
+<p>│ age             │    │ startDate        │</p>
+<p>│ scores          │    │ sessionsCompleted│</p>
+<p>│ severity        │    │ progressScore    │</p>
+<p>│ recommendations │    │ notes            │</p>
+<p>└─────────────────┘    └──────────────────┘</p>
+<p>│</p>
+<p>│ N</p>
+<p>│</p>
+<p>│ 1</p>
+<p>▼</p>
+<p>┌──────────────────┐</p>
+<p>│   Intervention   │</p>
+<p>├──────────────────┤</p>
+<p>│ id (PK)          │</p>
+<p>│ name             │</p>
+<p>│ category         │</p>
+<p>│ targetDeficit    │</p>
+<p>│ ageRange         │</p>
+<p>│ efficacyRating   │</p>
+<p>└──────────────────┘</p>
+<p>│</p>
+<p>│ N</p>
+<p>│</p>
+<p>│ N</p>
+<p>▼</p>
+<p>┌──────────────────┐</p>
+<p>│      Claim       │</p>
+<p>├──────────────────┤</p>
+<p>│ id (PK)          │</p>
+<p>│ text             │</p>
+<p>│ sourceId (FK)    │</p>
+<p>│ confidence       │</p>
+<p>│ phase            │</p>
+<p>│ topics           │</p>
+<p>└──────────────────┘</p>
+<p>│</p>
+<p>│ N</p>
+<p>│</p>
+<p>│ 1</p>
+<p>▼</p>
+<p>┌──────────────────┐</p>
+<p>│      Source       │</p>
+<p>├──────────────────┤</p>
+<p>│ id (PK)          │</p>
+<p>│ title            │</p>
+<p>│ authors          │</p>
+<p>│ year             │</p>
+<p>│ doi              │</p>
+<p>│ pmid             │</p>
+<p>│ arxivId          │</p>
+<p>└──────────────────┘</p>
+</code></pre>
+
+<hr>
+
+<h2>Table Definitions</h2>
+
+<h3>Local Storage Schema (IndexedDB/Web)</h3>
+
+<h4>Users</h4>
+
+<pre><code>interface UserRecord {
+<p>id: string; // UUID</p>
+<p>age: number;</p>
+<p>language: string; // ISO 639-1 code (e.g., 'en', 'es')</p>
+<p>createdAt: Date;</p>
+<p>updatedAt: Date;</p>
+<p>preferences: UserPreferences;</p>
+<p>}</p>
+
+<p>interface UserPreferences {</p>
+<p>theme: 'default' | 'dyslexia' | 'high-contrast';</p>
+<p>fontSize: 'small' | 'medium' | 'large' | 'extra-large';</p>
+<p>fontFamily: 'default' | 'opendyslexic';</p>
+<p>lineSpacing: number; // 1.0 - 2.0</p>
+<p>letterSpacing: number; // 0 - 5px</p>
+<p>enableSoundEffects: boolean;</p>
+<p>enableAnimations: boolean;</p>
+<p>enableOfflineMode: boolean;</p>
+<p>enableCloudSync: boolean;</p>
+<p>}</p>
+</code></pre>
+
+<strong>Indexes:</strong>
+<ul>
+<li>Primary: <code>id</code></li>
+<li>Index: <code>language</code></li>
+<li>Index: <code>createdAt</code></li>
+</ul>
+
+<hr>
+
+<h4>ScreeningResults</h4>
+
+<pre><code>interface ScreeningResultRecord {
+<p>id: string; // UUID</p>
+<p>userId: string; // FK to Users</p>
+<p>date: Date;</p>
+<p>age: number;</p>
+<p>version: string; // Screening version</p>
+<p>scores: ScreeningScores;</p>
+<p>severity: SeverityLevel;</p>
+<p>recommendations: string[]; // Intervention IDs</p>
+<p>}</p>
+
+<p>interface ScreeningScores {</p>
+<p>phonological: number; // 0-100</p>
+<p>rapidNaming: number; // 0-100</p>
+<p>visual: number; // 0-100</p>
+<p>workingMemory: number; // 0-100</p>
+<p>overall: number; // 0-100</p>
+<p>}</p>
+
+<p>type SeverityLevel = 'none' | 'mild' | 'moderate' | 'severe';</p>
+</code></pre>
+
+<strong>Indexes:</strong>
+<ul>
+<li>Primary: <code>id</code></li>
+<li>Index: <code>userId</code></li>
+<li>Index: <code>date</code></li>
+<li>Index: <code>severity</code></li>
+<li>Compound: <code>[userId, date]</code></li>
+</ul>
+
+<hr>
+
+<h4>InterventionProgress</h4>
+
+<pre><code>interface InterventionProgressRecord {
+<p>id: string; // UUID</p>
+<p>userId: string; // FK to Users</p>
+<p>interventionId: string; // FK to Interventions</p>
+<p>startDate: Date;</p>
+<p>lastSessionDate: Date;</p>
+<p>sessionsCompleted: number;</p>
+<p>totalDuration: number; // minutes</p>
+<p>progressScore: number; // 0-100</p>
+<p>notes: ProgressNote[];</p>
+<p>status: 'active' | 'paused' | 'completed' | 'abandoned';</p>
+<p>}</p>
+
+<p>interface ProgressNote {</p>
+<p>date: Date;</p>
+<p>content: string;</p>
+<p>type: 'manual' | 'automatic';</p>
+<p>}</p>
+</code></pre>
+
+<strong>Indexes:</strong>
+<ul>
+<li>Primary: <code>id</code></li>
+<li>Index: <code>userId</code></li>
+<li>Index: <code>interventionId</code></li>
+<li>Index: <code>status</code></li>
+<li>Compound: <code>[userId, interventionId]</code></li>
+</ul>
+
+<hr>
+
+<h4>Interventions (Cached)</h4>
+
+<pre><code>interface InterventionRecord {
+<p>id: string; // UUID</p>
+<p>name: string;</p>
+<p>category: InterventionCategory;</p>
+<p>targetDeficit: string[];</p>
+<p>ageRange: [number, number]; // [min, max]</p>
+<p>efficacyRating: number; // 0-10</p>
+<p>evidenceCount: number; // Number of supporting claims</p>
+<p>description: string;</p>
+<p>guide: InterventionGuide;</p>
+<p>lastUpdated: Date;</p>
+<p>}</p>
+
+<p>type InterventionCategory =</p>
+<p>| 'phonological'</p>
+<p>| 'RAN'</p>
+<p>| 'neurofeedback'</p>
+<p>| 'BCI'</p>
+<p>| 'multisensory'</p>
+<p>| 'environmental'</p>
+<p>| 'technological';</p>
+
+<p>interface InterventionGuide {</p>
+<p>steps: GuideStep[];</p>
+<p>duration: number; // minutes per session</p>
+<p>frequency: string; // e.g., '3x per week'</p>
+<p>materials: string[];</p>
+<p>warnings: string[];</p>
+<p>}</p>
+
+<p>interface GuideStep {</p>
+<p>step: number;</p>
+<p>title: string;</p>
+<p>description: string;</p>
+<p>duration: number; // minutes</p>
+<p>}</p>
+</code></pre>
+
+<strong>Indexes:</strong>
+<ul>
+<li>Primary: <code>id</code></li>
+<li>Index: <code>category</code></li>
+<li>Index: <code>efficacyRating</code></li>
+<li>Index: <code>ageRange</code> (using separate minAge, maxAge for indexing)</li>
+<li>Index: <code>lastUpdated</code></li>
+</ul>
+
+<hr>
+
+<h4>Claims (Cached from Research Repository)</h4>
+
+<pre><code>interface ClaimRecord {
+<p>id: string; // UUID</p>
+<p>text: string;</p>
+<p>sourceId: string; // FK to Sources</p>
+<p>confidence: number; // 0-1</p>
+<p>phase: number; // 1-7</p>
+<p>topics: string[];</p>
+<p>relatedClaims: string[]; // Claim IDs</p>
+<p>contradictoryClaims: string[]; // Claim IDs</p>
+<p>lastUpdated: Date;</p>
+<p>}</p>
+</code></pre>
+
+<strong>Indexes:</strong>
+<ul>
+<li>Primary: <code>id</code></li>
+<li>Index: <code>sourceId</code></li>
+<li>Index: <code>phase</code></li>
+<li>Index: <code>confidence</code></li>
+<li>Index: <code>topics</code> (using separate topics table for many-to-many)</li>
+<li>Index: <code>lastUpdated</code></li>
+</ul>
+
+<hr>
+
+<h4>Sources (Cached from Research Repository)</h4>
+
+<pre><code>interface SourceRecord {
+<p>id: string; // UUID</p>
+<p>title: string;</p>
+<p>authors: string[];</p>
+<p>year: number;</p>
+<p>doi: string | null;</p>
+<p>pmid: string | null;</p>
+<p>arxivId: string | null;</p>
+<p>journal: string | null;</p>
+<p>volume: string | null;</p>
+<p>issue: string | null;</p>
+<p>pages: string | null;</p>
+<p>abstract: string | null;</p>
+<p>lastUpdated: Date;</p>
+<p>}</p>
+</code></pre>
+
+<strong>Indexes:</strong>
+<ul>
+<li>Primary: <code>id</code></li>
+<li>Index: <code>year</code></li>
+<li>Index: <code>doi</code></li>
+<li>Index: <code>pmid</code></li>
+<li>Index: <code>arxivId</code></li>
+<li>Index: <code>lastUpdated</code></li>
+</ul>
+
+<hr>
+
+<h4>Topics (Claim-Topic Many-to-Many)</h4>
+
+<pre><code>interface ClaimTopicRecord {
+<p>claimId: string; // FK to Claims</p>
+<p>topic: string;</p>
+<p>}</p>
+
+<p>interface TopicRecord {</p>
+<p>name: string; // PK</p>
+<p>claimCount: number;</p>
+<p>}</p>
+</code></pre>
+
+<strong>Indexes:</strong>
+<ul>
+<li>Compound: <code>[claimId, topic]</code></li>
+<li>Index: <code>topic</code></li>
+</ul>
+
+<hr>
+
+<h4>SyncMetadata</h4>
+
+<pre><code>interface SyncMetadataRecord {
+<p>id: string; // PK</p>
+<p>lastSyncDate: Date;</p>
+<p>syncStatus: 'success' | 'partial' | 'failed';</p>
+<p>conflicts: SyncConflict[];</p>
+<p>version: number; // Schema version</p>
+<p>}</p>
+
+<p>interface SyncConflict {</p>
+<p>entityType: string;</p>
+<p>entityId: string;</p>
+<p>localVersion: any;</p>
+<p>cloudVersion: any;</p>
+<p>timestamp: Date;</p>
+<p>resolved: boolean;</p>
+<p>}</p>
+</code></pre>
+
+<strong>Indexes:</strong>
+<ul>
+<li>Primary: <code>id</code></li>
+<li>Index: <code>lastSyncDate</code></li>
+<li>Index: <code>syncStatus</code></li>
+</ul>
+
+<hr>
+
+<h3>Cloud Storage Schema (PostgreSQL - Optional)</h3>
+
+<h4>Users (Cloud)</h4>
+
+<pre><code>CREATE TABLE users (
+<p>id UUID PRIMARY KEY DEFAULT gen_random_uuid(),</p>
+<p>email VARCHAR(255) UNIQUE NOT NULL,</p>
+<p>password_hash VARCHAR(255) NOT NULL,</p>
+<p>age INTEGER,</p>
+<p>language VARCHAR(10) NOT NULL DEFAULT 'en',</p>
+<p>created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),</p>
+<p>updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),</p>
+<p>preferences JSONB NOT NULL DEFAULT '{}',</p>
+<p>cloud_sync_enabled BOOLEAN DEFAULT FALSE,</p>
+<p>last_synced_at TIMESTAMP WITH TIME ZONE</p>
+<p>);</p>
+
+<p>CREATE INDEX idx_users_email ON users(email);</p>
+<p>CREATE INDEX idx_users_language ON users(language);</p>
+<p>CREATE INDEX idx_users_last_synced ON users(last_synced_at);</p>
+</code></pre>
+
+<h4>ScreeningResults (Cloud)</h4>
+
+<pre><code>CREATE TABLE screening_results (
+<p>id UUID PRIMARY KEY DEFAULT gen_random_uuid(),</p>
+<p>user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,</p>
+<p>date TIMESTAMP WITH TIME ZONE NOT NULL,</p>
+<p>age INTEGER NOT NULL,</p>
+<p>version VARCHAR(50) NOT NULL,</p>
+<p>scores JSONB NOT NULL,</p>
+<p>severity VARCHAR(20) NOT NULL,</p>
+<p>recommendations TEXT[] NOT NULL,</p>
+<p>created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()</p>
+<p>);</p>
+
+<p>CREATE INDEX idx_screening_user_id ON screening_results(user_id);</p>
+<p>CREATE INDEX idx_screening_date ON screening_results(date);</p>
+<p>CREATE INDEX idx_screening_severity ON screening_results(severity);</p>
+<p>CREATE INDEX idx_screening_user_date ON screening_results(user_id, date);</p>
+</code></pre>
+
+<h4>Interventions (Cloud - Read-Only for Clients)</h4>
+
+<pre><code>CREATE TABLE interventions (
+<p>id UUID PRIMARY KEY DEFAULT gen_random_uuid(),</p>
+<p>name VARCHAR(255) NOT NULL,</p>
+<p>category VARCHAR(50) NOT NULL,</p>
+<p>target_deficit TEXT[] NOT NULL,</p>
+<p>age_min INTEGER NOT NULL,</p>
+<p>age_max INTEGER NOT NULL,</p>
+<p>efficacy_rating DECIMAL(3,2) NOT NULL CHECK (efficacy_rating >= 0 AND efficacy_rating <= 10),</p>
+<p>evidence_count INTEGER NOT NULL DEFAULT 0,</p>
+<p>description TEXT NOT NULL,</p>
+<p>guide JSONB NOT NULL,</p>
+<p>created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),</p>
+<p>updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()</p>
+<p>);</p>
+
+<p>CREATE INDEX idx_interventions_category ON interventions(category);</p>
+<p>CREATE INDEX idx_interventions_efficacy ON interventions(efficacy_rating);</p>
+<p>CREATE INDEX idx_interventions_age_range ON interventions(age_min, age_max);</p>
+<p>CREATE INDEX idx_interventions_updated ON interventions(updated_at);</p>
+</code></pre>
+
+<h4>Claims (Cloud - Read-Only for Clients)</h4>
+
+<pre><code>CREATE TABLE claims (
+<p>id UUID PRIMARY KEY DEFAULT gen_random_uuid(),</p>
+<p>text TEXT NOT NULL,</p>
+<p>source_id UUID NOT NULL REFERENCES sources(id),</p>
+<p>confidence DECIMAL(3,2) NOT NULL CHECK (confidence >= 0 AND confidence <= 1),</p>
+<p>phase INTEGER NOT NULL CHECK (phase >= 1 AND phase <= 7),</p>
+<p>created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),</p>
+<p>updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()</p>
+<p>);</p>
+
+<p>CREATE INDEX idx_claims_source_id ON claims(source_id);</p>
+<p>CREATE INDEX idx_claims_phase ON claims(phase);</p>
+<p>CREATE INDEX idx_claims_confidence ON claims(confidence);</p>
+<p>CREATE INDEX idx_claims_updated ON claims(updated_at);</p>
+</code></pre>
+
+<h4>Sources (Cloud - Read-Only for Clients)</h4>
+
+<pre><code>CREATE TABLE sources (
+<p>id UUID PRIMARY KEY DEFAULT gen_random_uuid(),</p>
+<p>title TEXT NOT NULL,</p>
+<p>authors TEXT[] NOT NULL,</p>
+<p>year INTEGER NOT NULL,</p>
+<p>doi VARCHAR(255) UNIQUE,</p>
+<p>pmid VARCHAR(20) UNIQUE,</p>
+<p>arxiv_id VARCHAR(50) UNIQUE,</p>
+<p>journal VARCHAR(255),</p>
+<p>volume VARCHAR(50),</p>
+<p>issue VARCHAR(50),</p>
+<p>pages VARCHAR(50),</p>
+<p>abstract TEXT,</p>
+<p>created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),</p>
+<p>updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()</p>
+<p>);</p>
+
+<p>CREATE INDEX idx_sources_year ON sources(year);</p>
+<p>CREATE INDEX idx_sources_doi ON sources(doi);</p>
+<p>CREATE INDEX idx_sources_pmid ON sources(pmid);</p>
+<p>CREATE INDEX idx_sources_arxiv ON sources(arxiv_id);</p>
+</code></pre>
+
+<h4>ClaimTopics (Cloud - Many-to-Many)</h4>
+
+<pre><code>CREATE TABLE claim_topics (
+<p>claim_id UUID NOT NULL REFERENCES claims(id) ON DELETE CASCADE,</p>
+<p>topic VARCHAR(100) NOT NULL,</p>
+<p>PRIMARY KEY (claim_id, topic)</p>
+<p>);</p>
+
+<p>CREATE INDEX idx_claim_topics_claim_id ON claim_topics(claim_id);</p>
+<p>CREATE INDEX idx_claim_topics_topic ON claim_topics(topic);</p>
+
+<p>CREATE TABLE topics (</p>
+<p>name VARCHAR(100) PRIMARY KEY,</p>
+<p>claim_count INTEGER NOT NULL DEFAULT 0</p>
+<p>);</p>
+</code></pre>
+
+<hr>
+
+<h2>Indexes for Performance</h2>
+
+<h3>Local Storage (IndexedDB)</h3>
+
+<strong>Performance Considerations:</strong>
+<ul>
+<li>IndexedDB automatically indexes primary keys</li>
+<li>Create additional indexes for frequently queried fields</li>
+<li>Use compound indexes for multi-field queries</li>
+</ul>
+
+<strong>Critical Indexes:</strong>
+<ul>
+<li><code>ScreeningResult[userId, date]</code> - For user's screening history</li>
+<li><code>InterventionProgress[userId, interventionId]</code> - For user's progress on specific intervention</li>
+<li><code>Claim[phase]</code> - For filtering by research phase</li>
+<li><code>Claim[topics]</code> - For topic-based searches</li>
+</ul>
+
+<h3>Cloud Storage (PostgreSQL)</h3>
+
+<strong>Performance Considerations:</strong>
+<ul>
+<li>B-tree indexes for equality and range queries</li>
+<li>GIN indexes for JSONB fields</li>
+<li>Partial indexes for filtered queries</li>
+<li>Covering indexes for frequently accessed columns</li>
+</ul>
+
+<strong>Critical Indexes:</strong>
+<ul>
+<li>B-tree on foreign keys (automatic)</li>
+<li>B-tree on frequently filtered columns (category, severity, phase)</li>
+<li>GIN on JSONB fields (scores, preferences, guide)</li>
+<li>Compound indexes for common query patterns</li>
+<li>Partial indexes for active records only</li>
+</ul>
+
+<hr>
+
+<h2>Relationships</h2>
+
+<h3>One-to-Many</h3>
+
+<strong>User → ScreeningResults</strong>
+<ul>
+<li>One user can have many screening results</li>
+<li>Cascade delete: If user deleted, delete all screening results</li>
+</ul>
+
+<strong>User → InterventionProgress</strong>
+<ul>
+<li>One user can track progress on many interventions</li>
+<li>Cascade delete: If user deleted, delete all progress</li>
+</ul>
+
+<strong>Intervention → InterventionProgress</strong>
+<ul>
+<li>One intervention can have many progress records (different users)</li>
+<li>No cascade: Intervention is read-only reference data</li>
+</ul>
+
+<strong>Source → Claims</strong>
+<ul>
+<li>One source can have many claims</li>
+<li>No cascade: Source is read-only reference data</li>
+</ul>
+
+<h3>Many-to-Many</h3>
+
+<strong>Claim ↔ Topics</strong>
+<ul>
+<li>One claim can have many topics</li>
+<li>One topic can have many claims</li>
+<li>Junction table: <code>claim_topics</code></li>
+</ul>
+
+<hr>
+
+<h2>Offline-First Storage Strategy</h2>
+
+<h3>IndexedDB (Web)</h3>
+
+<strong>Database Name:</strong> <code>dyslexia-hub-db</code>
+<strong>Version:</strong> 1
+
+<strong>Object Stores:</strong>
+<ol>
+<li><code>users</code> - User profiles</li>
+<li><code>screeningResults</code> - Screening results</li>
+<li><code>interventionProgress</code> - Intervention progress</li>
+<li><code>interventions</code> - Cached intervention metadata</li>
+<li><code>claims</code> - Cached research claims</li>
+<li><code>sources</code> - Cached research sources</li>
+<li><code>claimTopics</code> - Claim-topic relationships</li>
+<li><code>topics</code> - Topic metadata</li>
+<li><code>syncMetadata</code> - Sync status and conflicts</li>
+</ol>
+
+<strong>Initial Data:</strong>
+<ul>
+<li>Interventions: Pre-populated from research repository</li>
+<li>Claims: Pre-populated from research repository</li>
+<li>Sources: Pre-populated from research repository</li>
+<li>Topics: Pre-populated from research repository</li>
+</ul>
+
+<strong>Sync Strategy:</strong>
+<ul>
+<li>User data: Local-first, sync to cloud on opt-in</li>
+<li>Reference data (interventions, claims, sources): Cache from cloud, update in background</li>
+</ul>
+
+<h3>SQLite (Mobile/Desktop)</h3>
+
+<strong>Database File:</strong> <code>dyslexia-hub.db</code>
+<strong>Schema:</strong> Same as IndexedDB (normalized SQL)
+
+<strong>Migration Strategy:</strong>
+<pre><code>interface Migration {
+<p>version: number;</p>
+<p>up: (db: SQLiteDatabase) => void;</p>
+<p>down: (db: SQLiteDatabase) => void;</p>
+<p>}</p>
+
+<p>const migrations: Migration[] = [</p>
+<p>{</p>
+<p>version: 1,</p>
+<p>up: (db) => {</p>
+<p>db.exec(<code></p>
+<p>CREATE TABLE users (</p>
+<p>id TEXT PRIMARY KEY,</p>
+<p>age INTEGER,</p>
+<p>language TEXT,</p>
+<p>createdAt TEXT,</p>
+<p>updatedAt TEXT,</p>
+<p>preferences TEXT</p>
+<p>);</p>
+<p>-- ... other tables</p>
+</code>);
+<p>},</p>
+<p>down: (db) => {</p>
+<p>db.exec('DROP TABLE users;');</p>
+<p>// ... drop other tables</p>
+<p>},</p>
+<p>},</p>
+<p>];</p>
+</code></pre>
+
+<hr>
+
+<h2>Data Versioning</h2>
+
+<h3>Schema Versioning</h3>
+
+<strong>Version Format:</strong> Semantic versioning (major.minor.patch)
+
+<strong>Version 1.0.0:</strong>
+<ul>
+<li>Initial schema</li>
+<li>Core tables: users, screeningResults, interventionProgress, interventions, claims, sources</li>
+</ul>
+
+<strong>Migration Tracking:</strong>
+<pre><code>interface SchemaVersion {
+<p>version: string;</p>
+<p>appliedAt: Date;</p>
+<p>migrationFiles: string[];</p>
+<p>}</p>
+</code></pre>
+
+<h3>Data Migration Strategy</h3>
+
+<strong>Automatic Migrations:</strong>
+<ul>
+<li>On app startup, check current schema version</li>
+<li>Apply pending migrations in order</li>
+<li>Create backup before migration</li>
+<li>Rollback on failure</li>
+</ul>
+
+<strong>Backward Compatibility:</strong>
+<ul>
+<li>Maintain support for previous schema versions for grace period</li>
+<li>Transform data during migration</li>
+<li>Validate data integrity after migration</li>
+</ul>
+
+<hr>
+
+<h2>Data Integrity</h2>
+
+<h3>Constraints</h3>
+
+<strong>Local Storage (IndexedDB):</strong>
+<ul>
+<li>Primary key uniqueness (enforced by IndexedDB)</li>
+<li>Foreign key relationships (application-level validation)</li>
+<li>Required fields (application-level validation)</li>
+</ul>
+
+<strong>Cloud Storage (PostgreSQL):</strong>
+<ul>
+<li>Primary key uniqueness (enforced by database)</li>
+<li>Foreign key constraints (enforced by database)</li>
+<li>NOT NULL constraints (enforced by database)</li>
+<li>CHECK constraints (enforced by database)</li>
+<li>UNIQUE constraints (enforced by database)</li>
+</ul>
+
+<h3>Validation</h3>
+
+<strong>Application-Level Validation:</strong>
+<pre><code>function validateUser(user: Partial<UserProfile>): ValidationResult {
+<p>const errors: string[] = [];</p>
+
+<p>if (user.age !== undefined && (user.age < 0 || user.age > 120)) {</p>
+<p>errors.push('Age must be between 0 and 120');</p>
+<p>}</p>
+
+<p>if (user.language !== undefined && !isValidLanguageCode(user.language)) {</p>
+<p>errors.push('Invalid language code');</p>
+<p>}</p>
+
+<p>return { valid: errors.length === 0, errors };</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h2>Data Privacy</h2>
+
+<h3>Sensitive Data</h3>
+
+<strong>Types of Sensitive Data:</strong>
+<ul>
+<li>Screening results (potentially stigmatizing)</li>
+<li>Intervention progress (learning disability indicators)</li>
+<li>User preferences (personalization data)</li>
+</ul>
+
+<strong>Protection Strategies:</strong>
+<ul>
+<li>Local-first: Primary storage is local</li>
+<li>Encryption at rest (for cloud sync)</li>
+<li>No PII in reference data (interventions, claims, sources)</li>
+<li>Anonymized analytics (if enabled)</li>
+</ul>
+
+<h3>Cloud Sync Privacy</h3>
+
+<strong>Opt-In Only:</strong>
+<ul>
+<li>User must explicitly enable cloud sync</li>
+<li>Clear explanation of what data is synced</li>
+<li>Ability to delete cloud data</li>
+</ul>
+
+<strong>Encryption:</strong>
+<ul>
+<li>End-to-end encryption for sensitive fields</li>
+<li>Encryption keys stored locally</li>
+<li>Server cannot decrypt user data</li>
+</ul>
+
+<hr>
+
+<h2>Data Synchronization</h2>
+
+<h3>Sync Flow</h3>
+
+<strong>Local to Cloud:</strong>
+<ol>
+<li>User completes screening (offline)</li>
+<li>Data saved to IndexedDB</li>
+<li>User comes online</li>
+<li>Background sync triggers</li>
+<li>Push screening result to cloud</li>
+<li>Cloud validates and stores</li>
+<li>Sync metadata updated</li>
+</ol>
+
+<strong>Cloud to Local:</strong>
+<ol>
+<li>Research repository updated (new claims added)</li>
+<li>Cloud data updated</li>
+<li>User comes online</li>
+<li>Background sync triggers</li>
+<li>Pull updated claims from cloud</li>
+<li>Update local IndexedDB</li>
+<li>Sync metadata updated</li>
+</ol>
+
+<h3>Conflict Resolution</h3>
+
+<strong>Strategies:</strong>
+<ol>
+<li><strong>Last-Write-Wins:</strong> Most recent change wins (default)</li>
+<li><strong>Manual Resolution:</strong> User prompted to choose</li>
+<li><strong>Merge:</strong> Automatic merge if possible (e.g., additive arrays)</li>
+</ol>
+
+<strong>Conflict Types:</strong>
+<ul>
+<li>Same record modified locally and cloud</li>
+<li>Record deleted locally but exists in cloud</li>
+<li>Record added locally and cloud with same ID</li>
+</ul>
+
+<strong>Resolution Logic:</strong>
+<pre><code>function resolveConflict(conflict: SyncConflict): Resolution {
+<p>const localTimestamp = new Date(conflict.localVersion.updatedAt);</p>
+<p>const cloudTimestamp = new Date(conflict.cloudVersion.updatedAt);</p>
+
+<p>if (localTimestamp > cloudTimestamp) {</p>
+<p>return { strategy: 'local', result: conflict.localVersion };</p>
+<p>} else if (cloudTimestamp > localTimestamp) {</p>
+<p>return { strategy: 'cloud', result: conflict.cloudVersion };</p>
+<p>} else {</p>
+<p>// Same timestamp - merge if possible</p>
+<p>return mergeRecords(conflict.localVersion, conflict.cloudVersion);</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h2>Backup and Recovery</h2>
+
+<h3>Local Backup</h3>
+
+<strong>Strategy:</strong>
+<ul>
+<li>Periodic export of IndexedDB to JSON</li>
+<li>User can manually trigger backup</li>
+<li>Backup includes all user data (not reference data)</li>
+</ul>
+
+<strong>Backup Format:</strong>
+<pre><code>{
+<p>"version": "1.0.0",</p>
+<p>"exportDate": "2026-10-31T00:00:00Z",</p>
+<p>"users": [...],</p>
+<p>"screeningResults": [...],</p>
+<p>"interventionProgress": [...]</p>
+<p>}</p>
+</code></pre>
+
+<h3>Cloud Backup</h3>
+
+<strong>Strategy:</strong>
+<ul>
+<li>Automatic daily backups (PostgreSQL)</li>
+<li>Point-in-time recovery (PITR)</li>
+<li>Geographic redundancy (multi-region)</li>
+</ul>
+
+<strong>Retention:</strong>
+<ul>
+<li>Daily backups: 30 days</li>
+<li>Weekly backups: 12 weeks</li>
+<li>Monthly backups: 12 months</li>
+</ul>
+
+<hr>
+
+<h2>Performance Optimization</h2>
+
+<h3>Query Optimization</h3>
+
+<strong>IndexedDB:</strong>
+<ul>
+<li>Use indexes for filtered queries</li>
+<li>Limit result sets with pagination</li>
+<li>Use cursor-based iteration for large datasets</li>
+</ul>
+
+<strong>PostgreSQL:</strong>
+<ul>
+<li>Use EXPLAIN ANALYZE for query planning</li>
+<li>Add covering indexes for frequent queries</li>
+<li>Use materialized views for complex aggregations</li>
+<li>Partition large tables by date (if needed)</li>
+</ul>
+
+<h3>Caching Strategy</h3>
+
+<strong>Application-Level:</strong>
+<ul>
+<li>Cache frequently accessed data in memory</li>
+<li>Cache invalidation on data changes</li>
+<li>TTL-based cache expiration</li>
+</ul>
+
+<strong>Reference Data:</strong>
+<ul>
+<li>Interventions, claims, sources cached locally</li>
+<li>Update in background when online</li>
+<li>Stale-while-revalidate strategy</li>
+</ul>
+
+<hr>
+
+<h2>Summary</h2>
+
+<p>This database schema provides:</p>
+<ul>
+<li><strong>Normalized Design:</strong> 3NF compliance, clear relationships</li>
+<li><strong>Clear Relationships:</strong> One-to-many, many-to-many defined</li>
+<li><strong>Performance Considerations:</strong> Strategic indexes, caching</li>
+<li><strong>Offline-Capable:</strong> IndexedDB/SQLite for local storage</li>
+<li><strong>Sync Strategy:</strong> Local-first with optional cloud sync</li>
+<li><strong>Data Integrity:</strong> Constraints and validation</li>
+<li><strong>Privacy Protection:</strong> Local-first, opt-in cloud sync, encryption</li>
+<li><strong>Migration Strategy:</strong> Versioned schema, automatic migrations</li>
+<li><strong>Backup/Recovery:</strong> Local export, cloud backups</li>
+</ul>
+
+<hr>
+
+<strong>Document Status:</strong> Complete
+<strong>Next Step:</strong> API Specification Design (Phase 2)
+
+        </div>
+    </div>
+</body>
+</html>

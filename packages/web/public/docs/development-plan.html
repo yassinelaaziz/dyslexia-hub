@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyslexia Grand Hub - Development Plan - Dyslexia Grand Hub Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fafb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header .container {
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            padding: 0 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        nav a:hover {
+            background: #f3f4f6;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.75rem;
+            color: #374151;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.25rem 0 0.5rem;
+            color: #4b5563;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem;
+            color: #6b7280;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f9fafb;
+            font-weight: 600;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 2rem 0;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .meta {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dyslexia Grand Hub - Development Plan</h1>
+            <p class="subtitle">Document  Complete</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Documentation Index</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="monorepo-structure.html">Monorepo Structure</a></li>
+                <li><a href="database-schema.html">Database Schema</a></li>
+                <li><a href="api-specification.html">API Specification</a></li>
+                <li><a href="component-library.html">Component Library</a></li>
+                <li><a href="user-journeys.html">User Journeys</a></li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+                <li><a href="development-plan.html">Development Plan</a></li>
+                <li><a href="testing-strategy.html">Testing Strategy</a></li>
+                <li><a href="deployment-plan.html">Deployment Plan</a></li>
+                <li><a href="monitoring-plan.html">Monitoring Plan</a></li>
+                <li><a href="maintenance-plan.html">Maintenance Plan</a></li>
+                <li><a href="technical-specification.html">Technical Specification</a></li>
+                <li><a href="training-system.html">Training System</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>Dyslexia Grand Hub - Development Plan</h1>
+
+<strong>Version:</strong> 1.0
+<strong>Date:</strong> 2026-10-31
+<strong>Author:</strong> Senior Tech Lead (Devin)
+<strong>Status:</strong> Development Planning Phase - Complete
+
+<hr>
+
+<h2>Sprint Breakdown (12-Week MVP Timeline)</h2>
+
+<h3>Sprint 1-2: Foundation (Weeks 1-2)</h3>
+
+<strong>Objectives:</strong>
+<ul>
+<li>Set up monorepo structure</li>
+<li>Implement core business logic (domain models, services, repositories)</li>
+<li>Set up build tooling (Vite, TypeScript, ESLint, Prettier)</li>
+<li>Set up testing framework (Jest, React Testing Library)</li>
+</ul>
+
+<strong>Tasks:</strong>
+<ul>
+<li>Initialize monorepo with npm workspaces</li>
+<li>Create packages/core, packages/web, packages/components</li>
+<li>Implement domain models (User, ScreeningResult, Intervention, Claim)</li>
+<li>Implement repository interfaces</li>
+<li>Implement domain services (ScreeningService, InterventionService)</li>
+<li>Set up Vite build configuration</li>
+<li>Configure TypeScript (base and package-specific)</li>
+<li>Configure ESLint and Prettier</li>
+<li>Set up Jest and React Testing Library</li>
+<li>Create initial component library (Button, Input, Card)</li>
+</ul>
+
+<strong>Deliverables:</strong>
+<ul>
+<li>Working monorepo structure</li>
+<li>Core business logic implemented</li>
+<li>Build and test tooling configured</li>
+<li>Base component library</li>
+</ul>
+
+<strong>Success Criteria:</strong>
+<ul>
+<li>All packages build successfully</li>
+<li>Core services have unit tests</li>
+<li>Component library renders in Storybook</li>
+</ul>
+
+<hr>
+
+<h3>Sprint 3-4: Screening Module (Weeks 3-4)</h3>
+
+<strong>Objectives:</strong>
+<ul>
+<li>Implement screening logic</li>
+<li>Create child-friendly screening UI</li>
+<li>Create adult screening UI</li>
+<li>Implement offline storage for screening results</li>
+</ul>
+
+<strong>Tasks:</strong>
+<ul>
+<li>Implement screening algorithm (multi-domain assessment)</li>
+<li>Create ScreeningQuestion component</li>
+<li>Create ScreeningProgress component</li>
+<li>Create ScreeningResult component</li>
+<li>Create SeverityIndicator component</li>
+<li>Implement IndexedDB storage for screening results</li>
+<li>Create screening pages (child and adult versions)</li>
+<li>Implement accessibility (screen reader, keyboard nav)</li>
+<li>Implement dyslexia-friendly design (fonts, spacing)</li>
+</ul>
+
+<strong>Deliverables:</strong>
+<ul>
+<li>Functional screening module</li>
+<li>Child and adult screening flows</li>
+<li>Offline screening result storage</li>
+<li>Accessibility audit passed</li>
+</ul>
+
+<strong>Success Criteria:</strong>
+<ul>
+<li>Screening completes in <10 minutes</li>
+<li>Results saved to IndexedDB</li>
+<li>WCAG 2.1 AA compliance</li>
+<li>Dyslexia-friendly design validated</li>
+</ul>
+
+<hr>
+
+<h3>Sprint 5-6: Intervention Explorer (Weeks 5-6)</h3>
+
+<strong>Objectives:</strong>
+<ul>
+<li>Implement intervention database (from research repository)</li>
+<li>Create intervention search and filter</li>
+<li>Implement efficacy ratings display</li>
+<li>Create intervention guides</li>
+</ul>
+
+<strong>Tasks:</strong>
+<ul>
+<li>Parse research repository for intervention data</li>
+<li>Implement InterventionService</li>
+<li>Create InterventionCard component</li>
+<li>Create InterventionFilter component</li>
+<li>Create InterventionGuide component</li>
+<li>Create EfficacyRating component</li>
+<li>Implement search and filter logic</li>
+<li>Create intervention explorer page</li>
+<li>Cache intervention data in IndexedDB</li>
+</ul>
+
+<strong>Deliverables:</strong>
+<ul>
+<li>Functional intervention explorer</li>
+<li>Search and filter working</li>
+<li>Intervention guides displayed</li>
+<li>Offline intervention data cached</li>
+</ul>
+
+<strong>Success Criteria:</strong>
+<ul>
+<li>Search returns relevant results</li>
+<li>Filters work correctly</li>
+<li>Efficacy ratings displayed</li>
+<li>Data cached offline</li>
+</ul>
+
+<hr>
+
+<h3>Sprint 7-8: Brain Showcase (Weeks 7-8)</h3>
+
+<strong>Objectives:</strong>
+<ul>
+<li>Implement 3D brain visualization</li>
+<li>Annotate key brain regions</li>
+<li>Create before/after intervention animations</li>
+<li>Implement fallback 2D visualization</li>
+</ul>
+
+<strong>Tasks:</strong>
+<ul>
+<li>Set up Three.js and React Three Fiber</li>
+<li>Create 3D brain model (or load existing model)</li>
+<li>Implement BrainModel3D component</li>
+<li>Implement BrainModel2D component (fallback)</li>
+<li>Create AnnotationOverlay component</li>
+<li>Implement region selection logic</li>
+<li>Create before/after animation</li>
+<li>Implement keyboard controls for 3D</li>
+<li>Add audio description option</li>
+<li>Performance optimization (lazy loading, LOD)</li>
+</ul>
+
+<strong>Deliverables:</strong>
+<ul>
+<li>Interactive 3D brain model</li>
+<li>Region annotations</li>
+<li>Before/after animations</li>
+<li>2D fallback</li>
+<li>Keyboard controls</li>
+<li>Accessibility audit passed</li>
+</ul>
+
+<strong>Success Criteria:</strong>
+<ul>
+<li>3D model loads in <3 seconds</li>
+<li>Keyboard controls work</li>
+<li>Fallback to 2D on low-end devices</li>
+<li>Screen reader compatible</li>
+</ul>
+
+<hr>
+
+<h3>Sprint 9-10: Developmental Display (Weeks 9-10)</h3>
+
+<strong>Objectives:</strong>
+<ul>
+<li>Implement interactive timeline</li>
+<li>Create milestone comparison charts</li>
+<li>Add intervention impact overlays</li>
+<li>Implement age-appropriate complexity levels</li>
+</ul>
+
+<strong>Tasks:</strong>
+<ul>
+<li>Implement DevelopmentalTimelineService</li>
+<li>Create DevelopmentalTimeline component</li>
+<li>Create MilestoneChart component</li>
+<li>Implement timeline interaction (age selection)</li>
+<li>Add intervention window overlays</li>
+<li>Create age-appropriate complexity (child vs. adult)</li>
+<li>Implement keyboard navigation</li>
+<li>Add screen reader descriptions</li>
+</ul>
+
+<strong>Deliverables:</strong>
+<ul>
+<li>Interactive developmental timeline</li>
+<li>Milestone comparison charts</li>
+<li>Intervention impact overlays</li>
+<li>Age-appropriate complexity</li>
+<li>Accessibility audit passed</li>
+</ul>
+
+<strong>Success Criteria:</strong>
+<ul>
+<li>Timeline is interactive (keyboard/mouse)</li>
+<li>Milestones clearly labeled</li>
+<li>Intervention windows highlighted</li>
+<li>Screen reader compatible</li>
+</ul>
+
+<hr>
+
+<h3>Sprint 11-12: Integration and Testing (Weeks 11-12)</h3>
+
+<strong>Objectives:</strong>
+<ul>
+<li>Integrate all modules</li>
+<li>Cross-browser testing</li>
+<li>Mobile responsiveness testing</li>
+<li>Accessibility audit (comprehensive)</li>
+<li>Performance optimization</li>
+<li>Beta testing with target users</li>
+<li>Bug fixes and polish</li>
+</ul>
+
+<strong>Tasks:</strong>
+<ul>
+<li>Integrate screening, interventions, brain showcase, developmental display</li>
+<li>Create navigation and routing</li>
+<li>Implement global state management (Zustand)</li>
+<li>Create home page and navigation</li>
+<li>Cross-browser testing (Chrome, Firefox, Safari, Edge)</li>
+<li>Mobile responsiveness testing (iOS, Android)</li>
+<li>Accessibility audit (axe-core, screen reader testing)</li>
+<li>Performance optimization (Lighthouse target: 90+)</li>
+<li>Beta testing with target users (Alex persona focus)</li>
+<li>Bug fixes and polish</li>
+<li>PWA configuration (manifest, service worker)</li>
+</ul>
+
+<strong>Deliverables:</strong>
+<ul>
+<li>Fully integrated application</li>
+<li>Cross-browser compatible</li>
+<li>Mobile responsive</li>
+<li>WCAG 2.1 AA compliant</li>
+<li>Performance targets met</li>
+<li>Beta testing feedback incorporated</li>
+<li>PWA capabilities</li>
+</ul>
+
+<strong>Success Criteria:</strong>
+<ul>
+<li>All modules integrated</li>
+<li>Passes cross-browser testing</li>
+<li>Passes mobile testing</li>
+<li>Passes accessibility audit</li>
+<li>Lighthouse score >90</li>
+<li>Beta test feedback positive</li>
+</ul>
+
+<hr>
+
+<h2>Task Dependencies</h2>
+
+<strong>Critical Path:</strong>
+<ol>
+<li>Foundation (Sprint 1-2) → All modules</li>
+<li>Screening (Sprint 3-4) → Progress tracking (future)</li>
+<li>Intervention Explorer (Sprint 5-6) → Brain showcase (independent)</li>
+<li>Brain Showcase (Sprint 7-8) → Developmental display (independent)</li>
+<li>All modules → Integration (Sprint 11-12)</li>
+</ol>
+
+<strong>Parallel Opportunities:</strong>
+<ul>
+<li>Sprint 3-4 and Sprint 5-6 can run in parallel (different developers)</li>
+<li>Sprint 7-8 and Sprint 9-10 can run in parallel (different developers)</li>
+</ul>
+
+<hr>
+
+<h2>Risk Register</h2>
+
+<p>| Risk | Likelihood | Impact | Mitigation |</p>
+<p>|------|------------|--------|------------|</p>
+<p>| 3D performance issues on low-end devices | High | High | Fallback to 2D, progressive loading, LOD |</p>
+<p>| Screening algorithm accuracy uncertain | Medium | High | Validate against professional assessments, add disclaimer |</p>
+<p>| Research repository data quality issues | Medium | Medium | Data validation, manual review of critical claims |</p>
+<p>| Accessibility not meeting WCAG 2.1 AA | Medium | High | Continuous testing, axe-core integration, expert review |</p>
+<p>| Timeline overrun (12 weeks insufficient) | Medium | Medium | Cut non-essential features, prioritize core modules |</p>
+<p>| Dyslexia-friendly design not validated | Medium | Medium | User testing with dyslexic individuals, iterate |</p>
+
+<hr>
+
+<h2>Resource Estimates</h2>
+
+<strong>Personnel:</strong>
+<ul>
+<li>Senior Frontend Developer: 1 FTE (Sprints 1-12)</li>
+<li>Frontend Developer: 1 FTE (Sprints 3-10)</li>
+<li>Accessibility Specialist: 0.5 FTE (Sprints 11-12)</li>
+<li>UX Designer: 0.5 FTE (Sprints 1-2, 11-12)</li>
+<li>QA Engineer: 0.5 FTE (Sprints 11-12)</li>
+</ul>
+
+<strong>Total:</strong> 3.5 FTE over 12 weeks
+
+<strong>Budget:</strong>
+<ul>
+<li>Personnel: ~$200,000 (assuming $60k/FTE for 12 weeks)</li>
+<li>Tools/Services: ~$5,000 (Vercel, Sentry, etc.)</li>
+<li>Contingency: ~$20,000 (10%)</li>
+<li><strong>Total:</strong> ~$225,000</li>
+</ul>
+
+<hr>
+
+<h2>Milestone Criteria</h2>
+
+<strong>Milestone 1: Foundation Complete (Week 2)</strong>
+<ul>
+<li>Monorepo builds successfully</li>
+<li>Core services have unit tests</li>
+<li>Component library renders</li>
+</ul>
+
+<strong>Milestone 2: Screening Complete (Week 4)</strong>
+<ul>
+<li>Screening flow works end-to-end</li>
+<li>Results saved to IndexedDB</li>
+<li>Accessibility audit passed</li>
+</ul>
+
+<strong>Milestone 3: Intervention Explorer Complete (Week 6)</strong>
+<ul>
+<li>Search and filter work</li>
+<li>Efficacy ratings displayed</li>
+<li>Data cached offline</li>
+</ul>
+
+<strong>Milestone 4: Brain Showcase Complete (Week 8)</strong>
+<ul>
+<li>3D model interactive</li>
+<li>Keyboard controls work</li>
+<li>Fallback to 2D</li>
+</ul>
+
+<strong>Milestone 5: Developmental Display Complete (Week 10)</strong>
+<ul>
+<li>Timeline interactive</li>
+<li>Milestones comparable</li>
+<li>Intervention windows shown</li>
+</ul>
+
+<strong>Milestone 6: MVP Complete (Week 12)</strong>
+<ul>
+<li>All modules integrated</li>
+<li>Cross-browser compatible</li>
+<li>Mobile responsive</li>
+<li>WCAG 2.1 AA compliant</li>
+<li>Lighthouse >90</li>
+<li>Beta test feedback positive</li>
+</ul>
+
+<hr>
+
+<h2>Conclusion</h2>
+
+<p>This development plan provides:</p>
+<ul>
+<li><strong>Detailed Sprint Breakdown:</strong> 12-week timeline with 6 sprints</li>
+<li><strong>Task Dependencies:</strong> Critical path and parallel opportunities</li>
+<li><strong>Risk Register:</strong> 6 risks with mitigation strategies</li>
+<li><strong>Resource Estimates:</strong> 3.5 FTE, ~$225,000 budget</li>
+<li><strong>Milestone Criteria:</strong> Clear success criteria for each milestone</li>
+</ul>
+
+<p>The plan is realistic and achievable for MVP delivery.</p>
+
+<hr>
+
+<strong>Document Status:</strong> Complete
+<strong>Next Step:</strong> Testing Strategy (Phase 5)
+
+        </div>
+    </div>
+</body>
+</html>

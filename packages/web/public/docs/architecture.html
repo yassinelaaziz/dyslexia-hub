@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development - Dyslexia Grand Hub Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fafb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header .container {
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            padding: 0 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        nav a:hover {
+            background: #f3f4f6;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.75rem;
+            color: #374151;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.25rem 0 0.5rem;
+            color: #4b5563;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem;
+            color: #6b7280;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f9fafb;
+            font-weight: 600;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 2rem 0;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .meta {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Development</h1>
+            <p class="subtitle">Document  Complete</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Documentation Index</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="monorepo-structure.html">Monorepo Structure</a></li>
+                <li><a href="database-schema.html">Database Schema</a></li>
+                <li><a href="api-specification.html">API Specification</a></li>
+                <li><a href="component-library.html">Component Library</a></li>
+                <li><a href="user-journeys.html">User Journeys</a></li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+                <li><a href="development-plan.html">Development Plan</a></li>
+                <li><a href="testing-strategy.html">Testing Strategy</a></li>
+                <li><a href="deployment-plan.html">Deployment Plan</a></li>
+                <li><a href="monitoring-plan.html">Monitoring Plan</a></li>
+                <li><a href="maintenance-plan.html">Maintenance Plan</a></li>
+                <li><a href="technical-specification.html">Technical Specification</a></li>
+                <li><a href="training-system.html">Training System</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>Dyslexia Grand Hub - Technical Architecture</h1>
+
+<strong>Version:</strong> 1.0
+<strong>Date:</strong> 2026-10-31
+<strong>Author:</strong> Senior Tech Lead (Devin)
+<strong>Status:</strong> Architecture Phase - Complete
+
+<hr>
+
+<h2>System Overview</h2>
+
+<p>The Dyslexia Grand Hub is a platform-agnostic, offline-first application designed to provide evidence-based dyslexia interventions, screening, and educational content. The architecture follows a layered approach with clear separation of concerns, enabling deployment across web, mobile, and desktop platforms while maintaining a shared core.</p>
+
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+<p>│                        Presentation Layer                        │</p>
+<p>│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐      │</p>
+<p>│  │   Web    │  │  Mobile  │  │ Desktop  │  │  Future  │      │</p>
+<p>│  │ (React)  │  │(RN/Flutter)│ │(Electron)│ │  Platforms│      │</p>
+<p>│  └──────────┘  └──────────┘  └──────────┘  └──────────┘      │</p>
+<p>└─────────────────────────────────────────────────────────────────┘</p>
+<p>│</p>
+<p>▼</p>
+<p>┌─────────────────────────────────────────────────────────────────┐</p>
+<p>│                      UI Component Layer                          │</p>
+<p>│  ┌──────────────────────────────────────────────────────────┐   │</p>
+<p>│  │  Component Library (Framework-Agnostic Interfaces)       │   │</p>
+<p>│  │  - Screening Components                                  │   │</p>
+<p>│  │  - Intervention Components                               │   │</p>
+<p>│  │  - Brain Visualization Components                         │   │</p>
+<p>│  │  - Developmental Timeline Components                      │   │</p>
+<p>│  └──────────────────────────────────────────────────────────┘   │</p>
+<p>└─────────────────────────────────────────────────────────────────┘</p>
+<p>│</p>
+<p>▼</p>
+<p>┌─────────────────────────────────────────────────────────────────┐</p>
+<p>│                    Application Logic Layer                        │</p>
+<p>│  ┌──────────────────────────────────────────────────────────┐   │</p>
+<p>│  │  Feature Modules (Plugin Architecture)                   │   │</p>
+<p>│  │  - Screening Module                                      │   │</p>
+<p>│  │  - Intervention Explorer Module                          │   │</p>
+<p>│  │  - Brain Showcase Module                                  │   │</p>
+<p>│  │  - Developmental Display Module                           │   │</p>
+<p>│  │  - Research Repository Module (Future)                    │   │</p>
+<p>│  └──────────────────────────────────────────────────────────┘   │</p>
+<p>└─────────────────────────────────────────────────────────────────┘</p>
+<p>│</p>
+<p>▼</p>
+<p>┌─────────────────────────────────────────────────────────────────┐</p>
+<p>│                      Core Business Logic                         │</p>
+<p>│  ┌──────────────────────────────────────────────────────────┐   │</p>
+<p>│  │  Domain Services                                         │   │</p>
+<p>│  │  - Screening Service                                     │   │</p>
+<p>│  │  - Intervention Service                                  │   │</p>
+<p>│  │  - User Profile Service                                  │   │</p>
+<p>│  │  - Research Service                                      │   │</p>
+<p>│  │  - Sync Service (Offline ↔ Cloud)                        │   │</p>
+<p>│  └──────────────────────────────────────────────────────────┘   │</p>
+<p>└─────────────────────────────────────────────────────────────────┘</p>
+<p>│</p>
+<p>▼</p>
+<p>┌─────────────────────────────────────────────────────────────────┐</p>
+<p>│                        Data Access Layer                         │</p>
+<p>│  ┌──────────────────────────────────────────────────────────┐   │</p>
+<p>│  │  Repository Pattern (Agnostic Interfaces)                 │   │</p>
+<p>│  │  - UserRepository                                        │   │</p>
+<p>│  │  - ScreeningResultRepository                             │   │</p>
+<p>│  │  - InterventionRepository                                │   │</p>
+<p>│  │  - ClaimRepository (Research Claims)                      │   │</p>
+<p>│  └──────────────────────────────────────────────────────────┘   │</p>
+<p>└─────────────────────────────────────────────────────────────────┘</p>
+<p>│</p>
+<p>▼</p>
+<p>┌─────────────────────────────────────────────────────────────────┐</p>
+<p>│                       Data Storage Layer                         │</p>
+<p>│  ┌──────────────────┐  ┌──────────────────┐                    │</p>
+<p>│  │   Local Storage  │  │   Cloud Storage   │                    │</p>
+<p>│  │  (SQLite/Indexed │  │  (PostgreSQL/     │                    │</p>
+<p>│  │   DB)            │  │   - Optional)     │                    │</p>
+<p>│  └──────────────────┘  └──────────────────┘                    │</p>
+<p>└─────────────────────────────────────────────────────────────────┘</p>
+</code></pre>
+
+<hr>
+
+<h2>Core Business Logic Layer</h2>
+
+<h3>Design Principles</h3>
+
+<strong>1. Platform Agnosticism</strong>
+<ul>
+<li>Core business logic has no dependencies on UI frameworks</li>
+<li>Pure TypeScript/JavaScript with standard interfaces</li>
+<li>Testable without UI layer</li>
+<li>Reusable across web, mobile, desktop</li>
+</ul>
+
+<strong>2. Framework Agnosticism</strong>
+<ul>
+<li>No framework-specific patterns in core</li>
+<li>Dependency injection for all services</li>
+<li>Plugin architecture for features</li>
+<li>Standard JavaScript/TypeScript APIs only</li>
+</ul>
+
+<strong>3. Language Agnosticism</strong>
+<ul>
+<li>i18n support from day one</li>
+<li>All user-facing strings externalized</li>
+<li>ICU message format for complex translations</li>
+<li>RTL support built-in</li>
+</ul>
+
+<strong>4. Offline-First</strong>
+<ul>
+<li>All core operations work offline</li>
+<li>Local storage as primary, cloud as sync target</li>
+<li>Background sync when online</li>
+<li>Conflict resolution strategy</li>
+</ul>
+
+<h3>Domain Services</h3>
+
+<strong>Screening Service</strong>
+<pre><code>interface ScreeningService {
+<p>assessUser(age: number, language: string): Promise<ScreeningResult>;</p>
+<p>calculateSeverity(scores: ScreeningScores): SeverityLevel;</p>
+<p>getRecommendations(severity: SeverityLevel, age: number): Intervention[];</p>
+<p>saveResult(result: ScreeningResult): Promise<void>;</p>
+<p>getHistory(userId: string): Promise<ScreeningResult[]>;</p>
+<p>}</p>
+</code></pre>
+
+<strong>Intervention Service</strong>
+<pre><code>interface InterventionService {
+<p>searchInterventions(filters: InterventionFilters): Promise<Intervention[]>;</p>
+<p>getInterventionById(id: string): Promise<Intervention>;</p>
+<p>trackProgress(userId: string, interventionId: string, session: Session): Promise<void>;</p>
+<p>getProgress(userId: string, interventionId: string): Promise<InterventionProgress>;</p>
+<p>getEfficacyRating(interventionId: string): Promise<number>;</p>
+<p>}</p>
+</code></pre>
+
+<strong>User Profile Service</strong>
+<pre><code>interface UserProfileService {
+<p>createProfile(profile: UserProfile): Promise<string>;</p>
+<p>updateProfile(userId: string, updates: Partial<UserProfile>): Promise<void>;</p>
+<p>getProfile(userId: string): Promise<UserProfile>;</p>
+<p>setPreferences(userId: string, preferences: UserPreferences): Promise<void>;</p>
+<p>syncProfile(userId: string): Promise<SyncResult>;</p>
+<p>}</p>
+</code></pre>
+
+<strong>Research Service</strong>
+<pre><code>interface ResearchService {
+<p>searchClaims(query: string, filters: ClaimFilters): Promise<Claim[]>;</p>
+<p>getClaimById(id: string): Promise<Claim>;</p>
+<p>getClaimsByTopic(topic: string): Promise<Claim[]>;</p>
+<p>getClaimsByPhase(phase: number): Promise<Claim[]>;</p>
+<p>getContradictoryClaims(claimId: string): Promise<Claim[]>;</p>
+<p>}</p>
+</code></pre>
+
+<strong>Sync Service</strong>
+<pre><code>interface SyncService {
+<p>syncLocalToCloud(): Promise<SyncResult>;</p>
+<p>syncCloudToLocal(): Promise<SyncResult>;</p>
+<p>resolveConflict(conflict: SyncConflict): Promise<Resolution>;</p>
+<p>getSyncStatus(): Promise<SyncStatus>;</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h2>UI Layer Architecture</h2>
+
+<h3>Separation of Concerns</h3>
+
+<strong>UI Layer Responsibilities:</strong>
+<ul>
+<li>Render user interface</li>
+<li>Handle user interactions</li>
+<li>Manage UI state (loading, errors, form state)</li>
+<li>Communicate with application logic layer</li>
+</ul>
+
+<strong>UI Layer Must NOT:</strong>
+<ul>
+<li>Contain business logic</li>
+<li>Directly access databases</li>
+<li>Implement domain rules</li>
+<li>Handle data persistence</li>
+</ul>
+
+<h3>UI Component Layer</h3>
+
+<strong>Component Library Design:</strong>
+<ul>
+<li>Framework-agnostic interfaces (TypeScript interfaces)</li>
+<li>React implementation for web (MVP)</li>
+<li>React Native implementation for mobile (future)</li>
+<li>Desktop-specific components (future)</li>
+</ul>
+
+<strong>Component Categories:</strong>
+
+<ol>
+<li><strong>Base Components</strong> (agnostic)</li>
+</ol>
+<p>- Button</p>
+<p>- Input</p>
+<p>- Card</p>
+<p>- Modal</p>
+<p>- Typography</p>
+
+<ol>
+<li><strong>Screening Components</strong></li>
+</ol>
+<p>- ScreeningQuestion</p>
+<p>- ScreeningProgress</p>
+<p>- ScreeningResult</p>
+<p>- SeverityIndicator</p>
+
+<ol>
+<li><strong>Intervention Components</strong></li>
+</ol>
+<p>- InterventionCard</p>
+<p>- InterventionFilter</p>
+<p>- InterventionGuide</p>
+<p>- ProgressTracker</p>
+
+<ol>
+<li><strong>Visualization Components</strong></li>
+</ol>
+<p>- BrainModel3D</p>
+<p>- BrainModel2D (fallback)</p>
+<p>- DevelopmentalTimeline</p>
+<p>- MilestoneChart</p>
+
+<h3>Accessibility Integration</h3>
+
+<strong>Component-Level Accessibility:</strong>
+<ul>
+<li>All components implement ARIA patterns</li>
+<li>Keyboard navigation built-in</li>
+<li>Screen reader support</li>
+<li>High contrast mode support</li>
+<li>Dyslexia-friendly fonts (OpenDyslexic option)</li>
+</ul>
+
+<strong>Theme System:</strong>
+<pre><code>interface Theme {
+<p>colors: {</p>
+<p>primary: string;</p>
+<p>secondary: string;</p>
+<p>background: string;</p>
+<p>text: string;</p>
+<p>dyslexiaMode: {</p>
+<p>background: string;</p>
+<p>text: string;</p>
+<p>spacing: number;</p>
+<p>fontFamily: string;</p>
+<p>};</p>
+<p>};</p>
+<p>typography: {</p>
+<p>fontFamily: string;</p>
+<p>fontSize: {</p>
+<p>base: string;</p>
+<p>large: string;</p>
+<p>extraLarge: string;</p>
+<p>};</p>
+<p>lineHeight: number;</p>
+<p>letterSpacing: number;</p>
+<p>};</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h2>Data Layer Architecture</h2>
+
+<h3>Repository Pattern</h3>
+
+<strong>Agnostic Interface:</strong>
+<pre><code>interface Repository<T> {
+<p>findById(id: string): Promise<T | null>;</p>
+<p>findAll(filters?: FilterOptions): Promise<T[]>;</p>
+<p>create(entity: T): Promise<T>;</p>
+<p>update(id: string, updates: Partial<T>): Promise<T>;</p>
+<p>delete(id: string): Promise<void>;</p>
+<p>sync(): Promise<SyncResult>;</p>
+<p>}</p>
+</code></pre>
+
+<strong>Implementation Variants:</strong>
+<ul>
+<li><code>LocalRepository<T></code> - SQLite/IndexedDB implementation</li>
+<li><code>CloudRepository<T></code> - PostgreSQL implementation (optional)</li>
+<li><code>HybridRepository<T></code> - Local with cloud sync</li>
+</ul>
+
+<h3>Local Storage Strategy</h3>
+
+<strong>IndexedDB (Web):</strong>
+<ul>
+<li>User profiles and preferences</li>
+<li>Screening results</li>
+<li>Intervention progress</li>
+<li>Offline cache of research claims</li>
+</ul>
+
+<strong>SQLite (Mobile/Desktop):</strong>
+<ul>
+<li>Same schema as IndexedDB</li>
+<li>Cross-platform consistency</li>
+<li>Migration strategy</li>
+</ul>
+
+<h3>Cloud Storage (Optional)</h3>
+
+<strong>PostgreSQL Schema:</strong>
+<ul>
+<li>User accounts (for sync)</li>
+<li>Research claims database (centralized)</li>
+<li>Intervention metadata (updates)</li>
+<li>Analytics (privacy-first)</li>
+</ul>
+
+<strong>Sync Strategy:</strong>
+<ul>
+<li>Local-first: primary storage is local</li>
+<li>Cloud as backup and sync target</li>
+<li>Background sync when online</li>
+<li>Conflict resolution: last-write-wins with user prompt</li>
+</ul>
+
+<hr>
+
+<h2>Module Breakdown</h2>
+
+<h3>Feature Modules (Plugin Architecture)</h3>
+
+<strong>Module Interface:</strong>
+<pre><code>interface FeatureModule {
+<p>name: string;</p>
+<p>version: string;</p>
+<p>dependencies: string[];</p>
+<p>initialize(container: DIContainer): void;</p>
+<p>routes?: RouteConfig[];</p>
+<p>components?: ComponentRegistry;</p>
+<p>services?: ServiceRegistry;</p>
+<p>}</p>
+</code></pre>
+
+<strong>Screening Module:</strong>
+<ul>
+<li>Services: ScreeningService</li>
+<li>Components: ScreeningQuestion, ScreeningProgress, ScreeningResult</li>
+<li>Routes: /screening, /screening/child, /screening/adult</li>
+<li>Dependencies: UserProfileService</li>
+</ul>
+
+<strong>Intervention Explorer Module:</strong>
+<ul>
+<li>Services: InterventionService</li>
+<li>Components: InterventionCard, InterventionFilter, InterventionGuide</li>
+<li>Routes: /interventions, /interventions/:id</li>
+<li>Dependencies: ResearchService, UserProfileService</li>
+</ul>
+
+<strong>Brain Showcase Module:</strong>
+<ul>
+<li>Services: BrainVisualizationService</li>
+<li>Components: BrainModel3D, BrainModel2D, AnnotationOverlay</li>
+<li>Routes: /brain-showcase</li>
+<li>Dependencies: ResearchService</li>
+</ul>
+
+<strong>Developmental Display Module:</strong>
+<ul>
+<li>Services: DevelopmentalTimelineService</li>
+<li>Components: Timeline, MilestoneChart, InterventionOverlay</li>
+<li>Routes: /developmental-display</li>
+<li>Dependencies: ResearchService</li>
+</ul>
+
+<h3>Dependency Injection</h3>
+
+<strong>Container Pattern:</strong>
+<pre><code>class DIContainer {
+<p>private services: Map<string, any> = new Map();</p>
+
+<p>register<T>(token: string, factory: () => T): void {</p>
+<p>this.services.set(token, factory());</p>
+<p>}</p>
+
+<p>resolve<T>(token: string): T {</p>
+<p>return this.services.get(token);</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<strong>Service Registration:</strong>
+<pre><code>container.register('ScreeningService', () => new ScreeningService(
+<p>container.resolve('ScreeningResultRepository'),</p>
+<p>container.resolve('InterventionService')</p>
+<p>));</p>
+</code></pre>
+
+<hr>
+
+<h2>Communication Patterns</h2>
+
+<h3>Event Bus Pattern</h3>
+
+<strong>Module Communication:</strong>
+<pre><code>interface EventBus {
+<p>publish(event: Event): void;</p>
+<p>subscribe(eventType: string, handler: EventHandler): void;</p>
+<p>unsubscribe(eventType: string, handler: EventHandler): void;</p>
+<p>}</p>
+
+<p>interface Event {</p>
+<p>type: string;</p>
+<p>payload: any;</p>
+<p>timestamp: Date;</p>
+<p>}</p>
+</code></pre>
+
+<strong>Event Types:</strong>
+<ul>
+<li><code>SCREENING_COMPLETED</code> - When user completes screening</li>
+<li><code>INTERVENTION_STARTED</code> - When user starts an intervention</li>
+<li><code>INTERVENTION_PROGRESS</code> - When user makes progress</li>
+<li><code>SYNC_COMPLETED</code> - When sync completes</li>
+<li><code>OFFLINE_MODE_CHANGED</code> - When online/offline status changes</li>
+</ul>
+
+<h3>Service Communication</h3>
+
+<strong>Direct Service Calls:</strong>
+<ul>
+<li>Services call each other through interfaces</li>
+<li>No circular dependencies</li>
+<li>Event bus for async notifications</li>
+</ul>
+
+<hr>
+
+<h2>State Management Strategy</h2>
+
+<h3>Local State (Component Level)</h3>
+<ul>
+<li>React state for UI state (loading, form inputs, modals)</li>
+<li>Short-lived, component-scoped</li>
+</ul>
+
+<h3>Global State (Application Level)</h3>
+<ul>
+<li>Zustand or Redux Toolkit for cross-component state</li>
+<li>User profile, screening results, active interventions</li>
+<li>Persisted to local storage</li>
+</ul>
+
+<h3>Server State (Data Layer)</h3>
+<ul>
+<li>React Query or SWR for data fetching</li>
+<li>Caching, invalidation, optimistic updates</li>
+<li>Offline-first: cache first, network second</li>
+</ul>
+
+<h3>State Synchronization</h3>
+<ul>
+<li>Single source of truth: local storage</li>
+<li>UI state derived from data state</li>
+<li>Sync with cloud in background</li>
+</ul>
+
+<hr>
+
+<h2>Plugin System Design</h2>
+
+<h3>Plugin Interface</h3>
+
+<pre><code>interface Plugin {
+<p>name: string;</p>
+<p>version: string;</p>
+<p>author: string;</p>
+<p>description: string;</p>
+<p>install(app: Application): void;</p>
+<p>uninstall(app: Application): void;</p>
+<p>}</p>
+</code></pre>
+
+<h3>Plugin Types</h3>
+
+<strong>Feature Plugins:</strong>
+<ul>
+<li>Add new modules (e.g., Community Forum plugin)</li>
+<li>Extend existing modules (e.g., AI Coach plugin)</li>
+</ul>
+
+<strong>Theme Plugins:</strong>
+<ul>
+<li>Add new themes (e.g., High Contrast theme)</li>
+<li>Add new font options</li>
+</ul>
+
+<strong>Language Plugins:</strong>
+<ul>
+<li>Add new language translations</li>
+<li>Add RTL support</li>
+</ul>
+
+<h3>Plugin Loading</h3>
+
+<strong>Dynamic Import:</strong>
+<pre><code>async function loadPlugin(pluginPath: string): Promise<Plugin> {
+<p>const plugin = await import(pluginPath);</p>
+<p>return plugin.default;</p>
+<p>}</p>
+</code></pre>
+
+<strong>Plugin Registry:</strong>
+<pre><code>class PluginRegistry {
+<p>private plugins: Map<string, Plugin> = new Map();</p>
+
+<p>register(plugin: Plugin): void {</p>
+<p>this.plugins.set(plugin.name, plugin);</p>
+<p>}</p>
+
+<p>get(name: string): Plugin | undefined {</p>
+<p>return this.plugins.get(name);</p>
+<p>}</p>
+
+<p>getAll(): Plugin[] {</p>
+<p>return Array.from(this.plugins.values());</p>
+<p>}</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h2>Technology Stack Recommendations</h2>
+
+<h3>Web Platform (MVP)</h3>
+
+<strong>Frontend:</strong>
+<ul>
+<li><strong>Framework:</strong> React 18+ with TypeScript</li>
+<li><strong>Justification:</strong> Large ecosystem, strong typing, excellent accessibility support, component reusability</li>
+</ul>
+
+<strong>Styling:</strong>
+<ul>
+<li><strong>CSS Framework:</strong> Tailwind CSS</li>
+<li><strong>Justification:</strong> Utility-first, accessible by default, easy theming, excellent mobile support</li>
+</ul>
+
+<strong>State Management:</strong>
+<ul>
+<li><strong>Library:</strong> Zustand</li>
+<li><strong>Justification:</strong> Simple API, TypeScript-first, no boilerplate, good performance</li>
+</ul>
+
+<strong>3D Visualization:</strong>
+<ul>
+<li><strong>Library:</strong> Three.js + React Three Fiber</li>
+<li><strong>Justification:</strong> Industry standard, React integration, excellent performance, fallback to 2D</li>
+</ul>
+
+<strong>Build Tool:</strong>
+<ul>
+<li><strong>Tool:</strong> Vite</li>
+<li><strong>Justification:</strong> Fast HMR, modern, simple config, excellent TypeScript support</li>
+</ul>
+
+<strong>Testing:</strong>
+<ul>
+<li><strong>Unit:</strong> Jest + React Testing Library</li>
+<li><strong>E2E:</strong> Playwright</li>
+<li><strong>Accessibility:</strong> axe-core</li>
+<li><strong>Justification:</strong> Industry standards, excellent coverage, accessibility testing built-in</li>
+</ul>
+
+<h3>Mobile Platform (Post-MVP)</h3>
+
+<strong>Option A: React Native</strong>
+<ul>
+<li><strong>Pros:</strong> Shares React codebase, large ecosystem, TypeScript support</li>
+<li><strong>Cons:</strong> Native modules needed for some features</li>
+<li><strong>Recommendation:</strong> If web uses React</li>
+</ul>
+
+<strong>Option B: Flutter</strong>
+<ul>
+<li><strong>Pros:</strong> Single codebase, excellent performance, Dart type safety</li>
+<li><strong>Cons:</strong> Different language (Dart), no code sharing with web</li>
+<li><strong>Recommendation:</strong> If cross-platform performance is critical</li>
+</ul>
+
+<h3>Desktop Platform (Future)</h3>
+
+<strong>Option A: Electron</strong>
+<ul>
+<li><strong>Pros:</strong> Web tech to desktop, large ecosystem, easy migration from web</li>
+<li><strong>Cons:</strong> Heavy resource usage</li>
+<li><strong>Recommendation:</strong> If resource usage is not critical</li>
+</ul>
+
+<strong>Option B: Tauri</strong>
+<ul>
+<li><strong>Pros:</strong> Lightweight, Rust-based, secure</li>
+<li><strong>Cons:</strong> Smaller ecosystem, Rust learning curve</li>
+<li><strong>Recommendation:</strong> If performance and security are critical</li>
+</ul>
+
+<h3>Backend (Optional - Cloud Sync)</h3>
+
+<strong>API:</strong>
+<ul>
+<li><strong>Framework:</strong> Node.js + Express or Python + FastAPI</li>
+<li><strong>Justification:</strong> Express: familiar, FastAPI: type-safe, fast</li>
+</ul>
+
+<strong>Database:</strong>
+<ul>
+<li><strong>Primary:</strong> PostgreSQL</li>
+<li><strong>Justification:</strong> ACID compliance, JSON support, excellent scalability</li>
+</ul>
+
+<strong>Authentication:</strong>
+<ul>
+<li><strong>Service:</strong> Auth0 or Firebase Auth</li>
+<li><strong>Justification:</strong> OAuth 2.0, social login, secure</li>
+</ul>
+
+<strong>Hosting:</strong>
+<ul>
+<li><strong>Frontend:</strong> Vercel or Netlify</li>
+<li><strong>Backend:</strong> Railway or Render</li>
+<li><strong>Justification:</strong> Easy deployment, automatic HTTPS, generous free tiers</li>
+</ul>
+
+<hr>
+
+<h2>Deployment Architecture</h2>
+
+<h3>Web Deployment</h3>
+
+<strong>Static Site (MVP):</strong>
+<ul>
+<li>Pure client-side application</li>
+<li>No backend required</li>
+<li>Hosted on Vercel/Netlify</li>
+<li>Service workers for offline capability</li>
+</ul>
+
+<strong>Full Stack (Future):</strong>
+<ul>
+<li>Client: Vercel/Netlify</li>
+<li>API: Railway/Render</li>
+<li>Database: Supabase or Railway PostgreSQL</li>
+<li>CDN: Cloudflare (for static assets)</li>
+</ul>
+
+<h3>Build Process</h3>
+
+<strong>Monorepo Build:</strong>
+<pre><code>packages/
+<p>├── core/              # Shared business logic</p>
+<p>├── web/               # Web application</p>
+<p>├── mobile/            # Mobile application (future)</p>
+<p>├── desktop/           # Desktop application (future)</p>
+<p>└── components/        # Shared component library</p>
+</code></pre>
+
+<strong>Build Commands:</strong>
+<pre><code><h1>Build all packages</h1>
+<p>npm run build</p>
+
+<h1>Build specific platform</h1>
+<p>npm run build:web</p>
+<p>npm run build:mobile  # Future</p>
+<p>npm run build:desktop # Future</p>
+
+<h1>Development</h1>
+<p>npm run dev:web</p>
+<p>npm run dev:mobile    # Future</p>
+<p>npm run dev:desktop   # Future</p>
+</code></pre>
+
+<h3>Environment Management</h3>
+
+<strong>Environments:</strong>
+<ul>
+<li>Development (local)</li>
+<li>Staging (preview deployments)</li>
+<li>Production (main deployment)</li>
+</ul>
+
+<strong>Configuration:</strong>
+<pre><code>interface Config {
+<p>environment: 'development' | 'staging' | 'production';</p>
+<p>apiBaseUrl: string;</p>
+<p>enableCloudSync: boolean;</p>
+<p>enableAnalytics: boolean;</p>
+<p>analyticsId?: string;</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h2>Offline-First Architecture</h2>
+
+<h3>Service Worker Strategy</h3>
+
+<strong>Cache Strategy:</strong>
+<ul>
+<li>Static assets: Cache First (immediate load)</li>
+<li>API calls: Network First (fetch fresh, fallback to cache)</li>
+<li>Research claims: Cache First (update in background)</li>
+<li>User data: Network First (sync when online)</li>
+</ul>
+
+<strong>Background Sync:</strong>
+<pre><code>navigator.serviceWorker.ready.then((registration) => {
+<p>registration.sync.register('sync-screening-results');</p>
+<p>registration.sync.register('sync-intervention-progress');</p>
+<p>});</p>
+</code></pre>
+
+<h3>Local Storage Strategy</h3>
+
+<strong>IndexedDB Schema:</strong>
+<pre><code>interface LocalDatabase {
+<p>users: {</p>
+<p>key: string;</p>
+<p>value: UserProfile;</p>
+<p>};</p>
+<p>screeningResults: {</p>
+<p>key: string;</p>
+<p>value: ScreeningResult;</p>
+<p>};</p>
+<p>interventionProgress: {</p>
+<p>key: string;</p>
+<p>value: InterventionProgress;</p>
+<p>};</p>
+<p>researchClaims: {</p>
+<p>key: string;</p>
+<p>value: Claim;</p>
+<p>};</p>
+<p>}</p>
+</code></pre>
+
+<h3>Sync Strategy</h3>
+
+<strong>Sync Flow:</strong>
+<ol>
+<li>User comes online</li>
+<li>Check for local changes</li>
+<li>Push local changes to cloud</li>
+<li>Pull cloud changes to local</li>
+<li>Resolve conflicts (last-write-wins with user prompt)</li>
+<li>Update sync status</li>
+</ol>
+
+<strong>Conflict Resolution:</strong>
+<pre><code>interface SyncConflict {
+<p>entityType: string;</p>
+<p>entityId: string;</p>
+<p>localVersion: any;</p>
+<p>cloudVersion: any;</p>
+<p>timestamp: Date;</p>
+<p>}</p>
+
+<p>interface Resolution {</p>
+<p>strategy: 'local' | 'cloud' | 'merge';</p>
+<p>result: any;</p>
+<p>}</p>
+</code></pre>
+
+<hr>
+
+<h2>Security Considerations</h2>
+
+<h3>Data Privacy</h3>
+
+<strong>Local-First:</strong>
+<ul>
+<li>Primary storage is local</li>
+<li>User data never leaves device without consent</li>
+<li>Cloud sync is opt-in</li>
+</ul>
+
+<strong>Cloud Sync (if enabled):</strong>
+<ul>
+<li>End-to-end encryption for sensitive data</li>
+<li>GDPR compliant</li>
+<li>Minimal data collection</li>
+</ul>
+
+<h3>Authentication (if cloud sync)</h3>
+
+<strong>OAuth 2.0:</strong>
+<ul>
+<li>Social login (Google, GitHub)</li>
+<li>No password storage</li>
+<li>Secure token handling</li>
+</ul>
+
+<h3>Content Security</h3>
+
+<strong>XSS Prevention:</strong>
+<ul>
+<li>React auto-escapes by default</li>
+<li>Content Security Policy headers</li>
+<li>Sanitize user input</li>
+</ul>
+
+<strong>CSRF Prevention:</strong>
+<ul>
+<li>SameSite cookies</li>
+<li>CSRF tokens for API calls</li>
+</ul>
+
+<hr>
+
+<h2>Performance Optimization</h2>
+
+<h3>Code Splitting</h3>
+
+<strong>Route-Based Splitting:</strong>
+<pre><code>const BrainShowcase = lazy(() => import('./modules/BrainShowcase'));
+<p>const DevelopmentalDisplay = lazy(() => import('./modules/DevelopmentalDisplay'));</p>
+</code></pre>
+
+<strong>Component-Based Splitting:</strong>
+<ul>
+<li>Load 3D components only when needed</li>
+<li>Lazy load heavy visualizations</li>
+</ul>
+
+<h3>Asset Optimization</h3>
+
+<strong>Images:</strong>
+<ul>
+<li>WebP format with fallbacks</li>
+<li>Responsive images</li>
+<li>Lazy loading</li>
+</ul>
+
+<strong>Fonts:</strong>
+<ul>
+<li>Subset fonts (only needed characters)</li>
+<li>Preload critical fonts</li>
+<li>Fallback fonts</li>
+</ul>
+
+<h3>Caching Strategy</h3>
+
+<strong>HTTP Caching:</strong>
+<ul>
+<li>Static assets: Long cache (1 year)</li>
+<li>API responses: Short cache (5 minutes)</li>
+<li>Research claims: Medium cache (1 day)</li>
+</ul>
+
+<strong>Service Worker Caching:</strong>
+<ul>
+<li>Precache critical assets</li>
+<li>Cache on-demand for others</li>
+<li>Stale-while-revalidate for dynamic content</li>
+</ul>
+
+<hr>
+
+<h2>Scalability Considerations</h2>
+
+<h3>Horizontal Scaling</h3>
+
+<strong>Web:</strong>
+<ul>
+<li>CDN for static assets</li>
+<li>Edge functions for API (if backend needed)</li>
+<li>Stateless design for easy scaling</li>
+</ul>
+
+<strong>Database:</strong>
+<ul>
+<li>Read replicas for research claims</li>
+<li>Connection pooling</li>
+<li>Query optimization</li>
+</ul>
+
+<h3>Vertical Scaling</h3>
+
+<strong>Performance Budgets:</strong>
+<ul>
+<li>Initial load: <3s</li>
+<li>Time to interactive: <5s</li>
+<li>First contentful paint: <1.5s</li>
+<li>Largest contentful paint: <2.5s</li>
+</ul>
+
+<strong>Bundle Size:</strong>
+<ul>
+<li>Core bundle: <200KB gzipped</li>
+<li>Route bundles: <100KB gzipped each</li>
+<li>Total: <500KB gzipped</li>
+</ul>
+
+<hr>
+
+<h2>Monitoring and Observability</h2>
+
+<h3>Error Tracking</h3>
+
+<strong>Tool:</strong> Sentry
+<ul>
+<li>Capture client-side errors</li>
+<li>Capture performance issues</li>
+<li>Source maps for debugging</li>
+</ul>
+
+<h3>Performance Monitoring</h3>
+
+<strong>Tool:</strong> Lighthouse CI
+<ul>
+<li>Automated performance audits</li>
+<li>Core Web Vitals tracking</li>
+<li>Regression detection</li>
+</ul>
+
+<h3>User Analytics (Privacy-First)</h3>
+
+<strong>Tool:</strong> Plausible or self-hosted
+<ul>
+<li>No personal data collection</li>
+<li>No cookies</li>
+<li>GDPR compliant</li>
+<li>Opt-in only</li>
+</ul>
+
+<hr>
+
+<h2>Conclusion</h2>
+
+<p>This architecture provides:</p>
+<ul>
+<li><strong>Platform Agnosticism:</strong> Shared core across web, mobile, desktop</li>
+<li><strong>Framework Agnosticism:</strong> No lock-in, plugin architecture</li>
+<li><strong>Language Agnosticism:</strong> i18n support from day one</li>
+<li><strong>Offline-First:</strong> Works without internet, syncs when online</li>
+<li><strong>Modularity:</strong> Clear module boundaries, plugin system</li>
+<li><strong>Scalability:</strong> Performance budgets, caching strategy</li>
+<li><strong>Accessibility:</strong> Built-in from day one</li>
+<li><strong>Privacy:</strong> Local-first, opt-in cloud sync</li>
+</ul>
+
+<p>The architecture is ready for implementation following the monorepo structure defined in the next document.</p>
+
+<hr>
+
+<strong>Document Status:</strong> Complete
+<strong>Next Step:</strong> Monorepo Structure Design
+
+        </div>
+    </div>
+</body>
+</html>

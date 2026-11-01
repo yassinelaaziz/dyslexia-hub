@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training System Implementation Summary - Dyslexia Grand Hub Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fafb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header .container {
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            padding: 0 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        nav a:hover {
+            background: #f3f4f6;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.75rem;
+            color: #374151;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.25rem 0 0.5rem;
+            color: #4b5563;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem;
+            color: #6b7280;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f9fafb;
+            font-weight: 600;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 2rem 0;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .meta {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Training System Implementation Summary</h1>
+            <p class="subtitle"></p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Documentation Index</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="monorepo-structure.html">Monorepo Structure</a></li>
+                <li><a href="database-schema.html">Database Schema</a></li>
+                <li><a href="api-specification.html">API Specification</a></li>
+                <li><a href="component-library.html">Component Library</a></li>
+                <li><a href="user-journeys.html">User Journeys</a></li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+                <li><a href="development-plan.html">Development Plan</a></li>
+                <li><a href="testing-strategy.html">Testing Strategy</a></li>
+                <li><a href="deployment-plan.html">Deployment Plan</a></li>
+                <li><a href="monitoring-plan.html">Monitoring Plan</a></li>
+                <li><a href="maintenance-plan.html">Maintenance Plan</a></li>
+                <li><a href="technical-specification.html">Technical Specification</a></li>
+                <li><a href="training-system.html">Training System</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>Training System Implementation Summary</h1>
+
+<h2>Overview</h2>
+<p>Created a comprehensive dyslexia assessment-to-training system with local caching and a grand training system.</p>
+
+<h2>Implementation Date</h2>
+<p>2026-11-01</p>
+
+<h2>Components Created</h2>
+
+<h3>1. Data Files</h3>
+
+<h4>assessment-training-mapping.json</h4>
+<ul>
+<li>Maps assessment domain scores to training modules</li>
+<li>Defines thresholds for severity levels (severe, moderate, mild, normal)</li>
+<li>Specifies weightings for each domain (phonological 35%, RAN 35%, working memory 15%, attention 15%)</li>
+<li>Includes training sequence strategies based on deficit types</li>
+<li>Location: <code>packages/web/src/data/assessment-training-mapping.json</code></li>
+</ul>
+
+<h4>training-recommendations.json</h4>
+<ul>
+<li>Training module metadata for 4 modules:</li>
+</ul>
+<p>- Phonological Awareness Training</p>
+<p>- Rapid Automatized Naming Training</p>
+<p>- Working Memory Training</p>
+<p>- Reading Fluency Training</p>
+<ul>
+<li>Training programs by severity (severe, moderate, mild, maintenance)</li>
+<li>Deficit-to-module mapping</li>
+<li>Location: <code>packages/web/src/data/training-recommendations.json</code></li>
+</ul>
+
+<h4>training-achievements.json</h4>
+<ul>
+<li>18 achievement definitions across categories:</li>
+</ul>
+<p>- Milestone achievements (first session, 5 sessions, etc.)</p>
+<p>- Consistency achievements (streaks)</p>
+<p>- Performance achievements (perfect scores, speed)</p>
+<p>- Module completion achievements</p>
+<p>- Special achievements (time-based)</p>
+<ul>
+<li>Rarity system (common, uncommon, rare, legendary)</li>
+<li>Points system</li>
+<li>Location: <code>packages/web/src/data/training-achievements.json</code></li>
+</ul>
+
+<h3>2. Core Domain Models</h3>
+
+<h4>training.ts</h4>
+<ul>
+<li>TrainingRecord: Individual training session data</li>
+<li>UserTrainingProgress: Overall user progress tracking</li>
+<li>ModuleProgress: Progress per training module</li>
+<li>TrainingSessionRequest/Result: Session management</li>
+<li>TrainingPlan: Personalized training plan from assessment</li>
+<li>Achievement: Achievement definition</li>
+<li>TrainingStatistics: Analytics data</li>
+<li>Location: <code>packages/core/src/domain/training.ts</code></li>
+</ul>
+
+<h3>3. Core Services</h3>
+
+<h4>training.service.ts</h4>
+<ul>
+<li>TrainingServiceImpl with methods:</li>
+</ul>
+<p>- generateTrainingPlan(): Maps assessment to training recommendations</p>
+<p>- startSession(): Initiates training session</p>
+<p>- completeSession(): Saves training results</p>
+<p>- getUserProgress(): Retrieves user progress</p>
+<p>- getTrainingHistory(): Gets training history</p>
+<p>- getTrainingStatistics(): Calculates analytics</p>
+<p>- getAchievements(): Retrieves user achievements</p>
+<p>- getRecommendedNextModule(): Suggests next training</p>
+<p>- resetProgress(): Resets user progress</p>
+<ul>
+<li>Includes scoring logic, streak calculation, and improvement tracking</li>
+<li>Location: <code>packages/core/src/services/training.service.ts</code></li>
+</ul>
+
+<h3>4. Core Repositories</h3>
+
+<h4>training.repository.ts</h4>
+<ul>
+<li>Interface for training data persistence</li>
+<li>Methods for CRUD operations on training records, progress, and achievements</li>
+<li>Location: <code>packages/core/src/repositories/training.repository.ts</code></li>
+</ul>
+
+<h4>training.repository.impl.ts</h4>
+<ul>
+<li>Implementation using localStorage fallback</li>
+<li>In production, would delegate to web package's IndexedDB storage</li>
+<li>Location: <code>packages/core/src/repositories/training.repository.impl.ts</code></li>
+</ul>
+
+<h3>5. Storage Layer</h3>
+
+<h4>trainingStorage.ts</h4>
+<ul>
+<li>IndexedDB-based storage for training data</li>
+<li>Stores: trainingRecords, userProgress, achievements</li>
+<li>Methods for saving/loading training records, progress, and achievements</li>
+<li>Integrates with existing DyslexiaHubDB (version 2)</li>
+<li>Location: <code>packages/web/src/storage/trainingStorage.ts</code></li>
+</ul>
+
+<h4>indexedDB.ts (Updated)</h4>
+<ul>
+<li>Updated DB_VERSION to 2</li>
+<li>Added training-specific object stores:</li>
+</ul>
+<p>- trainingRecords</p>
+<p>- userProgress</p>
+<p>- achievements</p>
+<ul>
+<li>Location: <code>packages/web/src/storage/indexedDB.ts</code></li>
+</ul>
+
+<h3>6. UI Components</h3>
+
+<h4>TrainingProgressCard</h4>
+<ul>
+<li>Displays progress for a single training module</li>
+<li>Shows: current level, sessions completed, best score, time spent, completion percentage</li>
+<li>Includes progress bar and action button</li>
+<li>Location: <code>packages/web/src/components/training/TrainingProgressCard.tsx</code></li>
+</ul>
+
+<h4>TrainingDashboardPage</h4>
+<ul>
+<li>Main training dashboard with:</li>
+</ul>
+<p>- Overall progress stats (progress percentage, streak, sessions, time)</p>
+<p>- Training module cards</p>
+<p>- Achievements display</p>
+<p>- Quick action links (history, retake screening)</p>
+<p>- Disclaimer about non-clinical nature</p>
+<ul>
+<li>Location: <code>packages/web/src/pages/training/TrainingDashboardPage.tsx</code></li>
+</ul>
+
+<h4>TrainingSessionPage</h4>
+<ul>
+<li>Interactive training session page</li>
+<li>Reuses existing TrainingExercise component</li>
+<li>Tracks session time and score</li>
+<li>Saves results to storage on completion</li>
+<li>Location: <code>packages/web/src/pages/training/TrainingSessionPage.tsx</code></li>
+</ul>
+
+<h4>TrainingHistoryPage</h4>
+<ul>
+<li>Displays training history in table format</li>
+<li>Filter by training module</li>
+<li>Export to CSV functionality</li>
+<li>Statistics summary (total sessions, average score, total time, completion rate)</li>
+<li>Location: <code>packages/web/src/pages/training/TrainingHistoryPage.tsx</code></li>
+</ul>
+
+<h3>7. Screening Integration</h3>
+
+<h4>ScreeningPage.tsx (Updated)</h4>
+<ul>
+<li>Added handleStartTraining() method</li>
+<li>Navigates to training dashboard after screening</li>
+<li>Location: <code>packages/web/src/pages/screening/ScreeningPage.tsx</code></li>
+</ul>
+
+<h4>ScreeningResult.tsx (Updated)</h4>
+<ul>
+<li>Added onStartTraining prop</li>
+<li>Shows "Start Training" button when severity is not 'none'</li>
+<li>Location: <code>packages/web/src/components/screening/ScreeningResult.tsx</code></li>
+</ul>
+
+<h3>8. Routing Updates</h3>
+
+<h4>App.tsx (Updated)</h4>
+<ul>
+<li>Added Training link to navigation</li>
+<li>Added routes:</li>
+</ul>
+<p>- <code>/training</code> → TrainingDashboardPage</p>
+<p>- <code>/training/session/:moduleId</code> → TrainingSessionPage</p>
+<p>- <code>/training/history</code> → TrainingHistoryPage</p>
+<ul>
+<li>Location: <code>packages/web/src/App.tsx</code></li>
+</ul>
+
+<h3>9. Core Package Exports</h3>
+
+<h4>index.ts (Updated)</h4>
+<ul>
+<li>Added exports for:</li>
+</ul>
+<p>- domain/training</p>
+<p>- repositories/training.repository</p>
+<p>- repositories/training.repository.impl</p>
+<p>- services/training.service</p>
+<ul>
+<li>Location: <code>packages/core/src/index.ts</code></li>
+</ul>
+
+<h2>Key Features</h2>
+
+<h3>Assessment-to-Training Mapping</h3>
+<ul>
+<li>Maps screening domain scores to training modules</li>
+<li>Considers severity levels (severe, moderate, mild, normal)</li>
+<li>Prioritizes training based on lowest-scoring domains</li>
+<li>Generates personalized training plans</li>
+</ul>
+
+<h3>Local Caching</h3>
+<ul>
+<li>IndexedDB for persistent storage</li>
+<li>localStorage fallback for compatibility</li>
+<li>Stores: training records, user progress, achievements</li>
+<li>All data stored locally (no cloud sync)</li>
+</ul>
+
+<h3>Gamification</h3>
+<ul>
+<li>Achievement system with 18 achievements</li>
+<li>Streak tracking for consistency</li>
+<li>Points system</li>
+<li>Rarity levels (common, uncommon, rare, legendary)</li>
+</ul>
+
+<h3>Progress Tracking</h3>
+<ul>
+<li>Overall progress percentage</li>
+<li>Per-module progress (current level, completion)</li>
+<li>Session history with filtering</li>
+<li>Statistics and analytics</li>
+<li>Improvement trend calculation</li>
+</ul>
+
+<h3>User Experience</h3>
+<ul>
+<li>Playful, engaging UI with emojis</li>
+<li>Dyslexia-friendly design (WCAG 2.1 AA compliant)</li>
+<li>Clear disclaimers about non-clinical nature</li>
+<li>Simple, streamlined flow from screening to training</li>
+</ul>
+
+<h2>Technical Details</h2>
+
+<h3>Database Schema</h3>
+<ul>
+<li><strong>trainingRecords</strong>: id, userId, trainingModule, level, score, completed, timeSpent, date, metrics</li>
+<li><strong>userProgress</strong>: userId, overallProgress, streak, lastTrainingDate, totalSessions, totalTimeSpent, averageScore, achievements, recommendedModules, moduleProgress</li>
+<li><strong>achievements</strong>: id, userId, name, description, icon, category, points, rarity, unlocked, unlockedDate</li>
+</ul>
+
+<h3>Training Modules</h3>
+<ol>
+<li><strong>Phonological Awareness Training</strong> (3 levels)</li>
+</ol>
+<p>- Phoneme Identification</p>
+<p>- Phoneme Blending</p>
+<p>- Rhyme Detection</p>
+
+<ol>
+<li><strong>Rapid Automatized Naming Training</strong> (3 levels)</li>
+</ol>
+<p>- Letter Naming</p>
+<p>- Number Naming</p>
+<p>- Color Naming</p>
+
+<ol>
+<li><strong>Working Memory Training</strong> (3 levels)</li>
+</ol>
+<p>- Memory Span - Numbers</p>
+<p>- Memory Span - Words</p>
+<p>- Reverse Recall</p>
+
+<ol>
+<li><strong>Reading Fluency Training</strong> (3 levels)</li>
+</ol>
+<p>- Word Reading</p>
+<p>- Phrase Reading</p>
+<p>- Sentence Reading</p>
+
+<h3>Severity-Based Programs</h3>
+<ul>
+<li><strong>Severe</strong>: 5 sessions/week, 30 min/session, 12 weeks, 30 hours total</li>
+<li><strong>Moderate</strong>: 4 sessions/week, 25 min/session, 10 weeks, 25 hours total</li>
+<li><strong>Mild</strong>: 3 sessions/week, 20 min/session, 8 weeks, 15 hours total</li>
+<li><strong>Maintenance</strong>: 2 sessions/week, 15 min/session, 4 weeks, 8 hours total</li>
+</ul>
+
+<h2>Integration Points</h2>
+
+<h3>Screening → Training Flow</h3>
+<ol>
+<li>User completes screening</li>
+<li>Screening results page shows "Start Training" button</li>
+<li>User clicks button → navigates to TrainingDashboard</li>
+<li>TrainingDashboard shows recommended modules based on assessment</li>
+<li>User selects module → starts training session</li>
+<li>Session completion saves to storage</li>
+<li>Progress updates automatically</li>
+</ol>
+
+<h3>Storage Integration</h3>
+<ul>
+<li>TrainingStorage uses same IndexedDB as screening storage</li>
+<li>DB_VERSION incremented to 2 to add training stores</li>
+<li>Compatible with existing screening data</li>
+</ul>
+
+<h2>Future Enhancements</h2>
+
+<h3>Potential Improvements</h3>
+<ol>
+<li>Implement actual TrainingServiceImpl with TrainingRepositoryImpl</li>
+<li>Add achievement unlocking logic after each session</li>
+<li>Implement adaptive difficulty based on performance</li>
+<li>Add more training modules based on research</li>
+<li>Implement progress charts and visualizations</li>
+<li>Add reminder notifications for training consistency</li>
+<li>Implement cloud sync (optional, user-opt-in)</li>
+<li>Add multiplayer/competitive training modes</li>
+<li>Implement AI-powered personalization</li>
+<li>Add parent/teacher dashboard for child users</li>
+</ol>
+
+<h3>Known Limitations</h3>
+<ul>
+<li>TrainingRepositoryImpl uses localStorage (should use IndexedDB in production)</li>
+<li>Achievement unlocking logic not fully implemented</li>
+<li>No adaptive difficulty currently</li>
+<li>User authentication not implemented (uses hardcoded userId)</li>
+<li>No data export/import functionality</li>
+</ul>
+
+<h2>Testing Recommendations</h2>
+
+<h3>Manual Testing</h3>
+<ol>
+<li>Complete screening → verify "Start Training" button appears</li>
+<li>Navigate to training dashboard → verify stats display correctly</li>
+<li>Start training session → verify exercise loads</li>
+<li>Complete session → verify result saves to storage</li>
+<li>Check training history → verify session appears</li>
+<li>Verify streak calculation works correctly</li>
+<li>Test achievement unlocking (when implemented)</li>
+<li>Test CSV export functionality</li>
+<li>Verify dark mode compatibility</li>
+<li>Test accessibility (keyboard navigation, screen reader)</li>
+</ol>
+
+<h3>Integration Testing</h3>
+<ol>
+<li>Test full flow: screening → training → history</li>
+<li>Verify data persistence across page refreshes</li>
+<li>Test with multiple users (if auth implemented)</li>
+<li>Verify IndexedDB migration from v1 to v2</li>
+<li>Test localStorage fallback when IndexedDB unavailable</li>
+</ol>
+
+<h2>Conclusion</h2>
+
+<p>The training system provides a comprehensive, evidence-based training platform that integrates seamlessly with the existing screening system. It features local-only storage for privacy, gamification for engagement, and a clear assessment-to-training flow. The system is designed to be dyslexia-friendly and accessible, with clear disclaimers about its non-clinical nature.</p>
+
+        </div>
+    </div>
+</body>
+</html>

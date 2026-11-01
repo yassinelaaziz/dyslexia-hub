@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyslexia Grand Hub - User Journey Maps - Dyslexia Grand Hub Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fafb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header .container {
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            padding: 0 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        nav a:hover {
+            background: #f3f4f6;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.75rem;
+            color: #374151;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.25rem 0 0.5rem;
+            color: #4b5563;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem;
+            color: #6b7280;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f9fafb;
+            font-weight: 600;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 2rem 0;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .meta {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dyslexia Grand Hub - User Journey Maps</h1>
+            <p class="subtitle">Document  Complete</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Documentation Index</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="monorepo-structure.html">Monorepo Structure</a></li>
+                <li><a href="database-schema.html">Database Schema</a></li>
+                <li><a href="api-specification.html">API Specification</a></li>
+                <li><a href="component-library.html">Component Library</a></li>
+                <li><a href="user-journeys.html">User Journeys</a></li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+                <li><a href="development-plan.html">Development Plan</a></li>
+                <li><a href="testing-strategy.html">Testing Strategy</a></li>
+                <li><a href="deployment-plan.html">Deployment Plan</a></li>
+                <li><a href="monitoring-plan.html">Monitoring Plan</a></li>
+                <li><a href="maintenance-plan.html">Maintenance Plan</a></li>
+                <li><a href="technical-specification.html">Technical Specification</a></li>
+                <li><a href="training-system.html">Training System</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>Dyslexia Grand Hub - User Journey Maps</h1>
+
+<strong>Version:</strong> 1.0
+<strong>Date:</strong> 2026-10-31
+<strong>Author:</strong> Senior Tech Lead (Devin)
+<strong>Status:</strong> UI/UX Design Phase - Complete
+
+<hr>
+
+<h2>Persona Definitions</h2>
+
+<h3>Persona 1: Individual with Dyslexia (Primary)</h3>
+
+<strong>Name:</strong> Alex
+<strong>Age:</strong> 12 years old
+<strong>Profile:</strong>
+<ul>
+<li>Diagnosed with dyslexia at age 8</li>
+<li>Struggles with reading speed and accuracy</li>
+<li>Motivated to improve but frustrated with traditional methods</li>
+<li>Comfortable with technology (tablet, smartphone)</li>
+<li>Parents supportive but busy</li>
+</ul>
+
+<strong>Goals:</strong>
+<ul>
+<li>Improve reading skills</li>
+<li>Understand why reading is hard</li>
+<li>Find interventions that work</li>
+<li>Track progress to stay motivated</li>
+</ul>
+
+<strong>Pain Points:</strong>
+<ul>
+<li>Difficulty reading long text (gets tired quickly)</li>
+<li>Confusing assessment results</li>
+<li>Too many intervention options, don't know what works</li>
+<li>Lack of visual feedback on progress</li>
+<li>Stigma and shame around dyslexia</li>
+</ul>
+
+<strong>Tech Proficiency:</strong> Moderate (comfortable with apps, needs simple UI)
+
+<strong>Key Features Needed:</strong>
+<ul>
+<li>Screening with immediate, clear feedback</li>
+<li>Brain-friendly learning interventions</li>
+<li>Visual explanations of brain changes</li>
+<li>Progress tracking with celebrations</li>
+<li>Dyslexia-friendly interface (fonts, spacing)</li>
+</ul>
+
+<hr>
+
+<h3>Persona 2: Parent/Caregiver</h3>
+
+<strong>Name:</strong> Sarah
+<strong>Age:</strong> 38 years old
+<strong>Profile:</strong>
+<ul>
+<li>Mother of Alex (12, dyslexia)</li>
+<li>Full-time professional, limited time</li>
+<li>Wants to help but feels overwhelmed by information</li>
+<li>Has some budget for interventions but wants evidence-based options</li>
+</ul>
+
+<strong>Goals:</strong>
+<ul>
+<li>Understand Alex's dyslexia profile</li>
+<li>Find effective interventions</li>
+<li>Track Alex's progress</li>
+<li>Access research to understand dyslexia</li>
+</ul>
+
+<strong>Pain Points:</strong>
+<ul>
+<li>Information overload from internet searches</li>
+<li>Conflicting advice from different sources</li>
+<li>Cost of professional interventions</li>
+<li>Uncertainty about what actually works</li>
+<li>Time constraints for research</li>
+</ul>
+
+<strong>Tech Proficiency:</strong> High (comfortable with web and mobile apps)
+
+<strong>Key Features Needed:</strong>
+<ul>
+<li>Assessment tools for Alex</li>
+<li>Research summaries (not paywalled papers)</li>
+<li>Intervention recommendations with efficacy ratings</li>
+<li>Progress tracking dashboard</li>
+<li>Community support (optional)</li>
+</ul>
+
+<hr>
+
+<h3>Persona 3: Educator/Professional</h3>
+
+<strong>Name:</strong> Dr. Martinez
+<strong>Age:</strong> 45 years old
+<strong>Profile:</strong>
+<ul>
+<li>Special education teacher</li>
+<li>Works with 15-20 dyslexic students</li>
+<li>Stays current with research but time-constrained</li>
+<li>Needs tools for classroom use</li>
+</ul>
+
+<strong>Goals:</strong>
+<ul>
+<li>Screen students efficiently</li>
+<li>Recommend appropriate interventions</li>
+<li>Access research for professional development</li>
+<li>Track student progress across multiple students</li>
+</ul>
+
+<strong>Pain Points:</strong>
+<ul>
+<li>Time constraints for individualized assessment</li>
+<li>Staying current with research (paywalled papers)</li>
+<li>Finding appropriate interventions for different profiles</li>
+<li>Lack of centralized resources</li>
+</ul>
+
+<strong>Tech Proficiency:</strong> Very High
+
+<strong>Key Features Needed:</strong>
+<ul>
+<li>Batch screening tools</li>
+<li>Research repository access</li>
+<li>Intervention database with efficacy ratings</li>
+<li>Professional dashboard (future)</li>
+<li>Export to clinical systems (future)</li>
+</ul>
+
+<hr>
+
+<h3>Persona 4: Researcher</h3>
+
+<strong>Name:</strong> Dr. Chen
+<strong>Age:</strong> 32 years old
+<strong>Profile:</strong>
+<ul>
+<li>Postdoctoral researcher in cognitive neuroscience</li>
+<li>Studies dyslexia interventions</li>
+<li>Needs access to data and literature</li>
+<li>Wants to share findings</li>
+</ul>
+
+<strong>Goals:</strong>
+<ul>
+<li>Access research claims database</li>
+<li>Visualize findings</li>
+<li>Cite papers easily</li>
+<li>Share research with community</li>
+</ul>
+
+<strong>Pain Points:</strong>
+<ul>
+<li>Fragmented literature access</li>
+<li>Paywalled papers</li>
+<li>Difficulty sharing findings</li>
+<li>No centralized data access</li>
+</ul>
+
+<strong>Tech Proficiency:</strong> Very High
+
+<strong>Key Features Needed:</strong>
+<ul>
+<li>Research repository explorer</li>
+<li>Citation tools</li>
+<li>Visualization capabilities</li>
+<li>Data export</li>
+</ul>
+
+<hr>
+
+<h2>User Journey Maps</h2>
+
+<h3>Journey 1: Alex (Individual with Dyslexia) - First-Time Screening</h3>
+
+<strong>Step 1: Discovery</strong>
+<ul>
+<li><strong>Trigger:</strong> Alex hears about app from parent or teacher</li>
+<li><strong>Action:</strong> Downloads app or visits website</li>
+<li><strong>Pain Point:</strong> Worried about assessment difficulty</li>
+<li><strong>Solution:</strong> Clear, welcoming landing page explaining it's not a test, just a check</li>
+</ul>
+
+<strong>Step 2: Onboarding</strong>
+<ul>
+<li><strong>Action:</strong> Creates profile (age, language, preferences)</li>
+<li><strong>Pain Point:</strong> Reading too much text is tiring</li>
+<li><strong>Solution:</strong> Minimal text, audio instructions, dyslexia-friendly fonts</li>
+</ul>
+
+<strong>Step 3: Screening</strong>
+<ul>
+<li><strong>Action:</strong> Starts age-appropriate screening (child version)</li>
+<li><strong>Pain Point:</strong> Test anxiety, fear of failure</li>
+<li><strong>Solution:</strong> Gamified screening, no wrong answers, progress bar encouraging</li>
+</ul>
+
+<strong>Step 4: Results</strong>
+<ul>
+<li><strong>Action:</strong> Receives screening results immediately</li>
+<li><strong>Pain Point:</strong> Confusing technical jargon</li>
+<li><strong>Solution:</strong> Simple language, visual severity indicator, hopeful messaging ("Your brain can change!")</li>
+</ul>
+
+<strong>Step 5: Intervention Exploration</strong>
+<ul>
+<li><strong>Action:</strong> Browses recommended interventions</li>
+<li><strong>Pain Point:</strong> Too many options, don't know what to choose</li>
+<li><strong>Solution:</strong> Filtered recommendations based on screening results, efficacy ratings clearly shown</li>
+</ul>
+
+<strong>Step 6: Intervention Selection</strong>
+<ul>
+<li><strong>Action:</strong> Selects intervention (e.g., RAN-IT)</li>
+<li><strong>Pain Point:</strong> Unclear how to start</li>
+<li><strong>Solution:</strong> Step-by-step guide, video tutorial if available</li>
+</ul>
+
+<strong>Step 7: Intervention Use</strong>
+<ul>
+<li><strong>Action:</strong> Completes first intervention session</li>
+<li><strong>Pain Point:</strong> Boring or difficult</li>
+<li><strong>Solution:</strong> Gamified elements, immediate feedback, celebration on completion</li>
+</ul>
+
+<strong>Step 8: Progress Tracking</strong>
+<ul>
+<li><strong>Action:</strong> Views progress dashboard</li>
+<li><strong>Pain Point:</strong> Not seeing improvement</li>
+<li><strong>Solution:</strong> Visual progress charts, achievement badges, motivational messages</li>
+</ul>
+
+<strong>Step 9: Brain Showcase</strong>
+<ul>
+<li><strong>Action:</strong> Explores brain visualization</li>
+<li><strong>Pain Point:</strong> Complex neuroscience is confusing</li>
+<li><strong>Solution:</strong> Age-appropriate explanations, interactive 3D model, "How interventions change your brain"</li>
+</ul>
+
+<strong>Step 10: Return Usage</strong>
+<ul>
+<li><strong>Action:</strong> Returns to app daily/weekly</li>
+<li><strong>Pain Point:</strong> Losing motivation</li>
+<li><strong>Solution:</strong> Reminders, streak tracking, social features (optional)</li>
+</ul>
+
+<strong>Happy Path:</strong> Discovery → Onboarding → Screening → Results → Intervention → Progress → Brain Showcase → Daily Use
+
+<strong>Edge Cases:</strong>
+<ul>
+<li>Screening interrupted: Save progress, resume later</li>
+<li>Intervention too difficult: Suggest alternative</li>
+<li>No progress detected: Encouragement, suggest trying different intervention</li>
+<li>App crashes: Offline data preserved, sync on restart</li>
+</ul>
+
+<strong>Key Decision Points:</strong>
+<ul>
+<li>After screening: Which intervention to try?</li>
+<li>After 2 weeks: Continue or switch intervention?</li>
+<li>After 1 month: Progress check, celebrate or adjust</li>
+</ul>
+
+<strong>Success Criteria:</strong>
+<ul>
+<li>Screening completion rate >70%</li>
+<li>Intervention adoption rate >50%</li>
+<li>Return usage within 7 days >30%</li>
+</ul>
+
+<hr>
+
+<h3>Journey 2: Sarah (Parent) - Understanding and Supporting Alex</h3>
+
+<strong>Step 1: Discovery</strong>
+<ul>
+<li><strong>Trigger:</strong> Searching for dyslexia resources online</li>
+<li><strong>Action:</strong> Finds Dyslexia Grand Hub</li>
+<li><strong>Pain Point:</strong> Skeptical about another resource</li>
+<li><strong>Solution:</strong> Clear credibility indicators (research-backed, evidence-based)</li>
+</ul>
+
+<strong>Step 2: Registration</strong>
+<ul>
+<li><strong>Action:</strong> Creates account for Alex</li>
+<li><strong>Pain Point:</strong> Privacy concerns about child's data</li>
+<li><strong>Solution:</strong> Clear privacy policy, local-first storage, opt-in cloud sync</li>
+</ul>
+
+<strong>Step 3: Screening Alex</strong>
+<ul>
+<li><strong>Action:</strong> Has Alex complete screening</li>
+<li><strong>Pain Point:</strong> Unsure if screening is accurate</li>
+<li><strong>Solution:</strong> Confidence indicators, comparison to research norms, recommend professional confirmation</li>
+</ul>
+
+<strong>Step 4: Reviewing Results</strong>
+<ul>
+<li><strong>Action:</strong> Reviews Alex's screening results</li>
+<li><strong>Pain Point:</strong> Doesn't understand the scores</li>
+<li><strong>Solution:</strong> Plain language explanations, what each score means, age comparisons</li>
+</ul>
+
+<strong>Step 5: Research Exploration</strong>
+<ul>
+<li><strong>Action:</strong> Explores research repository</li>
+<li><strong>Pain Point:</strong> Paywalled papers, technical jargon</li>
+<li><strong>Solution:</strong> Extracted key findings, plain language summaries, free access</li>
+</ul>
+
+<strong>Step 6: Intervention Selection</strong>
+<ul>
+<li><strong>Action:</strong> Reviews recommended interventions for Alex</li>
+<li><strong>Pain Point:</strong> Which intervention is best for Alex's profile?</li>
+<li><strong>Solution:</strong> Matched to screening results, efficacy ratings, cost/time estimates</li>
+</ul>
+
+<strong>Step 7: Monitoring Progress</strong>
+<ul>
+<li><strong>Action:</strong> Checks Alex's progress periodically</li>
+<li><strong>Pain Point:</strong> Unclear if intervention is working</li>
+<li><strong>Solution:</strong> Visual progress charts, improvement indicators, suggestions for adjustments</li>
+</ul>
+
+<strong>Step 8: Adjusting Approach</strong>
+<ul>
+<li><strong>Action:</strong> Decides to try different intervention</li>
+<li><strong>Pain Point:</strong> Guilt about "giving up" on first intervention</li>
+<li><strong>Solution:</strong> Normalized messaging ("Finding the right fit takes time"), celebrate effort</li>
+</ul>
+
+<strong>Happy Path:</strong> Discovery → Registration → Screening → Results → Research → Intervention → Monitoring → Adjustment
+
+<strong>Edge Cases:</strong>
+<ul>
+<li>Alex refuses screening: Encourage with gamification, respect autonomy</li>
+<li>Screening shows severe dyslexia: Provide resources, encourage professional support</li>
+<li>No progress after 4 weeks: Suggest professional consultation, different intervention approach</li>
+<li>Financial constraints: Highlight free/low-cost interventions</li>
+</ul>
+
+<strong>Key Decision Points:</strong>
+<ul>
+<li>After screening: Seek professional assessment or proceed with app-based interventions?</li>
+<li>After 4 weeks: Continue current intervention or try different approach?</li>
+<li>Budget constraints: Prioritize free interventions or invest in paid options?</li>
+</ul>
+
+<strong>Success Criteria:</strong>
+<ul>
+<li>Parent satisfaction with screening results >80%</li>
+<li>Parent confidence in intervention choice >70%</li>
+<li>Parent returns to check progress >50%</li>
+</ul>
+
+<hr>
+
+<h3>Journey 3: Dr. Martinez (Educator) - Classroom Use</h3>
+
+<strong>Step 1: Discovery</strong>
+<ul>
+<li><strong>Trigger:</strong> Colleague recommendation or professional development</li>
+<li><strong>Action:</strong> Creates professional account</li>
+<li><strong>Pain Point:</strong> Time investment for learning new tool</li>
+<li><strong>Solution:</strong> Quick onboarding, clear value proposition, tutorial videos</li>
+</ul>
+
+<strong>Step 2: Student Screening</strong>
+<ul>
+<li><strong>Action:</strong> Screens 5 students in class</li>
+<li><strong>Pain Point:</strong> Takes too much time per student</li>
+<li><strong>Solution:</strong> Efficient screening workflow, batch operations (future), save progress</li>
+</ul>
+
+<strong>Step 3: Reviewing Results</strong>
+<ul>
+<li><strong>Action:</strong> Reviews screening results for all students</li>
+<li><strong>Pain Point:</strong> Individual results hard to compare</li>
+<li><strong>Solution:</strong> Class overview dashboard, comparison charts, severity distribution</li>
+</ul>
+
+<strong>Step 4: Intervention Assignment</strong>
+<ul>
+<li><strong>Action:</strong> Assigns interventions to students based on profiles</li>
+<li><strong>Pain Point:</strong> Different interventions for different profiles</li>
+<li><strong>Solution:</strong> Auto-recommendations based on screening, group similar profiles</li>
+</ul>
+
+<strong>Step 5: Monitoring Class Progress</strong>
+<ul>
+<li><strong>Action:</strong> Tracks progress across all students</li>
+<li><strong>Pain Point:</strong> Time-consuming to check each student individually</li>
+<li><strong>Solution:</strong> Class progress dashboard, aggregate metrics, alert for students not progressing</li>
+</ul>
+
+<strong>Step 6: Research Access</strong>
+<ul>
+<li><strong>Action:</strong> Looks up research on specific interventions</li>
+<li><strong>Pain Point:</strong> Paywalled papers, limited time for research</li>
+<li><strong>Solution:</strong> Research repository with extracted findings, plain language summaries</li>
+</ul>
+
+<strong>Step 7: Sharing with Parents</strong>
+<ul>
+<li><strong>Action:</strong> Shares progress reports with parents</li>
+<li><strong>Pain Point:</strong> Parents don't understand technical language</li>
+<li><strong>Solution:</strong> Parent-friendly reports, plain language, visual charts</li>
+</ul>
+
+<strong>Happy Path:</strong> Discovery → Registration → Batch Screening → Results Review → Intervention Assignment → Progress Monitoring → Research Access → Parent Sharing
+
+<strong>Edge Cases:</strong>
+<ul>
+<li>Student refuses screening: Respect autonomy, explain benefits, involve parents</li>
+<li>Class size too large: Prioritize high-risk students, use screening as tool not mandate</li>
+<li>Student not progressing: Suggest professional referral, different intervention approach</li>
+<li>Parents concerned about data: Explain privacy policy, local storage option</li>
+</ul>
+
+<strong>Key Decision Points:</strong>
+<ul>
+<li>Which students to screen first? (High-risk vs. random sample)</li>
+<li>How to group students for interventions? (Similar profiles vs. mixed)</li>
+<li>When to involve parents? (All screenings vs. concerning results only)</li>
+<li>When to refer to professionals? (Severity thresholds, lack of progress)</li>
+</ul>
+
+<strong>Success Criteria:</strong>
+<ul>
+<li>Screening time per student <10 minutes</li>
+<li>Educator satisfaction with intervention recommendations >75%</li>
+<li>Class progress tracking saves time vs. manual methods</li>
+</ul>
+
+<hr>
+
+<h3>Journey 4: Dr. Chen (Researcher) - Research Access</h3>
+
+<strong>Step 1: Discovery</strong>
+<ul>
+<li><strong>Trigger:</strong> Searching for dyslexia research database</li>
+<li><strong>Action:</strong> Creates researcher account</li>
+<li><strong>Pain Point:</strong> Unclear if database is comprehensive</li>
+<li><strong>Solution:</strong> Database statistics (460 papers, 335 claims), transparency about methodology</li>
+</ul>
+
+<strong>Step 2: Search Claims</strong>
+<ul>
+<li><strong>Action:</strong> Searches for claims on specific topic (e.g., RAN interventions)</li>
+<li><strong>Pain Point:</strong> Too many results, hard to find relevant ones</li>
+<li><strong>Solution:</strong> Advanced filters (phase, topic, confidence, date), sorting options</li>
+</ul>
+
+<strong>Step 3: Reviewing Claims</strong>
+<ul>
+<li><strong>Action:</strong> Reviews relevant claims with sources</li>
+<li><strong>Pain Point:</strong> Need to verify original papers</li>
+<li><strong>Solution:</strong> Direct links to open-access papers, citation export, PMID/DOI</li>
+</ul>
+
+<strong>Step 4: Exploring Contradictions</strong>
+<ul>
+<li><strong>Action:</strong> Looks for contradictory evidence</li>
+<li><strong>Pain Point:</strong> Hard to find conflicting views</li>
+<li><strong>Solution:</strong> Contradiction links, debate sections from Phase 6</li>
+</ul>
+
+<strong>Step 5: Data Export</strong>
+<ul>
+<li><strong>Action:</strong> Exports claims for analysis</li>
+<li><strong>Pain Point:</strong> Data format incompatible with analysis tools</li>
+<li><strong>Solution:</strong> Multiple export formats (CSV, JSON, BibTeX), structured data</li>
+</ul>
+
+<strong>Step 6: Visualization</strong>
+<ul>
+<li><strong>Action:</strong> Uses brain showcase for presentation</li>
+<li><strong>Pain Point:</strong> Need high-quality visuals for papers/talks</li>
+<li><strong>Solution:</strong> Downloadable 3D models, high-resolution exports, annotation support</li>
+</ul>
+
+<strong>Step 7: Sharing Findings</strong>
+<ul>
+<li><strong>Action:</strong> Cites database in paper</li>
+<li><strong>Pain Point:</strong> Need proper citation format</li>
+<li><strong>Solution:</strong> Citation generator (APA, MLA, BibTeX), persistent DOIs for database</li>
+</ul>
+
+<strong>Happy Path:</strong> Discovery → Registration → Search → Review → Contradictions → Export → Visualization → Citation
+
+<strong>Edge Cases:</strong>
+<ul>
+<li>Claim not found: Suggest similar topics, broaden search</li>
+<li>Source paywalled: Provide extracted findings, suggest alternatives</li>
+<li>Data format issues: Provide multiple export options, custom format support</li>
+<li>Citation needed for database: Provide database DOI, citation generator</li>
+</ul>
+
+<strong>Key Decision Points:</strong>
+<ul>
+<li>Which claims to include in literature review? (Confidence threshold, relevance)</li>
+<li>How to handle contradictory evidence? (Present both sides, note controversy)</li>
+<li>Which data to export? (All claims vs. filtered subset)</li>
+<li>How to cite database? (Cite specific claims vs. database as source)</li>
+</ul>
+
+<strong>Success Criteria:</strong>
+<ul>
+<li>Search finds relevant claims >90% of time</li>
+<li>Claim accuracy vs. original papers >95%</li>
+<li>Export formats compatible with analysis tools >80%</li>
+</ul>
+
+<hr>
+
+<h2>Pain Points and Solutions Summary</h2>
+
+<h3>Common Pain Points Across Personas</h3>
+
+<strong>1. Information Overload</strong>
+<ul>
+<li><strong>Solution:</strong> Curated pathways, progressive disclosure, clear CTAs</li>
+</ul>
+
+<strong>2. Technical Jargon</strong>
+<ul>
+<li><strong>Solution:</strong> Plain language, glossary, visual explanations</li>
+</ul>
+
+<strong>3. Uncertainty About What Works</strong>
+<ul>
+<li><strong>Solution:</strong> Efficacy ratings, evidence-based recommendations, confidence indicators</li>
+</ul>
+
+<strong>4. Time Constraints</strong>
+<ul>
+<li><strong>Solution:</strong> Efficient workflows, batch operations, quick-start guides</li>
+</ul>
+
+<strong>5. Privacy Concerns</strong>
+<ul>
+<li><strong>Solution:</strong> Local-first storage, clear privacy policy, opt-in cloud sync</li>
+</ul>
+
+<strong>6. Motivation/Engagement</strong>
+<ul>
+<li><strong>Solution:</strong> Gamification, progress tracking, celebration, social features</li>
+</ul>
+
+<h3>Persona-Specific Solutions</h3>
+
+<strong>Alex (Individual):</strong>
+<ul>
+<li>Gamified screening</li>
+<li>Dyslexia-friendly interface</li>
+<li>Immediate feedback</li>
+<li>Visual progress</li>
+<li>Hope-focused messaging</li>
+</ul>
+
+<strong>Sarah (Parent):</strong>
+<ul>
+<li>Research summaries (not full papers)</li>
+<li>Intervention efficacy ratings</li>
+<li>Progress dashboard</li>
+<li>Plain language results</li>
+</ul>
+
+<strong>Dr. Martinez (Educator):</strong>
+<ul>
+<li>Batch screening (future)</li>
+<li>Class overview dashboard</li>
+<li>Auto-recommendations</li>
+<li>Parent-friendly reports</li>
+</ul>
+
+<strong>Dr. Chen (Researcher):</strong>
+<ul>
+<li>Advanced search filters</li>
+<li>Contradiction links</li>
+<li>Data export</li>
+<li>Citation tools</li>
+</ul>
+
+<hr>
+
+<h2>Happy Paths and Edge Cases</h2>
+
+<h3>Happy Path Characteristics</h3>
+
+<strong>Alex:</strong> Screening → Intervention → Progress → Brain Showcase → Daily Use
+<strong>Sarah:</strong> Registration → Screening → Research → Intervention → Monitoring
+<strong>Dr. Martinez:</strong> Registration → Batch Screening → Intervention Assignment → Progress Monitoring
+<strong>Dr. Chen:</strong> Search → Review → Export → Visualization → Citation
+
+<h3>Common Edge Cases</h3>
+
+<strong>Technical:</strong>
+<ul>
+<li>App crashes: Offline data preserved, sync on restart</li>
+<li>Network failure: Offline mode, queue sync</li>
+<li>Device compatibility: Responsive design, progressive enhancement</li>
+</ul>
+
+<strong>User Behavior:</strong>
+<ul>
+<li>Abandon screening: Save progress, email reminder</li>
+<li>Refuse intervention: Suggest alternatives, respect autonomy</li>
+<li>No progress detected: Encouragement, suggest different approach</li>
+<li>Data loss concern: Backup/export options, clear retention policy</li>
+</ul>
+
+<strong>Content:</strong>
+<ul>
+<li>Intervention not available for age: Filter options, suggest alternatives</li>
+<li>Research claim outdated: Version tracking, update notifications</li>
+<li>Contradictory evidence: Present both sides, note controversy</li>
+</ul>
+
+<hr>
+
+<h2>Key Decision Points</h2>
+
+<h3>Screening Phase</h3>
+<ul>
+<li><strong>Age appropriateness:</strong> Child vs. adult screening</li>
+<li><strong>Severity threshold:</strong> When to recommend professional help</li>
+<li><strong>Confidence level:</strong> How to present uncertainty in results</li>
+</ul>
+
+<h3>Intervention Phase</h3>
+<ul>
+<li><strong>Selection criteria:</strong> Which intervention to try first</li>
+<li><strong>Duration:</strong> How long to try before switching</li>
+<li><strong>Adjustment:</strong> When to modify intervention approach</li>
+</ul>
+
+<h3>Progress Phase</h3>
+<ul>
+<li><strong>Success metrics:</strong> What constitutes progress</li>
+<li><strong>Celebration triggers:</strong> When to celebrate achievements</li>
+<li><strong>Intervention change:</strong> When to switch interventions</li>
+</ul>
+
+<h3>Research Phase</h3>
+<ul>
+<li><strong>Relevance threshold:</strong> Which claims to include</li>
+<li><strong>Contradiction handling:</strong> How to present conflicting evidence</li>
+<li><strong>Citation format:</strong> How to cite database claims</li>
+</ul>
+
+<hr>
+
+<h2>Success Criteria</h2>
+
+<h3>Alex (Individual)</h3>
+<ul>
+<li>Screening completion rate >70%</li>
+<li>Intervention adoption rate >50%</li>
+<li>Return usage within 7 days >30%</li>
+<li>User-reported improvement >60%</li>
+</ul>
+
+<h3>Sarah (Parent)</h3>
+<ul>
+<li>Parent satisfaction with results >80%</li>
+<li>Confidence in intervention choice >70%</li>
+<li>Return to check progress >50%</li>
+<li>Understanding of dyslexia improves >70%</li>
+</ul>
+
+<h3>Dr. Martinez (Educator)</h3>
+<ul>
+<li>Screening time per student <10 minutes</li>
+<li>Satisfaction with recommendations >75%</li>
+<li>Time saved vs. manual methods >30%</li>
+<li>Parent report satisfaction >75%</li>
+</ul>
+
+<h3>Dr. Chen (Researcher)</h3>
+<ul>
+<li>Search success rate >90%</li>
+<li>Claim accuracy >95%</li>
+<li>Export format compatibility >80%</li>
+<li>Citation usage satisfaction >85%</li>
+</ul>
+
+<hr>
+
+<h2>Conclusion</h2>
+
+<p>These user journey maps provide:</p>
+<ul>
+<li><strong>Detailed Persona Definitions:</strong> 4 personas with goals, pain points, tech proficiency</li>
+<li><strong>Comprehensive Journey Maps:</strong> Step-by-step flows for each persona</li>
+<li><strong>Pain Point Solutions:</strong> Common and persona-specific solutions</li>
+<li><strong>Happy Paths and Edge Cases:</strong> Normal flows and exception handling</li>
+<li><strong>Key Decision Points:</strong> Critical decision moments in each journey</li>
+<li><strong>Success Criteria:</strong> Measurable goals for each persona</li>
+</ul>
+
+<p>The journey maps inform wireframe design, component priorities, and feature sequencing for the MVP.</p>
+
+<hr>
+
+<strong>Document Status:</strong> Complete
+<strong>Next Step:</strong> Wireframes Design (Phase 3)
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyslexia Grand Hub - Deployment Plan - Dyslexia Grand Hub Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fafb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header .container {
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            padding: 0 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        nav a:hover {
+            background: #f3f4f6;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.75rem;
+            color: #374151;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.25rem 0 0.5rem;
+            color: #4b5563;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem;
+            color: #6b7280;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f9fafb;
+            font-weight: 600;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 2rem 0;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .meta {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dyslexia Grand Hub - Deployment Plan</h1>
+            <p class="subtitle">Document  Complete</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Documentation Index</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="monorepo-structure.html">Monorepo Structure</a></li>
+                <li><a href="database-schema.html">Database Schema</a></li>
+                <li><a href="api-specification.html">API Specification</a></li>
+                <li><a href="component-library.html">Component Library</a></li>
+                <li><a href="user-journeys.html">User Journeys</a></li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+                <li><a href="development-plan.html">Development Plan</a></li>
+                <li><a href="testing-strategy.html">Testing Strategy</a></li>
+                <li><a href="deployment-plan.html">Deployment Plan</a></li>
+                <li><a href="monitoring-plan.html">Monitoring Plan</a></li>
+                <li><a href="maintenance-plan.html">Maintenance Plan</a></li>
+                <li><a href="technical-specification.html">Technical Specification</a></li>
+                <li><a href="training-system.html">Training System</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>Dyslexia Grand Hub - Deployment Plan</h1>
+
+<strong>Version:</strong> 1.0
+<strong>Date:</strong> 2026-10-31
+<strong>Author:</strong> Senior Tech Lead (Devin)
+<strong>Status:</strong> Deployment Phase - Complete
+
+<hr>
+
+<h2>Hosting Strategy</h2>
+
+<strong>Primary Choice:</strong> Vercel
+
+<strong>Justification:</strong>
+<ul>
+<li>Free tier sufficient for MVP</li>
+<li>Automatic HTTPS</li>
+<li>Global CDN</li>
+<li>Preview deployments</li>
+<li>Easy GitHub integration</li>
+</ul>
+
+<strong>Alternative:</strong> Netlify
+
+<strong>Justification:</strong>
+<ul>
+<li>Similar benefits to Vercel</li>
+<li>Edge functions for future backend</li>
+</ul>
+
+<strong>Backend (Future):</strong> Railway or Render
+
+<strong>Justification:</strong>
+<ul>
+<li>Simple PostgreSQL hosting</li>
+<li>Good free tier</li>
+<li>Easy deployment</li>
+</ul>
+
+<hr>
+
+<h2>CI/CD Pipeline</h2>
+
+<strong>Tool:</strong> GitHub Actions
+
+<strong>Workflow:</strong>
+<pre><code>name: CI/CD
+<p>on:</p>
+<p>push:</p>
+<p>branches: [main]</p>
+<p>pull_request:</p>
+<p>branches: [main]</p>
+
+<p>jobs:</p>
+<p>test:</p>
+<p>runs-on: ubuntu-latest</p>
+<p>steps:</p>
+<p>- uses: actions/checkout@v3</p>
+<p>- uses: actions/setup-node@v3</p>
+<p>- run: npm install</p>
+<p>- run: npm run test</p>
+<p>- run: npm run lint</p>
+<p>- run: npm run build</p>
+
+<p>deploy-preview:</p>
+<p>if: github.event_name == 'pull_request'</p>
+<p>runs-on: ubuntu-latest</p>
+<p>steps:</p>
+<p>- uses: actions/checkout@v3</p>
+<p>- uses: amondnet/vercel-action@v20</p>
+<p>with:</p>
+<p>vercel-token: ${{ secrets.VERCEL_TOKEN }}</p>
+<p>vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}</p>
+<p>vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}</p>
+<p>vercel-args: '--preview'</p>
+
+<p>deploy-production:</p>
+<p>if: github.event_name == 'push' && github.ref == 'refs/heads/main'</p>
+<p>runs-on: ubuntu-latest</p>
+<p>steps:</p>
+<p>- uses: actions/checkout@v3</p>
+<p>- uses: amondnet/vercel-action@v20</p>
+<p>with:</p>
+<p>vercel-token: ${{ secrets.VERCEL_TOKEN }}</p>
+<p>vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}</p>
+<p>vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}</p>
+<p>vercel-args: '--prod'</p>
+</code></pre>
+
+<hr>
+
+<h2>Build and Deployment Process</h2>
+
+<strong>Build Process:</strong>
+<ol>
+<li><code>npm install</code> - Install dependencies</li>
+<li><code>npm run lint</code> - Lint code</li>
+<li><code>npm run test</code> - Run tests</li>
+<li><code>npm run build</code> - Build for production</li>
+<li>Output: <code>dist/</code> directory</li>
+</ol>
+
+<strong>Deployment Process:</strong>
+<ol>
+<li>GitHub Actions triggers on push to main</li>
+<li>Tests run automatically</li>
+<li>If tests pass, deploy to Vercel</li>
+<li>Vercel builds and deploys globally</li>
+<li>Preview deployments for PRs</li>
+<li>Production deployments for main branch</li>
+</ol>
+
+<hr>
+
+<h2>Environment Configuration</h2>
+
+<strong>Environments:</strong>
+<ul>
+<li>Development (local)</li>
+<li>Preview (PR deployments)</li>
+<li>Production (main branch)</li>
+</ul>
+
+<strong>Configuration:</strong>
+<pre><code>const config = {
+<p>environment: process.env.NODE_ENV || 'development',</p>
+<p>apiBaseUrl: process.env.VITE_API_URL || '',</p>
+<p>enableCloudSync: process.env.VITE_ENABLE_CLOUD_SYNC === 'true',</p>
+<p>enableAnalytics: process.env.VITE_ENABLE_ANALYTICS === 'true',</p>
+<p>analyticsId: process.env.VITE_ANALYTICS_ID,</p>
+<p>};</p>
+</code></pre>
+
+<strong>Environment Variables:</strong>
+<ul>
+<li><code>VITE_API_URL</code> - API base URL (future)</li>
+<li><code>VITE_ENABLE_CLOUD_SYNC</code> - Enable cloud sync (future)</li>
+<li><code>VITE_ENABLE_ANALYTICS</code> - Enable analytics</li>
+<li><code>VITE_ANALYTICS_ID</code> - Analytics ID</li>
+</ul>
+
+<hr>
+
+<h2>Database Migrations</h2>
+
+<strong>Local Storage (IndexedDB):</strong>
+<ul>
+<li>Version tracking in sync metadata</li>
+<li>Automatic migration on app startup</li>
+<li>Backup before migration</li>
+<li>Rollback on failure</li>
+</ul>
+
+<strong>Cloud Storage (PostgreSQL - Future):</strong>
+<ul>
+<li>Migration files in <code>migrations/</code> directory</li>
+<li>Run migrations on deployment</li>
+<li>Use database migration tool (node-pg-migrate)</li>
+<li>Rollback capability</li>
+</ul>
+
+<hr>
+
+<h2>Rollback Procedures</h2>
+
+<strong>Vercel Rollback:</strong>
+<ol>
+<li>Go to Vercel dashboard</li>
+<li>Select project</li>
+<li>Go to Deployments</li>
+<li>Click rollback to previous deployment</li>
+<li>Verify rollback</li>
+</ol>
+
+<strong>Alternative:</strong> Git revert and redeploy
+
+<hr>
+
+<h2>Blue-Green Deployment Strategy</h2>
+
+<strong>Future Implementation:</strong>
+<ul>
+<li>Two production environments (blue, green)</li>
+<li>Deploy to green first</li>
+<li>Run smoke tests</li>
+<li>Switch traffic to green</li>
+<li>Keep blue as rollback target</li>
+</ul>
+
+<hr>
+
+<h2>Conclusion</h2>
+
+<p>This deployment plan provides:</p>
+<ul>
+<li><strong>Hosting Strategy:</strong> Vercel for web, Railway for backend (future)</li>
+<li><strong>CI/CD Pipeline:</strong> GitHub Actions with automated testing</li>
+<li><strong>Build Process:</strong> Install → Lint → Test → Build</li>
+<li><strong>Environment Management:</strong> Dev, Preview, Production</li>
+<li><strong>Rollback Strategy:</strong> Vercel rollback or Git revert</li>
+<li><strong>Blue-Green Deployment:</strong> Future enhancement</li>
+</ul>
+
+<hr>
+
+<strong>Document Status:</strong> Complete
+<strong>Next Step:</strong> Monitoring Plan (Phase 7)
+
+        </div>
+    </div>
+</body>
+</html>
